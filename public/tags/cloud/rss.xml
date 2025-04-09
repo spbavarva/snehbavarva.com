@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cloud on Sneh Bavarva | Cybersecurity Professional</title>
+    <link>http://localhost:1313/tags/cloud/</link>
+    <description>Recent content in Cloud on Sneh Bavarva | Cybersecurity Professional</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/cloud/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Secure CI/CD DevSecOps pipeline</title>
+      <link>http://localhost:1313/projects/cloud-security-automation/</link>
+      <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cloud-security-automation/</guid>
+      <description>Automated security scanning and compliance checking for code</description>
+    </item>
+    <item>
+      <title>How I passed AWS Solution Architect Associate - SAA in 5 days!</title>
+      <link>http://localhost:1313/blog/post-1/</link>
+      <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/post-1/</guid>
+      <description>fairly easy exam if you follow just one resource...</description>
+    </item>
+  </channel>
+</rss>

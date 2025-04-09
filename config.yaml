@@ -1,0 +1,111 @@
+baseURL: https://snehbavarva.xyz/
+languageCode: en-us
+title: Sneh Bavarva | Cybersecurity Professional
+theme: PaperMod
+enableEmoji: true
+enableRobotsTXT: true
+pagination:
+  pagerSize: 10
+params:
+  defaultTheme: auto
+  ShowShareButtons: true
+  disableThemeToggle: false
+  ShowCodeCopyButtons: true
+  enableCodeCopy: true
+  profileMode:
+    enabled: true
+  homeInfoParams:
+    Title: Sneh Bavarva
+    Content: Cybersecurity Professional
+  socialIcons:
+    - name: github
+      url: https://github.com/spbavarva
+    - name: linkedin
+      url: https://linkedin.com/in/snehbavarva
+    - name: medium
+      url: https://medium.com/@snehbavarva
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+    assets:
+      css:
+        - css/main.css
+menu:
+  main:
+    - name: Home
+      url: /mainpage
+      weight: 8
+    - name: About
+      url: /about/
+      weight: 2
+    - name: Projects
+      url: /projects/
+      weight: 3
+    - name: Blog
+      url: /blog/
+      weight: 4
+    - name: Contact
+      url: /contact/
+      weight: 5
+    - name: Archives
+      url: /archives/
+      weight: 6
+    - identifier: posts
+      name: Blog
+      url: /posts/
+      weight: 7
+    - name: mainpage
+      url: /mainpage/
+      weight: 1
+taxonomies:
+  tag: tags
+  category: categories
+outputFormats:
+  RSS:
+    mediatype: application/rss+xml
+    baseName: rss
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  page:
+    - HTML
+  section:
+    - HTML
+    - RSS
+  taxonomy:
+    - HTML
+    - RSS
+  term:
+    - HTML
+    - RSS
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    disable: true
+  instagram:
+    disable: true
+  twitter:
+    disable: false
+  x:
+    disable: false
+    enableDNT: true
+    simple: true
+  vimeo:
+    disable: false
+    enableDNT: true
+    simple: true
+  youtube:
+    disable: false
+    privacyEnhanced: true

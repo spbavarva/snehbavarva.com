@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+    
+    <!-- Load CSS -->
+    {{ $css := resources.Get "css/main.css" | resources.ExecuteAsTemplate "css/main.css" . | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    
+    <!-- Initial theme class based on user preference -->
+    <script>
+        // Set the initial theme class on the html element
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.classList.add(savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.add('light');
+        }
+    </script>
+</head>
+<body>
+    {{ partial "header.html" . }}
+    
+    <div class="content-wrapper">
+        {{ block "main" . }}{{ end }}
+    </div>
+    
+    {{ partial "footer.html" . }}
+</body>
+</html>

@@ -1,0 +1,44 @@
+{{ define "main" }}
+<main class="blog-container">
+  <h1 class="blog-title">📝 My Blogs</h1>
+  <p class="blog-description">
+    These are mynew blogs apart from Medium blogs. For my previous Medium blogs
+    about Privilege Escalation Techniques and more,
+    <a
+      class="timeline-content-read"
+      href="https://medium.com/@snehbavarva"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Please visit here →
+    </a>
+  </p>
+
+  <div class="timeline-wrapper">
+    <div class="timeline-line"></div>
+
+    <div class="timeline-posts">
+      {{ range (where .Site.RegularPages "Section" "blog").ByDate.Reverse }}
+      <article class="timeline-entry">
+        <div></div>
+        {{ if .Date }}
+        <div class="timeline-date">{{ .Date.Format "January 2, 2006" }}</div>
+        {{ end }}
+        <div class="timeline-content">
+          <h2>
+            <a class="timeline-content-title" href="{{ .RelPermalink }}"
+              >{{ .Title }}</a
+            >
+          </h2>
+          <p>{{ .Description | default .Summary | truncate 150 }}</p>
+          <a class="timeline-content-read" href="{{ .RelPermalink }}"
+            >Read article →</a
+          >
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+  <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+</main>
+{{ end }}

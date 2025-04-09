@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I passed AWS Solution Architect Associate - SAA in 5 days! | Sneh Bavarva | Cybersecurity Professional</title>
+    <meta name="description" content="fairly easy exam if you follow just one resource...">
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.100089ac78d2c9697e5cf4aba2af1b301b4bfc0edf37658e9b9af5f3623f8676.css">
+    
+    
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    
+    
+    <script>
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.classList.add(savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.add('light');
+        }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+  <div class="header-inner">
+    <div class="site-brand">
+      <a href="/" class="site-name">Sneh Bavarva</a>
+    </div>
+    
+    <nav class="nav">
+      <a href="/" class="nav-link ">Home</a>
+      <a href="/about" class="nav-link ">About</a>
+      <a href="/projects" class="nav-link ">Projects</a>
+      <a href="/blog" class="nav-link ">Blog</a>
+      
+      <a href="/contact" class="nav-link ">Contact</a>
+      <a href="https://calendly.com/bavarvasneh/30min" class="nav-link" target="_blank">Calendly</a>
+      <a href="https://linkedin.com/in/snehbavarva" class="nav-link" target="_blank">LinkedIn</a>
+    </nav>
+  </div>
+  
+  <style>
+    .site-header {
+      padding: 1.5rem 0;
+      margin-bottom: 2rem;
+    }
+    
+    
+    .header-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .site-brand {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .site-name {
+      color: var(--text-color-dark);
+      text-decoration: none;
+    }
+    
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 0;
+    }
+    
+    .nav-link {
+      color: var(--text-color-light);
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary-color);
+    }
+    
+    .theme-toggle button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-color);
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    html.light .moon-icon {
+      display: block;
+    }
+    
+    html.light .sun-icon {
+      display: none;
+    }
+    
+    html.dark .moon-icon {
+      display: none;
+    }
+    
+    html.dark .sun-icon {
+      display: block;
+    }
+    
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .nav {
+        margin: 1rem 0;
+      }
+    }
+  </style>
+  
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      const themeToggle = document.getElementById('theme-toggle');
+      const htmlElement = document.documentElement;
+      
+      
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        htmlElement.classList.add(savedTheme);
+      } else {
+        
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          htmlElement.classList.add('dark');
+        } else {
+          htmlElement.classList.add('light');
+        }
+      }
+      
+      
+      themeToggle.addEventListener('click', () => {
+        if (htmlElement.classList.contains('dark')) {
+          htmlElement.classList.remove('dark');
+          htmlElement.classList.add('light');
+          localStorage.setItem('theme', 'light');
+        } else {
+          htmlElement.classList.remove('light');
+          htmlElement.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    });
+  </script>
+</header>
+    
+    <div class="content-wrapper">
+        
+<main class="main">
+  <article class="single-page">
+    <h1>How I passed AWS Solution Architect Associate - SAA in 5 days!</h1>
+
+    
+    <div class="post-meta">
+      <span>April 3, 2025</span>
+    </div>
+     
+    <aside class="table-of-contents collapsible-toc">
+      <button class="toc-toggle" onclick="toggleToc()">
+        📑 Table of Contents
+      </button>
+      <div id="toc-content" class="toc-content collapsed">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-how-i-decided-to-take-this-exam">🚀 How I decided to take this exam</a></li>
+    <li><a href="#initial-thoughts--strategy">Initial Thoughts &amp; Strategy</a></li>
+    <li><a href="#resources--study-approach">Resources &amp; Study Approach</a>
+      <ul>
+        <li><a href="#-resources">📚 Resources</a></li>
+        <li><a href="#-study-approach">📝 Study Approach</a></li>
+      </ul>
+    </li>
+    <li><a href="#time-for-bonus">Time for BONUS$</a></li>
+  </ul>
+</nav>
+      </div>
+    </aside>
+
+    <script>
+      function toggleToc() {
+        const toc = document.getElementById("toc-content");
+        toc.classList.toggle("expanded");
+        toc.classList.toggle("collapsed");
+      }
+    </script>
+    
+
+    <div class="content"><figure class="align-center ">
+    <img loading="lazy" src="/images/blog/blog-1-AWS/aws-saa-logo.png#center"
+         alt="AWS SAA Badge"/> <figcaption>
+            <p></p>
+        </figcaption>
+</figure>
+
+<blockquote>
+<p><em>“Sometimes starting something new opens the door to accomplishments you never expected.”</em></p></blockquote>
+<h2 id="-how-i-decided-to-take-this-exam">🚀 How I decided to take this exam</h2>
+<p>In the <strong>last week of March</strong>, I was exploring new things to learn and that curiosity led me to start a <strong>DevSecOps project</strong>.</p>
+<p>While diving deeper, I thought,<br>
+<em>“Why not understand AWS deeply and get certified along the way?”</em></p>
+<p>So, I looked into available AWS certifications and decided to try the <strong>AWS Solutions Architect Associate (SAA-C03)</strong>.</p>
+<p>And guess what?</p>
+<blockquote>
+<p><strong>And yes, I took the exam on April 3rd and passed in less than a week!</strong></p></blockquote>
+<p>🔗 <a href="https://www.credly.com/badges/c35b460c-42ed-4f70-8053-578f71d57a97/public_url">Verify my badge on Credly</a></p>
+<hr>
+<h2 id="initial-thoughts--strategy">Initial Thoughts &amp; Strategy</h2>
+<p>At first, I was so overwhelmed that there are multiple things to cover but as soon as I just googled about each domains which will be coming on exam I realized that there are only limited number of services that this exam focuses on.</p>
+<p>The exam is structured into <strong>4 domains</strong>:</p>
+<p>1 Design Secure Architectures<br>
+2 Design Resilient Architecture<br>
+3 High-Performing Architecture<br>
+4 Design Cost-Optimized Architectures</p>
+<p>Before started learning about exam, I just had basic understanding of popular services like S3, EC2, VPC because I have Cloud Computing subject in my curriculum. It was totally basic so I think we can neglect that. But as these domains just covers essential part, that was enough.</p>
+<div style="text-align: center; font-size: 2.5rem; margin: 1rem 0;">
+    &middot; &nbsp; &middot; &nbsp; &middot;
+  </div>
+  
+<h2 id="resources--study-approach">Resources &amp; Study Approach</h2>
+<h3 id="-resources">📚 Resources</h3>
+<p>I won’t make it unnecessary long and come to the point. All I did study was from a YouTube playlist by Peace of Code. That guy covered all of the basic concepts and solved around <strong>350 questions</strong> with explanation.</p>
+<blockquote>
+<p>🎥 <a href="https://www.youtube.com/@peaceofcode"><strong>Peace of Code - AWS SAA-C03 Full Course + Questions</strong></a></p></blockquote>
+<h3 id="-study-approach">📝 Study Approach</h3>
+<p>I take notes majorly from his question solving parts because those tips are important like how you actually thought about question and how you can eliminate options. As you can see it’s short and concise notes, which I just referred once before starting my exam.</p>
+<p>And about my study hours, I didn’t really study much for this like roughly 3–4 hours a day and on exam day maybe I studies 6 hours as I took it in the evening. But I watch videos in 3x-4x speed that’s why I managed to complete that playlist this early.</p>
+<figure class="align-center ">
+    <img loading="lazy" src="/images/blog/blog-1-AWS/notes-obs.webp#center"
+         alt="obs-notes-sample"/> <figcaption>
+            <p></p>
+        </figcaption>
+</figure>
+
+<p>Somehow thinking about Cloud infrastructure came to me naturally and in fact, I had 50+ minutes left over in my exam. (total exam time is 130 minutes for 65 questions).</p>
+<h2 id="time-for-bonus">Time for BONUS$</h2>
+<figure class="align-center ">
+    <img loading="lazy" src="/images/blog/blog-1-AWS/bonus.gif#center"
+         alt="bonus"/> <figcaption>
+            <p></p>
+        </figcaption>
+</figure>
+
+<p>I got 50% off just by checking post of <a href="https://www.linkedin.com/showcase/aws-training-%26-certification/">AWS Training &amp; Certification LinkedIn</a>! They usually have 50% off voucher always available or you can easily find it somewhere else. Currently they have 50% off for all Associate level exam till 21st May.</p>
+<div style="text-align: center; font-size: 2.5rem; margin: 1rem 0;">
+    &middot; &nbsp; &middot; &nbsp; &middot;
+  </div>
+  
+<p>Trust me, this exam is just test foundational knowledge of AWS cloud and you don’t need to take stress over it. Watch that playlist and you are good to go.</p>
+<p>Thank you for reading through, I wish you good luck if you are considering taking exam with AWS soon and meet you on DevSecOps project’s blog!</p>
+</div>
+  </article>
+  
+
+</main>
+
+    </div>
+    
+    <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-content">
+      <span>&copy; 2025 Sneh Bavarva</span>
+      <span class="footer-separator">•</span>
+      <a href="https://github.com/spbavarva" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <span class="footer-separator">•</span>
+      <a href="https://linkedin.com/in/snehbavarva" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <span class="footer-separator">•</span>
+      <a href="https://medium.com/@snehbavarva" target="_blank" rel="noopener noreferrer">Medium</a>
+    </div>
+  </div>
+  
+  <style>
+     
+    
+    .footer-inner {
+      max-width: 800px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+    }
+    
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .footer-separator {
+      color: var(--text-color-light);
+      font-size: 1.2rem;
+      margin: 0 0.25rem;
+    }
+    
+    .footer-content a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    .footer-content a:hover {
+      color: var(--primary-color-light);
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 640px) {
+      .footer-content {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .footer-separator {
+        display: none;
+      }
+    }
+  </style>
+</footer>
+</body>
+</html>

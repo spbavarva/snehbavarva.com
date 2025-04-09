@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👋 About Me | Sneh Bavarva | Cybersecurity Professional</title>
+    <meta name="description" content="Learn more about Sneh Bavarva&#39;s cybersecurity background and expertise">
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.100089ac78d2c9697e5cf4aba2af1b301b4bfc0edf37658e9b9af5f3623f8676.css">
+    
+    
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    
+    
+    <script>
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.classList.add(savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.add('light');
+        }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+  <div class="header-inner">
+    <div class="site-brand">
+      <a href="/" class="site-name">Sneh Bavarva</a>
+    </div>
+    
+    <nav class="nav">
+      <a href="/" class="nav-link ">Home</a>
+      <a href="/about" class="nav-link active">About</a>
+      <a href="/projects" class="nav-link ">Projects</a>
+      <a href="/blog" class="nav-link ">Blog</a>
+      
+      <a href="/contact" class="nav-link ">Contact</a>
+      <a href="https://calendly.com/bavarvasneh/30min" class="nav-link" target="_blank">Calendly</a>
+      <a href="https://linkedin.com/in/snehbavarva" class="nav-link" target="_blank">LinkedIn</a>
+    </nav>
+  </div>
+  
+  <style>
+    .site-header {
+      padding: 1.5rem 0;
+      margin-bottom: 2rem;
+    }
+    
+    
+    .header-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .site-brand {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .site-name {
+      color: var(--text-color-dark);
+      text-decoration: none;
+    }
+    
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 0;
+    }
+    
+    .nav-link {
+      color: var(--text-color-light);
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary-color);
+    }
+    
+    .theme-toggle button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-color);
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    html.light .moon-icon {
+      display: block;
+    }
+    
+    html.light .sun-icon {
+      display: none;
+    }
+    
+    html.dark .moon-icon {
+      display: none;
+    }
+    
+    html.dark .sun-icon {
+      display: block;
+    }
+    
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .nav {
+        margin: 1rem 0;
+      }
+    }
+  </style>
+  
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      const themeToggle = document.getElementById('theme-toggle');
+      const htmlElement = document.documentElement;
+      
+      
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        htmlElement.classList.add(savedTheme);
+      } else {
+        
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          htmlElement.classList.add('dark');
+        } else {
+          htmlElement.classList.add('light');
+        }
+      }
+      
+      
+      themeToggle.addEventListener('click', () => {
+        if (htmlElement.classList.contains('dark')) {
+          htmlElement.classList.remove('dark');
+          htmlElement.classList.add('light');
+          localStorage.setItem('theme', 'light');
+        } else {
+          htmlElement.classList.remove('light');
+          htmlElement.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    });
+  </script>
+</header>
+    
+    <div class="content-wrapper">
+        
+<main class="main">
+  <article class="single-page">
+    <h1>👋 About Me</h1>
+
+     
+
+    <div class="content"><p>I&rsquo;m passionate about cybersecurity and always eager to explore different areas within the field. Funny enough, my journey began when my own LinkedIn account got hacked - lol, that&rsquo;s a story for another time!</p>
+<p>Currently, I&rsquo;m diving deep into <strong>Cloud</strong>, <strong>AI</strong>, and their integration with security to build a secure CI/CD pipeline. I&rsquo;m focused on <strong>threat modeling</strong> and automating that process by integrating LLM models in the workflow. This project will take a while but it&rsquo;s my goal for the year.</p>
+<p>Also recently, I&rsquo;ve developed an interest in <strong>defensive side of the security</strong> like securing infrastructure and detecting anomalies. One of my goals this year is to build an AI-powered tool/pipeline to automate SOC workflows and detect unusual patterns in logs and infrastructure.</p>
+<p>And yeah of course, I enjoy <strong>offensive security</strong> as well and I can say I have strong fundamental holding there. I love solving CTF challenges and hacking machines on platforms like <strong>Hack The Box (HTB)</strong> and <strong>TryHackMe (THM)</strong>. I really like <strong>API testing</strong>, exploring <strong>OWASP Top 10</strong> vulnerabilities, and digging into <strong>business logic flaws</strong> during web app pentests. Burp-<code>~</code>- I am coming for you next&hellip;.</p>
+<style>
+  .timeline1 {
+     
+    margin: 1.5rem 0;
+     
+  }
+  .timeline-item1 {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    border-left: 2px solid #3273dc;
+    position: relative;
+  }
+  .timeline-item1::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #3273dc;
+  }
+  .timeline-item-header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+  }
+  .timeline-item-header1 h3 {
+    margin: 0;
+  }
+
+  .timeline-header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+  }
+  .timeline-title1 {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  .timeline-sub1 {
+    font-style: italic;
+    color: #aaa;
+    font-size: 0.95rem;
+  }
+  .timeline-location1 {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  .timeline-date1 {
+    font-size: 0.9rem;
+    color: #999;
+    font-weight: 500;
+  }
+  .timeline-item1 .coursework {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #a0aec0;  
+  line-height: 1.5;
+}
+
+</style>
+
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0;" />
+
+<h2>🎓 Education </h2>
+<div class="timeline1">
+  <div class="timeline-item1">
+    <div class="timeline-header1">
+      <div>
+        <div class="timeline-title1">Master of Engineering in Cybersecurity</div>
+        <p class="timeline-sub1">Graduate Certificate in Cloud Engineering</p>
+        <div class="timeline-sub1">University of Maryland - College Park</div>
+        <div class="coursework">Coursework: Binary Exploitation | Security Tools | Information Assurance | Cloud Security | Cloud Computing</div>
+      </div>
+      <div class="timeline-date1">2024 - 2026</div>
+    </div>
+  </div>
+
+  <div class="timeline-item1">
+    <div class="timeline-header1">
+      <div>
+        <div class="timeline-title1">
+          Bachelor of Technology in Information Technology
+        </div>
+        <div class="timeline-sub1">Birla Vishvakarma Mahavidyalaya</div>
+      </div>
+      <div class="timeline-date1">2020 - 2024</div>
+    </div>
+    <div class="coursework">Coursework: Cybersecurity | Computer Networks | Operating System | Machine Learning</div>
+  </div>
+</div>
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0;" />
+
+<h2>💼 Work Experience</h2>
+<div class="timeline1">
+  <div class="timeline-item1">
+    <div class="timeline-header1">
+      <div>
+        <div class="timeline-title1">Junior Penetration Tester</div>
+        <div class="timeline-sub1">EVE Healthcare Centers</div>
+      </div>
+      <div class="timeline-date1">2022 - 2023</div>
+    </div>
+  </div>
+
+  <div class="timeline-item1">
+    <div class="timeline-header1">
+      <div>
+        <div class="timeline-title1">Information Security Administrator</div>
+        <div class="timeline-sub1">Virtual Testing Foundation</div>
+      </div>
+      <div class="timeline-date1">2022</div>
+    </div>
+  </div>
+</div>
+
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0;" />
+
+<h2 id="-technical-skills">🛠️ Technical Skills</h2>
+
+<style>
+  .skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1rem;
+  }
+
+  .skills-table th,
+  .skills-table td {
+    border-bottom: 1px solid #333;
+    padding: 1rem;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  .skills-table th {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .skills-table td ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .skills-table td ul li {
+    margin-bottom: 0.5rem;
+  }
+</style>
+
+<table class="skills-table">
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Skills & Tools</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Languages</td>
+      <td>
+        Python, x86/x64 Assembly, Bash, PowerShell, Shell Scripting, JavaScript,
+        SQL, C/C++
+      </td>
+    </tr>
+    <tr>
+      <td>Domain</td>
+      <td>
+        AD Management, Incident Response, Threat Modelling, System Design,
+        OWASP, Reverse Engineering, Cryptography, Risk Management
+      </td>
+    </tr>
+    <tr>
+      <td>Security Practices & Methodologies</td>
+      <td>SCA, SAST, DAST, TCP/IP, EDR, Network Security</td>
+    </tr>
+    <tr>
+      <td>Operating Systems</td>
+      <td>Windows, Linux, MacOS, mint Linux (best)</td>
+    </tr>
+    <tr>
+      <td>Cloud & DevSecOps</td>
+      <td>
+        AWS, Azure, GCP, Docker, Jenkins, Git, Microservices, Terraform,
+        Kubernetes, argoCD
+      </td>
+    </tr>
+    <tr>
+      <td>Penetration Testing</td>
+      <td>
+        <ul>
+          <li>VAPT</li>
+          <li>Vulnerability Assessment</li>
+          <li>Network Scanning</li>
+          <li>Web Application Security</li>
+          <li>LLM Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Tools</td>
+      <td>
+        Burp Suite, Ghidra, Autopsy, Frida, Cobalt Strike, mimikatz, MobSF,
+        OWASP ZAP, x64Dbg, IDS/IPS, Nessus, Nmap, Wireshark, Snort, Splunk,
+        Elastic, Microsoft Sentinel, Zeek (Bro)
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+  </article>
+  
+
+</main>
+
+    </div>
+    
+    <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-content">
+      <span>&copy; 2025 Sneh Bavarva</span>
+      <span class="footer-separator">•</span>
+      <a href="https://github.com/spbavarva" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <span class="footer-separator">•</span>
+      <a href="https://linkedin.com/in/snehbavarva" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <span class="footer-separator">•</span>
+      <a href="https://medium.com/@snehbavarva" target="_blank" rel="noopener noreferrer">Medium</a>
+    </div>
+  </div>
+  
+  <style>
+     
+    
+    .footer-inner {
+      max-width: 800px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+    }
+    
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .footer-separator {
+      color: var(--text-color-light);
+      font-size: 1.2rem;
+      margin: 0 0.25rem;
+    }
+    
+    .footer-content a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    .footer-content a:hover {
+      color: var(--primary-color-light);
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 640px) {
+      .footer-content {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .footer-separator {
+        display: none;
+      }
+    }
+  </style>
+</footer>
+</body>
+</html>

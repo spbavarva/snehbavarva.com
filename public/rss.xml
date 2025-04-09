@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sneh Bavarva | Cybersecurity Professional</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Sneh Bavarva | Cybersecurity Professional</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Secure CI/CD DevSecOps pipeline</title>
+      <link>http://localhost:1313/projects/cloud-security-automation/</link>
+      <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cloud-security-automation/</guid>
+      <description>Automated security scanning and compliance checking for code</description>
+    </item>
+    <item>
+      <title>How I passed AWS Solution Architect Associate - SAA in 5 days!</title>
+      <link>http://localhost:1313/blog/post-1/</link>
+      <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/post-1/</guid>
+      <description>fairly easy exam if you follow just one resource...</description>
+    </item>
+    <item>
+      <title>Eye-Sint – A Multi-Module Open-Source Intelligence Tool</title>
+      <link>http://localhost:1313/projects/eye-sint/</link>
+      <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/eye-sint/</guid>
+      <description>An OSINT tool for web and human footprinting</description>
+    </item>
+    <item>
+      <title>ONE STOP SHOP</title>
+      <link>http://localhost:1313/projects/one-stop-shop/</link>
+      <pubDate>Sat, 09 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/one-stop-shop/</guid>
+      <description>Built fully-fledged ecommerce platform protected against OWASP Top 10</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34; /&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;
+    &lt;link
+      rel=&#34;stylesheet&#34;
+      href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css&#34;
+    /&gt;
+
+    &lt;title&gt;Get In Touch&lt;/title&gt;
+    &lt;style&gt;
+      .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #333;
+        border-radius: 6px;
+        background-color: #121212;
+        color: white;
+        font-size: 1rem;
+      }
+
+      .contact-form label {
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        display: block;
+      }
+
+      .submit-button {
+        background-color: #3b82f6;
+        color: white;
+        border: none;
+        padding: 0.75rem;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      .submit-button:hover {
+        background-color: #2563eb;
+      }
+
+      .click-to-fill {
+        font-size: 0.875rem;
+        color: #3b82f6;
+        margin-top: 0.25rem;
+        cursor: pointer;
+      }
+
+      .contact-container {
+          display: grid;
+          grid-template-columns: 1fr 1.5fr;
+          gap: 3rem;
+          margin-bottom: 4rem;
+        }
+
+        .contact-info {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+
+        .info-card {
+          display: flex;
+          gap: 1rem;
+          padding: 1.25rem;
+          background-color: var(--card-bg);
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .info-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 48px;
+          height: 48px;
+          /* background-color: var(--primary-color-light); */
+          border-radius: 50%;
+          /* color: var(--primary-color); */
+          flex-shrink: 0;
+        }
+
+        .info-content {
+          flex: 1;
+        }
+
+        .info-content h3 {
+          margin: 0 0 0.5rem;
+          /* font-size: 1.1rem; */
+        }
+
+        .info-content p {
+          margin: 0;
+          color: var(--text-color-light);
+        }
+
+        .info-content a {
+          color: var(--text-color);
+          text-decoration: none;
+          transition: color 0.2s ease;
+        }
+
+        .info-content a:hover {
+          color: var(--primary-color);
+          text-decoration: underline;
+        }
+
+        .social-links {
+          margin-top: 1rem;
+        }
+
+        .social-links h3 {
+          margin-bottom: 1rem;
+          /* font-size: 1.1rem; */
+        }
+
+        .social-icons {
+          display: flex;
+          gap: 3rem;
+        }
+
+        .social-icons a {
+          display: flex;
+          /* align-items: center; */
+          /* justify-content: center; */
+          width: 40px;
+          height: 40px;
+          /* background-color: var(--card-bg); */
+          border-radius: 50%;
+          color: var(--text-color);
+          transition: all 0.2s ease;
+        }
+
+        .social-icons a:hover {
+          /* background-color: var(--primary-color); */
+          color: white;
+          transform: translateY(-2px);
+        }
+
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;section&gt;
+      &lt;h1&gt;Get In Touch&lt;/h1&gt;
+
+      &lt;p class=&#34;intro-text&#34;&gt;
+        Got a question about cybersecurity? Or just want to geek out over tech?
+        I’m always happy to connect, help where I can, and learn something new
+        along the way :)
+      &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/mainpage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mainpage/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34; /&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;
+    &lt;link
+      rel=&#34;stylesheet&#34;
+      href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css&#34;
+    /&gt;
+
+    &lt;title&gt;Get In Touch&lt;/title&gt;
+&lt;style&gt;
+  .highlight {
+    background-color: rgba(50, 115, 220, 0.1);
+    color: #3273dc;
+    padding: 0 0.2rem;
+    border-radius: 3px;
+  }
+  .featured-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .featured-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3273dc;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+
+  .featured-link:hover {
+    background-color: #2366c9;
+    text-decoration: none;
+  }
+
+  .featured-link.outline {
+    background-color: transparent;
+    color: #3273dc;
+    border: 1px solid #3273dc;
+  }
+
+  .featured-link.outline:hover {
+    background-color: #3273dc;
+    color: white;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .project-card {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-card h3 {
+    margin-top: 0;
+    color: #fff;
+  }
+
+  .project-card p {
+    color: #ccc;
+  }
+
+  .tags {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    background-color: #2d2d2d;
+    color: #60a5fa;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .project-links {
+    margin-top: 1rem;
+  }
+
+  .project-links a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .project-links a:hover {
+    text-decoration: underline;
+  }
+
+  .view-all {
+    margin-top: 1rem;
+    text-align: right;
+  }
+
+  .view-all a {
+    color: #60a5fa;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .view-all a:hover {
+    text-decoration: underline;
+  }
+&lt;/style&gt;
+&lt;body&gt;
+&lt;main class=&#34;main&#34;&gt;
+  &lt;section class=&#34;intro py-12&#34;&gt;
+    &lt;div class=&#34;typing-container mb-6&#34;&gt;
+      &lt;h2 class=&#34;text-2xl font-bold&#34;&gt;
+        &lt;span class=&#34;highlight text-blue-400&#34;&gt;whoami&lt;/span&gt;
+      &lt;/h2&gt;
+    &lt;/div&gt;
+
+    &lt;p class=&#34;mb-4 text-zinc-300&#34;&gt;
+      I&#39;m an international graduate student at the
+      &lt;strong&gt; University of Maryland, College Park&lt;/strong&gt;, currently pursuing
+      my
+      &lt;span class=&#34;highlight text-blue-400&#34;&gt; Master’s in Cybersecurity&lt;/span&gt;
+      along with a &lt;strong&gt;Graduate Certificate in Cloud Engineering&lt;/strong&gt;.
+    &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>👋 About Me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>Learn more about Sneh Bavarva&amp;#39;s cybersecurity background and expertise</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+{{ define "main" }}
+<main class="main">
+  <article class="single-page">
+    <h1>{{ .Title }}</h1>
+
+    {{ if .Date }}
+    <div class="post-meta">
+      <span>{{ .Date.Format "January 2, 2006" }}</span>
+    </div>
+    {{ end }} {{ if .Params.showToc }}
+    <aside class="table-of-contents collapsible-toc">
+      <button class="toc-toggle" onclick="toggleToc()">
+        📑 Table of Contents
+      </button>
+      <div id="toc-content" class="toc-content collapsed">
+        {{ .TableOfContents }}
+      </div>
+    </aside>
+
+    <script>
+      function toggleToc() {
+        const toc = document.getElementById("toc-content");
+        toc.classList.toggle("expanded");
+        toc.classList.toggle("collapsed");
+      }
+    </script>
+    {{ end }}
+
+    <div class="content">{{ .Content }}</div>
+  </article>
+  
+
+</main>
+{{ end }}

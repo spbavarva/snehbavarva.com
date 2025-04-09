@@ -1,0 +1,65 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-content">
+      <span>&copy; {{ now.Format "2006" }} Sneh Bavarva</span>
+      <span class="footer-separator">•</span>
+      <a href="https://github.com/spbavarva" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <span class="footer-separator">•</span>
+      <a href="https://linkedin.com/in/snehbavarva" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <span class="footer-separator">•</span>
+      <a href="https://medium.com/@snehbavarva" target="_blank" rel="noopener noreferrer">Medium</a>
+    </div>
+  </div>
+  
+  <style>
+    /* .site-footer {
+      margin-top: 3rem;
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-color-light);
+      font-size: 0.9rem;
+    } */
+    
+    .footer-inner {
+      max-width: 800px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+    }
+    
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .footer-separator {
+      color: var(--text-color-light);
+      font-size: 1.2rem;
+      margin: 0 0.25rem;
+    }
+    
+    .footer-content a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    .footer-content a:hover {
+      color: var(--primary-color-light);
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 640px) {
+      .footer-content {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .footer-separator {
+        display: none;
+      }
+    }
+  </style>
+</footer>

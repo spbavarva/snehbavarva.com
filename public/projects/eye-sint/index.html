@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye-Sint – A Multi-Module Open-Source Intelligence Tool | Sneh Bavarva | Cybersecurity Professional</title>
+    <meta name="description" content="An OSINT tool for web and human footprinting">
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.100089ac78d2c9697e5cf4aba2af1b301b4bfc0edf37658e9b9af5f3623f8676.css">
+    
+    
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    
+    
+    <script>
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.classList.add(savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.add('light');
+        }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+  <div class="header-inner">
+    <div class="site-brand">
+      <a href="/" class="site-name">Sneh Bavarva</a>
+    </div>
+    
+    <nav class="nav">
+      <a href="/" class="nav-link ">Home</a>
+      <a href="/about" class="nav-link ">About</a>
+      <a href="/projects" class="nav-link ">Projects</a>
+      <a href="/blog" class="nav-link ">Blog</a>
+      
+      <a href="/contact" class="nav-link ">Contact</a>
+      <a href="https://calendly.com/bavarvasneh/30min" class="nav-link" target="_blank">Calendly</a>
+      <a href="https://linkedin.com/in/snehbavarva" class="nav-link" target="_blank">LinkedIn</a>
+    </nav>
+  </div>
+  
+  <style>
+    .site-header {
+      padding: 1.5rem 0;
+      margin-bottom: 2rem;
+    }
+    
+    
+    .header-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .site-brand {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .site-name {
+      color: var(--text-color-dark);
+      text-decoration: none;
+    }
+    
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 0;
+    }
+    
+    .nav-link {
+      color: var(--text-color-light);
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary-color);
+    }
+    
+    .theme-toggle button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-color);
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    html.light .moon-icon {
+      display: block;
+    }
+    
+    html.light .sun-icon {
+      display: none;
+    }
+    
+    html.dark .moon-icon {
+      display: none;
+    }
+    
+    html.dark .sun-icon {
+      display: block;
+    }
+    
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .nav {
+        margin: 1rem 0;
+      }
+    }
+  </style>
+  
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      const themeToggle = document.getElementById('theme-toggle');
+      const htmlElement = document.documentElement;
+      
+      
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        htmlElement.classList.add(savedTheme);
+      } else {
+        
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          htmlElement.classList.add('dark');
+        } else {
+          htmlElement.classList.add('light');
+        }
+      }
+      
+      
+      themeToggle.addEventListener('click', () => {
+        if (htmlElement.classList.contains('dark')) {
+          htmlElement.classList.remove('dark');
+          htmlElement.classList.add('light');
+          localStorage.setItem('theme', 'light');
+        } else {
+          htmlElement.classList.remove('light');
+          htmlElement.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    });
+  </script>
+</header>
+    
+    <div class="content-wrapper">
+        
+<main class="main">
+  <article class="single-page">
+    <h1>Eye-Sint – A Multi-Module Open-Source Intelligence Tool</h1>
+
+    
+    <div class="post-meta">
+      <span>April 9, 2024</span>
+    </div>
+     
+    <aside class="table-of-contents collapsible-toc">
+      <button class="toc-toggle" onclick="toggleToc()">
+        📑 Table of Contents
+      </button>
+      <div id="toc-content" class="toc-content collapsed">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-what-can-eye-sint-do">🔍 What Can Eye-Sint Do?</a>
+      <ul>
+        <li><a href="#-built-with">🧪 Built With:</a></li>
+        <li><a href="#-research-publication">📝 Research Publication</a></li>
+        <li><a href="#-why-i-built-this">🚀 Why I Built This</a></li>
+      </ul>
+    </li>
+    <li><a href="#-tech-demo">💻 Tech Demo</a></li>
+    <li><a href="#-whats-next">🧠 What’s Next?</a></li>
+  </ul>
+</nav>
+      </div>
+    </aside>
+
+    <script>
+      function toggleToc() {
+        const toc = document.getElementById("toc-content");
+        toc.classList.toggle("expanded");
+        toc.classList.toggle("collapsed");
+      }
+    </script>
+    
+
+    <div class="content"><p>Eye-Sint was made during my undergrad as a final-year college project, and it became one of the most rewarding technical journeys I’ve had. I always wanted to build something useful in the OSINT and cybersecurity space and Eye-Sint brought both of those passions together.</p>
+<p>And in fact, it was awarded Best Project of the 2024 Batch! 🏆</p>
+<p>It&rsquo;s a <strong>cloud-hosted, GUI-based OSINT tool</strong> developed using <strong>Python</strong>, <strong>Flask</strong>, and <strong>React.js</strong>, capable of performing reconnaissance across the internet. What makes Eye-Sint special is its <strong>modular design</strong>: it brings together multiple OSINT functionalities that are usually scattered across several tools—all in one place.</p>
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+<h2 id="-what-can-eye-sint-do">🔍 What Can Eye-Sint Do?</h2>
+<ul>
+<li>🌐 <strong>Web Scraping:</strong> Collects website headers, extracts emails, performs domain lookups, and even brute-forces directories.</li>
+<li>🧠 <strong>Human Footprinting:</strong> Gathers information about individuals, performs username lookups, phone number-based geolocation, and extracts PDF metadata.</li>
+<li>🔐 <strong>Port Scanning:</strong> Detects open network ports to help with vulnerability assessments.</li>
+<li>📁 <strong>PDF Metadata Extraction:</strong> Analyze files for hidden author details, creation dates, and more.</li>
+<li>🌎 <strong>Domain Search:</strong> Perform whois lookups and SSL info extraction with just a few clicks.
+<br>
+<br>
+And the best part? It’s <strong>open source</strong>, easily extendable, and built to be used by both beginners and pros in the cybersecurity field.</li>
+</ul>
+<div style="text-align: center; font-size: 2.5rem; margin: 1rem 0;">
+    &middot; &nbsp; &middot; &nbsp; &middot;
+  </div>
+  
+<h3 id="-built-with">🧪 Built With:</h3>
+<ul>
+<li>🐍 <strong>Python (Backend Logic)</strong></li>
+<li>⚛️ <strong>React.js (Frontend UI)</strong></li>
+<li>🔥 <strong>Flask (Web Server &amp; Routing)</strong></li>
+<li>☁️ <strong>Cloud-hosted</strong> on Render for public access</li>
+</ul>
+<div style="text-align: center; font-size: 2.5rem; margin: 1rem 0;">
+    &middot; &nbsp; &middot; &nbsp; &middot;
+  </div>
+  
+<h3 id="-research-publication">📝 Research Publication</h3>
+<p>I’m super proud to say that our project also resulted in a <strong>research paper</strong>, titled:</p>
+<blockquote>
+<p><em>“Enhancing OSINT Practices with Eye-Sint: A Multi-Module Intelligence Tool”</em><br>
+📄 Published in the <strong>Indian Journal of Natural Sciences</strong> (Vol.14 / Issue 82 / Feb 2024)</p></blockquote>
+<p>This paper explores the <strong>technical architecture</strong>, <strong>methodologies</strong>, and <strong>comparative evaluation</strong> of Eye-Sint against tools like Shodan and Maltego. We also emphasized <strong>ethical OSINT</strong>, ensuring Eye-Sint encourages responsible data usage, consent practices, and privacy considerations.</p>
+<p>🔗 <a href="https://drive.google.com/file/d/11kwNP_r4h08tmu7-3-8Lp7mAvORLIhaI/view?usp=sharing">Read the publication here (PDF)</a><br>
+💡 <em>Let me know if you&rsquo;d like access to the source code!</em></p>
+<div style="text-align: center; font-size: 2.5rem; margin: 1rem 0;">
+    &middot; &nbsp; &middot; &nbsp; &middot;
+  </div>
+  
+<h3 id="-why-i-built-this">🚀 Why I Built This</h3>
+<p>While my other projects (like One Shop Stop) focused more on web development, <strong>Eye-Sint was where I truly started diving deep into cybersecurity</strong>. It helped me explore OSINT frameworks, automate repetitive tasks, and apply research knowledge into practice.</p>
+<p>I also learned a lot about <strong>secure data handling</strong>, <strong>modular architecture</strong>, and <strong>open-source collaboration</strong>, and I can confidently say this project boosted my technical and professional growth.</p>
+<blockquote>
+<p><em>“Eye-Sint is more than a project—it&rsquo;s a personal milestone that blends my passion for security, research, and open-source contribution.”</em></p></blockquote>
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+<h2 id="-tech-demo">💻 Tech Demo</h2>
+<p>🌐 Try it here: <a href="https://tool-frontend.onrender.com">https://tool-frontend.onrender.com</a></p>
+<p>📝 Paper: <a href="https://drive.google.com/file/d/11kwNP_r4h08tmu7-3-8Lp7mAvORLIhaI/view?usp=sharing">Research Article (PDF)</a></p>
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+<h2 id="-whats-next">🧠 What’s Next?</h2>
+<p>I&rsquo;m actively working on:</p>
+<ul>
+<li>Adding <strong>AI-assisted OSINT automation</strong></li>
+<li>Integrating <strong>Maltego-like graphs</strong></li>
+<li>Expanding modules with more <strong>social recon features</strong></li>
+</ul>
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+<p>Feel free to connect if you&rsquo;re interested in collaborating, contributing, or testing it out!</p>
+</div>
+  </article>
+  
+
+</main>
+
+    </div>
+    
+    <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-content">
+      <span>&copy; 2025 Sneh Bavarva</span>
+      <span class="footer-separator">•</span>
+      <a href="https://github.com/spbavarva" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <span class="footer-separator">•</span>
+      <a href="https://linkedin.com/in/snehbavarva" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <span class="footer-separator">•</span>
+      <a href="https://medium.com/@snehbavarva" target="_blank" rel="noopener noreferrer">Medium</a>
+    </div>
+  </div>
+  
+  <style>
+     
+    
+    .footer-inner {
+      max-width: 800px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+    }
+    
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .footer-separator {
+      color: var(--text-color-light);
+      font-size: 1.2rem;
+      margin: 0 0.25rem;
+    }
+    
+    .footer-content a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    .footer-content a:hover {
+      color: var(--primary-color-light);
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 640px) {
+      .footer-content {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .footer-separator {
+        display: none;
+      }
+    }
+  </style>
+</footer>
+</body>
+</html>

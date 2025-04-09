@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <title>Get In Touch</title>
+<style>
+  .highlight {
+    background-color: rgba(50, 115, 220, 0.1);
+    color: #3273dc;
+    padding: 0 0.2rem;
+    border-radius: 3px;
+  }
+  .featured-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .featured-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3273dc;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+
+  .featured-link:hover {
+    background-color: #2366c9;
+    text-decoration: none;
+  }
+
+  .featured-link.outline {
+    background-color: transparent;
+    color: #3273dc;
+    border: 1px solid #3273dc;
+  }
+
+  .featured-link.outline:hover {
+    background-color: #3273dc;
+    color: white;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .project-card {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-card h3 {
+    margin-top: 0;
+    color: #fff;
+  }
+
+  .project-card p {
+    color: #ccc;
+  }
+
+  .tags {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    background-color: #2d2d2d;
+    color: #60a5fa;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .project-links {
+    margin-top: 1rem;
+  }
+
+  .project-links a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .project-links a:hover {
+    text-decoration: underline;
+  }
+
+  .view-all {
+    margin-top: 1rem;
+    text-align: right;
+  }
+
+  .view-all a {
+    color: #60a5fa;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .view-all a:hover {
+    text-decoration: underline;
+  }
+</style>
+<body>
+<main class="main">
+  <section class="intro py-12">
+    <div class="typing-container mb-6">
+      <h2 class="text-2xl font-bold">
+        <span class="highlight text-blue-400">whoami</span>
+      </h2>
+    </div>
+
+    <p class="mb-4 text-zinc-300">
+      I'm an international graduate student at the
+      <strong> University of Maryland, College Park</strong>, currently pursuing
+      my
+      <span class="highlight text-blue-400"> Master’s in Cybersecurity</span>
+      along with a <strong>Graduate Certificate in Cloud Engineering</strong>.
+    </p>
+
+    <p class="mb-4 text-zinc-300">
+      I'm actively seeking a cybersecurity internship or co-op opportunity for
+      Summer or Fall 2025 in the DMV area - where I can contribute,
+      learn, and grow in real-world security environments.
+    </p>
+
+    <p class="mb-6 text-zinc-300">
+      You'll find me writing
+      <a
+        href="/blog"
+        class="text-blue-400 underline hover:text-blue-300 transition"
+        >technical blogs</a
+      >, building and contributing to open-source security tools, and regularly
+      participating in CTFs to sharpen my skills.
+    </p>
+
+    <div class="featured-links">
+      <a href="/projects" class="featured-link outline">View Projects →</a>
+      <a href="/contact" class="featured-link outline">Get in Touch →</a>
+    </div>
+
+    <!-- <div class="featured-links flex flex-col sm:flex-row gap-4">
+      <a href="/projects" class="featured-link bg-blue-600 text-white px-4 py-2 rounded-md shadow hover:bg-blue-500 transition">
+        View Projects
+      </a>
+      <a href="/contact" class="featured-link border border-blue-500 text-blue-500 px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white transition">
+        Get in Touch
+      </a>
+    </div> -->
+  </section>
+
+  <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+
+  <section>
+    <h3>Featured Projects</h3>
+
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Automated DevSecOps pipeline: Secure CI/CD Deployment</h3>
+        <p>
+          An automated vulnerability scanning pipeline which involves Cloud, AI
+          and Security Integration.
+        </p>
+        <div class="tags">
+          <span class="tag">Jenkins</span>
+          <span class="tag">Docker</span>
+          <span class="tag">OWASP</span>
+        </div>
+        <div class="project-links">
+          <!-- Uncomment when GitHub is ready -->
+          <!-- <a href="https://github.com/yourusername/security-scanner" target="_blank" rel="noopener noreferrer">GitHub</a> -->
+          <a href="/projects">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>Eye-Sint Tool</h3>
+        <p>
+          It's a GUI-based unique OSINT tool hosted on Cloud which can do web
+          enum and human footprinting.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">React</span>
+          <span class="tag">Flask</span>
+        </div>
+        <div class="project-links">
+          <a href="/projects">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="view-all">
+      <a href="/projects">View All Projects →</a>
+    </div>
+  </section>
+
+  <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+
+  <section class="py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Certifications -->
+      <div class="bg-zinc-900 p-6 rounded-2xl shadow-lg border border-zinc-700">
+        <h3 class="text-xl font-semibold text-white mb-4">📜 Certifications</h3>
+        <ul class="space-y-2">
+          <li
+            class="grid grid-cols-[1fr_auto] justify-between items-start gap-2"
+          >
+            <a
+              href="https://www.credly.com/badges/c35b460c-42ed-4f70-8053-578f71d57a97/public_url"
+              class="text-blue-400 hover:underline"
+              target="_blank"
+              >AWS Solution Architect Associate</a
+            >
+            <span> | (SAA)</span>
+            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
+              - April 2025</span
+            >
+          </li>
+          <li
+            class="grid grid-cols-[1fr_auto] justify-between items-start gap-2"
+          >
+            <a
+              href="https://www.credly.com/badges/0b7bc11a-55c4-4948-807a-30c26926ffc7/public_url"
+              class="text-blue-400 hover:underline"
+              target="_blank"
+              >HTB Certified Defensive Security Analyst</a
+            >
+            <span> | (CDSA)</span>
+            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
+              - March 2025</span
+            >
+          </li>
+          <li
+            class="grid grid-cols-[1fr_auto] justify-between items-start gap-2"
+          >
+            <a
+              href="https://www.credential.net/6b9e9db3-fe36-43fe-b28f-15cafb95e776#acc.a5n9KTyH"
+              class="text-blue-400 hover:underline"
+              target="_blank"
+              >Offensive Security Certified Professional</a
+            >
+            <span> | (OSCP)</span>
+            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
+              - July 2024</span
+            >
+          </li>
+          <li
+            class="grid grid-cols-[1fr_auto] justify-between items-start gap-2"
+          >
+            <a
+              href="https://www.coursera.org/account/accomplishments/professional-cert/WE85FGTPTJFR"
+              class="text-blue-400 hover:underline"
+              target="_blank"
+              >Google Cybersecurity Professional Certificate</a
+            >
+            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
+              - September 2023</span
+            >
+          </li>
+          <li
+            class="grid grid-cols-[1fr_auto] justify-between items-start gap-2"
+          >
+            <a
+              href="https://certs.ine.com/feaa4277-2a76-4595-8f78-dacbc0f466b6#acc.hsixWzf9"
+              class="text-blue-400 hover:underline"
+              target="_blank"
+              >INE eLearnSecurity Junior Penetration Tester</a
+            >
+            <span> | (eJPTv2)</span>
+            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
+              - May 2023</span
+            >
+          </li>
+          <li
+            class="grid grid-cols-[1fr_auto] justify-between items-start gap-2"
+          >
+            <a
+              href="https://drive.google.com/file/d/1JcZQQ5seGswCOJk3SBPkFlM6A3wHkKFe/view"
+              class="text-blue-400 hover:underline"
+              target="_blank"
+              >Certified Ethical Hacker</a
+            >
+            <span> | (CEH - Practical)</span>
+            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
+              - February 2023</span
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Separator -->
+      <div class="hidden md:block">
+        <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+      </div>
+
+      <!-- Publications -->
+      <div class="bg-zinc-900 p-6 rounded-2xl shadow-lg border border-zinc-700">
+        <h3 class="text-xl font-semibold text-white mb-4">📚 Publications</h3>
+        <p class="mb-2 font-medium text-zinc-300">Original Research</p>
+        <ul class="space-y-2">
+          <li
+            class="grid grid-cols-[1fr_auto] justify-between items-start gap-2"
+          >
+            <a
+              href="https://drive.google.com/file/d/11kwNP_r4h08tmu7-3-8Lp7mAvORLIhaI/view?usp=sharing"
+              class="text-blue-400 hover:underline"
+              target="_blank"
+            >
+              Enhancing OSINT Practices with Eye-Sint: A Multi-Module
+              Intelligence Tool
+            </a>
+            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
+              - October 2023</span
+            >
+          </li>
+          <li
+            class="grid grid-cols-[1fr_auto] justify-between items-start gap-2"
+          >
+            <a
+              href="https://www.researchgate.net/publication/375113483_SQLI_Attack_An_Approach_using_ML_and_Hybrid_Techniques"
+              class="text-blue-400 hover:underline"
+              target="_blank"
+            >
+              SQLI Attack: An Approach using ML and Hybrid Techniques
+            </a>
+            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
+              - September 2023</span
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+
+  <div style="margin-top: 3rem">{{ partial "medium-feed.html" . }}</div>
+
+  <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+
+</main>
+</body>
+</html>
+

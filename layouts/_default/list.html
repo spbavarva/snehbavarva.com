@@ -1,0 +1,27 @@
+{{ define "main" }}
+<main class="main">
+  <div class="list-page">
+    <h1>{{ .Title }}</h1>
+    <div class="description">{{ .Content }}</div>
+
+    <div class="posts-list">
+      {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="post-entry">
+        {{ with .Params.cover.image }}
+        <div class="post-cover">
+          <img src="{{ . }}" alt="{{ $.Title }} Cover" class="post-thumbnail" />
+        </div>
+        {{ end }}
+
+        <h2>{{ .Title }}</h2>
+        <div class="post-meta">{{ .Date.Format "January 2, 2006" }}</div>
+        <p>{{ .Description | default .Summary | truncate 150 }}</p>
+        <span class="read-more">Read More →</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+  <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+
+</main>
+{{ end }}

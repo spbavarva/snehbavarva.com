@@ -1,0 +1,44 @@
+{{ $mediumRSS := "https://medium.com/feed/@snehbavarva" }} {{ $limit := 3 }}
+
+<div class="medium-feed">
+  <h2>Latest from Medium</h2>
+
+  {{ $rssUrl := printf "https://api.rss2json.com/v1/api.json?rss_url=%s"
+  $mediumRSS }} {{ $remote := resources.GetRemote $rssUrl }} {{ if $remote }} {{
+  $dataJ := $remote | transform.Unmarshal }} {{ if $dataJ.items }}
+  <div class="posts-grid">
+    {{ range first $limit $dataJ.items }}
+    <div class="post-entry">
+      <h3>
+        <a href="{{ .link }}" target="_blank" rel="noopener">{{ .title }}</a>
+      </h3>
+      <div class="post-meta">{{ dateFormat "January 2, 2006" .pubDate }}</div>
+      <p>{{ .description | plainify | truncate 150 }}</p>
+      <a href="{{ .link }}" target="_blank" rel="noopener" class="read-more"
+        >Read More →</a
+      >
+    </div>
+    {{ end }}
+  </div>
+  {{ else }}
+  <p>No posts found. Please check back later.</p>
+  {{ end }} {{ else }}
+  <p>Unable to fetch Medium posts at this time. Please check back later.</p>
+  {{ end }}
+
+  <div class="featured-links">
+    <a
+      href="https://medium.com/@snehbavarva"
+      target="_blank"
+      rel="noopener"
+      class="featured-link outline"
+      >View Medium Blogs →</a
+    >
+    <a
+      href="/blog"
+      rel="noopener"
+      class="featured-link outline"
+      >View New Blogs →</a
+    >
+  </div>
+</div>

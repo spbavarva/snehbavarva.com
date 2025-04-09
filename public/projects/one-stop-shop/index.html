@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE STOP SHOP | Sneh Bavarva | Cybersecurity Professional</title>
+    <meta name="description" content="Built fully-fledged ecommerce platform protected against OWASP Top 10">
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.100089ac78d2c9697e5cf4aba2af1b301b4bfc0edf37658e9b9af5f3623f8676.css">
+    
+    
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    
+    
+    <script>
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.classList.add(savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.add('light');
+        }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+  <div class="header-inner">
+    <div class="site-brand">
+      <a href="/" class="site-name">Sneh Bavarva</a>
+    </div>
+    
+    <nav class="nav">
+      <a href="/" class="nav-link ">Home</a>
+      <a href="/about" class="nav-link ">About</a>
+      <a href="/projects" class="nav-link ">Projects</a>
+      <a href="/blog" class="nav-link ">Blog</a>
+      
+      <a href="/contact" class="nav-link ">Contact</a>
+      <a href="https://calendly.com/bavarvasneh/30min" class="nav-link" target="_blank">Calendly</a>
+      <a href="https://linkedin.com/in/snehbavarva" class="nav-link" target="_blank">LinkedIn</a>
+    </nav>
+  </div>
+  
+  <style>
+    .site-header {
+      padding: 1.5rem 0;
+      margin-bottom: 2rem;
+    }
+    
+    
+    .header-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .site-brand {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .site-name {
+      color: var(--text-color-dark);
+      text-decoration: none;
+    }
+    
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 0;
+    }
+    
+    .nav-link {
+      color: var(--text-color-light);
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary-color);
+    }
+    
+    .theme-toggle button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-color);
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    html.light .moon-icon {
+      display: block;
+    }
+    
+    html.light .sun-icon {
+      display: none;
+    }
+    
+    html.dark .moon-icon {
+      display: none;
+    }
+    
+    html.dark .sun-icon {
+      display: block;
+    }
+    
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .nav {
+        margin: 1rem 0;
+      }
+    }
+  </style>
+  
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      const themeToggle = document.getElementById('theme-toggle');
+      const htmlElement = document.documentElement;
+      
+      
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        htmlElement.classList.add(savedTheme);
+      } else {
+        
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          htmlElement.classList.add('dark');
+        } else {
+          htmlElement.classList.add('light');
+        }
+      }
+      
+      
+      themeToggle.addEventListener('click', () => {
+        if (htmlElement.classList.contains('dark')) {
+          htmlElement.classList.remove('dark');
+          htmlElement.classList.add('light');
+          localStorage.setItem('theme', 'light');
+        } else {
+          htmlElement.classList.remove('light');
+          htmlElement.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    });
+  </script>
+</header>
+    
+    <div class="content-wrapper">
+        
+<main class="main">
+  <article class="single-page">
+    <h1>ONE STOP SHOP</h1>
+
+    
+    <div class="post-meta">
+      <span>December 9, 2023</span>
+    </div>
+     
+    <aside class="table-of-contents collapsible-toc">
+      <button class="toc-toggle" onclick="toggleToc()">
+        📑 Table of Contents
+      </button>
+      <div id="toc-content" class="toc-content collapsed">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-one-shop-stop--secure-mern-stack-e-commerce-platform">🛍️ One Shop Stop – Secure MERN Stack E-commerce Platform</a>
+      <ul>
+        <li><a href="#-key-features">🌐 Key Features</a></li>
+        <li><a href="#-security-enhancements">🔐 Security Enhancements</a></li>
+        <li><a href="#-admin--seller-tools">📈 Admin &amp; Seller Tools</a></li>
+        <li><a href="#-scalable--future-proof">📦 Scalable &amp; Future-Proof</a></li>
+        <li><a href="#-conclusion">🎯 Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </aside>
+
+    <script>
+      function toggleToc() {
+        const toc = document.getElementById("toc-content");
+        toc.classList.toggle("expanded");
+        toc.classList.toggle("collapsed");
+      }
+    </script>
+    
+
+    <div class="content"><p>It was basically my undergrade College Project and Built a responsive e-commerce platform using MERN stack with Razorpay integration for payments. Implemented features like product filtering, user reviews, delivery instructions, and secure data stored in MongoDB.</p>
+<p>Added protections against attacks such as XSS, CSRF, Broken Auth., Path traversal, local file inclusion and more OWASP attacks</p>
+<p>it was mainly web development project but I started learning about Cybersecurity at the same time so did some secure coding practice and tested for every OWASP Top 10 and my project successfully passed every check at that time. You can check my repo for project and leave below thing as it&rsquo;s just pure GPT.</p>
+<p>🔗 <a href="https://github.com/spbavarva/one-shop-stop-backend?tab=readme-ov-file">Backend</a></p>
+<p>🔗 <a href="https://github.com/spbavarva/one-shop-stop-frontend">Frontend</a></p>
+<h2 id="-one-shop-stop--secure-mern-stack-e-commerce-platform">🛍️ One Shop Stop – Secure MERN Stack E-commerce Platform</h2>
+<p><strong>One Shop Stop</strong> is a full-featured, responsive e-commerce platform built using the <strong>MERN stack</strong> (MongoDB, Express, React, Node.js). It integrates <strong>Razorpay</strong> for secure payment processing and prioritizes both functionality and security to provide a seamless user experience for customers and sellers.</p>
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+<h3 id="-key-features">🌐 Key Features</h3>
+<ul>
+<li>🔎 <strong>Product Search &amp; Filtering:</strong> Easily browse, search, and filter products by categories or keywords.</li>
+<li>🛒 <strong>Shopping Cart:</strong> Add multiple items, review your selections, and securely check out.</li>
+<li>🗣️ <strong>User Reviews &amp; Feedback:</strong> Customers can leave ratings and reviews to help others make informed decisions.</li>
+<li>💬 <strong>Delivery Instructions:</strong> Personalized delivery options included at checkout.</li>
+<li>🔐 <strong>Secure Registration &amp; Login:</strong> Role-based access and protected authentication flow for users and admins.</li>
+<li>💳 <strong>Razorpay Integration:</strong> Safe and smooth transactions through Razorpay’s payment gateway.</li>
+</ul>
+<div style="text-align: center; font-size: 2.5rem; margin: 1rem 0;">
+    &middot; &nbsp; &middot; &nbsp; &middot;
+  </div>
+  
+<h3 id="-security-enhancements">🔐 Security Enhancements</h3>
+<p>Security was a top priority in the development process. The platform is protected against multiple OWASP Top 10 vulnerabilities:</p>
+<ul>
+<li>✅ <strong>XSS (Cross-Site Scripting):</strong> DOMPurify and input sanitization are used across all user inputs to prevent malicious script injection.</li>
+<li>✅ <strong>CSRF (Cross-Site Request Forgery):</strong> Routes are CSRF-protected with token validation in sensitive operations.</li>
+<li>✅ <strong>Path Traversal &amp; Local File Inclusion (LFI):</strong> All routes are controlled via React Router, and uploads are validated to reject any file types like <code>.php</code>, <code>.phtml</code>, etc.</li>
+<li>✅ <strong>Broken Authentication:</strong> Proper session and token management ensures secure user identity.</li>
+<li>✅ <strong>Secure Upload Handling:</strong> Files are validated and sanitized before being stored, preventing injection and traversal attacks.</li>
+</ul>
+<blockquote>
+<p><em>“If a user tries to upload a file with unsafe extensions, the system immediately blocks it and notifies them with a warning.”</em></p></blockquote>
+<div style="text-align: center; font-size: 2.5rem; margin: 1rem 0;">
+    &middot; &nbsp; &middot; &nbsp; &middot;
+  </div>
+  
+<h3 id="-admin--seller-tools">📈 Admin &amp; Seller Tools</h3>
+<p>Sellers and admins can:</p>
+<ul>
+<li>View analytics and graphs for customer behavior</li>
+<li>Manage product inventory and orders efficiently</li>
+<li>Identify popular products by category or demographic</li>
+<li>Maintain a database of recurring customers and preferences</li>
+</ul>
+<h3 id="-scalable--future-proof">📦 Scalable &amp; Future-Proof</h3>
+<p>Designed with scalability in mind, One Shop Stop can easily expand to support a growing catalog and user base. The modular architecture allows integration of additional services, such as AI-based recommendations or multi-language support.</p>
+<div style="text-align: center; font-size: 2.5rem; margin: 1rem 0;">
+    &middot; &nbsp; &middot; &nbsp; &middot;
+  </div>
+  
+<h3 id="-conclusion">🎯 Conclusion</h3>
+<blockquote>
+<p><em>&ldquo;One Shop Stop aims to become a globally accessible and secure e-commerce platform, balancing intuitive design with enterprise-grade protection.&rdquo;</em></p></blockquote>
+<p>This project reflects real-world e-commerce challenges and solutions with a focus on modern security practices, cloud integration, and data-driven decision-making.</p>
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+</div>
+  </article>
+  
+
+</main>
+
+    </div>
+    
+    <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-content">
+      <span>&copy; 2025 Sneh Bavarva</span>
+      <span class="footer-separator">•</span>
+      <a href="https://github.com/spbavarva" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <span class="footer-separator">•</span>
+      <a href="https://linkedin.com/in/snehbavarva" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <span class="footer-separator">•</span>
+      <a href="https://medium.com/@snehbavarva" target="_blank" rel="noopener noreferrer">Medium</a>
+    </div>
+  </div>
+  
+  <style>
+     
+    
+    .footer-inner {
+      max-width: 800px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+    }
+    
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .footer-separator {
+      color: var(--text-color-light);
+      font-size: 1.2rem;
+      margin: 0 0.25rem;
+    }
+    
+    .footer-content a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    .footer-content a:hover {
+      color: var(--primary-color-light);
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 640px) {
+      .footer-content {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .footer-separator {
+        display: none;
+      }
+    }
+  </style>
+</footer>
+</body>
+</html>
