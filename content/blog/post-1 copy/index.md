@@ -1,6 +1,6 @@
 ---
 title: "Hunt Evil with YARA"
-description: "Walkthrough on privilege escalation via NFS misconfigurations."
+description: "Basic understanding of YARA rules"
 date: 2025-04-15
 draft: false
 tags: ["YARA", "Threat Detection", "Ransomware", "WannaCry", "Sigma"]
