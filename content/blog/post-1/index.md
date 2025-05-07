@@ -78,3 +78,5 @@ I got 50% off just by checking post of [AWS Training & Certification LinkedIn](h
 Trust me, this exam is just test foundational knowledge of AWS cloud and you don’t need to take stress over it. Watch that playlist and you are good to go.
 
 Thank you for reading through, I wish you good luck if you are considering taking exam with AWS soon and meet you on DevSecOps project’s blog!
+
+{{<seperator>}}
