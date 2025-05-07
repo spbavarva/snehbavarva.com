@@ -2,8 +2,8 @@
 title: "Hunt Evil with YARA"
 description: "Walkthrough on privilege escalation via NFS misconfigurations."
 date: 2025-04-15
-draft: true
-tags: ["YARA", "Threat Detection", "Ransomware", "WannaCry", "Volatility", "VirusTotal"]
+draft: false
+tags: ["YARA", "Threat Detection", "Ransomware", "WannaCry", "Sigma"]
 showToc: true
 ---
 As we know that YARA is one of the most powerful tools if used correctly. We can analyze disk artifacts, memory images, or even live endpoint telemetry. Also, YARA rules allow to detect known malware patterns, identify suspicious behavior.
