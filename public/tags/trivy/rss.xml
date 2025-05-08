@@ -6,14 +6,14 @@
     <description>Recent content in Trivy on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/trivy/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DevSecOps CI/CD pipeline for SAST</title>
       <link>http://localhost:1313/blog/post-1-copy-3/</link>
-      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/post-1-copy-3/</guid>
-      <description>fairly easy exam if you follow just one resource...</description>
+      <description>A secure complete CI/CD pipeline for SAST and image testing</description>
     </item>
   </channel>
 </rss>

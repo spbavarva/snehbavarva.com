@@ -388,5 +388,12 @@
       <guid>http://localhost:1313/about/</guid>
       <description>Learn more about Sneh Bavarva&amp;#39;s cybersecurity background and expertise</description>
     </item>
+    <item>
+      <title>CTF - Capture-the-flag</title>
+      <link>http://localhost:1313/ctf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ctf/</guid>
+      <description>My CTF experiences and activities</description>
+    </item>
   </channel>
 </rss>
