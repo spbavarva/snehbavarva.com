@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>F on Sneh Bavarva | Cybersecurity Professional</title>
+    <link>http://localhost:1313/tags/f/</link>
+    <description>Recent content in F on Sneh Bavarva | Cybersecurity Professional</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/f/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obsidian sync from windows: free</title>
+      <link>http://localhost:1313/projects/obsidian-sync-from-windows-free/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/obsidian-sync-from-windows-free/</guid>
+      <description>Automated sync your Obsidian notes from windows to your GitHub</description>
+    </item>
+  </channel>
+</rss>
