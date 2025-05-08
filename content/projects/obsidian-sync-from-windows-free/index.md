@@ -3,7 +3,7 @@ title: "Obsidian sync from windows"
 description: "Free and Automated way to sync your Obsidian notes from windows to GitHub"
 date: 2025-05-08
 draft: false
-tags: ["Sync", "Obsidian", "Windows", "FREE", "notes"]
+tags: ["Sync", "Obsidian", "Windows", "FREE", "notes", "powershell"]
 categories: ["Notes", "Tool"]
 showToc: true
 
