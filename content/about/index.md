@@ -5,7 +5,7 @@ draft: false
 description: "Learn more about Sneh Bavarva's cybersecurity background and expertise"
 ---
 
-
+<!-- need to update about section -->
 
 I'm passionate about cybersecurity and always eager to explore different areas within the field. Funny enough, my journey began when my own LinkedIn account got hacked - lol, that's a story for another time!
 
