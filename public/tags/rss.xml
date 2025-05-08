@@ -16,24 +16,17 @@
       <description></description>
     </item>
     <item>
+      <title>Sigma</title>
+      <link>http://localhost:1313/tags/sigma/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sigma/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Threat Detection</title>
       <link>http://localhost:1313/tags/threat-detection/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/threat-detection/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>VirusTotal</title>
-      <link>http://localhost:1313/tags/virustotal/</link>
-      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/virustotal/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Volatility</title>
-      <link>http://localhost:1313/tags/volatility/</link>
-      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/volatility/</guid>
       <description></description>
     </item>
     <item>

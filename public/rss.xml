@@ -6,14 +6,35 @@
     <description>Recent content on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hunt Evil with YARA</title>
+      <title>How I passed HTB CDSA in a month!</title>
+      <link>http://localhost:1313/blog/post-1-copy-4/</link>
+      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/post-1-copy-4/</guid>
+      <description>A completely new guy in defesive side passing in a month...</description>
+    </item>
+    <item>
+      <title>Hunt Evil with - Sigma</title>
+      <link>http://localhost:1313/blog/post-1-copy-2/</link>
+      <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/post-1-copy-2/</guid>
+      <description>Basic understanding of Sigma rules and it&amp;#39;s importance</description>
+    </item>
+    <item>
+      <title>Hunt Evil with - YARA</title>
       <link>http://localhost:1313/blog/post-1-copy/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/post-1-copy/</guid>
-      <description>Walkthrough on privilege escalation via NFS misconfigurations.</description>
+      <description>Basic understanding of YARA rules</description>
+    </item>
+    <item>
+      <title>DevSecOps CI/CD pipeline for SAST</title>
+      <link>http://localhost:1313/blog/post-1-copy-3/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/post-1-copy-3/</guid>
+      <description>A secure complete CI/CD pipeline for SAST and image testing</description>
     </item>
     <item>
       <title>Secure CI/CD DevSecOps pipeline</title>
@@ -28,13 +49,6 @@
       <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/post-1/</guid>
       <description>fairly easy exam if you follow just one resource...</description>
-    </item>
-    <item>
-      <title>blog 3</title>
-      <link>http://localhost:1313/blog/post-1-copy-2/</link>
-      <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/post-1-copy-2/</guid>
-      <description>Walkthrough on privilege escalation via NFS misconfigurations.</description>
     </item>
     <item>
       <title>Eye-Sint – A Multi-Module Open-Source Intelligence Tool</title>

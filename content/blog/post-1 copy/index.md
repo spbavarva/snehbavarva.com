@@ -1,5 +1,5 @@
 ---
-title: "Hunt Evil with YARA"
+title: "Hunt Evil with - YARA"
 description: "Basic understanding of YARA rules"
 date: 2025-04-15
 draft: false

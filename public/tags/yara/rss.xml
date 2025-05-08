@@ -13,7 +13,7 @@
       <link>http://localhost:1313/blog/post-1-copy/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/post-1-copy/</guid>
-      <description>Walkthrough on privilege escalation via NFS misconfigurations.</description>
+      <description>Basic understanding of YARA rules</description>
     </item>
   </channel>
 </rss>
