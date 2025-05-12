@@ -16,6 +16,8 @@ showToc: true
 
 In the **last week of March**, I was exploring new things to learn and that curiosity led me to start a **DevSecOps project**.
 
+just checking
+
 While diving deeper, I thought,  
 _“Why not understand AWS deeply and get certified along the way?”_
 

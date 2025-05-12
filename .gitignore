@@ -1,0 +1,12 @@
+# Hugo build output
+public/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
+
+# Hugo build lock
+.hugo_build.lock
