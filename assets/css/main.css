@@ -485,3 +485,9 @@ figure.align-center img {
   display: inline-block;
 }
 
+
+/* Scrollable code blocks */
+div.highlight pre {
+  overflow-x: auto;
+  white-space: pre;
+}

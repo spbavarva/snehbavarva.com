@@ -400,3 +400,8 @@ figure.align-center {
     display: inline-block;
   }
   
+/* Scrollable code blocks */
+div.highlight pre {
+  overflow-x: auto;
+  white-space: pre;
+}
