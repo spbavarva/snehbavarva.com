@@ -491,3 +491,31 @@ div.highlight pre {
   overflow-x: auto;
   white-space: pre;
 }
+
+/* Ensure relative container for positioning */
+.highlight {
+  position: relative;
+  overflow: visible; /* fixes clipping */
+}
+
+/* Actual copy button styling */
+.copy-button {
+ position: absolute;
+  top: 0rem;
+  right: 0rem;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 11px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.85;
+  transition: all 0.2s ease-in-out;
+}
+
+.copy-button:hover {
+  opacity: 1;
+  background-color: #444;
+}

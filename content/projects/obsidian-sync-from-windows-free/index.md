@@ -95,22 +95,15 @@ git init
 git remote add origin git@github.com:yourusername/obsidian-sync.git
 ```
 
-```markdown
-{{< highlight powershell "style=monokai" >}}
+{{<newline>}}
+
+```powershell
 Set-Content .gitignore ".obsidian/cache/`n.obsidian/workspace`n.obsidian/plugins`nid_ed25519`nid_ed25519.pub`nscripts/"
 git add .
 git commit -m "Clean initial commit: safe sync setup"
 git branch -M main
 git push -f origin main
-{{< /highlight >}}
 ```
-
-sdf
-
-```powershell
-skdf jwefwejifbwejifbwefiwebfwijfwebfkwjhfbwekhbfwekhfb wekjrfhnwekjrfbnwekjfbnw wekjfbnwkjfbnwkjfwfkbn wkejrfbnwkjfbwknfbwkwbf
-```
-
 
 
 {{<dots>}}
