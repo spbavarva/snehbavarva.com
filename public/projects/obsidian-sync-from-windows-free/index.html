@@ -192,6 +192,15 @@
         <nav id="TableOfContents">
   <ul>
     <li><a href="#overview">Overview</a></li>
+    <li><a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#vault--github-setup">Vault + GitHub Setup</a></li>
+        <li><a href="#create-private-github-repo">Create private GitHub repo</a></li>
+      </ul>
+    </li>
+    <li><a href="#automation-script">Automation Script</a></li>
+    <li><a href="#usage">Usage</a></li>
   </ul>
 </nav>
       </div>
@@ -207,8 +216,90 @@
     
 
     <div class="content"><h2 id="overview">Overview</h2>
-<p>This will a simple script to automate syncing your notes from your Obsidian Vault to your Github repo.</p>
-<p><em>content is under drafts</em></p>
+<p>This PowerShell-based automation sets up your Obsidian vault to sync with a private GitHub repo every 15 minutes.</p>
+<ul>
+<li>Automatic commit + push of your notes</li>
+<li>SSH key generation and registration</li>
+<li>Runs entirely on Windows Task Scheduler
+<br></li>
+</ul>
+<br>
+<hr>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li><a href="https://git-scm.com/download/win">Git for Windows</a></li>
+<li>Obsidian vault (already created or new)</li>
+<li>A GitHub account
+<br>
+<br></li>
+</ul>
+<hr>
+<h3 id="vault--github-setup">Vault + GitHub Setup</h3>
+<p>Open PowerShell as <strong>an administrator</strong> in your Obsidian vault folder.</p>
+<h4 id="generate-ssh-key">Generate SSH key</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>ssh-keygen -t ed25519 -C <span style="color:#e6db74">&#34;YOUR_EMAIL@gmail.com&#34;</span>
+</span></span></code></pre></div><br>
+<p>When prompted:  (I recommend using Vault path for smooth flow and not default key path)</p>
+<blockquote>
+<p><code>Enter file in which to save the key:</code>
+➜ Type: <em><strong>D:\your_obsidian_vault\id_ed25519</strong></em></p></blockquote>
+<h4 id="enable-and-start-ssh-agent">Enable and start SSH agent</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Set-Service -Name ssh-agent -StartupType Automatic
+</span></span><span style="display:flex;"><span>Start-Service ssh-agent
+</span></span></code></pre></div><br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>ssh-add D:\your_obsidian_vault\id_ed25519
+</span></span></code></pre></div><p><br>
+you should see output like: &ldquo;<em>Identity added: path</em>&rdquo;</p>
+<h4 id="add-key-to-github">Add key to GitHub</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Content D:\your_obsidian_vault\id_ed25519.pub
+</span></span></code></pre></div><p>Copy the full key (output start from <code>ssh-ed &lt;SNIP&gt; YOUR_EMAIL@gmail.com</code>) → Go to GitHub → <strong>Settings → SSH and GPG Keys → New SSH Key</strong> → Paste and save.</p>
+<p>Test the connection:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>ssh -T git@github.com
+</span></span></code></pre></div><p>prompt <code>yes</code> and you should see <code>Hi @your_username! blah blah</code></p>
+<h3 id="create-private-github-repo">Create private GitHub repo</h3>
+<ul>
+<li>Name it: <code>obsidian-sync</code></li>
+<li>✅ Mark it private</li>
+<li>❌ Do not initialize with README or .gitignore</li>
+</ul>
+<h4 id="initialize-git-in-your-vault">Initialize Git in your vault</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git remote add origin git@github.com<span style="color:#960050;background-color:#1e0010">:</span>yourusername/obsidian-sync.git
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Set-Content .gitignore <span style="color:#e6db74">&#34;.obsidian/cache/</span><span style="color:#ae81ff">`n</span><span style="color:#e6db74">.obsidian/workspace</span><span style="color:#ae81ff">`n</span><span style="color:#e6db74">.obsidian/plugins</span><span style="color:#ae81ff">`n</span><span style="color:#e6db74">id_ed25519</span><span style="color:#ae81ff">`n</span><span style="color:#e6db74">id_ed25519.pub</span><span style="color:#ae81ff">`n</span><span style="color:#e6db74">scripts/&#34;</span>
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Clean initial commit: safe sync setup&#34;</span>
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>git push <span style="color:#f92672">-f</span> origin main
+</span></span></code></pre></div><div style="text-align: center; font-size: 2.5rem; margin: 1rem 0;">
+    &middot; &nbsp; &middot; &nbsp; &middot;
+  </div>
+  
+<h2 id="automation-script">Automation Script</h2>
+<p>Make new .ps1 file in the same directory and copy content from <a href="https://github.com/spbavarva/obsidian-sync-windows/blob/main/setup_obsidian_sync.ps1">this one-time PowerShell script setup_obsidian_sync.ps1</a> and in same administartor pwershell.exe to automate syncing:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Set-ExecutionPolicy Bypass -Scope <span style="color:#66d9ef">Process</span> -Force
+</span></span><span style="display:flex;"><span>.\setup_obsidian_sync.ps1 -VaultPath <span style="color:#e6db74">&#34;D:\your_obsidian_vault&#34;</span> -PrivateKeyPath <span style="color:#e6db74">&#34;D:\your_obsidian_vault\id_ed25519&#34;</span>
+</span></span></code></pre></div><p><br>
+This will:</p>
+<ul>
+<li>Generate <code>sync_obsidian.ps1</code> and <code>load_ssh_key.ps1</code></li>
+<li>Create two scheduled tasks:
+<ol>
+<li>SSH key loader at login</li>
+<li>Auto-sync every 15 minutes (runs silently in the background)</li>
+</ol>
+</li>
+</ul>
+<br>
+<div style="text-align: center; font-size: 2.5rem; margin: 1rem 0;">
+    &middot; &nbsp; &middot; &nbsp; &middot;
+  </div>
+  
+<h2 id="usage">Usage</h2>
+<p>Just update your notes in Obsidian - every 15 minutes the changes will be committed and pushed.</p>
+<p>To test immediately:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Start-ScheduledTask -TaskName <span style="color:#e6db74">&#34;Obsidian_Auto_Sync&#34;</span>
+</span></span></code></pre></div><p>You can verify pushes by checking your GitHub repository.</p>
 <hr>
 </div>
   </article>
