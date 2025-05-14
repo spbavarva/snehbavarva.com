@@ -289,13 +289,63 @@
   }
 
   .view-all a {
-    
     font-weight: 500;
     text-decoration: none;
   }
 
   .view-all a:hover {
     text-decoration: underline;
+  }
+
+  .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 20px;
+  }
+
+  .cert-card {
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    min-height: 160px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cert-card img {
+    height: 175px;  
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cert-name {
+    font-weight: bold;
+    margin-top: 8px;
+  }
+
+  .cert-date {
+    font-size: 0.875rem;
+    color: #a1a1aa;
+    margin-top: 4px;
+  }
+
+  @media (max-width: 768px) {
+    .cert-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .cert-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 
@@ -328,11 +378,10 @@
         class="text-blue-400 underline hover:text-blue-300 transition"
         >technical blogs</a
       >, building and contributing to open-source security tools, and regularly
-      participating in CTFs to sharpen my skills. Always open to learning, collaborating on projects, or tackling fun security challenges.
+      participating in CTFs to sharpen my skills. Always open to learning,
+      collaborating on projects, or tackling fun security challenges.
     </p>
-    <p class="mb-4 text-zinc-300">
-      Let's stay in touch :)
-    </p>
+    <p class="mb-4 text-zinc-300">Let's stay in touch :)</p>
 
     <div class="featured-links">
       <a href="/projects" class="featured-link outline">View Projects →</a>
@@ -375,18 +424,16 @@
       
       <div class="project-card">
         <h3>
-          <a href="/projects" role="link">
-            Eye-Sint Tool
-          </a>
+          <a href="/projects" role="link"> Obsidian sync from windows </a>
         </h3>
         <p>
-          It's a GUI-based unique OSINT tool hosted on Cloud which can do web
-          enum and human footprinting.
+          PowerShell-based automation sets up your Obsidian vault to sync with a
+          private GitHub repo
         </p>
         <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">React</span>
-          <span class="tag">Flask</span>
+          <span class="tag">Powershell</span>
+          <span class="tag">Automation</span>
+          <span class="tag">Obsidian</span>
         </div>
         <div class="project-links">
           <a href="/projects">Learn More</a>
@@ -401,98 +448,88 @@
 
   <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
 
-  <section class="py-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <section>
+    <h3 style="font-size: 1.25rem; font-weight: 600; color: white">
+      Certifications
+    </h3>
+
+    <div class="cert-grid">
       
-      <div class="bg-zinc-900 p-6 rounded-2xl shadow-lg border border-zinc-700">
-        <h3 class="text-xl font-semibold text-white mb-4">📜 Certifications</h3>
-        <ul class="space-y-2">
-          <li
-            class="grid grid-cols-[1fr_auto] justify-between items-start gap-2"
-          >
-            <a
-              href="https://www.credly.com/badges/c35b460c-42ed-4f70-8053-578f71d57a97/public_url"
-              class="text-blue-400 hover:underline"
-              target="_blank"
-              >AWS Solution Architect Associate</a
-            >
-            <span> | (SAA)</span>
-            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
-              - April 2025</span
-            >
-          </li>
-          <li
-            class="grid grid-cols-[1fr_auto] justify-between items-start gap-2"
-          >
-            <a
-              href="https://www.credly.com/badges/0b7bc11a-55c4-4948-807a-30c26926ffc7/public_url"
-              class="text-blue-400 hover:underline"
-              target="_blank"
-              >HTB Certified Defensive Security Analyst</a
-            >
-            <span> | (CDSA)</span>
-            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
-              - March 2025</span
-            >
-          </li>
-          <li
-            class="grid grid-cols-[1fr_auto] justify-between items-start gap-2"
-          >
-            <a
-              href="https://www.credential.net/6b9e9db3-fe36-43fe-b28f-15cafb95e776#acc.a5n9KTyH"
-              class="text-blue-400 hover:underline"
-              target="_blank"
-              >Offensive Security Certified Professional</a
-            >
-            <span> | (OSCP)</span>
-            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
-              - July 2024</span
-            >
-          </li>
-          <li
-            class="grid grid-cols-[1fr_auto] justify-between items-start gap-2"
-          >
-            <a
-              href="https://www.coursera.org/account/accomplishments/professional-cert/WE85FGTPTJFR"
-              class="text-blue-400 hover:underline"
-              target="_blank"
-              >Google Cybersecurity Professional Certificate</a
-            >
-            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
-              - September 2023</span
-            >
-          </li>
-          <li
-            class="grid grid-cols-[1fr_auto] justify-between items-start gap-2"
-          >
-            <a
-              href="https://certs.ine.com/feaa4277-2a76-4595-8f78-dacbc0f466b6#acc.hsixWzf9"
-              class="text-blue-400 hover:underline"
-              target="_blank"
-              >INE eLearnSecurity Junior Penetration Tester</a
-            >
-            <span> | (eJPTv2)</span>
-            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
-              - May 2023</span
-            >
-          </li>
-          <li
-            class="grid grid-cols-[1fr_auto] justify-between items-start gap-2"
-          >
-            <a
-              href="https://drive.google.com/file/d/1JcZQQ5seGswCOJk3SBPkFlM6A3wHkKFe/view"
-              class="text-blue-400 hover:underline"
-              target="_blank"
-              >Certified Ethical Hacker</a
-            >
-            <span> | (CEH - Practical)</span>
-            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
-              - February 2023</span
-            >
-          </li>
-        </ul>
+      <div class="cert-card">
+        <a
+          href="https://www.credly.com/badges/c35b460c-42ed-4f70-8053-578f71d57a97/public_url"
+          target="_blank"
+        >
+          <img src="/images/aws.png" alt="AWS" />
+        </a>
+        <div class="cert-name">SAA</div>
+        <div class="cert-date">April 2025</div>
       </div>
 
+      
+      <div class="cert-card">
+        <a
+          href="https://www.credly.com/badges/0b7bc11a-55c4-4948-807a-30c26926ffc7/public_url"
+          target="_blank"
+        >
+          <img src="/images/htb_cdsa.webp" alt="CDSA" />
+        </a>
+        <div class="cert-name">CDSA</div>
+        <div class="cert-date">March 2025</div>
+      </div>
+
+      
+      <div class="cert-card">
+        <a
+          href="https://www.credential.net/6b9e9db3-fe36-43fe-b28f-15cafb95e776#acc.a5n9KTyH"
+          target="_blank"
+        >
+          <img src="/images/OSCP.png" alt="OSCP" />
+        </a>
+        <div class="cert-name">OSCP</div>
+        <div class="cert-date">July 2024</div>
+      </div>
+
+      
+      <div class="cert-card">
+        <a
+          href="https://www.coursera.org/account/accomplishments/professional-cert/WE85FGTPTJFR"
+          target="_blank"
+        >
+          <img src="/images/google.png" alt="Google" />
+        </a>
+        <div class="cert-name">Google Cert</div>
+        <div class="cert-date">Sept 2023</div>
+      </div>
+
+      
+      <div class="cert-card">
+        <a
+          href="https://certs.ine.com/feaa4277-2a76-4595-8f78-dacbc0f466b6#acc.hsixWzf9"
+          target="_blank"
+        >
+          <img src="/images/ejpt.png" alt="eJPT" />
+        </a>
+        <div class="cert-name">eJPTv2</div>
+        <div class="cert-date">May 2023</div>
+      </div>
+
+      
+      <div class="cert-card">
+        <a
+          href="https://drive.google.com/file/d/1JcZQQ5seGswCOJk3SBPkFlM6A3wHkKFe/view"
+          target="_blank"
+        >
+          <img src="/images/ceh.jpeg" alt="CEH" />
+        </a>
+        <div class="cert-name">CEH</div>
+        <div class="cert-date">Feb 2023</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       
       <div class="hidden md:block">
         <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
