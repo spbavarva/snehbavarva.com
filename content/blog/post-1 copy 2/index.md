@@ -2,7 +2,7 @@
 title: "Hunt Evil with - Sigma"
 description: "Basic understanding of Sigma rules and it's importance"
 date: 2025-04-17
-draft: true
+draft: false
 tags: ["Sigma", "Threat Detection", "Threat Hunting", "SIEM", "Splunk", "Windows Security", "Cybersecurity", "Log Analysis"]
 showToc: true
 ---
