@@ -1,8 +1,12 @@
 baseURL: https://snehbavarva.xyz/
 languageCode: en-us
 title: Sneh Bavarva | Cybersecurity Professional
+description: Cybersecurity Portfolio | OSCP | Projects | Blogs
+author: Sneh Bavarva
 theme: PaperMod
 enableEmoji: true
+opengraph:
+  enable:true
 enableRobotsTXT: true
 pagination:
   pagerSize: 10
