@@ -1,7 +1,6 @@
 baseURL: https://snehbavarva.xyz/
 languageCode: en-us
 title: Sneh Bavarva | Cybersecurity Professional
-description: Cybersecurity Portfolio | OSCP | Projects | Blogs
 author: Sneh Bavarva
 theme: PaperMod
 enableEmoji: true
@@ -12,6 +11,12 @@ pagination:
   pagerSize: 10
 params:
   defaultTheme: auto
+  description: >
+    Cybersecurity portfolio of Sneh Bavarva – OSCP-certified professional with hands-on experience in penetration testing, threat analysis, and DevSecOps. Seeking opportunities to contribute and grow in the cybersecurity industry.
+  opengraph:
+    enable: true
+  twitter_cards:
+    enable: true
   ShowShareButtons: true
   disableThemeToggle: false
   ShowCodeCopyButtons: true
