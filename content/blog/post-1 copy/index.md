@@ -3,7 +3,7 @@ title: "Hunt Evil with - YARA"
 description: "Basic understanding of YARA rules"
 date: 2025-04-15
 draft: false
-tags: ["YARA", "Threat Detection", "Ransomware", "WannaCry", "Sigma"]
+tags: ["YARA", "Threat Detection", "Ransomware", "WannaCry", "Sigma", "Cybersecurity"]
 showToc: true
 ---
 As we know that YARA is one of the most powerful tools if used correctly. We can analyze disk artifacts, memory images, or even live endpoint telemetry. Also, YARA rules allow to detect known malware patterns, identify suspicious behavior.
