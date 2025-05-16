@@ -8,6 +8,11 @@
       }}{{ end }}
     </title>
     <meta
+      name="title"
+      property="og:title"
+      content="Sneh Bavarva | Cybersecurity Portfolio – OSCP, DevSecOps, and Security Researcher"
+    />
+    <meta
       name="description"
       content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}"
     />
@@ -37,7 +42,6 @@
       inject();
     </script>
     <script src="/js/copy-code.js" defer></script>
-
   </head>
   <body>
     {{ partial "header.html" . }}
