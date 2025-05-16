@@ -41,17 +41,17 @@ The first image below explains the structure and fields of a Sigma rule:
 
 Key Elements:
 
-{{< indent10 >}} • title : The purpose of the rule. Example: Potential LethalHTA Technique Execution.{{< /indent10 >}}
-{{< indent10 >}} • id: A unique identifier (UUID) for tracking and referencing the rule.{{< /indent10 >}}
-{{< indent10 >}} • status: Indicates whether the rule is test, stable, or deprecated.{{< /indent10 >}}
-{{< indent10 >}} • description: A summary of what the rule detects and why.{{< /indent10 >}}
-{{< indent10 >}} • references: Helpful URLs or documents supporting the rule’s logic.{{< /indent10 >}}
-{{< indent10 >}} • author & date: Credit to the rule creator and its creation date.{{< /indent10 >}}
-{{< indent10 >}} • tags: MITRE ATT&CK techniques or context tags like attack.defense_evasion.{{< /indent10 >}}
-{{< indent10 >}} • logsource: Tells Sigma what logs to look at (e.g., process_creation on Windows).{{< /indent10 >}}
-{{< indent10 >}} • detection: Defines the search conditions (explained in more detail below 👇).{{< /indent10 >}}
-{{< indent10 >}} • falsepositives: Known legitimate activity that might match the rule.{{< /indent10 >}}
-{{< indent10 >}} • level: The severity if this rule triggers (low, medium, high, or critical).{{< /indent10 >}}
+        • title : The purpose of the rule. Example: Potential LethalHTA Technique Execution.
+        • id: A unique identifier (UUID) for tracking and referencing the rule.
+        • status: Indicates whether the rule is test, stable, or deprecated.
+        • description: A summary of what the rule detects and why.
+        • references: Helpful URLs or documents supporting the rule’s logic.
+        • author & date: Credit to the rule creator and its creation date.
+        • tags: MITRE ATT&CK techniques or context tags like attack.defense_evasion.
+        • logsource: Tells Sigma what logs to look at (e.g., process_creation on Windows).
+        • detection: Defines the search conditions (explained in more detail below 👇).
+        • falsepositives: Known legitimate activity that might match the rule.
+        • level: The severity if this rule triggers (low, medium, high, or critical).
 
 
 #### Understanding the Detection Logic (Search Identifiers & Conditions)
