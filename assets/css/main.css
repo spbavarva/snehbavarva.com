@@ -485,7 +485,6 @@ figure.align-center img {
   display: inline-block;
 }
 
-
 /* Scrollable code blocks */
 div.highlight pre {
   overflow-x: auto;
@@ -500,7 +499,7 @@ div.highlight pre {
 
 /* Actual copy button styling */
 .copy-button {
- position: absolute;
+  position: absolute;
   top: 0rem;
   right: 0rem;
   background-color: #222;
@@ -518,4 +517,45 @@ div.highlight pre {
 .copy-button:hover {
   opacity: 1;
   background-color: #444;
+}
+
+.newsletter-promo {
+  margin-bottom: 3rem; /* ensures clear separation from blog posts */
+}
+
+.newsletter-promo .blog-description {
+  margin-bottom: 0.5em; /* Reduce space below the paragraph */
+}
+
+.subscribe-container {
+  margin-top: 0rem;
+  margin-bottom: 3rem; /* pushes it away from the timeline */
+  text-align: center;
+}
+
+
+.subscribe-button {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.subscribe-button:hover {
+  background-color: #050508; /* Slightly lighter */
+  border-color: #4b5563;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.span-for-inline {
+  color: #2876d6; /* Matches your primary blue */
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.markdown-content {
+  text-align: justify;
 }

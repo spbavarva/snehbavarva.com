@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blue Team</title>
+      <link>http://localhost:1313/tags/blue-team/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/blue-team/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CDSA</title>
+      <link>http://localhost:1313/tags/cdsa/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cdsa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Certification</title>
+      <link>http://localhost:1313/tags/certification/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/certification/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTB</title>
+      <link>http://localhost:1313/tags/htb/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/htb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SOC</title>
+      <link>http://localhost:1313/tags/soc/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/soc/</guid>
+      <description></description>
+    </item>
     <item>
       <title>FREE</title>
       <link>http://localhost:1313/tags/free/</link>
@@ -51,41 +86,6 @@
       <description></description>
     </item>
     <item>
-      <title>Blue Team</title>
-      <link>http://localhost:1313/tags/blue-team/</link>
-      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/blue-team/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CDSA</title>
-      <link>http://localhost:1313/tags/cdsa/</link>
-      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cdsa/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Certification</title>
-      <link>http://localhost:1313/tags/certification/</link>
-      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/certification/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>HTB</title>
-      <link>http://localhost:1313/tags/htb/</link>
-      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/htb/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SOC</title>
-      <link>http://localhost:1313/tags/soc/</link>
-      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/soc/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Cybersecurity</title>
       <link>http://localhost:1313/tags/cybersecurity/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
@@ -114,6 +114,20 @@
       <description></description>
     </item>
     <item>
+      <title>Splunk</title>
+      <link>http://localhost:1313/tags/splunk/</link>
+      <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/splunk/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Threat Detection</title>
+      <link>http://localhost:1313/tags/threat-detection/</link>
+      <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/threat-detection/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Threat Hunting</title>
       <link>http://localhost:1313/tags/threat-hunting/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
@@ -132,13 +146,6 @@
       <link>http://localhost:1313/tags/ransomware/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/ransomware/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Threat Detection</title>
-      <link>http://localhost:1313/tags/threat-detection/</link>
-      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/threat-detection/</guid>
       <description></description>
     </item>
     <item>
