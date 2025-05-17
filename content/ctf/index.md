@@ -11,3 +11,5 @@ _~Capablaca_
 
 
 {{<seperator>}}
+
+<!-- {{< htb-thm-shortcode >}} -->
