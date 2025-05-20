@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/cloud/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DevSecOps CI/CD pipeline for SAST</title>
-      <link>http://localhost:1313/blog/post-1-copy-3/</link>
+      <link>http://localhost:1313/blog/devsecops-cicd/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/post-1-copy-3/</guid>
+      <guid>http://localhost:1313/blog/devsecops-cicd/</guid>
       <description>A secure complete CI/CD pipeline for SAST and image testing</description>
     </item>
     <item>
@@ -24,9 +24,9 @@
     </item>
     <item>
       <title>How I passed AWS Solution Architect Associate - SAA in 5 days!</title>
-      <link>http://localhost:1313/blog/post-1/</link>
+      <link>http://localhost:1313/blog/aws-review/</link>
       <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/post-1/</guid>
+      <guid>http://localhost:1313/blog/aws-review/</guid>
       <description>fairly easy exam if you follow just one resource...</description>
     </item>
   </channel>

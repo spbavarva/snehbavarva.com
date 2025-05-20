@@ -10,16 +10,16 @@
     <atom:link href="http://localhost:1313/tags/threat-detection/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hunt Evil with - Sigma</title>
-      <link>http://localhost:1313/blog/post-1-copy-2/</link>
+      <link>http://localhost:1313/blog/sigma-rules/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/post-1-copy-2/</guid>
+      <guid>http://localhost:1313/blog/sigma-rules/</guid>
       <description>Basic understanding of Sigma rules and it&amp;#39;s importance</description>
     </item>
     <item>
       <title>Hunt Evil with - YARA</title>
-      <link>http://localhost:1313/blog/post-1-copy/</link>
+      <link>http://localhost:1313/blog/yara-rules/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/post-1-copy/</guid>
+      <guid>http://localhost:1313/blog/yara-rules/</guid>
       <description>Basic understanding of YARA rules</description>
     </item>
   </channel>

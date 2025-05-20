@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/ransomware/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hunt Evil with - YARA</title>
-      <link>http://localhost:1313/blog/post-1-copy/</link>
+      <link>http://localhost:1313/blog/yara-rules/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/post-1-copy/</guid>
+      <guid>http://localhost:1313/blog/yara-rules/</guid>
       <description>Basic understanding of YARA rules</description>
     </item>
   </channel>

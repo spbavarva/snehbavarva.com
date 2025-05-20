@@ -10,37 +10,37 @@
     <atom:link href="http://localhost:1313/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTB - Certified Defensive Security Analyst (CDSA) Review 2025</title>
-      <link>http://localhost:1313/blog/post-1-copy-4/</link>
+      <link>http://localhost:1313/blog/cdsa/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/post-1-copy-4/</guid>
+      <guid>http://localhost:1313/blog/cdsa/</guid>
       <description>A completely new guy in defesive side passing in a month...</description>
     </item>
     <item>
       <title>Hunt Evil with - Sigma</title>
-      <link>http://localhost:1313/blog/post-1-copy-2/</link>
+      <link>http://localhost:1313/blog/sigma-rules/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/post-1-copy-2/</guid>
+      <guid>http://localhost:1313/blog/sigma-rules/</guid>
       <description>Basic understanding of Sigma rules and it&amp;#39;s importance</description>
     </item>
     <item>
       <title>Hunt Evil with - YARA</title>
-      <link>http://localhost:1313/blog/post-1-copy/</link>
+      <link>http://localhost:1313/blog/yara-rules/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/post-1-copy/</guid>
+      <guid>http://localhost:1313/blog/yara-rules/</guid>
       <description>Basic understanding of YARA rules</description>
     </item>
     <item>
       <title>DevSecOps CI/CD pipeline for SAST</title>
-      <link>http://localhost:1313/blog/post-1-copy-3/</link>
+      <link>http://localhost:1313/blog/devsecops-cicd/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/post-1-copy-3/</guid>
+      <guid>http://localhost:1313/blog/devsecops-cicd/</guid>
       <description>A secure complete CI/CD pipeline for SAST and image testing</description>
     </item>
     <item>
       <title>How I passed AWS Solution Architect Associate - SAA in 5 days!</title>
-      <link>http://localhost:1313/blog/post-1/</link>
+      <link>http://localhost:1313/blog/aws-review/</link>
       <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/post-1/</guid>
+      <guid>http://localhost:1313/blog/aws-review/</guid>
       <description>fairly easy exam if you follow just one resource...</description>
     </item>
   </channel>
