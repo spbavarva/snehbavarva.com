@@ -2,7 +2,7 @@
 title: "HTB - Certified Defensive Security Analyst (CDSA) Review 2025"
 description: "A completely new guy in defesive side passing in a month..."
 date: 2025-05-11
-draft: true
+draft: false
 tags: ["HTB", "CDSA", "Blue Team", "Certification", "SOC", "2025"]
 categories: ["Certifications", "Defensive"]
 showToc: true
