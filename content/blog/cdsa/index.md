@@ -83,56 +83,65 @@ Overall this path was great to start awaken defensive side and CDSA path consist
 
 Below is my personal review of each module,
 
-### Module and path review
+### Module/Path review
 
-**Incident Handling Process**: shkjdbf
-sdfg
+**Incident Handling Process**: This module covers the core stages of incident handling. It’s a foundational overview meant to prepare you for more technical, SOC-focused modules. And seriously for exam, this module may not worth but in reality this worth the most than any other modules!
 {{<newline>}}
 
-**Security Monitoring & SIEM Fundamentals**: ksjndf
+**Security Monitoring & SIEM Fundamentals**: Core SIEM fundamentals and you will learn basic use of Elastic Stack. Setup of ELK, finding events and triaging process. 
 {{<newline>}}
 
-**Introduction to Threat Hunting & Hunting With Elastic**:
+**Windows Event Logs & Finding Evil**: You will learn about Windows Event Logs and Sysmon Logs, how to detect threats like DLL hijacking and credential dumping. It also explores ETW, and hands-on techniques to investigate malicious activity with tools like Get-WinEvent and Event Viewer.
 {{<newline>}}
 
-**Windows Event Logs & Finding Evil**:
+**Introduction to Threat Hunting & Hunting With Elastic**: Threat Hunting and CTI fundamentals are covered here as well as at the end, you will have to asses a phishing scenario from phishing mail to how it implemented RAT. (tough one for me)
 {{<newline>}}
 
-**Understanding Log Sources & Investigating with Splunk**:
+**Understanding Log Sources & Investigating with Splunk**: You are introduced to Splunk and you'll know how to use diverse log sources and it's importance using Splunk
 {{<newline>}}
 
-**Windows Attacks & Defense**:
+**Windows Attacks & Defense**: Almost all type of basic attacks of AD infra is covered here and you will enjoy a lot if you know AD stuff before-hand :&#41;
+Also. It taught how to set up a honeypot and understand how event IDs for detecting the attacks can vary when a honeypot is used. (most useful for real-life)
 {{<newline>}}
 
-**Intro to Network Traffic Analysis**:
+**Intro to Network Traffic Analysis**: Networking knowledge and analysis with tools like: Wireshark and Tcpdump
 {{<newline>}}
 
-**Intermediate Network Traffic Analysis**:
+**Intermediate Network Traffic Analysis**: Detailed module on networking concepts like: ARP, 802.11, ICMP tunneling, XSS and SSL detection, TCP and TLS handshake. (I don't know wju this module is rated easy and previous rated as Medium)
 {{<newline>}}
 
-**Working with IDS/IPS**:
+**Working with IDS/IPS**: Understanding of IDS and IPS tools with Suricata, Snort, and Zeek
 {{<newline>}}
 
-**Introduction to Malware Analysis** (If you aren't familiar with Assembly Language Programming, I suggest :completing Intro to Assembly Langu{{<newline>}}age module from HTB, which will familiarize you Assembly 
-Language.)
+**Introduction to Malware Analysis**: Static and Dynamic detection method of malware on Windows and Linux with code analysis and debugging. (If you aren't familiar with Assembly, I suggest completing Intro to [Assembly Language module](https://academy.hackthebox.com/course/preview/intro-to-assembly-language))
 
-**JavaScript Deobfuscation**:
+**JavaScript Deobfuscation**: You'll learn how to decode and analyze obfuscated JavaScript, which is common practice by attackers
 {{<newline>}}
 
-**YARA & Sigma for SOC Analysts**:
+**YARA & Sigma for SOC Analysts**: YARA and Sigma rules are important and you will understand why and how it's used. Also you can checkout my blog for that as well!
 {{<newline>}}
 
-**Introduction to Digital Forensics**:
+**Introduction to Digital Forensics**: DFIR! Best module to learn the most of it. So many new tools and full-fledge investigation of scenario on DFIR. This is my personal favourite module as well and best skill assessment in whole path!
 {{<newline>}}
 
-**Detecting Windows Attacks with Splunk**:
+**Detecting Windows Attacks with Splunk**: Most easiest one if you know AD stuff. You wil complete this in like a couple of hours
 {{<newline>}}
 
-**Security Incident Reporting**:
+**Security Incident Reporting**: Basically they will tell you how to write a report in real-life as well as in exam.
 {{<newline>}}
 
 
 ### My timeline
+
+It took me one and half month from starting the path to ending the exam. I started path in Feb and started exam in around 20th March. 
+
+But I tracked my time with [Toggle Track](https://toggl.com/) cause I want just curious whether it really takes that much of time which HTB tells us. I figured out I completed modules with lesser time.
+
+{{< figure src="/images/blog/blog-4-CDSA/toggle.png" alt="Toggle Track" caption=" " align="center" >}}
+
+All modules were not tracked here but I get all of those done in line 70 hours roughly. Which is around 6 hours/day and 12-13 days. This was just my curiosity, ignore it lol.
+
+But yes as I mentioned in [start](/blog/cdsa/#why-this-exam), I started early but it was all blank in the Feb after I come from winter break.
 
 ## EXAM!!
 
