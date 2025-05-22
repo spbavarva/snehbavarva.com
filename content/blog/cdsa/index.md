@@ -273,6 +273,7 @@ Definitely first one would be HTB team who even refunded me money for accident p
 
 Also huge thanks to my mate **Hypercure (HC)**, who helped me a lot and motivated me to learn more and **Sunny Singh**, who shared me his experience in this field.
 **zzzz** and **timmytrill**, our dank discussions 🚀 is flying high!
+And **dakshn**, have you learned how to read memdumps? lol
 
 {{<dots>}}
 
