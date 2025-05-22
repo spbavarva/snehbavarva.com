@@ -14,11 +14,11 @@ showToc: true
 
 ## Overview
 
-Finally, I am happy to say that I am now HTB CDSA certified! Definitely it was good one to get and in this blog I will be sharing my journey from deciding to take this cert and actualy getting it. This will be long, so bear with it! Less go...
+Finally, I am happy to say that I am now HTB CDSA certified! Definitely it was good one to get and in this blog I will be sharing my journey from deciding to take this cert and actually getting it. This will be long, so bear with it! Less go...
 
 ## Why this exam?
 
-I am a huge fan of [HTB Academy](https://academy.hackthebox.com/) and it's content and I recommend the paltform to anyone looking to learn. I was just going through each of their job role path and though to give it a try for their [SOC Analyst Path](https://academy.hackthebox.com/path/preview/soc-analyst) a try in the December but I quit that in few days after doing few % and then I talked with people, look at study materials and some YT vidos of course - I figured out that Defensive side of security is best suited for me and I enjoy it more than Web-Pentesting (I hate BURP!).
+I am a huge fan of [HTB Academy](https://academy.hackthebox.com/) and it's content and I recommend the platform to anyone looking to learn. I was just going through each of their job role path and though to give it a try for their [SOC Analyst Path](https://academy.hackthebox.com/path/preview/soc-analyst) a try in the December but I quit that in few days after doing few % and then I talked with people, look at study materials and some YT videos of course - I figured out that Defensive side of security is best suited for me and I enjoy it more than Web-Pentesting (I hate BURP!).
 {{<newline>}}
 {{<newline>}}
 I will come to [my background](/blog/cdsa/#my-background) and [timeline](/blog/cdsa/#my-timeline) of my study and how long I took to prepare for the exam later in the module. But this is how I decided to take the exam.
@@ -31,14 +31,14 @@ Below is what HTB has to say:
 
 {{< figure src="/images/blog/blog-4-CDSA/targeted.png" alt="targeted people" caption=" " align="center" >}}
 
-But I do believe that this content (**Content**) is absoulately helpful for any Pentester or any Red teamer to understand how your actual attack works behind the scene and how it can be detected. For example, mimikatz can be easily detected, which is known by anyone but how it's getting detected? that's what you wil learn in this path.
+But I do believe that this content (**Content**) is absolutely helpful for any Pentester or any Red teamer to understand how your actual attack works behind the scene and how it can be detected. For example, mimikatz can be easily detected, which is known by anyone but how it's getting detected? that's what you wil learn in this path.
 
 I highly recommend anyone who wants to explore how blue team works or how incident response team works as well as to the red teamers and pentester to understand how defending team operates, which could give you more ways to bypass certain things with clear understanding.
 
 {{<dots>}}
 
 
-## Pre-requisites
+## Pre-Requisites
 
 {{< figure src="/images/blog/blog-4-CDSA/pre-re.png" alt="Pre-requisites" caption="" align="center" >}}
 
@@ -48,7 +48,7 @@ It is advisable to have a bit of knowledge in web and AD infrastructure penetrat
 
 ### Pricing
 
-The SOC Analyst path is available at HTB Academy platform and fortunately there are multiple afforable subscription models for different users. I used their student subscription which is only $8 per months if you have a .edu email and I am using that from almost 1.5 years now. This will give you access to all the modules in the SOC Analyst path, the pre-requisites path and even access to all their main certifications paths (CPTS, CBBH and CDSA).
+The SOC Analyst path is available at HTB Academy platform and fortunately there are multiple affordable subscription models for different users. I used their student subscription which is only $8 per months if you have a .edu email and I am using that from almost 1.5 years now. This will give you access to all the modules in the SOC Analyst path, the pre-requisites path and even access to all their main certifications paths (CPTS, CBBH and CDSA).
 
 And yes, a voucher ($210) comes with two attempts. To qualify for the second attempt, you need to submit a report detailing your progress.
 
@@ -61,7 +61,7 @@ If you don’t have a .edu email fortunately there are some other affordable sub
 
 ## My background
 
-A little bit of myself to give you context, which I am diiving into Defensive and Offensive categories.
+A little bit of myself to give you context, which I am dividing into Defensive and Offensive categories.
 
 **Defense side**
 
@@ -133,7 +133,7 @@ Also. It taught how to set up a honeypot and understand how event IDs for detect
 **Introduction to Digital Forensics**: DFIR! Best module to learn the most of it. So many new tools and full-fledge investigation of scenario on DFIR. This is my personal favourite module as well and best skill assessment in whole path!
 {{<newline>}}
 
-**Detecting Windows Attacks with Splunk**: Most easiest one if you know AD stuff. You wil complete this in like a couple of hours
+**Detecting Windows Attacks with Splunk**: Most easiest one if you know AD stuff. You will complete this in like a couple of hours
 {{<newline>}}
 
 **Security Incident Reporting**: Basically they will tell you how to write a report in real-life as well as in exam.
@@ -156,7 +156,7 @@ But yes as I mentioned in [start](/blog/cdsa/#why-this-exam), I started early bu
 
 ## EXAM!!
 
-Now comes the most interesting part! As you might have know that it's a 7 days long exam and you have to investigate 2 incidents and submit a report on them. Along with you have to find 17/20 in order to pass the exam. You can read some details aobut exam objective in below image which was taken from [Sysreptor](https://docs.sysreptor.com/assets/reports/HTB-CDSA-Report.pdf). (I will come on this later in the [note taking](/blog/cdsa/#reporting--note-taking) section)
+Now comes the most interesting part! As you might have know that it's a 7 days long exam and you have to investigate 2 incidents and submit a report on them. Along with you have to find 17/20 in order to pass the exam. You can read some details about exam objective in below image which was taken from [Sysreptor](https://docs.sysreptor.com/assets/reports/HTB-CDSA-Report.pdf). (I will come on this later in the [note taking](/blog/cdsa/#reporting--note-taking) section)
 
 {{< figure src="/images/blog/blog-4-CDSA/exam-objective.png" alt="Exam Objective" caption="" align="center" >}}
 
@@ -174,7 +174,7 @@ It may happen that you feel completely lost for particular question, just skip i
 
 #### Note Taking
 
-Obvisouly there are plenty of note-taking apps like Obsidian, Notion, OneNote, Joplin, etc. I personally use Obsidian. Just keep your study notes ready, which you made about Path and I hope you understand every commands and queries which was provided in the path. Because just copy-pasting won't help you in the exam.
+obviously there are plenty of note-taking apps like Obsidian, Notion, OneNote, Joplin, etc. I personally use Obsidian. Just keep your study notes ready, which you made about Path and I hope you understand every commands and queries which was provided in the path. Because just copy-pasting won't help you in the exam.
 
 **Pro Tip:** You have to understand like if there's spawn of `cmd.exe` from `notepad.exe` then you should know which place you have to look after, how to find user from that, what event ID to focus on to get further information, etc.
 
@@ -220,11 +220,11 @@ There are many more tips like this but I understand that if you are staring this
 
 #### Extra prep
 
-Personally I haven't done much of it. But yes, I did [BOTS (Boss of the SOC)](https://bots.splunk.com/) Splunk challenges and defenetaly I can recommend that as that will be most closest to the actual exam. (which is still not close but stil)
+Personally I haven't done much of it. But yes, I did [BOTS (Boss of the SOC)](https://bots.splunk.com/) Splunk challenges and definitely I can recommend that as that will be most closest to the actual exam. (which is still not close but still)
 
 And as everyone said, I tried few sherlocks but those are completely different from what I have learned from SOC Analyst Path on the HTB Academy. I mean you can use that knowledge but it's still completely different and after taking the exam I can even verify that. You don't need to do any sherlocks for exam.
 
-But but but, it's really great excercise to do in general to improve your knowledge and decide whether you want to do more sherlocks before attempting exam or not only after experincing that. Personally I did the following sherlocks:
+But but but, it's really great exercise to do in general to improve your knowledge and decide whether you want to do more sherlocks before attempting exam or not only after experiencing that. Personally I did the following sherlocks:
 
 - [Meerkat](https://app.hackthebox.com/sherlocks/Meerkat)
 - [Loggy](https://app.hackthebox.com/sherlocks/Loggy)
@@ -235,7 +235,7 @@ But but but, it's really great excercise to do in general to improve your knowle
 
 {{<newline>}}
 
-Also, [DFIR Report site](https://thedfirreport.com/) contains various incident response reports and going trhough them gives you idea of reporting and also familiarizes you with various incidents and how to detect it.
+Also, [DFIR Report site](https://thedfirreport.com/) contains various incident response reports and going through them gives you idea of reporting and also familiarizes you with various incidents and how to detect it.
 
 ### After the exam
 
@@ -269,9 +269,9 @@ As I mentioned about every modules and they are really very well structured and 
 
 ## Mentions
 
-Defenately first one would be HTB team who even refunded me money for accident purchase of another voucher. You are really great and content over HTB Academy is no match for any other platforms out there right now. It's the BEST!
+Definitely first one would be HTB team who even refunded me money for accident purchase of another voucher. You are really great and content over HTB Academy is no match for any other platforms out there right now. It's the BEST!
 
-Also huge thanks to my mate **Hypercure (HC)**, who helped me a lot and motivated me to learn more and **Sunny Singh**, who shared me his experince in this field.
+Also huge thanks to my mate **Hypercure (HC)**, who helped me a lot and motivated me to learn more and **Sunny Singh**, who shared me his experience in this field.
 **zzzz** and **timmytrill**, our dank discussions 🚀 is flying high!
 
 {{<dots>}}
