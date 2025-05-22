@@ -6,6 +6,9 @@
     {{ if .Date }}
     <div class="post-meta">
       <span>{{ .Date.Format "January 2, 2006" }}</span>
+      {{ if or (.Params.showReadingTime) (.Site.Params.ShowReadingTime) }} •
+      <span class="reading-time">☕︎ {{ .ReadingTime }} min read</span>
+      {{ end }}
     </div>
     {{ end }} {{ if .Params.showToc }}
     <aside class="table-of-contents collapsible-toc">
@@ -28,7 +31,5 @@
 
     <div class="content markdown-content">{{ .Content }}</div>
   </article>
-  
-
 </main>
 {{ end }}

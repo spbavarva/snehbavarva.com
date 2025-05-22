@@ -558,3 +558,8 @@ div.highlight pre {
 .markdown-content {
   text-align: justify;
 }
+
+.reading-time {
+  color: #aaa;
+  margin-left: 4px;
+}
