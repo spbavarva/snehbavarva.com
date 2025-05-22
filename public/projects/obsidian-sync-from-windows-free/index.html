@@ -234,7 +234,12 @@
 <h2 id="getting-started">Getting Started</h2>
 <h3 id="prerequisites">Prerequisites</h3>
 <ul>
-<li><a href="https://git-scm.com/download/win">Git for Windows</a></li>
+<li>
+<a href="https://git-scm.com/download/win"
+   target="_blank" rel="noopener noreferrer">
+  Git for Windows
+</a>
+</li>
 <li>Obsidian vault (already created or new)</li>
 <li>A GitHub account
 <br>
@@ -283,7 +288,12 @@ you should see output like: &ldquo;<em>Identity added: path</em>&rdquo;</p>
   </div>
   
 <h2 id="automation-script">Automation Script</h2>
-<p>Make new .ps1 file in the same directory and copy content from <a href="https://github.com/spbavarva/obsidian-sync-windows/blob/main/setup_obsidian_sync.ps1">this one-time PowerShell script setup_obsidian_sync.ps1</a> and in same administartor pwershell.exe to automate syncing:</p>
+<p>Make new .ps1 file in the same directory and copy content from 
+<a href="https://github.com/spbavarva/obsidian-sync-windows/blob/main/setup_obsidian_sync.ps1"
+   target="_blank" rel="noopener noreferrer">
+  this one-time PowerShell script setup_obsidian_sync.ps1
+</a>
+ and in same administartor pwershell.exe to automate syncing:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Set-ExecutionPolicy Bypass -Scope <span style="color:#66d9ef">Process</span> -Force
 </span></span><span style="display:flex;"><span>.\setup_obsidian_sync.ps1 -VaultPath <span style="color:#e6db74">&#34;D:\your_obsidian_vault&#34;</span> -PrivateKeyPath <span style="color:#e6db74">&#34;D:\your_obsidian_vault\id_ed25519&#34;</span>
 </span></span></code></pre></div><p><br>
