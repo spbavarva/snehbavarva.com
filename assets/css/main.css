@@ -563,3 +563,13 @@ div.highlight pre {
   color: #aaa;
   margin-left: 4px;
 }
+
+.inline-code {
+  background-color: #252525; /* Dark background */
+  color: #6caaf7; /* Tailwind's yellow-400 */
+  font-family: "Fira Code", monospace;
+  font-size: 0.875rem; /* text-sm */
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.21rem;
+  white-space: nowrap;
+}

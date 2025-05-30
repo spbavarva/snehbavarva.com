@@ -207,7 +207,9 @@
     <div class="featured-links">
       <a href="/projects" class="featured-link outline">View Projects →</a>
       <a href="/contact" class="featured-link outline">Get in Touch →</a>
-      <a href="/newsletter" class="featured-link outline">Subscribe to Newsletter →</a>
+      <a href="/newsletter" class="featured-link outline"
+        >Subscribe to Newsletter →</a
+      >
     </div>
 
     <!-- <div class="featured-links flex flex-col sm:flex-row gap-4">
@@ -273,6 +275,60 @@
 
     <div class="view-all text-zinc-300">
       <a href="/projects">View All Projects →</a>
+    </div>
+  </section>
+
+  <section class="py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Separator -->
+      <div class="hidden md:block">
+        <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+      </div>
+
+      <!-- CVEs -->
+      <div class="bg-zinc-900 p-6 rounded-2xl shadow-lg border border-zinc-700">
+        <h3 class="text-xl font-semibold text-white mb-4">CVEs</h3>
+
+        <!-- CVE 1 -->
+        <div class="mb-4">
+          <p class="text-white mb-1">
+            <span class="text-red-400">|</span>
+            <b
+              ><a href="" class="text-red-400 hover:underline" target="_blank"
+                >CVE-2025-46203</a
+              ></b
+            >
+          </p>
+          <ul class="list-disc list-inside text-sm text-zinc-300 ml-4">
+            <li>
+              Unifiedtransform v2.X suffers from Broken Access Control, allowing
+              students/teachers to access
+              <code class="inline-code">/students/edit/{id}</code> and modify
+              student records. Affects all v2.X builds
+            </li>
+          </ul>
+        </div>
+        <br />
+        <!-- CVE 2 -->
+        <div class="mb-4">
+          <p class="text-white mb-1">
+            <span class="text-red-400">|</span>
+            <b
+              ><a href="" class="text-red-400 hover:underline" target="_blank"
+                >CVE-2025-46204</a
+              >
+            </b>
+          </p>
+          <ul class="list-disc list-inside text-sm text-zinc-300 ml-4">
+            <li>
+              Unifiedtransform v2.X suffers from Broken Access Control, allowing
+              students/teachers to access
+              <code class="inline-code">/course/edit/{id}</code> and modify
+              course data. Affects all v2.X builds
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -405,8 +461,6 @@
   </section>
 
   <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
-  
-  <!-- CVE Section should be added -->
 
   <div style="margin-top: 3rem">{{ partial "medium-feed.html" . }}</div>
 
