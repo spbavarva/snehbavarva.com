@@ -573,3 +573,22 @@ div.highlight pre {
   border-radius: 0.21rem;
   white-space: nowrap;
 }
+
+.link-buttons {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.link-buttons a {
+  color: #3b82f6;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link-buttons a:hover {
+  color: #2563eb;
+}
