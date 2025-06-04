@@ -6,8 +6,64 @@
     <description>Recent content in Tags on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AppSec</title>
+      <link>http://localhost:1313/tags/appsec/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/appsec/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CVE</title>
+      <link>http://localhost:1313/tags/cve/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cve/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CVE-2025-46203</title>
+      <link>http://localhost:1313/tags/cve-2025-46203/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cve-2025-46203/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CVE-2025-46204</title>
+      <link>http://localhost:1313/tags/cve-2025-46204/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cve-2025-46204/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cybersecurity</title>
+      <link>http://localhost:1313/tags/cybersecurity/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FirstCVE</title>
+      <link>http://localhost:1313/tags/firstcve/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/firstcve/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenSource</title>
+      <link>http://localhost:1313/tags/opensource/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/opensource/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SecurityResearch</title>
+      <link>http://localhost:1313/tags/securityresearch/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/securityresearch/</guid>
+      <description></description>
+    </item>
     <item>
       <title>2025</title>
       <link>http://localhost:1313/tags/2025/</link>
@@ -90,13 +146,6 @@
       <link>http://localhost:1313/tags/windows/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/windows/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cybersecurity</title>
-      <link>http://localhost:1313/tags/cybersecurity/</link>
-      <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cybersecurity/</guid>
       <description></description>
     </item>
     <item>
