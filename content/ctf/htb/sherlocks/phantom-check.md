@@ -3,7 +3,7 @@ title: "Phantom Check"
 date: 2025-06-06
 retire_date: 2025-06-06
 description: "HTB sherlock"
-tags: ["htb", "very easy"]
+tags: ["htb", "very easy", "Phantom Check", "Hayabusa", "WMI", "Incident Response", "IR"]
 difficulty: "Very Easy"
 event: "HackTheBox"
 author: "iamr007"
