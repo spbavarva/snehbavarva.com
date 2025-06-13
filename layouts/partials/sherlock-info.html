@@ -1,0 +1,106 @@
+<style>
+  .machine-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: #111;
+    /* border: 1px solid #333; */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #181818;
+    /* border: 1px solid #2a2a2a; */
+  }
+
+  .machine-info-table td,
+  .machine-info-table th {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #2d2d2d;
+    vertical-align: top;
+    color: #e5e5e5;
+  }
+
+  .machine-info-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .machine-info-thumb {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    object-fit: contain;
+  }
+
+  .machine-info-label {
+    font-weight: 600;
+    color: #9ca3af; /* Tailwind slate-400 */
+    white-space: nowrap;
+    font-size: 0.85rem;
+  }
+
+  .machine-info-value {
+    font-weight: 500;
+    color: #f3f4f6; /* Tailwind slate-100 */
+    font-size: 0.95rem;
+  }
+
+  .machine-info-tags {
+    margin-top: 0.5rem;
+  }
+
+  .machine-info-tag {
+    display: inline-block;
+    background-color: #2a2a2a;
+    color: #60a5fa;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    margin: 0.2rem 0.2rem 0 0;
+  }
+  .machine-info-table tr:hover td {
+    background-color: #202020;
+    transition: background 0.2s ease;
+  }
+
+  @media (max-width: 600px) {
+    .machine-info-table td {
+      padding: 0.75rem;
+    }
+
+    .machine-info-thumb {
+      width: 100px;
+    }
+  }
+</style>
+
+<table class="machine-info-table">
+  <tr>
+    <td rowspan="7">
+      {{ with .Params.cover.image }}
+      <img src="{{ . }}" class="machine-info-thumb" alt="Machine Image" />
+      {{ end }}
+    </td>
+  </tr>
+  <tr>
+    <td class="machine-info-label">Release Date</td>
+    <td>{{ .Date.Format "02 Jan 2006" }}</td>
+  </tr>
+  <tr>
+    <td class="machine-info-label">Retire Date</td>
+    <td>{{ .Params.retire_date | time.Format "02 Jan 2006" }}</td>
+  </tr>
+  
+  <tr>
+    <td class="machine-info-label">Difficulty</td>
+    <td><span class="machine-info-value">{{ .Params.difficulty }}</span></td>
+  </tr>
+  
+  {{ if .Params.author }}
+  <tr>
+    <td class="machine-info-label">Creator</td>
+    <td>{{ .Params.author }}</td>
+  </tr>
+  {{ end }}
+</table>

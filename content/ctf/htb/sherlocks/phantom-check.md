@@ -1,21 +1,21 @@
 ---
-title: "Cat"
+title: "Phantom Check"
 date: 2025-06-10
 retire_date: 2025-07-01
 description: "HTB machine involving XSS and setcap escalation"
-tags: ["htb", "Windows", "easy"]
+tags: ["htb", "easy"]
 difficulty: "Easy"
-base_points: 30
+base_points: 330
 event: "HackTheBox"
 author: "Sneh"
 cover:
   image: "/images/ctf/htb/cat.png"
-  alt: "Cat Machine"
+  alt: "Phantom Check"
   relative: true
 ---
 
 
-{{< machine-info-shortcode >}}
+{{< sherlock-info-shortcode >}}
 
 
 ## Walkthrough
