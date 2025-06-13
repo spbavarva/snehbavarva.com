@@ -1,6 +1,13 @@
 ---
 title: "Phantom Check"
-date: 2025-06-06
-tags: ["ctf", "sherlock", "very easy", "windows"]
-description: "Analyzing anti-virtualization detection using Windows Event Logs."
+date: 2025-06-10
+description: "HTB machine involving XSS and setcap escalation"
+tags: ["htb", "web", "easy"]
+difficulty: "Easy"
+event: "HackTheBox"
+cover:
+  image: "/images/ctf/htb/dog.png"
+  alt: "CICD Pipeline"
+  caption: "Cloud Security CICD"
+  relative: true
 ---
