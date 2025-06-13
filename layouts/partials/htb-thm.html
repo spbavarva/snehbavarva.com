@@ -7,10 +7,10 @@
   }
 
   .project-card {
-    background-color: #1e1e1e;
+    background-color: #252525;
     padding: 1.5rem;
     border-radius: 10px;
-    border: 1px solid #333;
+    border: 1px solid #2b2b2b;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   }
 
@@ -82,14 +82,14 @@
   .cert-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
+    gap: 1rem;
     margin-top: 20px;
   }
 
   .cert-card {
     padding: 10px;
     border-radius: 12px;
-    background-color: #020202;
+    background-color: #0c0c0c;
     transition: color 0.2s ease, text-decoration 0.2s ease;
     text-align: center;
     color: white;
@@ -122,17 +122,22 @@
   }
 
   .cert-card a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
-  font-weight: 500;
-}
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-weight: 500;
+  }
 
-.cert-card a:hover {
-  color: #60a5fa; /* Tailwind-style blue (or pick your preferred blue) */
-  text-decoration: underline;
-}
-
+  .cert-card a:hover {
+    color: #60a5fa; /* Tailwind-style blue (or pick your preferred blue) */
+    text-decoration: underline;
+  }
+  .cert-card {
+    transition: transform 0.3s ease;
+  }
+  .cert-card:hover {
+    transform: scale(1.03);
+  }
 
   @media (max-width: 768px) {
     .cert-grid {
@@ -158,43 +163,77 @@
       text-align: center;
     "
   >
-    HTB - THM
+    HTB
   </h3>
 
   <div class="cert-grid">
-    <div class="cert-card">
-      <a
-        href="https://www.credly.com/badges/c35b460c-42ed-4f70-8053-578f71d57a97/public_url"
-        target="_blank"
-      >
-        <img src="/images/ctf/htb/env.png" alt="cat" />
-      </a>
-      <!-- <div class="cert-name">Environment HTB</div> -->
-      <a href="/environment">Environment HTB</a>
-    </div>
+  <!-- Grid 1 -->
+  <a href="/ctf/htb/machines" class="cert-card">
+    <img src="/images/ctf/htb/machines.jpg" alt="HTB Machines" />
+    <div class="cert-name">HTB Machines</div>
+  </a>
 
-    <!-- Cert 2 -->
-    <div class="cert-card">
-      <a
-        href="https://www.credly.com/badges/0b7bc11a-55c4-4948-807a-30c26926ffc7/public_url"
-        target="_blank"
-      >
-        <img src="/images/htb_cdsa.webp" alt="CDSA" />
-      </a>
-      <div class="cert-name">CDSA</div>
-      <div class="cert-date">March 2025</div>
-    </div>
+  <!-- Grid 2 -->
+  <a href="/ctf/htb/sherlocks" class="cert-card">
+    <img src="/images/ctf/htb/sherlock.jpg" alt="HTB Sherlocks" />
+    <div class="cert-name">HTB Sherlocks</div>
+  </a>
 
-    <!-- Cert 3 -->
-    <div class="cert-card">
-      <a
-        href="https://www.credential.net/6b9e9db3-fe36-43fe-b28f-15cafb95e776#acc.a5n9KTyH"
-        target="_blank"
-      >
-        <img src="/images/OSCP.png" alt="OSCP" />
-      </a>
-      <div class="cert-name">OSCP</div>
-      <div class="cert-date">July 2024</div>
-    </div>
-  </div>
+  <!-- Grid 3 -->
+  <a href="/ctf/htb/challenges" class="cert-card">
+    <img src="/images/ctf/htb/challenges.jpg" alt="HTB Challenges" />
+    <div class="cert-name">HTB Challenges</div>
+  </a>
+
+  <!-- Spacer to balance grid -->
+  <div></div>
+
+  <!-- Grid 4 -->
+  <a href="/ctf/htb/fortress" class="cert-card">
+    <img src="/images/ctf/htb/fortress.jpg" alt="HTB Fortress" />
+    <div class="cert-name">HTB Fortress</div>
+  </a>
+</div>
+
+</section>
+
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+
+<section>
+  <h3
+    style="
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: white;
+      text-align: center;
+    "
+  >
+    CTFtime
+  </h3>
+
+  <div class="cert-grid">
+  <!-- Grid 1 -->
+  <a href="/ctf/break-the-sytax" class="cert-card">
+    <img src="/images/ctf/htb/break-the-sytax.png" alt="Break the Sytax" />
+    <div class="cert-name">Break the Sytax</div>
+  </a>
+
+  <!-- Grid 2 -->
+  <a href="/ctf/besidesSF-cloud" class="cert-card">
+    <img src="/images/ctf/htb/cloud.png" alt="BesidesSF, Cloud Village" />
+    <div class="cert-name">BesidesSF, Cloud Village</div>
+  </a>
+
+  <!-- Grid 3 -->
+  <a href="/ctf/FTF" class="cert-card">
+    <img src="/images/ctf/htb/ftf.png" alt="Fetch The Flag by Snyk" />
+    <div class="cert-name">Fetch The Flag by Snyk</div>
+  </a>
+
+  <!-- Spacer to balance grid -->
+  <div></div>
+
+  
+</div>
+
 </section>

@@ -18,7 +18,7 @@
 
     
     
-    <link rel="stylesheet" href="/css/main.765331fb7989f889b475a225289ac90ea34690887a7841ff678238c8026f7484.css" />
+    <link rel="stylesheet" href="/css/main.2b5779e4be4f79296ef0b0f6227d4e72210c791d42b97713223d742f5f7c4b34.css" />
 
     
     <link rel="icon" type="image/png" href="/images/favicon.png" />
@@ -190,7 +190,247 @@
 
     <div class="content markdown-content"><p>This page is currently in the drafts, soon you will find things here&hellip;.</p>
 <p><em>~Capablaca</em></p>
+<style>
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .project-card {
+    background-color: #252525;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #2b2b2b;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-card h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .project-card h3 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+  }
+
+  .project-card h3 a:hover {
+    color: #60a5fa;  
+    text-decoration: underline;
+  }
+
+  .project-card p {
+    color: #ccc;
+  }
+
+  .tags {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    background-color: #2d2d2d;
+    color: #60a5fa;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .project-links {
+    margin-top: 1rem;
+  }
+
+  .project-links a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .project-links a:hover {
+    text-decoration: underline;
+  }
+
+  .view-all {
+    margin-top: 1rem;
+    text-align: right;
+  }
+
+  .view-all a {
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .view-all a:hover {
+    text-decoration: underline;
+  }
+
+  .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 20px;
+  }
+
+  .cert-card {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #0c0c0c;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+    text-align: center;
+    color: white;
+    min-height: 160px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cert-card img {
+    height: 200px;  
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 12px;
+    display: block;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cert-name {
+    font-weight: bold;
+    margin-top: 8px;
+  }
+
+  .cert-date {
+    font-size: 0.875rem;
+    color: #a1a1aa;
+    margin-top: 4px;
+  }
+
+  .cert-card a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-weight: 500;
+  }
+
+  .cert-card a:hover {
+    color: #60a5fa;  
+    text-decoration: underline;
+  }
+  .cert-card {
+    transition: transform 0.3s ease;
+  }
+  .cert-card:hover {
+    transform: scale(1.03);
+  }
+
+  @media (max-width: 768px) {
+    .cert-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .cert-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
 <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+
+<section>
+  <h3
+    style="
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: white;
+      text-align: center;
+    "
+  >
+    HTB
+  </h3>
+
+  <div class="cert-grid">
+  
+  <a href="/ctf/htb/machines" class="cert-card">
+    <img src="/images/ctf/htb/machines.jpg" alt="HTB Machines" />
+    <div class="cert-name">HTB Machines</div>
+  </a>
+
+  
+  <a href="/ctf/htb/sherlocks" class="cert-card">
+    <img src="/images/ctf/htb/sherlock.jpg" alt="HTB Sherlocks" />
+    <div class="cert-name">HTB Sherlocks</div>
+  </a>
+
+  
+  <a href="/ctf/htb/challenges" class="cert-card">
+    <img src="/images/ctf/htb/challenges.jpg" alt="HTB Challenges" />
+    <div class="cert-name">HTB Challenges</div>
+  </a>
+
+  
+  <div></div>
+
+  
+  <a href="/ctf/htb/fortress" class="cert-card">
+    <img src="/images/ctf/htb/fortress.jpg" alt="HTB Fortress" />
+    <div class="cert-name">HTB Fortress</div>
+  </a>
+</div>
+
+</section>
+
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+
+<section>
+  <h3
+    style="
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: white;
+      text-align: center;
+    "
+  >
+    CTFtime
+  </h3>
+
+  <div class="cert-grid">
+  
+  <a href="/ctf/break-the-sytax" class="cert-card">
+    <img src="/images/ctf/htb/break-the-sytax.png" alt="Break the Sytax" />
+    <div class="cert-name">Break the Sytax</div>
+  </a>
+
+  
+  <a href="/ctf/besidesSF-cloud" class="cert-card">
+    <img src="/images/ctf/htb/cloud.png" alt="BesidesSF, Cloud Village" />
+    <div class="cert-name">BesidesSF, Cloud Village</div>
+  </a>
+
+  
+  <a href="/ctf/FTF" class="cert-card">
+    <img src="/images/ctf/htb/ftf.png" alt="Fetch The Flag by Snyk" />
+    <div class="cert-name">Fetch The Flag by Snyk</div>
+  </a>
+
+  
+  <div></div>
+
+  
+</div>
+
+</section>
+
+
 </div>
   </article>
 </main>

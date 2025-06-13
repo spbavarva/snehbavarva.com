@@ -592,3 +592,66 @@ div.highlight pre {
 .link-buttons a:hover {
   color: #2563eb;
 }
+
+.machine-list-clean ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.machine-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.machine-name {
+  color: #60a5fa;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.machine-name:hover {
+  text-decoration: underline;
+}
+
+.machine-meta {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.difficulty {
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.easy {
+  background-color: #1f3f20;
+  color: #4ade80;
+}
+
+.medium {
+  background-color: #433800;
+  color: #facc15;
+}
+
+.hard {
+  background-color: #451a03;
+  color: #fb923c;
+}
+
+.insane {
+  background-color: #3b0764;
+  color: #c084fc;
+}
+
+.os {
+  background-color: #2a2a2a;
+  color: #a5f3fc;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}

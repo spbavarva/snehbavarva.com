@@ -10,6 +10,5 @@ This page is currently in the drafts, soon you will find things here....
 _~Capablaca_
 
 
-{{<seperator>}}
 
-<!-- {{< htb-thm-shortcode >}} -->
+{{< htb-thm-shortcode >}}

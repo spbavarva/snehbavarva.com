@@ -1,5 +1,5 @@
 ---
-title: "How my curiousity gave me 2 CVEs!"
+title: "How my curiosity gave me 2 CVEs!"
 description: "Journey of CVEs finding path...."
 date: 2025-06-04
 draft: false

@@ -4,6 +4,7 @@
     <h1>{{ .Title }}</h1>
     <div class="description">{{ .Content }}</div>
 
+    {{ if and (ne .RelPermalink "/ctf/htb/machines/") (ne .RelPermalink "/ctf/htb/sherlocks/") }}
     <div class="posts-list">
       {{ range .Pages }}
       <a href="{{ .RelPermalink }}" class="post-entry">
@@ -20,8 +21,9 @@
       </a>
       {{ end }}
     </div>
+    {{ end }}
+
   </div>
   <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
-
 </main>
 {{ end }}
