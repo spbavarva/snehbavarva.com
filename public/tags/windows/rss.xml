@@ -6,21 +6,495 @@
     <description>Recent content in Windows on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/windows/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cat</title>
-      <link>http://localhost:1313/ctf/htb/machines/cat/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ctf/htb/machines/cat/</guid>
-      <description>HTB machine involving XSS and setcap escalation</description>
+      <title>Tombwatcher</title>
+      <link>http://localhost:1313/ctf/htb/machines/tombwatcher/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ctf/htb/machines/tombwatcher/</guid>
+      <description>&lt;style&gt;
+  .machine-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: #111;
+     
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #181818;
+     
+  }
+
+  .machine-info-table td,
+  .machine-info-table th {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #2d2d2d;
+    vertical-align: top;
+    color: #e5e5e5;
+  }
+
+  .machine-info-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .machine-info-thumb {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    object-fit: contain;
+  }
+
+  .machine-info-label {
+    font-weight: 600;
+    color: #9ca3af;  
+    white-space: nowrap;
+    font-size: 0.85rem;
+  }
+
+  .machine-info-value {
+    font-weight: 500;
+    color: #f3f4f6;  
+    font-size: 0.95rem;
+  }
+
+  .machine-info-tags {
+    margin-top: 0.5rem;
+  }
+
+  .machine-info-tag {
+    display: inline-block;
+    background-color: #2a2a2a;
+    color: #60a5fa;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    margin: 0.2rem 0.2rem 0 0;
+  }
+  .machine-info-table tr:hover td {
+    background-color: #202020;
+    transition: background 0.2s ease;
+  }
+
+  @media (max-width: 600px) {
+    .machine-info-table td {
+      padding: 0.75rem;
+    }
+
+    .machine-info-thumb {
+      width: 100px;
+    }
+  }
+&lt;/style&gt;
+
+&lt;table class=&#34;machine-info-table&#34;&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&#34;7&#34;&gt;
+      
+      &lt;img src=&#34;http://localhost:1313/images/ctf/htb/tombwatcher.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
+      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Release Date&lt;/td&gt;
+    &lt;td&gt;07 Jun 2025&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Retire Date&lt;/td&gt;
+    &lt;td&gt;09 Sep 9999&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;OS&lt;/td&gt;
+    &lt;td&gt;Windows&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Difficulty&lt;/td&gt;
+    &lt;td&gt;&lt;span class=&#34;machine-info-value&#34;&gt;Medium&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Base Points&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Creator&lt;/td&gt;
+    &lt;td&gt;mrb3n8132 &amp;amp; Sentinal&lt;/td&gt;
+  &lt;/tr&gt;
+  
+&lt;/table&gt;
+
+
+&lt;h2 id=&#34;walkthrough&#34;&gt;Walkthrough&lt;/h2&gt;
+&lt;p&gt;will publish once machine is retired&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Environment</title>
-      <link>http://localhost:1313/ctf/htb/machines/environment/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ctf/htb/machines/environment/</guid>
-      <description>HTB machine involving XSS and setcap escalation</description>
+      <title>Certificate</title>
+      <link>http://localhost:1313/ctf/htb/machines/certificate/</link>
+      <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ctf/htb/machines/certificate/</guid>
+      <description>&lt;style&gt;
+  .machine-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: #111;
+     
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #181818;
+     
+  }
+
+  .machine-info-table td,
+  .machine-info-table th {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #2d2d2d;
+    vertical-align: top;
+    color: #e5e5e5;
+  }
+
+  .machine-info-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .machine-info-thumb {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    object-fit: contain;
+  }
+
+  .machine-info-label {
+    font-weight: 600;
+    color: #9ca3af;  
+    white-space: nowrap;
+    font-size: 0.85rem;
+  }
+
+  .machine-info-value {
+    font-weight: 500;
+    color: #f3f4f6;  
+    font-size: 0.95rem;
+  }
+
+  .machine-info-tags {
+    margin-top: 0.5rem;
+  }
+
+  .machine-info-tag {
+    display: inline-block;
+    background-color: #2a2a2a;
+    color: #60a5fa;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    margin: 0.2rem 0.2rem 0 0;
+  }
+  .machine-info-table tr:hover td {
+    background-color: #202020;
+    transition: background 0.2s ease;
+  }
+
+  @media (max-width: 600px) {
+    .machine-info-table td {
+      padding: 0.75rem;
+    }
+
+    .machine-info-thumb {
+      width: 100px;
+    }
+  }
+&lt;/style&gt;
+
+&lt;table class=&#34;machine-info-table&#34;&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&#34;7&#34;&gt;
+      
+      &lt;img src=&#34;http://localhost:1313/images/ctf/htb/certificate.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
+      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Release Date&lt;/td&gt;
+    &lt;td&gt;31 May 2025&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Retire Date&lt;/td&gt;
+    &lt;td&gt;09 Sep 9999&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;OS&lt;/td&gt;
+    &lt;td&gt;Windows&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Difficulty&lt;/td&gt;
+    &lt;td&gt;&lt;span class=&#34;machine-info-value&#34;&gt;Medium&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Base Points&lt;/td&gt;
+    &lt;td&gt;40&lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Creator&lt;/td&gt;
+    &lt;td&gt;Spectra199&lt;/td&gt;
+  &lt;/tr&gt;
+  
+&lt;/table&gt;
+
+
+&lt;h2 id=&#34;walkthrough&#34;&gt;Walkthrough&lt;/h2&gt;
+&lt;p&gt;will publish once machine is retired&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Puppy</title>
+      <link>http://localhost:1313/ctf/htb/machines/puppy/</link>
+      <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ctf/htb/machines/puppy/</guid>
+      <description>&lt;style&gt;
+  .machine-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: #111;
+     
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #181818;
+     
+  }
+
+  .machine-info-table td,
+  .machine-info-table th {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #2d2d2d;
+    vertical-align: top;
+    color: #e5e5e5;
+  }
+
+  .machine-info-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .machine-info-thumb {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    object-fit: contain;
+  }
+
+  .machine-info-label {
+    font-weight: 600;
+    color: #9ca3af;  
+    white-space: nowrap;
+    font-size: 0.85rem;
+  }
+
+  .machine-info-value {
+    font-weight: 500;
+    color: #f3f4f6;  
+    font-size: 0.95rem;
+  }
+
+  .machine-info-tags {
+    margin-top: 0.5rem;
+  }
+
+  .machine-info-tag {
+    display: inline-block;
+    background-color: #2a2a2a;
+    color: #60a5fa;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    margin: 0.2rem 0.2rem 0 0;
+  }
+  .machine-info-table tr:hover td {
+    background-color: #202020;
+    transition: background 0.2s ease;
+  }
+
+  @media (max-width: 600px) {
+    .machine-info-table td {
+      padding: 0.75rem;
+    }
+
+    .machine-info-thumb {
+      width: 100px;
+    }
+  }
+&lt;/style&gt;
+
+&lt;table class=&#34;machine-info-table&#34;&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&#34;7&#34;&gt;
+      
+      &lt;img src=&#34;http://localhost:1313/images/ctf/htb/puppy.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
+      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Release Date&lt;/td&gt;
+    &lt;td&gt;31 May 2025&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Retire Date&lt;/td&gt;
+    &lt;td&gt;09 Sep 9999&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;OS&lt;/td&gt;
+    &lt;td&gt;Windows&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Difficulty&lt;/td&gt;
+    &lt;td&gt;&lt;span class=&#34;machine-info-value&#34;&gt;Medium&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Base Points&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Creator&lt;/td&gt;
+    &lt;td&gt;tr3nb0lone&lt;/td&gt;
+  &lt;/tr&gt;
+  
+&lt;/table&gt;
+
+
+&lt;h2 id=&#34;walkthrough&#34;&gt;Walkthrough&lt;/h2&gt;
+&lt;p&gt;will publish once machine is retired&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fluffy</title>
+      <link>http://localhost:1313/ctf/htb/machines/fluffy/</link>
+      <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ctf/htb/machines/fluffy/</guid>
+      <description>&lt;style&gt;
+  .machine-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: #111;
+     
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #181818;
+     
+  }
+
+  .machine-info-table td,
+  .machine-info-table th {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #2d2d2d;
+    vertical-align: top;
+    color: #e5e5e5;
+  }
+
+  .machine-info-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .machine-info-thumb {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    object-fit: contain;
+  }
+
+  .machine-info-label {
+    font-weight: 600;
+    color: #9ca3af;  
+    white-space: nowrap;
+    font-size: 0.85rem;
+  }
+
+  .machine-info-value {
+    font-weight: 500;
+    color: #f3f4f6;  
+    font-size: 0.95rem;
+  }
+
+  .machine-info-tags {
+    margin-top: 0.5rem;
+  }
+
+  .machine-info-tag {
+    display: inline-block;
+    background-color: #2a2a2a;
+    color: #60a5fa;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    margin: 0.2rem 0.2rem 0 0;
+  }
+  .machine-info-table tr:hover td {
+    background-color: #202020;
+    transition: background 0.2s ease;
+  }
+
+  @media (max-width: 600px) {
+    .machine-info-table td {
+      padding: 0.75rem;
+    }
+
+    .machine-info-thumb {
+      width: 100px;
+    }
+  }
+&lt;/style&gt;
+
+&lt;table class=&#34;machine-info-table&#34;&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&#34;7&#34;&gt;
+      
+      &lt;img src=&#34;http://localhost:1313/images/ctf/htb/fluffy.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
+      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Release Date&lt;/td&gt;
+    &lt;td&gt;24 May 2025&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Retire Date&lt;/td&gt;
+    &lt;td&gt;09 Sep 9999&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;OS&lt;/td&gt;
+    &lt;td&gt;Windows&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Difficulty&lt;/td&gt;
+    &lt;td&gt;&lt;span class=&#34;machine-info-value&#34;&gt;Easy&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Base Points&lt;/td&gt;
+    &lt;td&gt;20&lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td class=&#34;machine-info-label&#34;&gt;Creator&lt;/td&gt;
+    &lt;td&gt;ruycr4ft &amp;amp; kavigihan&lt;/td&gt;
+  &lt;/tr&gt;
+  
+&lt;/table&gt;
+
+
+&lt;h2 id=&#34;walkthrough&#34;&gt;Walkthrough&lt;/h2&gt;
+&lt;p&gt;will publish once machine is retired&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Obsidian sync from windows</title>

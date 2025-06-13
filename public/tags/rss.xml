@@ -6,55 +6,69 @@
     <description>Recent content in Tags on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assume Breach</title>
+      <link>http://localhost:1313/tags/assume-breach/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/assume-breach/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Easy</title>
       <link>http://localhost:1313/tags/easy/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/easy/</guid>
       <description></description>
     </item>
     <item>
       <title>Hard</title>
       <link>http://localhost:1313/tags/hard/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/hard/</guid>
       <description></description>
     </item>
     <item>
       <title>Htb</title>
       <link>http://localhost:1313/tags/htb/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/htb/</guid>
       <description></description>
     </item>
     <item>
       <title>Insane</title>
       <link>http://localhost:1313/tags/insane/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/insane/</guid>
       <description></description>
     </item>
     <item>
       <title>Medium</title>
       <link>http://localhost:1313/tags/medium/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/medium/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web</title>
-      <link>http://localhost:1313/tags/web/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/web/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows</title>
       <link>http://localhost:1313/tags/windows/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Easy&#34;</title>
+      <link>http://localhost:1313/tags/easy/</link>
+      <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/easy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Very Easy</title>
+      <link>http://localhost:1313/tags/very-easy/</link>
+      <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/very-easy/</guid>
       <description></description>
     </item>
     <item>
@@ -254,160 +268,6 @@
       <description></description>
     </item>
     <item>
-      <title>ArgoCD</title>
-      <link>http://localhost:1313/tags/argocd/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/argocd/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AWS</title>
-      <link>http://localhost:1313/tags/aws/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/aws/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CD</title>
-      <link>http://localhost:1313/tags/cd/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cd/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CI</title>
-      <link>http://localhost:1313/tags/ci/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ci/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cloud</title>
-      <link>http://localhost:1313/tags/cloud/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DevOps</title>
-      <link>http://localhost:1313/tags/devops/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/devops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DevSecOps</title>
-      <link>http://localhost:1313/tags/devsecops/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/devsecops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Docker</title>
-      <link>http://localhost:1313/tags/docker/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/docker/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Git</title>
-      <link>http://localhost:1313/tags/git/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/git/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Gitlab</title>
-      <link>http://localhost:1313/tags/gitlab/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/gitlab/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>JACOCO</title>
-      <link>http://localhost:1313/tags/jacoco/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/jacoco/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Jenkins</title>
-      <link>http://localhost:1313/tags/jenkins/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/jenkins/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>K8s</title>
-      <link>http://localhost:1313/tags/k8s/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/k8s/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kubernetes</title>
-      <link>http://localhost:1313/tags/kubernetes/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Maven</title>
-      <link>http://localhost:1313/tags/maven/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/maven/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>OWASP ZAP</title>
-      <link>http://localhost:1313/tags/owasp-zap/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/owasp-zap/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SAST</title>
-      <link>http://localhost:1313/tags/sast/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sast/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SCA</title>
-      <link>http://localhost:1313/tags/sca/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sca/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SonarQube</title>
-      <link>http://localhost:1313/tags/sonarqube/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sonarqube/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Testing</title>
-      <link>http://localhost:1313/tags/testing/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/testing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Trivy</title>
-      <link>http://localhost:1313/tags/trivy/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/trivy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>YML</title>
-      <link>http://localhost:1313/tags/yml/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/yml/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Automation</title>
       <link>http://localhost:1313/tags/automation/</link>
       <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
@@ -415,10 +275,38 @@
       <description></description>
     </item>
     <item>
+      <title>AWS</title>
+      <link>http://localhost:1313/tags/aws/</link>
+      <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aws/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>http://localhost:1313/tags/cloud/</link>
+      <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Security</title>
       <link>http://localhost:1313/tags/security/</link>
       <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DevOps</title>
+      <link>http://localhost:1313/tags/devops/</link>
+      <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DevSecOps</title>
+      <link>http://localhost:1313/tags/devsecops/</link>
+      <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/devsecops/</guid>
       <description></description>
     </item>
     <item>

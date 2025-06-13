@@ -2,56 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ctf/htb/machines/cat/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/assume-breach/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ctf/htb/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ctf/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ctf/htb/machines/dog/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/easy/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ctf/htb/machines/environment/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hard/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/htb/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ctf/htb/machines/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ctf/htb/sherlocks/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/insane/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/medium/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ctf/htb/sherlocks/phantom-check/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/web/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/ctf/htb/machines/tombwatcher/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/windows/</loc>
-    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/easy/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ctf/htb/sherlocks/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ctf/htb/sherlocks/phantom-check-copy/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ctf/htb/sherlocks/phantom-check/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/very-easy/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/appsec/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
@@ -91,6 +94,15 @@
   </url><url>
     <loc>http://localhost:1313/tags/securityresearch/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ctf/htb/machines/certificate/</loc>
+    <lastmod>2025-05-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ctf/htb/machines/puppy/</loc>
+    <lastmod>2025-05-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ctf/htb/machines/fluffy/</loc>
+    <lastmod>2025-05-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/2025/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
@@ -179,79 +191,13 @@
     <loc>http://localhost:1313/tags/yara/</loc>
     <lastmod>2025-04-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/argocd/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/automation/</loc>
+    <lastmod>2025-04-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/aws/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/cd/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ci/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/cloud/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cloud/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/devops/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/devsecops/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/devsecops-cicd/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/docker/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/git/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/gitlab/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/jacoco/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/jenkins/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/k8s/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/kubernetes/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/maven/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/owasp-zap/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sast/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sca/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sonarqube/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/testing/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/trivy/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/yml/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/automation/</loc>
     <lastmod>2025-04-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/cloud-security-automation/</loc>
@@ -262,6 +208,15 @@
   </url><url>
     <loc>http://localhost:1313/tags/security/</loc>
     <lastmod>2025-04-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/cloud/</loc>
+    <lastmod>2025-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/devops/</loc>
+    <lastmod>2025-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/devsecops/</loc>
+    <lastmod>2025-04-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/aws-review/</loc>
     <lastmod>2025-04-03T00:00:00+00:00</lastmod>
