@@ -5,5 +5,5 @@ tags: ["htb", "medium", "easy", "hard", "insane"]
 event: "HackTheBox"
 outputs: ["HTML"]
 ---
-Welcome to HTB Machines list.
+Welcome to HTB Sherlocks list.
 {{< htb-sherlocks-intro >}}

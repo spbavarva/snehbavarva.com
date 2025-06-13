@@ -1,9 +1,19 @@
 ---
-title: "Phantom Check"
+title: "Operation Blackout 2025: Phantom Check"
 date: 2025-06-06
 retire_date: 2025-06-06
 description: "HTB sherlock"
-tags: ["htb", "very easy", "Phantom Check", "Hayabusa", "WMI", "Incident Response", "IR"]
+tags:
+  [
+    "htb",
+    "very easy",
+    "Phantom Check",
+    "Hayabusa",
+    "WMI",
+    "Incident Response",
+    "IR",
+    "DFIR"
+  ]
 difficulty: "Very Easy"
 event: "HackTheBox"
 author: "iamr007"
@@ -14,10 +24,10 @@ cover:
   relative: true
 ---
 
-
 {{< sherlock-info-shortcode >}}
 
 ## What we gain?
+
 Ability to create detection rules by identifying specific WMI queries, comparing processes for virtual machine detection, and analyzing registry keys or file paths associated with virtual environments.
 
 ## Scenario
@@ -25,6 +35,7 @@ Ability to create detection rules by identifying specific WMI queries, comparing
 Talion suspects that the threat actor carried out anti-virtualization checks to avoid detection in sandboxed environments. Your task is to analyze the event logs and identify the specific techniques used for virtualization detection. Byte Doctor requires evidence of the registry checks or processes the attacker executed to perform these checks.
 
 ## Provided artifacts
+
 - Microsoft-Windows-Powershell.evtx
 - Windows-Powershell-Operational.evtx
 
@@ -36,11 +47,12 @@ As we are provided with the 2 event log files and question is asking about WMI c
 
 we can use [windows event viewer](https://learn.microsoft.com/en-us/shows/inside/event-viewer) or [Hayabusa](https://github.com/Yamato-Security/hayabusa). As I heard a lot about Hayabusa and I am also learning, we will use that.
 
-According to the task, the attacker did use a WMI [(Windows Management Instrumentation)](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page) query to gather system information in order to determine whether the current environment is a virtual machine. we can search for every command run with *wmi* query
+According to the task, the attacker did use a WMI [(Windows Management Instrumentation)](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page) query to gather system information in order to determine whether the current environment is a virtual machine. we can search for every command run with _wmi_ query
 
 ```powershell
 hayabusa-3.3.0-win-x64.exe search -f "Microsoft-Windows-Powershell.evtx" -k "Wmi" -J -o "wmi_result.json"
 ```
+
 {{< newline >}}
 
 {{< figure src="/images/ctf/htb/sherlock/hayabusa-terminal-start.png" alt="hayabusa" caption=" " align="center" >}}
@@ -55,11 +67,11 @@ We can clearly see the command line and which class has been used by attacker.
 
 _Question: Which WMI query did the attacker execute to retrieve the current temperature value of the machine?_
 
-In the same json output file we can see all usage of the WMI and which query performed by attacker. 
+In the same json output file we can see all usage of the WMI and which query performed by attacker.
 
 {{< figure src="/images/ctf/htb/sherlock/thermal-query.png" alt="Thermal Query" caption=" " align="center" >}}
 
-**Answer**: SELECT * FROM MSAcpi_ThermalZoneTemperature
+**Answer**: SELECT \* FROM MSAcpi_ThermalZoneTemperature
 
 ## Task 3
 
@@ -103,7 +115,7 @@ We scroll down until we come across the 'VirtualBox' comment in the script. Just
 
 _Question: The VM detection script prints any detection with the prefix ‘This is a’. Which two virtualization platforms did the script detect?_
 
-Thoroughly analyzing the script, we do observe that it prints virtual machine detection results using the phrase 'This is a' followed by the name of the VM. To  ind the output, we search for the string 'This is a' within the 'Microsoft-Windows-PowerShell' logs and confirm that, according to the script, the operating system is running inside either 'Hyper-V' or 'VMware'
+Thoroughly analyzing the script, we do observe that it prints virtual machine detection results using the phrase 'This is a' followed by the name of the VM. To ind the output, we search for the string 'This is a' within the 'Microsoft-Windows-PowerShell' logs and confirm that, according to the script, the operating system is running inside either 'Hyper-V' or 'VMware'
 
 **Answer**: Hyper-V, Vmware
 

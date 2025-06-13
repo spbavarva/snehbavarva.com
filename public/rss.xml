@@ -131,17 +131,17 @@
 &lt;p&gt;will publish once machine is retired&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Phantom Check</title>
-      <link>http://localhost:1313/ctf/htb/sherlocks/phantom-check-copy/</link>
-      <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ctf/htb/sherlocks/phantom-check-copy/</guid>
-      <description>HTB sherlock</description>
-    </item>
-    <item>
-      <title>Phantom Check</title>
+      <title>Operation Blackout 2025: Phantom Check</title>
       <link>http://localhost:1313/ctf/htb/sherlocks/phantom-check/</link>
       <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ctf/htb/sherlocks/phantom-check/</guid>
+      <description>HTB sherlock</description>
+    </item>
+    <item>
+      <title>Operation Blackout 2025: Smoke &amp; Mirrors</title>
+      <link>http://localhost:1313/ctf/htb/sherlocks/smoke-and-mirror/</link>
+      <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ctf/htb/sherlocks/smoke-and-mirror/</guid>
       <description>HTB sherlock</description>
     </item>
     <item>
@@ -544,6 +544,13 @@
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/yara-rules/</guid>
       <description>Basic understanding of YARA rules</description>
+    </item>
+    <item>
+      <title>DevSecOps CI/CD pipeline for SAST</title>
+      <link>http://localhost:1313/blog/devsecops-cicd/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/devsecops-cicd/</guid>
+      <description>A secure complete CI/CD pipeline for SAST and image testing</description>
     </item>
     <item>
       <title>Secure CI/CD DevSecOps pipeline</title>
