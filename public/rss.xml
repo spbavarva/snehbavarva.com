@@ -567,6 +567,13 @@
       <description>fairly easy exam if you follow just one resource...</description>
     </item>
     <item>
+      <title>SmartyPants</title>
+      <link>http://localhost:1313/ctf/htb/sherlocks/smartypants/</link>
+      <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ctf/htb/sherlocks/smartypants/</guid>
+      <description>HTB sherlock</description>
+    </item>
+    <item>
       <title>Eye-Sint – A Multi-Module Open-Source Intelligence Tool</title>
       <link>http://localhost:1313/projects/eye-sint/</link>
       <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
