@@ -478,6 +478,13 @@
       <description></description>
     </item>
     <item>
+      <title>SmartyPants</title>
+      <link>http://localhost:1313/tags/smartypants/</link>
+      <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/smartypants/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>OSINT</title>
       <link>http://localhost:1313/tags/osint/</link>
       <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
