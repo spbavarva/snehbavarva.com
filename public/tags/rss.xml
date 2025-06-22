@@ -6,8 +6,71 @@
     <description>Recent content in Tags on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS</title>
+      <link>http://localhost:1313/tags/aws/</link>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aws/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Certification</title>
+      <link>http://localhost:1313/tags/certification/</link>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/certification/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>http://localhost:1313/tags/cloud/</link>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Security</title>
+      <link>http://localhost:1313/tags/cloud-security/</link>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cloud-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CloudSec</title>
+      <link>http://localhost:1313/tags/cloudsec/</link>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cloudsec/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fortress</title>
+      <link>http://localhost:1313/tags/fortress/</link>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fortress/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Htb</title>
+      <link>http://localhost:1313/tags/htb/</link>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/htb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OWASP</title>
+      <link>http://localhost:1313/tags/owasp/</link>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/owasp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reverse Engineering</title>
+      <link>http://localhost:1313/tags/reverse-engineering/</link>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reverse-engineering/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Assume Breach</title>
       <link>http://localhost:1313/tags/assume-breach/</link>
@@ -27,13 +90,6 @@
       <link>http://localhost:1313/tags/hard/</link>
       <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/hard/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Htb</title>
-      <link>http://localhost:1313/tags/htb/</link>
-      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/htb/</guid>
       <description></description>
     </item>
     <item>
@@ -191,13 +247,6 @@
       <description></description>
     </item>
     <item>
-      <title>Certification</title>
-      <link>http://localhost:1313/tags/certification/</link>
-      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/certification/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>SOC</title>
       <link>http://localhost:1313/tags/soc/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
@@ -317,13 +366,6 @@
       <description></description>
     </item>
     <item>
-      <title>AWS</title>
-      <link>http://localhost:1313/tags/aws/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/aws/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>CD</title>
       <link>http://localhost:1313/tags/cd/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
@@ -335,13 +377,6 @@
       <link>http://localhost:1313/tags/ci/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/ci/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cloud</title>
-      <link>http://localhost:1313/tags/cloud/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cloud/</guid>
       <description></description>
     </item>
     <item>
@@ -478,6 +513,55 @@
       <description></description>
     </item>
     <item>
+      <title>Dream Job-1</title>
+      <link>http://localhost:1313/tags/dream-job-1/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/dream-job-1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IOCs</title>
+      <link>http://localhost:1313/tags/iocs/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/iocs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lazarus Group</title>
+      <link>http://localhost:1313/tags/lazarus-group/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/lazarus-group/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MITRE</title>
+      <link>http://localhost:1313/tags/mitre/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mitre/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sandbox Bypass</title>
+      <link>http://localhost:1313/tags/sandbox-bypass/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sandbox-bypass/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TTPs</title>
+      <link>http://localhost:1313/tags/ttps/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ttps/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VirusTotal</title>
+      <link>http://localhost:1313/tags/virustotal/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/virustotal/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>SmartyPants</title>
       <link>http://localhost:1313/tags/smartypants/</link>
       <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
@@ -489,13 +573,6 @@
       <link>http://localhost:1313/tags/osint/</link>
       <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/osint/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>OWASP</title>
-      <link>http://localhost:1313/tags/owasp/</link>
-      <pubDate>Sat, 09 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/owasp/</guid>
       <description></description>
     </item>
   </channel>
