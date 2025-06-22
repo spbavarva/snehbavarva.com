@@ -194,3 +194,11 @@ URLs section.
 {{< figure src="/images/ctf/htb/sherlock/urldoc.png" alt="urldoc" caption=" " align="center" >}}
 
 **Answer**: https://markettrendingcenter.com/lk_job_oppor.docx
+
+## What's next and connect?
+
+Few more [sherlock writeups](/ctf/htb/sherlocks/) by me and [HTB CDSA](/blog/cdsa/) exam blog! Feel free to check it out and below are couple of ways to conect me!
+
+🔗 [Contact Me](/contact)
+
+📅 [Schedule via Calendly](https://calendly.com/bavarvasneh/30min)
