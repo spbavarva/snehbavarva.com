@@ -1,6 +1,6 @@
 ---
 title: "AWS Fortress - Hack The Box Review"
-description: "fairly easy exam if you follow just one resource..."
+description: "One resource, ten flags - my take on the AWS Fortress experience on Hack The Box"
 date: 2025-06-20
 draft: false
 tags: ["AWS", "Cloud", "Cloudsec", "Certification", "CloudSec", "Cloud Security", "HTB", "Fortress", "Reverse Engineering", "OWASP"]
