@@ -8,9 +8,9 @@ categories: ["HTB", "Cloud"]
 showToc: true
 ---
 
-{{< figure src="/images/blog/blog-1-AWS/aws-saa-logo.png" alt="AWS SAA Badge" caption=" " align="center" >}}
+{{< figure src="/images/blog/blog-6-AWS-fortress/aws-fortress.png" alt="AWS Fortress" caption=" " align="center" >}}
 
-> _“Sometimes starting something new opens the door to accomplishments you never expected.”_
+> _“Persistence is the payload that always executes.”_
 
 ## Why I decided this?
 
@@ -20,87 +20,70 @@ And also it has only 10 flags so my guess was that it won't be as hard as [Sorce
 
 ## Initial Thoughts
 
-As it was hosted on HTB, I knew that it will be CTF style thing like their other boxes. But not all flags was like that, in fact some of them are actually like vulnerabilities which is common 
+As it was hosted on HTB, I knew that it will be CTF style thing like their other boxes. But not all flags was like that, in fact some of them are actually like vulnerabilities which is common at some point but as I progress with more flags, it was getting CTF styled.
 
 ### Pre-requisites
 
+- Basic understanding of AWS services (IAM, Lambda, DynamoDB, SQS)
+- Strong understanding of OWASP Top 10!
+- Intermediate familiarity with AWS CLI and Python scripting
+- Binary analysis and debugging skills
+- Strong recon/FUZZing skill
+
 ## My Experince
+
+I was able to complete it within 3-4 days as doing it for 5-6 hours/day and completing AWS Fortress felt very relieved and I get to test my penetration testing techniques, including enumeration, OWASP exploitation, privilege escalation, and reverse engineering. Each challenge required careful attention to detail and encouraged using diverse tools and techniques.
+
+But still I didn't felt that I get to learn more about Cloud Pentesting, which was my expectation.
 
 ### The Good
 
+- **Some realistic scenarios**: Some tasks mimic real-world security flaws in AWS environments, including common misconfigurations.
+
+- **Variety of Vulnerabilities**: Indeed it covers a wide range of vulnerabilities, including web application flaws, AWS IAM misconfigurations, SQS, Lambda (etc) exploitation, and binary reversing.
+
+- **Structured Learning Path**: Each step progressively increases in complexity, and need you to FUZZ more and more.
+
+- **Hands-on AWS Experience**: Practical exposure to AWS CLI, services like Lambda, DynamoDB, IAM, SQS, and more.
+
 ### The Bad
+
+- Not a lot of AWS things as expected to be.
+
+- **Guesswork**: Some solutions were not intuitively discoverable without nudges from community forums or external help.
+
+- **Lack of Clear Guidance**: Certain tasks were dependent on deep technical assumptions, requiring substantial trial and error.
 
 ### What to Look for When Solving
 
-### Important Commands & Concepts (Without Spoilers)
+**Enumerate thoroughly**: Domains, services, and potential vulnerable endpoints. Just ENUM!!
+**Inspect code**: Hidden credentials and tokens often reside here.
+**Leverage internal servers**: OWASP things
+**AWS CLI Commands**: Familiarity with commands like aws sts get-caller-identity, aws s3api, and aws lambda invoke will greatly assist.
+**Binary Analysis**: Using tools such as Ghidra, IDA, strings, and ltrace for reversing and analyzing binaries.
 
 ## Who is it for?
 
+AWS Fortress is ideal for intermediate to advanced cybersecurity practitioners, particularly those with an interest in:
+- Pentesters
+- Addicted to HTB content, haha
+- Cybersecurity enthusiasts looking for mixture of penetration testing skills and Web testing.
+- Security researchers and SOC analysts aiming to understand AWS misconfigurations
+
 ### Additional Recommendations
 
-In the **last week of March**, I was exploring new things to learn and that curiosity led me to start a **DevSecOps project**.
-
-While diving deeper, I thought,  
-_“Why not understand AWS deeply and get certified along the way?”_
-
-So, I looked into available AWS certifications and decided to try the **AWS Solutions Architect Associate (SAA-C03)**.
-
-And guess what?
-
-> **And yes, I took the exam on April 3rd and passed in less than a week!**
-
-🔗 [Verify my badge on Credly](https://www.credly.com/badges/c35b460c-42ed-4f70-8053-578f71d57a97/public_url)
-
----
-
-## Initial Thoughts
-
-At first, I was so overwhelmed that there are multiple things to cover but as soon as I just googled about each domains which will be coming on exam I realized that there are only limited number of services that this exam focuses on.
-
-The exam is structured into **4 domains**:
-
-1 Design Secure Architectures  
-2 Design Resilient Architecture  
-3 High-Performing Architecture  
-4 Design Cost-Optimized Architectures
-
-Before started learning about exam, I just had basic understanding of popular services like S3, EC2, VPC because I have Cloud Computing subject in my curriculum. It was totally basic so I think we can neglect that. But as these domains just covers essential part, that was enough.
+- Try to make automation scripts as whenever you think you have to repeat things, it will save a lot of time!
+- Of course, document each step meticulously. Organization helps significantly when backtracking.
+- Combine manual inspection with automated enumeration tools for efficient vulnerability discovery.
+- Engage with the community forums for subtle hints but strive to solve challenges independently for maximum learning.
 
 
-{{< dots >}}
+## What's next?
 
-## Resources & Study Approach
+{{< figure src="/images/blog/blog-6-AWS-fortress/chill.gif" alt="Simple GIF" caption=" " align="center" >}}
 
-### 📚 Resources
-I won’t make it unnecessary long and come to the point. All I did study was from a YouTube playlist by Peace of Code. That guy covered all of the basic concepts and solved around **350 questions** with explanation.
+It was really fun one and indeed I completed AWS fortress and Sorcery in the same week! Really it was insane week but grind doesn't stop here!!
 
-> 🎥 [**Peace of Code - AWS SAA-C03 Full Course + Questions**](https://www.youtube.com/@peaceofcode)  
-
-
-
-
-### 📝 Study Approach
-
-I take notes majorly from his question solving parts because those tips are important like how you actually thought about question and how you can eliminate options. As you can see it’s short and concise notes, which I just referred once before starting my exam.
-
-And about my study hours, I didn’t really study much for this like roughly 3–4 hours a day and on exam day maybe I studies 6 hours as I took it in the evening. But I watch videos in 3x-4x speed that’s why I managed to complete that playlist this early.
-
-
-{{< figure src="/images/blog/blog-1-AWS/notes-obs.webp" alt="obs-notes-sample" caption=" " align="center" >}}
-
-Somehow thinking about Cloud infrastructure came to me naturally and in fact, I had 50+ minutes left over in my exam. (total exam time is 130 minutes for 65 questions).
-
-## Time for BONUS$
-
-{{< figure src="/images/blog/blog-1-AWS/bonus.gif" alt="bonus" caption=" " align="center" >}}
-
-I got 50% off just by checking post of [AWS Training & Certification LinkedIn](https://www.linkedin.com/showcase/aws-training-%26-certification/)! They usually have 50% off voucher always available or you can easily find it somewhere else. Currently they have 50% off for all Associate level exam till 21st May.
-
-{{< dots >}}
-
-
-Trust me, this exam is just test foundational knowledge of AWS cloud and you don’t need to take stress over it. Watch that playlist and you are good to go.
-
-Thank you for reading through, I wish you good luck if you are considering taking exam with AWS soon and meet you on DevSecOps project’s blog!
+Rasta I am coming there! Feel free to reach out via my [contact](/contact) page, schedule a meeting on Calendly/Topmate, or connect directly on [LinkedIn](https://www.linkedin.com/in/snehbavarva/).
 
 {{<seperator>}}
