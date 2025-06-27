@@ -13,7 +13,7 @@
       <link>http://localhost:1313/blog/aws-fortress-review/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/aws-fortress-review/</guid>
-      <description>fairly easy exam if you follow just one resource...</description>
+      <description>One resource, ten flags - my take on the AWS Fortress experience on Hack The Box</description>
     </item>
     <item>
       <title>Tombwatcher</title>
@@ -918,7 +918,7 @@
     &lt;/p&gt;</description>
     </item>
     <item>
-      <title>👋 About Me</title>
+      <title>About Me</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
