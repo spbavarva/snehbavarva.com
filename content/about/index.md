@@ -13,7 +13,7 @@ Currently, I'm diving deep into **Cloud**, **AI**, and their integration with se
 
 Also recently, I've developed an interest in **defensive side of the security** like securing infrastructure and detecting anomalies. One of my goals this year is to build an AI-powered tool/pipeline to automate SOC workflows and detect unusual patterns in logs and infrastructure.
 
-And yeah of course, I enjoy **offensive security** as well and I can say I have strong fundamental holding there. I love solving CTF challenges and active on current **HTB season** with Global rank 136! I really like **API testing**, exploring **OWASP Top 10** vulnerabilities, and digging into **business logic flaws** during web app pentests. RASTA-`~`- I am coming for you next....
+And yeah of course, I enjoy **offensive security** as well and I can say I have strong fundamental holding there. I love solving CTF challenges and active on current **HTB season** with Global rank 136! I really like **API testing**, exploring **OWASP Top 10** vulnerabilities, and digging into **business logic flaws** during web app pentests. RASTA-`~`- I am coming for you next......
 
 
 
