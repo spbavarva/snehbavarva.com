@@ -6,8 +6,78 @@
     <description>Recent content in Tags on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blue Team</title>
+      <link>http://localhost:1313/tags/blue-team/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/blue-team/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Security</title>
+      <link>http://localhost:1313/tags/cloud-security/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cloud-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cybersecurity</title>
+      <link>http://localhost:1313/tags/cybersecurity/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DFIR</title>
+      <link>http://localhost:1313/tags/dfir/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/dfir/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Incident Response</title>
+      <link>http://localhost:1313/tags/incident-response/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/incident-response/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IR</title>
+      <link>http://localhost:1313/tags/ir/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ir/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MalwareAnalysis</title>
+      <link>http://localhost:1313/tags/malwareanalysis/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/malwareanalysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MITREATTACK</title>
+      <link>http://localhost:1313/tags/mitreattack/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mitreattack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Phishing</title>
+      <link>http://localhost:1313/tags/phishing/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/phishing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weekly Report</title>
+      <link>http://localhost:1313/tags/weekly-report/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/weekly-report/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AWS</title>
       <link>http://localhost:1313/tags/aws/</link>
@@ -27,13 +97,6 @@
       <link>http://localhost:1313/tags/cloud/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/cloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cloud Security</title>
-      <link>http://localhost:1313/tags/cloud-security/</link>
-      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cloud-security/</guid>
       <description></description>
     </item>
     <item>
@@ -114,13 +177,6 @@
       <description></description>
     </item>
     <item>
-      <title>DFIR</title>
-      <link>http://localhost:1313/tags/dfir/</link>
-      <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/dfir/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Easy&#34;</title>
       <link>http://localhost:1313/tags/easy/</link>
       <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
@@ -132,20 +188,6 @@
       <link>http://localhost:1313/tags/hayabusa/</link>
       <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/hayabusa/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Incident Response</title>
-      <link>http://localhost:1313/tags/incident-response/</link>
-      <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/incident-response/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>IR</title>
-      <link>http://localhost:1313/tags/ir/</link>
-      <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ir/</guid>
       <description></description>
     </item>
     <item>
@@ -198,13 +240,6 @@
       <description></description>
     </item>
     <item>
-      <title>Cybersecurity</title>
-      <link>http://localhost:1313/tags/cybersecurity/</link>
-      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cybersecurity/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>FirstCVE</title>
       <link>http://localhost:1313/tags/firstcve/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
@@ -230,13 +265,6 @@
       <link>http://localhost:1313/tags/2025/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/2025/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Blue Team</title>
-      <link>http://localhost:1313/tags/blue-team/</link>
-      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/blue-team/</guid>
       <description></description>
     </item>
     <item>
