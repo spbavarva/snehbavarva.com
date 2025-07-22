@@ -6,8 +6,22 @@
     <description>Recent content in Categories on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automated</title>
+      <link>http://localhost:1313/categories/automated/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/automated/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tool</title>
+      <link>http://localhost:1313/categories/tool/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/tool/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Blue Team</title>
       <link>http://localhost:1313/categories/blue-team/</link>
@@ -69,13 +83,6 @@
       <link>http://localhost:1313/categories/notes/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/notes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tool</title>
-      <link>http://localhost:1313/categories/tool/</link>
-      <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/tool/</guid>
       <description></description>
     </item>
     <item>
