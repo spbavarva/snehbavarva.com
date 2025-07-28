@@ -190,7 +190,7 @@
     <div class="post-meta">
       <span>April 8, 2025</span>
        •
-      <span class="reading-time">☕︎ 1 min read</span>
+      <span class="reading-time">☕︎ 2 min read</span>
       
     </div>
      
@@ -202,6 +202,18 @@
         <nav id="TableOfContents">
   <ul>
     <li><a href="#overview">Overview</a></li>
+    <li><a href="#architecture">Architecture</a>
+      <ul>
+        <li><a href="#ci-pipeline-jenkins">CI Pipeline (Jenkins)</a></li>
+        <li><a href="#cd-pipeline-gitops-with-argo-cd">CD Pipeline (GitOps with Argo CD)</a></li>
+      </ul>
+    </li>
+    <li><a href="#devsecops-highlights">DevSecOps Highlights</a>
+      <ul>
+        <li><a href="#repository-structure">Repository Structure</a></li>
+      </ul>
+    </li>
+    <li><a href="#learnings">Learnings</a></li>
   </ul>
 </nav>
       </div>
@@ -217,12 +229,152 @@
     
 
     <div class="content markdown-content"><h2 id="overview">Overview</h2>
-<p>This project is under development and I am researching more about how to make pipeline more secure. But you see what tools and technology I will be using for this project in below image.</p>
+<p>This project demonstrates a fully integrated and secure CI/CD pipeline built with DevSecOps principles and GitOps deployment. From automated testing and vulnerability scanning to Kubernetes deployment via Argo CD, this pipeline ensures that every commit is verified, tested, secured, and deployed in a streamlined and reproducible way.</p>
 <figure class="align-center ">
     <img loading="lazy" src="/images/projects/CICD.png#center"/> 
 </figure>
 
-<hr>
+<h2 id="architecture">Architecture</h2>
+<p><strong>CI Pipeline</strong>: Builds, tests, and scans the application, producing a secure Docker image.</p>
+<p><strong>CD Pipeline</strong>: Updates a Kubernetes manifest repo, which Argo CD syncs to the cluster.</p>
+<br>
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+<h3 id="ci-pipeline-jenkins">CI Pipeline (Jenkins)</h3>
+<p>The CI pipeline is triggered on every push to the source code repository. It includes:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Stage</th>
+          <th>Description</th>
+          <th>Tools Used</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Checkout</td>
+          <td>Pulls code from GitLab</td>
+          <td>GitLab</td>
+      </tr>
+      <tr>
+          <td>Build &amp; Unit Test</td>
+          <td>Compiles code and runs unit tests</td>
+          <td>Maven</td>
+      </tr>
+      <tr>
+          <td>Code Coverage</td>
+          <td>Analyzes test coverage</td>
+          <td>JaCoCo</td>
+      </tr>
+      <tr>
+          <td>SCA</td>
+          <td>Detects vulnerable third-party dependencies</td>
+          <td>OWASP Dependency Check</td>
+      </tr>
+      <tr>
+          <td>SAST</td>
+          <td>Static security scan on proprietary code</td>
+          <td>SonarQube</td>
+      </tr>
+      <tr>
+          <td>Quality Gate</td>
+          <td>Blocks pipeline if coverage/vulnerabilities exceed thresholds</td>
+          <td>SonarQube Quality Gates</td>
+      </tr>
+      <tr>
+          <td>Build Image</td>
+          <td>Creates a Docker image</td>
+          <td>Docker</td>
+      </tr>
+      <tr>
+          <td>Scan Image</td>
+          <td>Scans the image for vulnerabilities in all layers</td>
+          <td>Trivy</td>
+      </tr>
+      <tr>
+          <td>Smoke Test</td>
+          <td>Validates basic container health (port, response)</td>
+          <td>Custom shell script</td>
+      </tr>
+      <tr>
+          <td>Trigger CD Job</td>
+          <td>Passes Docker tag to CD pipeline</td>
+          <td>Jenkins downstream job trigger</td>
+      </tr>
+      <tr>
+          <td><br></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<ul>
+<li>Full pipeline
+<figure class="align-center ">
+    <img loading="lazy" src="/images/projects/pipeline.png#center"/> 
+</figure>
+</li>
+</ul></blockquote>
+<blockquote>
+<ul>
+<li>SonarQube dashboard showing passed quality gate
+<figure class="align-center ">
+    <img loading="lazy" src="/images/projects/sonarqube.png#center"/> 
+</figure>
+</li>
+</ul></blockquote>
+<h3 id="cd-pipeline-gitops-with-argo-cd">CD Pipeline (GitOps with Argo CD)</h3>
+<p>Once the image passes all checks, the CD pipeline updates the Kubernetes manifest repo with the new Docker image tag. This triggers a GitOps deployment using Argo CD.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Manifest Repo</td>
+          <td>Stores YAML files (Deployment, Service, etc.)</td>
+      </tr>
+      <tr>
+          <td>Update Script</td>
+          <td>Jenkins modifies the image tag in <code>deployment.yaml</code></td>
+      </tr>
+      <tr>
+          <td>Argo CD</td>
+          <td>Monitors the manifest repo and syncs changes to the cluster</td>
+      </tr>
+      <tr>
+          <td>Deployment</td>
+          <td>New image is pulled and deployed to Kubernetes via Argo CD</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="devsecops-highlights">DevSecOps Highlights</h2>
+<p><strong>Automated Security</strong>: SCA, SAST, and container scanning are enforced at build time.
+<strong>Gatekeeping</strong>: Code can&rsquo;t progress unless quality and security gates are passed.
+<strong>Zero Cluster Access</strong>: Jenkins never directly talks to Kubernetes.
+<strong>Reproducibility</strong>: Every deployment is traceable through Git commit history.
+<strong>Rollback Ready</strong>: Easily revert deployments by updating YAML to a previous tag.</p>
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+<h3 id="repository-structure">Repository Structure</h3>
+<pre tabindex="0"><code>├── Jenkinsfile
+├── Dockerfile
+├── sonar-project.properties
+├── manifests/
+│   └── deployment.yaml
+├── scripts/
+│   ├── smoke-test.sh
+│   └── update-yaml.sh
+</code></pre><hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+<h2 id="learnings">Learnings</h2>
+<ul>
+<li>Implementing DevSecOps as code improves release security without slowing down development.</li>
+<li>GitOps reduces risk by decoupling build and deploy workflows.</li>
+<li>Tooling like Trivy and SonarQube can be integrated early to shift security left.</li>
+</ul>
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
 </div>
   </article>
 </main>
