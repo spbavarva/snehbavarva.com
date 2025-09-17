@@ -3,7 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/automated/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/automation/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/edr/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/incident-response/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/incident-response/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mitre-attck/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/powershell/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/security-automation/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/soar/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/soar-edr/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/tool/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/windows/</loc>
+    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/automated/</loc>
     <lastmod>2025-07-21T00:00:00+00:00</lastmod>
@@ -17,28 +62,7 @@
     <loc>http://localhost:1313/tags/burpsuite/</loc>
     <lastmod>2025-07-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/portswigger/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/powershell/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/tool/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/windows/</loc>
     <lastmod>2025-07-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/blue-team/</loc>
@@ -57,9 +81,6 @@
     <lastmod>2025-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/dfir/</loc>
-    <lastmod>2025-07-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/incident-response/</loc>
     <lastmod>2025-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ir/</loc>
@@ -340,9 +361,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/yml/</loc>
     <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/automation/</loc>
-    <lastmod>2025-04-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/cloud-security-automation/</loc>
     <lastmod>2025-04-08T00:00:00+00:00</lastmod>

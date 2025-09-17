@@ -1,0 +1,13 @@
+{{/* usage: {{< pdf src="/images/soar-edr-report.pdf" height="800" >}} */}}
+{{ $src := .Get "src" }}
+{{ $height := .Get "height" | default "800" }}
+<iframe
+  src='{{ $src }}'
+  width="100%"
+  height='{{ $height }}'
+  style="border:none"
+  loading="lazy">
+</iframe>
+<p style="margin-top:.5rem">
+  <a href="{{ $src }}">Download the PDF</a>
+</p>

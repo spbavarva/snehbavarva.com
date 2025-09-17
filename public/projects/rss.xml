@@ -6,8 +6,15 @@
     <description>Recent content in Projects on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SOAR &#43; EDR Emulation</title>
+      <link>http://localhost:1313/projects/soar-edr/</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/soar-edr/</guid>
+      <description>Emulating adversary techniques and automating D&amp;amp;R with LimaCharlie &amp;amp; Tines</description>
+    </item>
     <item>
       <title>burplabs</title>
       <link>http://localhost:1313/projects/burplabs/</link>
