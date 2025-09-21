@@ -10,6 +10,13 @@
     <atom:link href="http://localhost:1313/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SOAR &#43; EDR Emulation</title>
+      <link>http://localhost:1313/blog/soar-edr/</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/soar-edr/</guid>
+      <description>Emulating adversary techniques and automating D&amp;amp;R with LimaCharlie &amp;amp; Tines</description>
+    </item>
+    <item>
+      <title>SOAR &#43; EDR Emulation</title>
       <link>http://localhost:1313/projects/soar-edr/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/soar-edr/</guid>
