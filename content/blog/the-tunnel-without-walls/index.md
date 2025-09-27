@@ -30,6 +30,10 @@ event: "HackTheBox"
 
 An attacke gained SSH access to a Debian host ( `5.10.0-35-amd64`) and used an interactive shell (PID **13608**) to perform reconnaissance, credential theft, and network manipulation. The attacker installed a malicious kernel module and replaced network services (DNS/DHCP) with a `dnsmasq` instance to impersonate the entire local network and perform a supply-chain redirect that delivered a trojanized Windows updater to a workstation.
 
+This is the Part of the HTB CTF. If you want to follow along and practice by yourself, you can find related zip file here: [Challenge Link](https://drive.google.com/file/d/1sGK1lKFJupXUnWgdo-h8oWyt8sZyqRW8/view?usp=sharing)
+
+And Questions are availble in the Table of Content! Happy Hunting :)
+
 #### Key findings
 
 - Host kernel: **5.10.0-35-amd64**.

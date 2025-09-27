@@ -37,6 +37,10 @@ There are many things happening in this task other than just questions asked. Th
 
 On 2025-08-24 an attacker established persistence via a scheduled task called **SysHelper Update**, which executed `C:\Users\Werni\Appdata\Local\JM.ps1`. The script created a privileged local account, generated a time-based password, exfiltrated the new credentials to `NapoleonsBlackPearl.htb`, and persisted a port proxy that forwarded an external listener to an internal SSH host. The chain of evidence is supported by the Task XML, the JM.ps1 script, Security Event ID 4720 (user creation), and the SYSTEM hive PortProxy entries.
 
+This is the Part of the HTB CTF. If you want to follow along and practice by yourself, you can find related zip file here: [Challenge Link](https://drive.google.com/file/d/1q8r7CZ8cSTMKnBKjM_6ndXd9qijZryEq/view?usp=sharing)
+
+And Questions are availble in the Table of Content! Happy Hunting :)
+
 {{<seperator>}}
 
 ### Report in PDF
