@@ -20,11 +20,11 @@ tags:
   ]
 difficulty: "Easy"
 event: "HackTheBox"
-author: "ArthurWho"
-cover:
-  image: "/images/ctf/htb/dream-job-1.png"
-  alt: "Dream Job 1"
-  relative: true
+# author: "ArthurWho"
+# cover:
+  # image: "/images/ctf/htb/dream-job-1.png"
+  # alt: "Dream Job 1"
+  # relative: true
 ---
 
 
@@ -381,3 +381,4 @@ Few more [sherlock writeups](/ctf/htb/sherlocks/) by me and [HTB CDSA](/blog/cds
 🔗 [Contact Me](/contact)
 
 📅 [Schedule via Calendly](https://calendly.com/bavarvasneh/30min)
+{{<seperator>}}

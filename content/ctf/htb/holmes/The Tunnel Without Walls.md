@@ -80,7 +80,7 @@ command
 vol -f .\memdump.mem banners.Banners
 ```
 
-![[Pasted image 20250923182923.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250923182923.png" alt="campaign" caption=" " align="center" >}}
 
 now we should gather basic information around this memory file
 
@@ -89,7 +89,7 @@ now we should gather basic information around this memory file
 
 and just when i thought it'll be easy, it bangs with error
 
-![[Pasted image 20250923185613.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250923185613.png" alt="campaign" caption=" " align="center" >}}
 
 same as vol2, where we used to select profile with the command. Here we have symbols. And I checked on the official repo, they don't have the symbol table for our Debian 5 version
 
@@ -100,6 +100,7 @@ I followed his steps and downloaded banner file to match
 ```powershell
 curl https://raw.githubusercontent.com/Abyss-W4tcher/volatility3-symbols/master/banners/banners_plain.json
 ```
+{{<newline>}}
 
 ```powershell
 Select-String -Path banners_plain.json -Pattern "5.10.0-35-amd64" -Context 3,3
@@ -107,7 +108,7 @@ Select-String -Path banners_plain.json -Pattern "5.10.0-35-amd64" -Context 3,3
 
 and we get the match!!
 
-![[Pasted image 20250923185948.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250923185948.png" alt="campaign" caption=" " align="center" >}}
 
 rest is we just have to install our required symbol
 
@@ -122,7 +123,7 @@ $out = "$symroot\Debian_5.10.0-35-amd64_5.10.237-1_amd64.json.xz"
 
 Invoke-WebRequest -Uri $uri -OutFile $out
 ```
-
+{{<newline>}}
 and that's it, now we can run the vol3 with out symbol
 
 ```powershell
@@ -155,8 +156,8 @@ $symbol = C:\Users\Administrator\Downloads\volatility3\volatility3\symbols
 
 vol -f .\memdump.mem -s $symbol -r pretty linux.psaux > .\Outputs\psaux2.txt
 ```
-
-![[Pasted image 20250923191059.png]]
+{{<newline>}}
+{{< figure src="/images/ctf/htb/sherlock/20250923191059.png" alt="campaign" caption=" " align="center" >}}
 
 {{<seperator>}}
 
@@ -169,11 +170,13 @@ jm:WATSON0
 
 From the output we can see that attacker then switch the user to `jm`. So we know that other authenticated user is `jm`
 
-![[Pasted image 20250923191550.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250923191550.png" alt="campaign" caption=" " align="center" >}}
 
 I have used many different things to find this. So we can get this by two ways
 1. dump process memory of 13608 pid
 2. dump whole file system and check for shadow and passwd file
+{{<newline>}}
+{{<newline>}}
 
 i did first method before but there are many dump files, overwhelming. Couldn't find answer from it but it's there
 
@@ -185,10 +188,9 @@ $strings = "C:\Users\Administrator\Downloads\strings64.exe"
 Get-ChildItem .\Outputs\pid13608 | Sort-Object Length -Descending | Select-Object Length,Name 
 
 Get-ChildItem -Filter *.dmp | ForEach-Object {..\..\strings.exe -n 4 $_.FullName > "$($_.FullName).strings.txt"}                                                    
-
 ```
-
-![[Pasted image 20250924090022.png]]
+{{<newline>}}
+{{< figure src="/images/ctf/htb/sherlock/20250924090022.png" alt="campaign" caption=" " align="center" >}}
 
 then I moved to dumping whole file system. This will give lot of warnings and error but its fine
 you'll end up having a tar file which you have to extract twice with 7-zip and in one of the file, you will get the whole file system
@@ -198,18 +200,18 @@ which you can check with size of each folder
 ```powershell
 vol -f ..\..\memdump.mem -s $symbol -r pretty linux.pagecache.RecoverFs > new.txt 
 ```
+{{<newline>}}
+{{< figure src="/images/ctf/htb/sherlock/20250924090047.png" alt="campaign" caption=" " align="center" >}}
 
-![[Pasted image 20250924090047.png]]
-
-![[Pasted image 20250924090104.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250924090104.png" alt="campaign" caption=" " align="center" >}}
 
 then we can check passwd file and find the hash and it's MD5 hash!
 
 just crack with john
 
-![[Pasted image 20250924090507.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250924090507.png" alt="campaign" caption=" " align="center" >}}
 
-![[Pasted image 20250924090533.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250924090533.png" alt="campaign" caption=" " align="center" >}}
 
 {{<seperator>}}
 
@@ -219,15 +221,16 @@ just crack with john
 `/usr/lib/modules/5.10.0-35-amd64/kernel/lib/Nullincrevenge.ko`
 
 **mindset:**
+{{<newline>}}
 If an attacker installed a kernel rootkit, it may be present only in memory or also persisted as a `.ko` file on disk. Running Volatility’s **hidden modules** check revealed an in-memory kernel object named `Nullincrevenge`
 
 ```powershell
 vol -f .\memdump.mem -s $symbol linux.hidden_modules.Hidden_modules
 ```
-
+{{<newline>}}
 That flagged a suspicious, out-of-tree/unsigned module in RAM (strong rootkit indicator). To map that in-memory artifact to a file on disk, I enumerated recovered pagecache files and searched for the module name (forced UTF-8 output to avoid console encoding errors on Windows)
 
-![[Pasted image 20250926150703.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250926150703.png" alt="campaign" caption=" " align="center" >}}
 
 ```powershell
 chcp 65001 > $null
@@ -237,8 +240,8 @@ $env:PYTHONUTF8 = '1'
 
 vol -f .\memdump.mem -s $symbol linux.pagecache.Files | Select-String "Nullincrevenge"
 ```
-
-![[Pasted image 20250926150725.png]]
+{{<newline>}}
+{{< figure src="/images/ctf/htb/sherlock/20250926150725.png" alt="campaign" caption=" " align="center" >}}
 
 the malicious kernel object `Nullincrevenge` was present in memory and persisted on disk at `/usr/lib/modules/5.10.0-35-amd64/kernel/lib/Nullincrevenge.ko`
 
@@ -249,9 +252,10 @@ the malicious kernel object `Nullincrevenge` was present in memory and persisted
 i-am-the@network.now
 
 **mindset:**
+{{<newline>}}
 opened that ko file, but it has bunch of ASCII control characters, which prints bytes. So we have to clean it and see what that file has. I used simple strings to clean it
 
-![[Pasted image 20250924092216.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250924092216.png" alt="campaign" caption=" " align="center" >}}
 
 command
 
@@ -260,10 +264,10 @@ $ko = "C:\Users\Administrator\Downloads\Outputs\recoverfs\92931307-c5fd-4804-94f
 
 ..\..\strings.exe -n 4 $ko > Nullincrevenge_strings.txt
 ```
-
+{{<newline>}}
 and there we go!
 
-![[Pasted image 20250924092318.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250924092318.png" alt="campaign" caption=" " align="center" >}}
 
 {{<seperator>}}
 ### 6. The next step in the attack involved issuing commands to modify the network settings and installing a new package. What is the name and PID of the package? (package name,PID)
@@ -272,15 +276,16 @@ and there we go!
 dnsmasq,38687
 
 **mindset:**
+{{<newline>}}
 We already have the key clue in the bash history: the attacker ran `apt install -y dnsmasq` and then enabled/restarted the service. So the package name is almost certainly `dnsmasq`
 
 and also if we `/var/log/apt/history.log`, we can see that it was downloaded
 
-![[Pasted image 20250924093624.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250924093624.png" alt="campaign" caption=" " align="center" >}}
 
 now I can check the psaux.txt which we had and get the pid from there
 
-![[Pasted image 20250924093713.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250924093713.png" alt="campaign" caption=" " align="center" >}}
 
 {{<seperator>}}
 ### 7. Clearly, the attacker's goal is to impersonate the entire network. One workstation was already tricked and got its new malicious network configuration. What is the workstation's hostname?
@@ -289,15 +294,16 @@ now I can check the psaux.txt which we had and get the pid from there
 Parallax-5-WS-3
 
 **mindset:**
+{{<newline>}}
 We know that `dnsmasq` was installed and serving DHCP/DNS. dnsmasq writes a line per lease: `<expiry> <mac> <ip> <hostname> <clientid>`. That directly contains the hostname the client reported during DHCP.
 
-![[Pasted image 20250924094813.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250924094813.png" alt="campaign" caption=" " align="center" >}}
 
 and I just followed GPT given things and found answer in the `dnsmasq.leases`
 
 `C:\Users\Administrator\Downloads\Outputs\recoverfs\92931307-c5fd-4804-94f2-a8287e677bd6\var\lib\misc\dnsmasq.leases`
 
-![[Pasted image 20250924094925.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250924094925.png" alt="campaign" caption=" " align="center" >}}
 
 {{<seperator>}}
 ### 8. After receiving the new malicious network configuration, the user accessed the City of CogWork-1 internal portal from this workstation. What is their username? (string)
@@ -308,10 +314,10 @@ mike.sullivan
 **mindset:**
 
 from someone else writeup
-```
+```bash
 strings memdump.mem | grep -E '^POST /index.php HTTP/1.1$' -A 20
 ```
-
+{{<newline>}}
 https://github.com/CleanCoderK/Holmes_CTF_2025_HTB/blob/main/05_The_Tunnel_Without_Walls.md
 
 {{<seperator>}}
@@ -321,6 +327,7 @@ https://github.com/CleanCoderK/Holmes_CTF_2025_HTB/blob/main/05_The_Tunnel_Witho
 /win10/update/CogSoftware/AetherDesk-v74-77.exe
 
 **mindset:**
+{{<newline>}}
 Now this question means a web request. So, we will find the answer in the log file somewhere
 
 We saw that it was launched the portal via `docker run` earlier (from bash history and psaux); container stdout/stderr is captured by Docker and written to JSON log files on the host.
@@ -333,18 +340,19 @@ We saw that it was launched the portal via `docker run` earlier (from bash histo
 - The container/nginx log shows a `GET` from the compromised workstation IP (`192.168.211.52`) requesting exactly that path. (we know it from **dnsmasq.leases**)
 - The log entry returns `200 12084`, which means the server served a 12,084-byte file successfully — it’s not just a probe, it downloaded a binary.
 - The User-Agent (`AetherDesk/... (Windows NT 10.0; Win64; x64)`) indicates a client updater or the workstation itself requested that installer — matching the story that the user accepted an “update” via the portal.
-
-```
+{{<newline>}}
+{{<newline>}}
+```bash
 Container log (2025-09-03T08:25:48Z): 192.168.211.52 - - [03/Sep/2025:08:25:48 +0000] "GET /win10/update/CogSoftware/AetherDesk-v74-77.exe HTTP/1.1" 200 12084 "-" "AetherDesk/73.0 (Windows NT 10.0; Win64; x64)" "-" (GET request)
 
 dnsmasq.leases: 1756891471 00:50:56:b4:32:cd 192.168.211.52 Parallax-5-W3-3 01:00:50:56:b4:32:cd (dnsmasq.leases)
 
 => Download endpoint: /win10/update/CogSoftware/AetherDesk-v74-77.exe
 ```
+{{<newline>}}
+{{< figure src="/images/ctf/htb/sherlock/20250924102402.png" alt="campaign" caption=" " align="center" >}}
 
-![[Pasted image 20250924102402.png]]
-
-![[Pasted image 20250924102423.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250924102423.png" alt="campaign" caption=" " align="center" >}}
 
 {{<seperator>}}
 ### 10. To perform this attack, the attacker redirected the original update domain to a malicious one. Identify the original domain and the final redirect IP address and port. (domain,IP:port)
@@ -357,18 +365,18 @@ As we know dnsmasq is involved, I checked dnsmasq.conf  in the etc and question 
 
 `updates.cogwork-1.net`
 
-![[Pasted image 20250924133018.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250924133018.png" alt="campaign" caption=" " align="center" >}}
 
 Then I randomly opened the `default.conf` I found in `/tmp` to check (another memory file is also here btw, but we are not even finding banner so I guess leave it)
 
-![[Pasted image 20250924133410.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250924133410.png" alt="campaign" caption=" " align="center" >}}
  
  We can see `proxy_pass http://13.62.49.86:7477/` which tells that where the proxy forwarded requests (final IP:port)
 And we already know about GET request made to update the file from previous question so it's pretty much clear
 
  So overall, attacker requested `updates.cogwork-1.net` (DNS), the proxy forwarded to `13.62.49.86:7477` (final target), and the logs prove the file was downloaded
 
-![[Pasted image 20250924133444.png]]
+{{< figure src="/images/ctf/htb/sherlock/20250924133444.png" alt="campaign" caption=" " align="center" >}}
 
 {{<seperator>}}
 
@@ -405,3 +413,4 @@ Few more [sherlock writeups](/ctf/htb/sherlocks/) by me and [HTB CDSA](/blog/cds
 🔗 [Contact Me](/contact)
 
 📅 [Schedule via Calendly](https://calendly.com/bavarvasneh/30min)
+{{<seperator>}}
