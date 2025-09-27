@@ -45,6 +45,10 @@ An attacke gained SSH access to a Debian host ( `5.10.0-35-amd64`) and used an i
 - Attacker redirected official updates domain **updates.cogwork-1.net** to **13.62.49.86:7477**, where the malicious file was served.
 {{<seperator>}}
 
+### Report in PDF
+
+{{< pdf src="/images/The-Tunnel-Without-Walls.pdf" height="900" >}}
+
 ### Table of contents
 
 1. What is the Linux kernel version of the provided image? (string)

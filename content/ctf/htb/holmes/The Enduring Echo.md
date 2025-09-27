@@ -39,6 +39,10 @@ On 2025-08-24 an attacker established persistence via a scheduled task called **
 
 {{<seperator>}}
 
+### Report in PDF
+
+{{< pdf src="/images/enduring-echo.pdf" height="900" >}}
+
 ### Table of contents
 
 1. What was the first (non cd) command executed by the attacker on the host?

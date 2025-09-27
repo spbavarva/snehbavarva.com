@@ -1,13 +1,22 @@
-{{/* usage: {{< pdf src="/images/soar-edr-report.pdf" height="800" >}} */}}
-{{ $src := .Get "src" }}
-{{ $height := .Get "height" | default "800" }}
-<iframe
-  src='{{ $src }}'
-  width="100%"
-  height='{{ $height }}'
-  style="border:none"
-  loading="lazy">
-</iframe>
-<p style="margin-top:.5rem">
-  <a href="{{ $src }}">Download the PDF</a>
-</p>
+{{/* usage:
+  {{< pdf src="/images/soar-edr-report.pdf" >}}
+  {{< pdf src="/images/x.pdf" min="320px" mid="70dvh" max="900px" >}}
+*/}}
+
+{{ $src  := .Get "src" }}
+{{ $minH := .Get "min" | default "320px" }}     {{/* smallest it can be */}}
+{{ $midH := .Get "mid" | default "70dvh" }}     {{/* preferred: dynamic viewport height */}}
+{{ $maxH := .Get "max" | default "900px" }}     {{/* largest it should get */}}
+
+<div class="pdf-embed" style="--min: {{ $minH }}; --mid: {{ $midH }}; --max: {{ $maxH }};">
+  <iframe
+    src="{{ $src }}"
+    aria-label="PDF preview"
+    loading="lazy"
+    style="width:100%; height:clamp(var(--min), var(--mid), var(--max)); border:none;">
+  </iframe>
+
+  <p class="pdf-actions" style="margin-top:.5rem">
+    <a href="{{ $src }}">Download the PDF</a>
+  </p>
+</div>
