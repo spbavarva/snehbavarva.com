@@ -7,24 +7,19 @@ tags:
   [
     "htb",
     "easy",
-    "Dream Job-1",
     "MITRE",
     "TTPs",
     "Incident Response",
     "IR",
     "DFIR",
     "IOCs",
-    "VirusTotal",
-    "Lazarus Group",
+    "Log Analysis",
+    "enduring echo",
+    "CTF","Persistence",
     "sandbox bypass"
   ]
 difficulty: "Easy"
 event: "HackTheBox"
-# author: "ArthurWho"
-# cover:
-  # image: "/images/ctf/htb/dream-job-1.png"
-  # alt: "Dream Job 1"
-  # relative: true
 ---
 
 

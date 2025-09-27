@@ -1,0 +1,41 @@
+{{ define "main" }}
+<main class="main">
+  <div class="list-page markdown-content">
+    <h1>{{ .Title }}</h1>
+
+    <!-- Render _index.md content (your shortcode lives here) -->
+    <div class="description">
+      {{ .Content }}
+    </div>
+
+    <!-- No theme posts loop here on purpose -->
+  </div>
+
+  <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+</main>
+
+<style>
+/* === Holmes shortcode styles (same look as your Sherlocks) === */
+.machine-list-clean{margin:1rem 0 0}
+.machine-list-clean ul{list-style:none;margin:0;padding:0}
+.machine-entry{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:.9rem 0;border-bottom:1px solid #2b2b2b
+}
+.machine-entry:first-child{border-top:1px solid #2b2b2b}
+.machine-name{text-decoration:none}
+.machine-name:hover{text-decoration:underline}
+.machine-meta{display:flex;gap:.5rem;flex-wrap:wrap}
+
+/* pills */
+.difficulty,.os{
+  background:#2d2d2d;border:1px solid #3a3a3a;border-radius:999px;
+  padding:.15rem .55rem;font-size:.85rem
+}
+.difficulty.easy{background:#143e2b;border-color:#1f5b3d}
+.difficulty.medium{background:#3a300a;border-color:#5b4a13}
+.difficulty.hard{background:#401c17;border-color:#5e2a23}
+.difficulty.insane{background:#2c1740;border-color:#442760}
+.os{background:#1d2430;border-color:#2a3a55}
+</style>
+{{ end }}

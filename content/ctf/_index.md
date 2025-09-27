@@ -5,7 +5,6 @@ draft: false
 description: "My CTF experiences and activities"
 ---
 
-This page is currently in the drafts, soon you will find things here....
 
 _~Capablaca_
 
