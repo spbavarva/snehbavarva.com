@@ -16,11 +16,25 @@
       <description>HTB CTF</description>
     </item>
     <item>
+      <title>The Enduring Echo Report - HTB Holmes</title>
+      <link>http://localhost:1313/blog/enduring-echo/</link>
+      <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/enduring-echo/</guid>
+      <description>Finding Persistence and Data Exfiltration Challenge</description>
+    </item>
+    <item>
       <title>The Tunnel Without Walls</title>
       <link>http://localhost:1313/ctf/htb/holmes/the-tunnel-without-walls/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ctf/htb/holmes/the-tunnel-without-walls/</guid>
       <description>HTB CTF</description>
+    </item>
+    <item>
+      <title>The Tunnel Without Walls Report - HTB Holmes</title>
+      <link>http://localhost:1313/blog/the-tunnel-without-walls/</link>
+      <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/the-tunnel-without-walls/</guid>
+      <description>Linux Memory Forensics </description>
     </item>
     <item>
       <title>SOAR &#43; EDR Emulation</title>
