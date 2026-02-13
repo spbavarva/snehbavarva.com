@@ -1,3 +1,27 @@
 {{ define "main" }}
-  {{< htb-holmes-intro >}}
+<div class="machine-list-clean">
+  <ul>
+    {{ range .Pages.ByTitle }}
+    <li class="machine-entry">
+      <a class="machine-name" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <div class="machine-meta">
+        {{ $tags := .Params.tags }} {{ range $tags }} {{ $tag := lower . }} {{
+        if in $tag "easy" }}
+        <span class="difficulty easy">🟢 Easy</span>
+        {{ else if in $tag "medium" }}
+        <span class="difficulty medium">🟡 Medium</span>
+        {{ else if in $tag "hard" }}
+        <span class="difficulty hard">🔴 Hard</span>
+        {{ else if in $tag "insane" }}
+        <span class="difficulty insane">🟣 Insane</span>
+        {{ else if in $tag "linux" }}
+        <span class="os">🐧 Linux</span>
+        {{ else if in $tag "windows" }}
+        <span class="os">🪟 Windows</span>
+        {{ end }} {{ end }}
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+</div>
 {{ end }}

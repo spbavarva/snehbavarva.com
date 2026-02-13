@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Windows on Sneh Bavarva | Cybersecurity Professional</title>
-    <link>http://localhost:1313/tags/windows/</link>
+    <link>http://localhost:52453/tags/windows/</link>
     <description>Recent content in Windows on Sneh Bavarva | Cybersecurity Professional</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 14 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/windows/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:52453/tags/windows/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SOAR &#43; EDR Emulation</title>
-      <link>http://localhost:1313/blog/soar-edr/</link>
+      <link>http://localhost:52453/blog/soar-edr/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/soar-edr/</guid>
+      <guid>http://localhost:52453/blog/soar-edr/</guid>
       <description>Emulating adversary techniques and automating D&amp;amp;R with LimaCharlie &amp;amp; Tines</description>
     </item>
     <item>
       <title>SOAR &#43; EDR Emulation</title>
-      <link>http://localhost:1313/projects/soar-edr/</link>
+      <link>http://localhost:52453/projects/soar-edr/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/soar-edr/</guid>
+      <guid>http://localhost:52453/projects/soar-edr/</guid>
       <description>Emulating adversary techniques and automating D&amp;amp;R with LimaCharlie &amp;amp; Tines</description>
     </item>
     <item>
       <title>burplabs</title>
-      <link>http://localhost:1313/projects/burplabs/</link>
+      <link>http://localhost:52453/projects/burplabs/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/burplabs/</guid>
+      <guid>http://localhost:52453/projects/burplabs/</guid>
       <description>Automated python package for portswigger labs</description>
     </item>
     <item>
       <title>Tombwatcher</title>
-      <link>http://localhost:1313/ctf/htb/machines/tombwatcher/</link>
+      <link>http://localhost:52453/ctf/htb/machines/tombwatcher/</link>
       <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ctf/htb/machines/tombwatcher/</guid>
+      <guid>http://localhost:52453/ctf/htb/machines/tombwatcher/</guid>
       <description>&lt;style&gt;
   .machine-info-table {
     width: 100%;
@@ -115,7 +115,7 @@
   &lt;tr&gt;
     &lt;td rowspan=&#34;7&#34;&gt;
       
-      &lt;img src=&#34;http://localhost:1313/images/ctf/htb/tombwatcher.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
+      &lt;img src=&#34;http://localhost:52453/images/ctf/htb/tombwatcher.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
       
     &lt;/td&gt;
   &lt;/tr&gt;
@@ -153,9 +153,9 @@
     </item>
     <item>
       <title>Certificate</title>
-      <link>http://localhost:1313/ctf/htb/machines/certificate/</link>
+      <link>http://localhost:52453/ctf/htb/machines/certificate/</link>
       <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ctf/htb/machines/certificate/</guid>
+      <guid>http://localhost:52453/ctf/htb/machines/certificate/</guid>
       <description>&lt;style&gt;
   .machine-info-table {
     width: 100%;
@@ -237,7 +237,7 @@
   &lt;tr&gt;
     &lt;td rowspan=&#34;7&#34;&gt;
       
-      &lt;img src=&#34;http://localhost:1313/images/ctf/htb/certificate.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
+      &lt;img src=&#34;http://localhost:52453/images/ctf/htb/certificate.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
       
     &lt;/td&gt;
   &lt;/tr&gt;
@@ -275,9 +275,9 @@
     </item>
     <item>
       <title>Puppy</title>
-      <link>http://localhost:1313/ctf/htb/machines/puppy/</link>
+      <link>http://localhost:52453/ctf/htb/machines/puppy/</link>
       <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ctf/htb/machines/puppy/</guid>
+      <guid>http://localhost:52453/ctf/htb/machines/puppy/</guid>
       <description>&lt;style&gt;
   .machine-info-table {
     width: 100%;
@@ -359,7 +359,7 @@
   &lt;tr&gt;
     &lt;td rowspan=&#34;7&#34;&gt;
       
-      &lt;img src=&#34;http://localhost:1313/images/ctf/htb/puppy.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
+      &lt;img src=&#34;http://localhost:52453/images/ctf/htb/puppy.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
       
     &lt;/td&gt;
   &lt;/tr&gt;
@@ -397,9 +397,9 @@
     </item>
     <item>
       <title>Fluffy</title>
-      <link>http://localhost:1313/ctf/htb/machines/fluffy/</link>
+      <link>http://localhost:52453/ctf/htb/machines/fluffy/</link>
       <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ctf/htb/machines/fluffy/</guid>
+      <guid>http://localhost:52453/ctf/htb/machines/fluffy/</guid>
       <description>&lt;style&gt;
   .machine-info-table {
     width: 100%;
@@ -481,7 +481,7 @@
   &lt;tr&gt;
     &lt;td rowspan=&#34;7&#34;&gt;
       
-      &lt;img src=&#34;http://localhost:1313/images/ctf/htb/fluffy.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
+      &lt;img src=&#34;http://localhost:52453/images/ctf/htb/fluffy.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
       
     &lt;/td&gt;
   &lt;/tr&gt;
@@ -519,9 +519,9 @@
     </item>
     <item>
       <title>Obsidian sync from windows</title>
-      <link>http://localhost:1313/projects/obsidian-sync-from-windows-free/</link>
+      <link>http://localhost:52453/projects/obsidian-sync-from-windows-free/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/obsidian-sync-from-windows-free/</guid>
+      <guid>http://localhost:52453/projects/obsidian-sync-from-windows-free/</guid>
       <description>Free and Automated way to sync your Obsidian notes from windows to GitHub</description>
     </item>
   </channel>
