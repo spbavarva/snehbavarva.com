@@ -2,7 +2,7 @@
 title: "React2Shell — CVE-2025–55182: Critical Vulnerability in React Server"
 description: "Technical breakdown of React2Shell (CVE-2025-55182)"
 date: 2026-02-13
-draft: true
+draft: false
 tags: ["React", "CVE-2025-55182", "RCE", "CVE", "React2shell", "javascript", "Appsec", "Deserialiozation", "PrototypeChain", "ReactServerComponents", "RCS", "FrameworkSecurity", "Vulnerability", "VulnerabilityResearch", "testing", "Git"]
 categories: ["Appsec"]
 showToc: true

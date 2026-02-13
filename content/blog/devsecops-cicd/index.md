@@ -2,7 +2,7 @@
 title: "DevSecOps CI/CD pipeline for SAST"
 description: "A secure complete CI/CD pipeline for SAST and image testing"
 date: 2025-04-11
-draft: true
+draft: false
 tags: ["AWS", "Cloud", "DevOps", "Certification", "DevSecOps", "Maven", "JACOCO", "OWASP ZAP", "SonarQube", "Docker", "Trivy", "Jenkins", "ArgoCD", "K8s", "Kubernetes", "YML", "Gitlab", "SAST", "SCA", "testing", "Git", "CI", "CD"]
 categories: ["Certifications", "Cloud"]
 showToc: true
