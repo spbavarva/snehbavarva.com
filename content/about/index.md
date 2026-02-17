@@ -7,6 +7,14 @@ description: "Learn more about Sneh Bavarva's cybersecurity background and exper
 
 <!-- need to update about section -->
 
+PSSSHHHHHH.... lot of AI LLM things to update and working on something special.
+
+- AI
+- Blogs
+- CRTO and CRTL
+- emails
+- OS tracking
+
 I'm passionate about cybersecurity and always eager to explore different areas within the field. Funny enough, my journey began when my own LinkedIn account got hacked - lol, that's a story for another time!
 
 Currently, I'm diving deep into **Cloud**, **AI**, and their integration with security to build a secure CI/CD pipeline. I'm focused on **threat modeling** and automating that process by integrating LLM models in the workflow. This project will take a while but it's my goal for the year.
