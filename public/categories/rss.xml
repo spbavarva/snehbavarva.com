@@ -2,115 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Sneh Bavarva | Cybersecurity Professional</title>
-    <link>http://localhost:52453/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:52453/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Appsec</title>
+      <link>http://localhost:1313/categories/appsec/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/appsec/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Automated</title>
-      <link>http://localhost:52453/categories/automated/</link>
+      <link>http://localhost:1313/categories/automated/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/automated/</guid>
+      <guid>http://localhost:1313/categories/automated/</guid>
       <description></description>
     </item>
     <item>
       <title>Incident Response</title>
-      <link>http://localhost:52453/categories/incident-response/</link>
+      <link>http://localhost:1313/categories/incident-response/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/incident-response/</guid>
+      <guid>http://localhost:1313/categories/incident-response/</guid>
       <description></description>
     </item>
     <item>
       <title>Security Automation</title>
-      <link>http://localhost:52453/categories/security-automation/</link>
+      <link>http://localhost:1313/categories/security-automation/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/security-automation/</guid>
+      <guid>http://localhost:1313/categories/security-automation/</guid>
       <description></description>
     </item>
     <item>
       <title>Tool</title>
-      <link>http://localhost:52453/categories/tool/</link>
+      <link>http://localhost:1313/categories/tool/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/tool/</guid>
+      <guid>http://localhost:1313/categories/tool/</guid>
       <description></description>
     </item>
     <item>
       <title>Blue Team</title>
-      <link>http://localhost:52453/categories/blue-team/</link>
+      <link>http://localhost:1313/categories/blue-team/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/blue-team/</guid>
+      <guid>http://localhost:1313/categories/blue-team/</guid>
       <description></description>
     </item>
     <item>
       <title>DFIR</title>
-      <link>http://localhost:52453/categories/dfir/</link>
+      <link>http://localhost:1313/categories/dfir/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/dfir/</guid>
+      <guid>http://localhost:1313/categories/dfir/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloud</title>
-      <link>http://localhost:52453/categories/cloud/</link>
+      <link>http://localhost:1313/categories/cloud/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/cloud/</guid>
+      <guid>http://localhost:1313/categories/cloud/</guid>
       <description></description>
     </item>
     <item>
       <title>HTB</title>
-      <link>http://localhost:52453/categories/htb/</link>
+      <link>http://localhost:1313/categories/htb/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/htb/</guid>
+      <guid>http://localhost:1313/categories/htb/</guid>
       <description></description>
     </item>
     <item>
       <title>CVE</title>
-      <link>http://localhost:52453/categories/cve/</link>
+      <link>http://localhost:1313/categories/cve/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/cve/</guid>
+      <guid>http://localhost:1313/categories/cve/</guid>
       <description></description>
     </item>
     <item>
       <title>OpenSource</title>
-      <link>http://localhost:52453/categories/opensource/</link>
+      <link>http://localhost:1313/categories/opensource/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/opensource/</guid>
+      <guid>http://localhost:1313/categories/opensource/</guid>
       <description></description>
     </item>
     <item>
       <title>Certifications</title>
-      <link>http://localhost:52453/categories/certifications/</link>
+      <link>http://localhost:1313/categories/certifications/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/certifications/</guid>
+      <guid>http://localhost:1313/categories/certifications/</guid>
       <description></description>
     </item>
     <item>
       <title>Defensive</title>
-      <link>http://localhost:52453/categories/defensive/</link>
+      <link>http://localhost:1313/categories/defensive/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/defensive/</guid>
+      <guid>http://localhost:1313/categories/defensive/</guid>
       <description></description>
     </item>
     <item>
       <title>Notes</title>
-      <link>http://localhost:52453/categories/notes/</link>
+      <link>http://localhost:1313/categories/notes/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/notes/</guid>
+      <guid>http://localhost:1313/categories/notes/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>http://localhost:52453/categories/security/</link>
+      <link>http://localhost:1313/categories/security/</link>
       <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/security/</guid>
+      <guid>http://localhost:1313/categories/security/</guid>
       <description></description>
     </item>
     <item>
       <title>Tooling</title>
-      <link>http://localhost:52453/categories/tooling/</link>
+      <link>http://localhost:1313/categories/tooling/</link>
       <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52453/categories/tooling/</guid>
+      <guid>http://localhost:1313/categories/tooling/</guid>
       <description></description>
     </item>
   </channel>
