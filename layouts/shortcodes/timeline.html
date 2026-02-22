@@ -4,12 +4,14 @@
     margin: 1.5rem 0;
     /* padding-left: 1rem; */
   }
+
   .timeline-item1 {
     margin-bottom: 2rem;
     padding-left: 1.5rem;
     border-left: 2px solid #3273dc;
     position: relative;
   }
+
   .timeline-item1::before {
     content: "";
     position: absolute;
@@ -20,12 +22,14 @@
     border-radius: 50%;
     background-color: #3273dc;
   }
+
   .timeline-item-header1 {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 0.5rem;
   }
+
   .timeline-item-header1 h3 {
     margin: 0;
   }
@@ -36,51 +40,79 @@
     align-items: baseline;
     margin-bottom: 0.5rem;
   }
+
   .timeline-title1 {
     font-weight: bold;
     font-size: 1.1rem;
   }
+
   .timeline-sub1 {
     font-style: italic;
     color: #aaa;
     font-size: 0.95rem;
   }
+
   .timeline-location1 {
     font-weight: 500;
     margin-bottom: 0.5rem;
   }
+
   .timeline-date1 {
     font-size: 0.9rem;
     color: #999;
     font-weight: 500;
   }
-  .timeline-item1 .coursework {
-  margin-top: 0.5rem;
-  font-size: 0.875rem;
-  color: #a0aec0; /* Soft gray/blue */
-  line-height: 1.5;
-}
 
+  .timeline-item1 .coursework {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #a0aec0;
+    /* Soft gray/blue */
+    line-height: 1.5;
+  }
+
+  .experience-points {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    /* slightly brighter than coursework */
+    line-height: 1.6;
+  }
+
+  .experience-points ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .experience-points li {
+    margin-bottom: 0.5rem;
+  }
+
+  .experience-points strong {
+    color: #60a5fa;
+    /* match your blue accent */
+    font-weight: 600;
+  }
 </style>
 
 
 
-  <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0;" />
+<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0;" />
 
 <div class="newsletter-promo">
-    <p>
-      I have started my own Newsletter and it's really very precious to me. It
-      won't be used for any spam and it will be bot-free. It will take only
-      <span class="span-for-inline">10 minutes/week</span>, and trust me, I will
-      make sure that it will add some value in your life :&#41;
-    </p>
+  <p>
+    I have started my own Newsletter and it's really very precious to me. It
+    won't be used for any spam and it will be bot-free. It will take only
+    <span class="span-for-inline">10 minutes/week</span>, and trust me, I will
+    make sure that it will add some value in your life :&#41;
+  </p>
 
-    <div class="subscribe-container">
-      <a href="/newsletter" class="subscribe-button">
-        📬 Subscribe to My Newsletter
-      </a>
-    </div>
+  <div class="subscribe-container">
+    <a href="/newsletter" class="subscribe-button">
+      📬 Subscribe to My Newsletter
+    </a>
   </div>
+</div>
 
 
 <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0;" />
@@ -93,7 +125,8 @@
         <div class="timeline-title1">Master of Engineering in Cybersecurity</div>
         <p class="timeline-sub1">Graduate Certificate in Cloud Engineering</p>
         <div class="timeline-sub1">University of Maryland - College Park</div>
-        <div class="coursework">Coursework: Binary Exploitation | Security Tools | Information Assurance | Cloud Security | Cloud Computing</div>
+        <div class="coursework">Coursework: Binary Exploitation | Security Tools | Information Assurance | Cloud
+          Security | Cloud Computing</div>
       </div>
       <div class="timeline-date1">2024 - 2026</div>
     </div>
@@ -115,25 +148,61 @@
 <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0;" />
 
 <h2>💼 Work Experience</h2>
-<div class="timeline1">
-  <div class="timeline-item1">
-    <div class="timeline-header1">
-      <div>
-        <div class="timeline-title1">Junior Penetration Tester</div>
-        <div class="timeline-sub1">EVE Healthcare Centers</div>
-      </div>
-      <div class="timeline-date1">2022 - 2023</div>
+<div class="timeline-item1">
+  <div class="timeline-header1">
+    <div>
+      <div class="timeline-title1">Junior Penetration Tester</div>
+      <div class="timeline-sub1">EVE Healthcare Centers</div>
     </div>
+    <div class="timeline-date1">2022 – 2023</div>
   </div>
 
-  <div class="timeline-item1">
-    <div class="timeline-header1">
-      <div>
-        <div class="timeline-title1">Information Security Administrator</div>
-        <div class="timeline-sub1">Virtual Testing Foundation</div>
-      </div>
-      <div class="timeline-date1">2022</div>
+  <div class="experience-points">
+    <ul>
+      <li>
+        Identified a critical <strong>Broken Authentication</strong> vulnerability
+        enabling account takeover via an internal portal.
+      </li>
+      <li>
+        Demonstrated real-world impact by exposing unauthorized access to
+        <strong>PII of 1,000+ users</strong>.
+      </li>
+      <li>
+        Assisted the incident handling team with <strong>triage, root cause analysis,
+          and containment</strong>, reducing exposure within <strong>24 hours</strong>.
+      </li>
+      <li>
+        Supported enforcement of <strong>role-based access control (RBAC)</strong>
+        to prevent lateral movement.
+      </li>
+      <li>
+        Partnered with IT and compliance teams to deliver
+        business-aligned remediation guidance.
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="timeline-item1">
+  <div class="timeline-header1">
+    <div>
+      <div class="timeline-title1">Information Security Administrator</div>
+      <div class="timeline-sub1">Virtual Testing Foundation</div>
     </div>
+    <div class="timeline-date1">2022</div>
+  </div>
+
+  <div class="experience-points">
+    <ul>
+      <li>
+        Monitored security events using <strong>SIEM platforms (Splunk / ELK)</strong>
+        to identify attack vectors and perform <strong>root cause analysis</strong>.
+      </li>
+      <li>
+        Simulated adversary techniques using <strong>BloodHound</strong> and applied
+        <strong>STRIDE-based threat modeling</strong> to strengthen network security posture.
+      </li>
+    </ul>
   </div>
 </div>
 

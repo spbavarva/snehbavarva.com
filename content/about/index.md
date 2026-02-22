@@ -7,23 +7,15 @@ description: "Learn more about Sneh Bavarva's cybersecurity background and exper
 
 <!-- need to update about section -->
 
-PSSSHHHHHH.... lot of AI LLM things to update and working on something special.
+I’m a cybersecurity engineer who likes breaking systems and fixing them, preferably by automating the boring parts. My journey began when my own LinkedIn account got hacked - that's a story for another time!
 
-- AI
-- Blogs
-- CRTO and CRTL
-- emails
-- OS tracking
+These days, My focus has shifted towards the **defensive security and incident response**, while I still have the strong offensive foundation; but with the new AI world, I am doing things differently. I am particularly interested in how **AI/LLM** could fit in the incident response cycle. 
 
-I'm passionate about cybersecurity and always eager to explore different areas within the field. Funny enough, my journey began when my own LinkedIn account got hacked - lol, that's a story for another time!
+I spend a lot of time working with the cloud security detection engineer in automation. I have created an augmented security workflow with the AI, which is practical for the threat modeling, host analysis, host isolation, and triaging, and is helpful for them. It is helpful for the decision support in South and IR pipelines. 
 
-Currently, I'm diving deep into **Cloud**, **AI**, and their integration with security to build a secure CI/CD pipeline. I'm focused on **threat modeling** and automating that process by integrating LLM models in the workflow. This project will take a while but it's my goal for the year.
+Also, I do participate in the CTFs. Learn the new technology and write so many **Blogs**. Also, I'm active on the Hack The Box season (my peak was global rank of 144). Honestly, this offensive security keeps my defender mindset honest, and I know how an attacker thinks. 
 
-Also recently, I've developed an interest in **defensive side of the security** like securing infrastructure and detecting anomalies. One of my goals this year is to build an AI-powered tool/pipeline to automate SOC workflows and detect unusual patterns in logs and infrastructure.
-
-And yeah of course, I enjoy **offensive security** as well and I can say I have strong fundamental holding there. I love solving CTF challenges and active on current **HTB season** with Global rank 136! I really like **API testing**, exploring **OWASP Top 10** vulnerabilities, and digging into **business logic flaws** during web app pentests. RASTA-`~`- I am coming for you next......
-
-
+I learned by building, documenting, and automating. If it is something related to security, cloud, or detection, or a bit of everything, then I am probably working on it. Like currently, I am working on something very special and soon I will be sharing it.
 
 
 <!-- ## 🎓 Education & 💼 Experience -->
