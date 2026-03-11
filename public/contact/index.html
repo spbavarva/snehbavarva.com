@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -191,310 +191,420 @@
 
      
 
-    <div class="content markdown-content"><!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+    <div class="content markdown-content"><style>
+    .contact-page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2.25rem 1rem 4.5rem;
+    }
 
-    <title>Get In Touch</title>
-    <style>
-      .contact-container {
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        gap: 2rem;
-        margin-top: 2rem;
+    .contact-title {
+      margin: 0 0 1rem;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      line-height: 0.98;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.94);
+    }
+
+    .contact-intro {
+      max-width: 760px;
+      margin: 0 0 2.5rem;
+      font-size: 1rem;
+      line-height: 1.85;
+      color: rgba(255, 255, 255, 0.64);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .contact-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .info-card {
+      display: flex;
+      gap: 1rem;
+      padding: 1.15rem 1.25rem;
+      border-radius: 18px;
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.03),
+          rgba(255, 255, 255, 0.018));
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .info-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(96, 165, 250, 0.18);
+      box-shadow: 0 24px 55px rgba(0, 0, 0, 0.22);
+    }
+
+    .info-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      color: rgba(96, 165, 250, 0.82);
+    }
+
+    .info-content h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .info-content p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .info-content a {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .info-content a:hover {
+      color: #76b4ff;
+      text-decoration: none;
+    }
+
+    .social-section {
+      padding: 1.15rem 1.25rem;
+      border-radius: 18px;
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.03),
+          rgba(255, 255, 255, 0.018));
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .social-section h3 {
+      margin: 0 0 1rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .social-row {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .social-row a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.42);
+      transition: color 0.2s ease, transform 0.2s ease;
+      text-decoration: none;
+    }
+
+    .social-row a:hover {
+      color: #76b4ff;
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 1rem;
+      border-radius: 999px;
+      background: linear-gradient(180deg,
+          rgba(50, 115, 220, 0.16),
+          rgba(50, 115, 220, 0.08));
+      border: 1px solid rgba(96, 165, 250, 0.22);
+      color: rgba(255, 255, 255, 0.92) !important;
+      font-size: 0.85rem;
+      font-weight: 400;
+      text-decoration: none;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .contact-links a:hover {
+      transform: translateY(-2px);
+      border-color: rgba(147, 197, 253, 0.42);
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+      text-decoration: none;
+    }
+
+    .contact-form-card {
+      padding: 1.5rem 1.5rem 1.75rem;
+      border-radius: 18px;
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.03),
+          rgba(255, 255, 255, 0.018));
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-form-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, #3273dc, #60a5fa, transparent);
+      opacity: 0.85;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.64);
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 0.95rem;
+      font-family: inherit;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: rgba(96, 165, 250, 0.5);
+      box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .click-to-fill {
+      font-size: 0.8rem;
+      color: rgba(96, 165, 250, 0.7);
+      margin-top: 0.35rem;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .click-to-fill:hover {
+      color: #76b4ff;
+    }
+
+    .submit-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0.85rem;
+      border: 1px solid rgba(96, 165, 250, 0.3);
+      border-radius: 12px;
+      background: linear-gradient(180deg,
+          rgba(50, 115, 220, 0.2),
+          rgba(50, 115, 220, 0.1));
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 0.95rem;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      border-color: rgba(147, 197, 253, 0.5);
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+    }
+
+    .form-status {
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+    }
+
+    .form-status.success {
+      background: rgba(74, 222, 128, 0.08);
+      border: 1px solid rgba(74, 222, 128, 0.2);
+      color: rgba(74, 222, 128, 0.9);
+    }
+
+    .form-status.error {
+      background: rgba(248, 113, 113, 0.08);
+      border: 1px solid rgba(248, 113, 113, 0.2);
+      color: rgba(248, 113, 113, 0.9);
+    }
+
+    .contact-separator {
+      border: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      margin: 2.5rem 0 0;
+    }
+
+    /* scroll reveal */
+    html.contact-motion-ready .reveal-item {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+
+    html.contact-motion-ready .reveal-item.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    @media (max-width: 900px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .contact-page {
+        padding: 1.5rem 1rem 4rem;
       }
 
-      .contact-form input,
-      .contact-form textarea {
-        width: 100%;
-        padding: 0.75rem;
-        border: 1px solid #333;
-        border-radius: 6px;
-        background-color: #121212;
-        color: white;
+      .contact-title {
+        font-size: clamp(2.35rem, 12vw, 3.3rem);
+      }
+
+      .contact-intro {
         font-size: 1rem;
+        line-height: 1.8;
       }
 
-      .contact-form label {
-        font-weight: 600;
-        margin-bottom: 0.25rem;
-        display: block;
+      .contact-form-card {
+        padding: 1.15rem 1rem 1.35rem;
+        border-radius: 14px;
       }
 
-      .submit-button {
-        background-color: #3b82f6;
-        color: white;
-        border: none;
-        padding: 0.75rem;
-        border-radius: 6px;
-        font-weight: 600;
-        cursor: pointer;
-        width: 100%;
-        margin-top: 1rem;
+      .form-group input,
+      .form-group textarea {
+        border-radius: 10px;
       }
 
-      .submit-button:hover {
-        background-color: #2563eb;
+      .submit-btn {
+        border-radius: 10px;
       }
+    }
+  </style>
 
-      .click-to-fill {
-        font-size: 0.875rem;
-        color: #3b82f6;
-        margin-top: 0.25rem;
-        cursor: pointer;
-      }
+  <section class="contact-page">
+    <h1 class="contact-title">Get In Touch</h1>
+    <p class="contact-intro">
+      Got a question about cybersecurity? Or just want to geek out over tech?
+      I'm always happy to connect, help where I can, and learn something new
+      along the way :)
+    </p>
 
-      .contact-container {
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        gap: 3rem;
-        margin-bottom: 4rem;
-      }
-
-      .contact-info {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-
-      .info-card {
-        display: flex;
-        gap: 1rem;
-        padding: 1.25rem;
-        background-color: var(--card-bg);
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      }
-
-      .info-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 48px;
-        height: 48px;
-        /* background-color: var(--primary-color-light); */
-        border-radius: 50%;
-        /* color: var(--primary-color); */
-        flex-shrink: 0;
-      }
-
-      .info-content {
-        flex: 1;
-      }
-
-      .info-content h3 {
-        margin: 0 0 0.5rem;
-        /* font-size: 1.1rem; */
-      }
-
-      .info-content p {
-        margin: 0;
-        color: var(--text-color-light);
-      }
-
-      .info-content a {
-        color: var(--text-color);
-        text-decoration: none;
-        transition: color 0.2s ease;
-      }
-
-      .info-content a:hover {
-        color: var(--primary-color);
-        text-decoration: underline;
-      }
-
-      .social-links {
-        margin-top: 1rem;
-      }
-
-      .social-links h3 {
-        margin-bottom: 1rem;
-        /* font-size: 1.1rem; */
-      }
-
-      .social-icons {
-        display: flex;
-        gap: 3rem;
-      }
-
-      .social-icons a {
-        display: flex;
-        /* align-items: center; */
-        /* justify-content: center; */
-        width: 40px;
-        height: 40px;
-        /* background-color: var(--card-bg); */
-        border-radius: 50%;
-        color: var(--text-color);
-        transition: all 0.2s ease;
-      }
-
-      .social-icons a:hover {
-        /* background-color: var(--primary-color); */
-        color: white;
-        transform: translateY(-2px);
-      }
-      @media (max-width: 900px) {
-        .contact-container {
-          grid-template-columns: 1fr;
-        }
-
-        .faq-items {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <section>
-      <h1>Get In Touch</h1>
-
-      <p class="intro-text">
-        Got a question about cybersecurity? Or just want to geek out over tech?
-        I’m always happy to connect, help where I can, and learn something new
-        along the way :)
-      </p>
-
-      <div class="contact-container">
-        <!-- Left: Info -->
-        <div class="contact-info">
-          <div class="info-card">
-            <div class="info-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path
-                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                ></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-            </div>
-            <div class="info-content">
-              <h3>Email</h3>
-              <p>
-                <a href="mailto:bavarvasneh@gmail.com">bavarvasneh@gmail.com</a>
-              </p>
-            </div>
+    <div class="contact-grid">
+      <!-- Left sidebar -->
+      <div class="contact-sidebar">
+        <div class="info-card reveal-item">
+          <div class="info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+  stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
           </div>
-          <div class="info-card">
-            <div class="info-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path
-                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                ></path>
-              </svg>
-            </div>
-            <div class="info-content">
-              <h3>Location</h3>
-              <p>///blend.monks.fumes</p>
-            </div>
-          </div>
-
-          <div class="social-links">
-            <h3 style="margin-left: 2.5rem">Connect With Me</h3>
-            <div class="social-icons">
-              <a href="https://github.com/spbavarva" aria-label="GitHub">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                  ></path>
-                </svg>
-              </a>
-              <a
-                href="https://linkedin.com/in/snehbavarva"
-                aria-label="LinkedIn"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path
-                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                  ></path>
-                  <rect x="2" y="9" width="4" height="12"></rect>
-                  <circle cx="4" cy="4" r="2"></circle>
-                </svg>
-              </a>
-              <a href="https://medium.com/@snehbavarva" aria-label="Medium">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M2.01 6.103a.6.6 0 0 1 .194-.505L3.9 4.047v-.256H7.58l4.595 10.082L16.12 4h3.516v.256l1.312 1.28a.355.355 0 0 1 .135.28v13.029a.355.355 0 0 1-.135.28l-1.273 1.28v.255h-6.396v-.256l1.32-1.28c.13-.129.13-.167.13-.28V8.59l-3.677 9.318h-.496L5.954 8.59v6.967c-.036.203.04.409.2.55l1.717 2.086v.256H2v-.256l1.717-2.086a.586.586 0 0 0 .192-.55V6.103Z"
-                  />
-                </svg>
-              </a>
-            </div>
-            <div class="subscribe-container">
-              <a href="/newsletter" class="subscribe-button"
-                >📬 Subscribe to My Newsletter</a
-              >
-            </div>
-            <div class="link-buttons">
-              <a href="https://calendly.com/bavarvasneh/30min" target="_blank"
-                >Calendly</a
-              >
-              <a href="https://topmate.io/snehbavarva" target="_blank"
-                >Topmate</a
-              >
-            </div>
+          <div class="info-content">
+            <h3>Email</h3>
+            <p><a href="mailto:bavarvasneh@gmail.com">bavarvasneh@gmail.com</a></p>
           </div>
         </div>
 
-        <!-- Right: Form -->
-        <form
-          id="contact-form"
-          action="https://formspree.io/f/xzzekree"
-          method="POST"
-          class="contact-form"
-        >
+        <div class="info-card reveal-item">
+          <div class="info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+  stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1
+   4-10z"></path>
+            </svg>
+          </div>
+          <div class="info-content">
+            <h3>Location</h3>
+            <p>///blend.monks.fumes</p>
+          </div>
+        </div>
+
+        <div class="social-section reveal-item">
+          <h3>Connect With Me</h3>
+          <div class="social-row">
+            <a href="https://github.com/spbavarva" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+  stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54
+  6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65
+  5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9
+  18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/snehbavarva" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+  stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1
+  6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://medium.com/@snehbavarva" aria-label="Medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0
+   0 24 24">
+                <path d="M2.01 6.103a.6.6 0 0 1 .194-.505L3.9 4.047v-.256H7.58l4.595 10.082L16.12
+  4h3.516v.256l1.312 1.28a.355.355 0 0 1 .135.28v13.029a.355.355 0 0 1-.135.28l-1.273
+  1.28v.255h-6.396v-.256l1.32-1.28c.13-.129.13-.167.13-.28V8.59l-3.677 9.318h-.496L5.954
+  8.59v6.967c-.036.203.04.409.2.55l1.717 2.086v.256H2v-.256l1.717-2.086a.586.586 0 0 0 .192-.55V6.103Z" />
+              </svg>
+            </a>
+          </div>
+          <div class="contact-links">
+            <a href="/newsletter">📬 Newsletter</a>
+            <a href="https://calendly.com/bavarvasneh/30min" target="_blank">Calendly</a>
+            <a href="https://topmate.io/snehbavarva" target="_blank">Topmate</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-card reveal-item">
+        <form id="contact-form" action="https://formspree.io/f/xzzekree" method="POST">
           <div class="form-group">
             <label for="name">Name *</label>
             <input type="text" id="name" name="name" required />
@@ -506,13 +616,9 @@
           <div class="form-group">
             <label for="subject">Subject *</label>
             <input type="text" id="subject" name="subject" required />
-            <div
-              id="autoFillSubject"
-              class="click-to-fill"
-              onclick="fillSubject()"
-            >
+            <div id="autoFillSubject" class="click-to-fill" onclick="fillSubject()">
               <span class="auto-fill-text">New Connection! :)</span>
-              <span class="auto-fill-instruction">← Click to auto-fill</span>
+              <span class="auto-fill-instruction"> ← Click to auto-fill</span>
             </div>
           </div>
           <div class="form-group">
@@ -520,79 +626,70 @@
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
           <input type="text" name="_gotcha" style="display: none" />
-          <button type="submit" class="submit-button">Send Message</button>
+          <button type="submit" class="submit-btn">Send Message</button>
           <div id="form-status" class="form-status" style="display: none"></div>
         </form>
       </div>
-    </section>
-    <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+    </div>
 
-    <script>
-      const subjectField = document.getElementById("subject");
-      const autoFillSubject = document.getElementById("autoFillSubject");
+    <hr class="contact-separator" />
+  </section>
 
-      // Function to auto-fill subject
-      function fillSubject() {
-        subjectField.value = "New Connection! :)";
-        subjectField.focus();
+  <script>
+    function fillSubject() {
+      document.getElementById("subject").value = "New Connection! :)";
+      document.getElementById("subject").focus();
+    }
+
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      var status = document.getElementById("form-status");
+      var email = document.getElementById("email").value;
+      var name = document.getElementById("name").value;
+      var message = document.getElementById("message").value;
+
+      if (!email || !name || !message) {
+        e.preventDefault();
+        status.textContent = "Please fill in all required fields";
+        status.className = "form-status error";
+        status.style.display = "block";
+        return;
       }
 
-      // Hover effects
-      autoFillSubject.addEventListener("mouseenter", () => {
-        autoFillSubject.style.textDecoration = "underline";
-        autoFillSubject.style.textDecorationColor = "#60a5fa";
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        e.preventDefault();
+        status.textContent = "Please enter a valid email address";
+        status.className = "form-status error";
+        status.style.display = "block";
+      } else {
+        status.textContent = "Thank you for your message! I will get back to you soon.";
+        status.className = "form-status success";
+        status.style.display = "block";
+      }
+    });
 
-        const spans = autoFillSubject.querySelectorAll("span");
-        spans.forEach((span) => {
-          span.style.color = "#60a5fa";
+    (function () {
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+      var items = document.querySelectorAll(".reveal-item");
+      if (!items.length) return;
+
+      document.documentElement.classList.add("contact-motion-ready");
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
         });
+      }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+
+      items.forEach(function (item, index) {
+        item.style.transitionDelay = Math.min(index * 70, 280) + "ms";
+        observer.observe(item);
       });
-
-      autoFillSubject.addEventListener("mouseleave", () => {
-        autoFillSubject.style.textDecoration = "none";
-
-        const textSpan = autoFillSubject.querySelector(".auto-fill-text");
-        const instructionSpan = autoFillSubject.querySelector(
-          ".auto-fill-instruction"
-        );
-
-        textSpan.style.color = "";
-        instructionSpan.style.color = "";
-      });
-
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (e) {
-          const status = document.getElementById("form-status");
-          const email = document.getElementById("email").value;
-          const name = document.getElementById("name").value;
-          const message = document.getElementById("message").value;
-
-          if (!email || !name || !message) {
-            e.preventDefault();
-            status.textContent = "Please fill in all required fields";
-            status.className = "form-status error";
-            status.style.display = "block";
-            return;
-          }
-
-          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          if (!emailRegex.test(email)) {
-            e.preventDefault();
-            status.textContent = "Please enter a valid email address";
-            status.className = "form-status error";
-            status.style.display = "block";
-          } else {
-            status.textContent =
-              "Thank you for your message! I will get back to you soon.";
-            status.className = "form-status success";
-            status.style.display = "block";
-          }
-        });
-    </script>
-  </body>
-</html>
-</div>
+    })();
+  </script></div>
   </article>
 </main>
 </div>

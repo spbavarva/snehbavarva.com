@@ -1,123 +1,535 @@
-<!-- layouts/shortcodes/skills-table.html -->
 <style>
-  .skills-table {
+  .skillx-ledger {
+    margin-top: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .skillx-row {
+    position: relative;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.018));
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    transition: border-color 0.22s ease, transform 0.22s ease, background 0.22s ease;
+  }
+
+  .skillx-row:hover {
+    border-color: rgba(96, 165, 250, 0.18);
+    transform: translateY(-2px);
+  }
+
+  .skillx-row.is-open {
+    border-left: 3px solid rgba(96, 165, 250, 0.7);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.042), rgba(255, 255, 255, 0.025));
+  }
+
+  .skillx-row.is-open::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    border-radius: 18px 18px 0 0;
+    background: linear-gradient(90deg, #3273dc, #60a5fa, transparent);
+    pointer-events: none;
+  }
+
+  .skillx-toggle {
     width: 100%;
-    border-collapse: collapse;
-    margin: 2rem 0;
-    font-size: 1rem;
-  }
-
-  .skills-table th,
-  .skills-table td {
-    border-bottom: 1px solid #333;
-    padding: 1rem;
-    vertical-align: top;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 42px minmax(170px, 220px) minmax(0, 1fr) 18px;
+    gap: 1rem;
+    align-items: center;
     text-align: left;
+    padding: 1rem 1.2rem;
   }
 
-  .skills-table th {
-    background-color: transparent;
-    font-weight: bold;
-    font-size: 1.1rem;
+  .skillx-index {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
   }
 
-  .skills-table td ul {
+  .skillx-titlebox {
+    min-width: 0;
+  }
+
+  .skillx-title {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.3;
+    font-weight: 620;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .skillx-preview {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.84rem;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.46);
+  }
+
+  .skillx-snapshot {
+    min-width: 0;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.66);
+  }
+
+  .skillx-icon {
+    justify-self: end;
+    width: 12px;
+    height: 12px;
+    border-right: 1.5px solid rgba(255, 255, 255, 0.45);
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.45);
+    transform: rotate(45deg);
+    transition: transform 0.22s ease, border-color 0.22s ease;
+  }
+
+  .skillx-row:hover .skillx-title,
+  .skillx-row.is-open .skillx-title {
+    color: #fff;
+  }
+
+  .skillx-row:hover .skillx-snapshot {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .skillx-row.is-open .skillx-icon {
+    transform: rotate(225deg);
+    border-color: #7db5ff;
+  }
+
+  .skillx-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition: grid-template-rows 0.32s ease, opacity 0.22s ease;
+  }
+
+  .skillx-row.is-open .skillx-panel {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+
+  .skillx-panel-inner {
+    overflow: hidden;
+    padding: 0 1.2rem 1rem calc(42px + 1.2rem);
+  }
+
+  .skillx-panel-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+    gap: 1rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .skillx-note {
     margin: 0;
-    padding-left: 1.2rem;
+    font-size: 0.84rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.48);
   }
 
-  .skills-table td ul li {
-    margin-bottom: 0.5rem;
+  .skillx-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 2;
+    column-gap: 1.5rem;
+  }
+
+  .skillx-list--wide {
+    columns: 3;
+  }
+
+  .skillx-list li {
+    break-inside: avoid;
+    position: relative;
+    padding-left: 0.9rem;
+    margin: 0 0 0.52rem;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.76);
+  }
+
+  .skillx-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #60a5fa;
+    opacity: 0.8;
+  }
+
+  @media (max-width: 880px) {
+    .skillx-toggle {
+      grid-template-columns: 36px minmax(150px, 190px) minmax(0, 1fr) 16px;
+      gap: 0.85rem;
+      padding: 1rem;
+    }
+
+    .skillx-panel-inner {
+      padding-left: calc(36px + 1rem);
+      padding-right: 1rem;
+    }
+
+    .skillx-panel-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .skillx-note {
+      margin-bottom: 0.25rem;
+    }
+
+    .skillx-list--wide {
+      columns: 2;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .skillx-row {
+      border-radius: 14px;
+    }
+
+    .skillx-toggle {
+      grid-template-columns: 28px minmax(0, 1fr) 14px;
+      gap: 0.8rem;
+      padding: 0.92rem 0.9rem;
+    }
+
+    .skillx-snapshot {
+      display: none;
+    }
+
+    .skillx-panel-inner {
+      padding-left: calc(28px + 0.9rem);
+      padding-right: 0.9rem;
+    }
+
+    .skillx-list,
+    .skillx-list--wide {
+      columns: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .skillx-icon,
+    .skillx-panel,
+    .skillx-row {
+      transition: none;
+    }
   }
 </style>
 
-<table class="skills-table">
-  <thead>
-    <tr>
-      <th>Category</th>
-      <th>Skills & Tools</th>
-    </tr>
-  </thead>
-  <tbody>
+<div class="skillx-ledger">
+  <article class="skillx-row aboutx-reveal">
+    <button class="skillx-toggle" type="button">
+      <span class="skillx-index">01</span>
+      <span class="skillx-titlebox">
+        <span class="skillx-title">Languages</span>
+        <span class="skillx-preview">Automation, scripting, and low-level analysis</span>
+      </span>
+      <span class="skillx-snapshot">Python · Bash · PowerShell · JavaScript · SQL</span>
+      <span class="skillx-icon" aria-hidden="true"></span>
+    </button>
+    <div class="skillx-panel">
+      <div class="skillx-panel-inner">
+        <div class="skillx-panel-grid">
+          <p class="skillx-note">Implementation languages and scripting tools used for automation, security tooling, analysis, and exploit development.</p>
+          <ul class="skillx-list">
+            <li>Python</li>
+            <li>Bash</li>
+            <li>PowerShell</li>
+            <li>Shell Scripting</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>C/C++</li>
+            <li>x86/x64 Assembly</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
 
-    <tr>
-      <td>Languages</td>
-      <td>
-        Python, Bash, PowerShell, Shell Scripting, JavaScript, SQL,
-        C/C++, x86/x64 Assembly
-      </td>
-    </tr>
+  <article class="skillx-row aboutx-reveal is-open">
+    <button class="skillx-toggle" type="button">
+      <span class="skillx-index">02</span>
+      <span class="skillx-titlebox">
+        <span class="skillx-title">Incident Response</span>
+        <span class="skillx-preview">Investigation, triage, tuning, and attack-chain analysis</span>
+      </span>
+      <span class="skillx-snapshot">Triage · RCA · Log Analysis · EDR · Alert Tuning</span>
+      <span class="skillx-icon" aria-hidden="true"></span>
+    </button>
+    <div class="skillx-panel">
+      <div class="skillx-panel-inner">
+        <div class="skillx-panel-grid">
+          <p class="skillx-note">The area closest to my current focus: investigation flow, signal quality, and incident decision support.</p>
+          <ul class="skillx-list">
+            <li>Incident Triage</li>
+            <li>Root Cause Analysis</li>
+            <li>Log Analysis</li>
+            <li>EDR Concepts</li>
+            <li>Alert Tuning</li>
+            <li>Attack Chain Analysis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
 
-    <tr>
-      <td>Incident Response</td>
-      <td>
-        Incident Triage, Root Cause Analysis, Log Analysis, EDR Concepts, Alert Tuning,
-        Attack Chain Analysis
-      </td>
-    </tr>
+  <article class="skillx-row aboutx-reveal">
+    <button class="skillx-toggle" type="button">
+      <span class="skillx-index">03</span>
+      <span class="skillx-titlebox">
+        <span class="skillx-title">Identity &amp; Active Directory</span>
+        <span class="skillx-preview">Identity internals and attacker-path visibility</span>
+      </span>
+      <span class="skillx-snapshot">AD Internals · Kerberos · Delegation Abuse · BloodHound</span>
+      <span class="skillx-icon" aria-hidden="true"></span>
+    </button>
+    <div class="skillx-panel">
+      <div class="skillx-panel-inner">
+        <div class="skillx-panel-grid">
+          <p class="skillx-note">Identity and access topics that matter for both offensive pathing and defensive hardening.</p>
+          <ul class="skillx-list">
+            <li>AD Internals</li>
+            <li>Kerberos Authentication</li>
+            <li>Delegation Abuse</li>
+            <li>Priv Esc Paths</li>
+            <li>BloodHound Analysis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
 
-    <tr>
-      <td>Identity & Active Directory</td>
-      <td>
-        AD Internals, Kerberos Authentication,
-        Delegation Abuse, Priv Esc Paths,
-        BloodHound Analysis
-      </td>
-    </tr>
+  <article class="skillx-row aboutx-reveal">
+    <button class="skillx-toggle" type="button">
+      <span class="skillx-index">04</span>
+      <span class="skillx-titlebox">
+        <span class="skillx-title">System Design</span>
+        <span class="skillx-preview">Architecture review through a security lens</span>
+      </span>
+      <span class="skillx-snapshot">STRIDE · Threat Modeling · Design Reviews · Surface Mapping</span>
+      <span class="skillx-icon" aria-hidden="true"></span>
+    </button>
+    <div class="skillx-panel">
+      <div class="skillx-panel-inner">
+        <div class="skillx-panel-grid">
+          <p class="skillx-note">Threat-led design work focused on abuse cases, architecture choices, and attack surface visibility.</p>
+          <ul class="skillx-list">
+            <li>STRIDE</li>
+            <li>Threat Modeling for Cloud &amp; Web Applications</li>
+            <li>System Design Reviews</li>
+            <li>Attack Surface Mapping</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
 
-    <tr>
-      <td>System Design</td>
-      <td>
-        STRIDE, Threat Modeling for Cloud & Web Applications,
-        System Design Reviews, Attack Surface Mapping
-      </td>
-    </tr>
+  <article class="skillx-row aboutx-reveal">
+    <button class="skillx-toggle" type="button">
+      <span class="skillx-index">05</span>
+      <span class="skillx-titlebox">
+        <span class="skillx-title">AppSec</span>
+        <span class="skillx-preview">Application weaknesses, auth flaws, and secure design</span>
+      </span>
+      <span class="skillx-snapshot">OWASP Top 10 · API Security · AuthN/AuthZ · Design Reviews</span>
+      <span class="skillx-icon" aria-hidden="true"></span>
+    </button>
+    <div class="skillx-panel">
+      <div class="skillx-panel-inner">
+        <div class="skillx-panel-grid">
+          <p class="skillx-note">Application security work spanning common flaw classes and secure review of real-world systems.</p>
+          <ul class="skillx-list">
+            <li>OWASP Top 10</li>
+            <li>Business Logic Flaws</li>
+            <li>API Security</li>
+            <li>Authentication &amp; Authorization Issues</li>
+            <li>Secure Design Reviews</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
 
-    <tr>
-      <td>AppSec</td>
-      <td>
-        OWASP Top 10, Business Logic Flaws, API Security,
-        Authentication & Authorization Issues,
-        Secure Design Reviews
-      </td>
-    </tr>
+  <article class="skillx-row aboutx-reveal">
+    <button class="skillx-toggle" type="button">
+      <span class="skillx-index">06</span>
+      <span class="skillx-titlebox">
+        <span class="skillx-title">Cloud &amp; DevSecOps</span>
+        <span class="skillx-preview">Cloud platforms, delivery pipelines, and platform hardening</span>
+      </span>
+      <span class="skillx-snapshot">AWS · Azure · Docker · Kubernetes · Terraform · Jenkins</span>
+      <span class="skillx-icon" aria-hidden="true"></span>
+    </button>
+    <div class="skillx-panel">
+      <div class="skillx-panel-inner">
+        <div class="skillx-panel-grid">
+          <p class="skillx-note">Cloud and deployment tooling tied to platform security, delivery pipelines, and automation-first workflows.</p>
+          <ul class="skillx-list">
+            <li>AWS</li>
+            <li>Azure</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Terraform</li>
+            <li>CI/CD Security</li>
+            <li>Jenkins</li>
+            <li>Microservices</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
 
-    <tr>
-      <td>Cloud & DevSecOps</td>
-      <td>
-        AWS, Azure, Docker, Kubernetes, Terraform,
-        CI/CD Security, Jenkins, Microservices
-      </td>
-    </tr>
+  <article class="skillx-row aboutx-reveal">
+    <button class="skillx-toggle" type="button">
+      <span class="skillx-index">07</span>
+      <span class="skillx-titlebox">
+        <span class="skillx-title">Operating Systems</span>
+        <span class="skillx-preview">Environments I test, defend, and automate against</span>
+      </span>
+      <span class="skillx-snapshot">Linux · Windows · macOS</span>
+      <span class="skillx-icon" aria-hidden="true"></span>
+    </button>
+    <div class="skillx-panel">
+      <div class="skillx-panel-inner">
+        <div class="skillx-panel-grid">
+          <p class="skillx-note">Working fluency across the operating systems that show up in security engineering and investigations.</p>
+          <ul class="skillx-list">
+            <li>Linux</li>
+            <li>Windows</li>
+            <li>macOS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
 
-    <tr>
-      <td>OS</td>
-      <td>
-        Linux, Windows, macOS
-      </td>
-    </tr>
+  <article class="skillx-row aboutx-reveal">
+    <button class="skillx-toggle" type="button">
+      <span class="skillx-index">08</span>
+      <span class="skillx-titlebox">
+        <span class="skillx-title">Offensive Security</span>
+        <span class="skillx-preview">Offensive practice that keeps the defender mindset honest</span>
+      </span>
+      <span class="skillx-snapshot">VAPT · Web Testing · Priv Esc · Lateral Movement · LLM/AI Testing</span>
+      <span class="skillx-icon" aria-hidden="true"></span>
+    </button>
+    <div class="skillx-panel">
+      <div class="skillx-panel-inner">
+        <div class="skillx-panel-grid">
+          <p class="skillx-note">The offensive foundation behind my current defensive and detection-focused work.</p>
+          <ul class="skillx-list">
+            <li>Vulnerability Assessment &amp; Penetration Testing (VAPT)</li>
+            <li>Network &amp; Web Application Testing</li>
+            <li>Privilege Escalation &amp; Lateral Movement</li>
+            <li>LLM &amp; AI Security Testing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
 
-    <tr>
-      <td>Offensive Security</td>
-      <td>
-        <ul>
-          <li>Vulnerability Assessment & Penetration Testing (VAPT)</li>
-          <li>Network & Web Application Testing</li>
-          <li>Privilege Escalation & Lateral Movement</li>
-          <li>LLM & AI Security Testing</li>
-        </ul>
-      </td>
-    </tr>
+  <article class="skillx-row aboutx-reveal">
+    <button class="skillx-toggle" type="button">
+      <span class="skillx-index">09</span>
+      <span class="skillx-titlebox">
+        <span class="skillx-title">Security Tooling</span>
+        <span class="skillx-preview">Core tools across offensive work, detection engineering, and investigations</span>
+      </span>
+      <span class="skillx-snapshot">Burp · Splunk · Elastic · Sentinel · Ghidra · Zeek · Snort</span>
+      <span class="skillx-icon" aria-hidden="true"></span>
+    </button>
+    <div class="skillx-panel">
+      <div class="skillx-panel-inner">
+        <div class="skillx-panel-grid">
+          <p class="skillx-note">The tools I reach for most across web testing, detection, visibility, investigation, and reverse engineering.</p>
+          <ul class="skillx-list skillx-list--wide">
+            <li>Burp Suite</li>
+            <li>OWASP ZAP</li>
+            <li>Nessus</li>
+            <li>Nmap</li>
+            <li>Wireshark</li>
+            <li>Splunk</li>
+            <li>Elastic</li>
+            <li>Microsoft Sentinel</li>
+            <li>Zeek (Bro)</li>
+            <li>Snort</li>
+            <li>Ghidra</li>
+            <li>Autopsy</li>
+            <li>Cobalt Strike</li>
+            <li>mimikatz</li>
+            <li>x64Dbg</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
 
-    <tr>
-      <td>Security Tooling</td>
-      <td>
-        Burp Suite, OWASP ZAP, Nessus, Nmap, Wireshark,
-        Splunk, Elastic, Microsoft Sentinel, Zeek (Bro),
-        Snort, Ghidra, Autopsy,
-        Cobalt Strike, mimikatz, x64Dbg
-      </td>
-    </tr>
+<script>
+  (function () {
+    function initSkillxLedger() {
+      var root = document.querySelector(".skillx-ledger");
+      if (!root || root.dataset.bound === "true") return;
+      root.dataset.bound = "true";
 
-  </tbody>
-</table>
+      var rows = Array.prototype.slice.call(root.querySelectorAll(".skillx-row"));
+
+      rows.forEach(function (row, index) {
+        var button = row.querySelector(".skillx-toggle");
+        var panel = row.querySelector(".skillx-panel");
+        if (!button || !panel) return;
+
+        var panelId = "skillx-panel-" + index;
+        panel.id = panelId;
+        button.setAttribute("aria-controls", panelId);
+        button.setAttribute("aria-expanded", row.classList.contains("is-open") ? "true" : "false");
+      });
+
+      root.addEventListener("click", function (event) {
+        var button = event.target.closest(".skillx-toggle");
+        if (!button) return;
+
+        var row = button.closest(".skillx-row");
+        var wasOpen = row.classList.contains("is-open");
+
+        rows.forEach(function (item) {
+          item.classList.remove("is-open");
+          var itemButton = item.querySelector(".skillx-toggle");
+          if (itemButton) itemButton.setAttribute("aria-expanded", "false");
+        });
+
+        if (!wasOpen) {
+          row.classList.add("is-open");
+          button.setAttribute("aria-expanded", "true");
+        }
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initSkillxLedger);
+    } else {
+      initSkillxLedger();
+    }
+  })();
+</script>

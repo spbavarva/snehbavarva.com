@@ -1,209 +1,395 @@
 <style>
-  .timeline1 {
-    /* border-left: 2px solid #60a5fa; */
-    margin: 1.5rem 0;
-    /* padding-left: 1rem; */
+  .aboutx-reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+    transition-delay: var(--aboutx-delay, 0ms);
   }
 
-  .timeline-item1 {
-    margin-bottom: 2rem;
-    padding-left: 1.5rem;
-    border-left: 2px solid #3273dc;
+  .aboutx-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .aboutx-block + .aboutx-block {
+    margin-top: 3rem;
+  }
+
+  .aboutx-head {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin: 0 0 1rem;
+  }
+
+  .aboutx-head::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(96, 165, 250, 0.32), transparent);
+  }
+
+  .aboutx-kicker {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem 0.68rem;
+    border-radius: 999px;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #60a5fa;
+    background: rgba(50, 115, 220, 0.09);
+    border: 1px solid rgba(50, 115, 220, 0.16);
+    white-space: nowrap;
+  }
+
+  .aboutx-head h2 {
+    margin: 0;
+    font-size: clamp(1.7rem, 3vw, 2.25rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: rgba(255, 255, 255, 0.94);
+  }
+
+  .aboutx-copy {
+    margin: 0 0 1.2rem;
+    max-width: 60ch;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.56);
+  }
+
+  .aboutx-track {
     position: relative;
+    display: grid;
+    gap: 0.9rem;
   }
 
-  .timeline-item1::before {
+  .aboutx-track::before {
     content: "";
     position: absolute;
-    left: -8px;
-    top: 0;
-    width: 14px;
-    height: 14px;
+    left: 11px;
+    top: 0.9rem;
+    bottom: 0.9rem;
+    width: 1px;
+    background: linear-gradient(
+      180deg,
+      rgba(96, 165, 250, 0.38),
+      rgba(96, 165, 250, 0.12)
+    );
+  }
+
+  .aboutx-entry {
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr);
+    gap: 0.95rem;
+    align-items: start;
+  }
+
+  .aboutx-node {
+    position: relative;
+    min-height: 100%;
+  }
+
+  .aboutx-node::before {
+    content: "";
+    position: absolute;
+    top: 1.02rem;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: #3273dc;
+    background: #07101d;
+    border: 2px solid #4f93ff;
+    box-shadow: 0 0 0 6px rgba(50, 115, 220, 0.08);
   }
 
-  .timeline-item-header1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 0.5rem;
+  .aboutx-card {
+    min-width: 0;
+    padding: 1rem 1.05rem 1rem 1.1rem;
+    border-radius: 16px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.028),
+      rgba(255, 255, 255, 0.016)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.055);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
   }
 
-  .timeline-item-header1 h3 {
+  .aboutx-entry:hover .aboutx-card {
+    transform: translateY(-3px);
+    border-color: rgba(96, 165, 250, 0.16);
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
+  }
+
+  .aboutx-top {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.8rem;
+    align-items: start;
+  }
+
+  .aboutx-title {
     margin: 0;
+    font-size: clamp(1.06rem, 1.7vw, 1.3rem);
+    line-height: 1.22;
+    font-weight: 620;
+    color: rgba(255, 255, 255, 0.92);
   }
 
-  .timeline-header1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 0.5rem;
+  .aboutx-date {
+    white-space: nowrap;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.42);
+    padding-top: 0.18rem;
   }
 
-  .timeline-title1 {
-    font-weight: bold;
-    font-size: 1.1rem;
-  }
-
-  .timeline-sub1 {
+  .aboutx-sub {
+    margin: 0.22rem 0 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.66);
     font-style: italic;
-    color: #aaa;
+  }
+
+  .aboutx-org {
+    margin: 0.45rem 0 0;
     font-size: 0.95rem;
-  }
-
-  .timeline-location1 {
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-  }
-
-  .timeline-date1 {
-    font-size: 0.9rem;
-    color: #999;
-    font-weight: 500;
-  }
-
-  .timeline-item1 .coursework {
-    margin-top: 0.5rem;
-    font-size: 0.875rem;
-    color: #a0aec0;
-    /* Soft gray/blue */
-    line-height: 1.5;
-  }
-
-  .experience-points {
-    margin-top: 0.75rem;
-    font-size: 0.9rem;
-    color: #cbd5e1;
-    /* slightly brighter than coursework */
     line-height: 1.6;
+    color: rgba(255, 255, 255, 0.78);
   }
 
-  .experience-points ul {
-    margin: 0;
-    padding-left: 1.2rem;
+  .aboutx-meta {
+    margin: 0.9rem 0 0;
+    font-size: 0.94rem;
+    line-height: 1.68;
+    color: rgba(255, 255, 255, 0.66);
   }
 
-  .experience-points li {
-    margin-bottom: 0.5rem;
-  }
-
-  .experience-points strong {
-    color: #60a5fa;
-    /* match your blue accent */
+  .aboutx-meta strong {
+    color: #8ebdff;
     font-weight: 600;
+  }
+
+  .aboutx-points {
+    margin: 0.95rem 0 0;
+    padding-left: 1.1rem;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 0.94rem;
+    line-height: 1.72;
+  }
+
+  .aboutx-points li {
+    margin-bottom: 0.58rem;
+  }
+
+  .aboutx-points strong {
+    color: #60a5fa;
+    font-weight: 600;
+  }
+
+  @media (max-width: 680px) {
+    .aboutx-head h2 {
+      font-size: clamp(1.55rem, 8vw, 2rem);
+    }
+
+    .aboutx-top {
+      grid-template-columns: 1fr;
+      gap: 0.45rem;
+    }
+
+    .aboutx-date {
+      white-space: normal;
+    }
+
+    .aboutx-track::before {
+      left: 9px;
+    }
+
+    .aboutx-entry {
+      grid-template-columns: 20px minmax(0, 1fr);
+      gap: 0.85rem;
+    }
+
+    .aboutx-node::before {
+      left: 10px;
+      width: 11px;
+      height: 11px;
+    }
+
+    .aboutx-card {
+      padding: 0.95rem;
+      border-radius: 14px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .aboutx-reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+
+    .aboutx-card {
+      transition: none;
+    }
   }
 </style>
 
+<section class="aboutx-block">
+  <div class="aboutx-head aboutx-reveal">
+    <span class="aboutx-kicker">Path</span>
+    <h2>Education</h2>
+  </div>
 
-
-<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0;" />
-
-<div class="newsletter-promo">
-  <p>
-    I have started my own Newsletter and it's really very precious to me. It
-    won't be used for any spam and it will be bot-free. It will take only
-    <span class="span-for-inline">10 minutes/week</span>, and trust me, I will
-    make sure that it will add some value in your life :&#41;
+  <p class="aboutx-copy aboutx-reveal">
+    Formal training in cybersecurity and cloud engineering, with the offensive foundations behind my defensive work.
   </p>
 
-  <div class="subscribe-container">
-    <a href="/newsletter" class="subscribe-button">
-      📬 Subscribe to My Newsletter
-    </a>
-  </div>
-</div>
-
-
-<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0;" />
-
-<h2>🎓 Education </h2>
-<div class="timeline1">
-  <div class="timeline-item1">
-    <div class="timeline-header1">
-      <div>
-        <div class="timeline-title1">Master of Engineering in Cybersecurity</div>
-        <p class="timeline-sub1">Graduate Certificate in Cloud Engineering</p>
-        <div class="timeline-sub1">University of Maryland - College Park</div>
-        <div class="coursework">Coursework: Binary Exploitation | Security Tools | Information Assurance | Cloud
-          Security | Cloud Computing</div>
-      </div>
-      <div class="timeline-date1">2024 - 2026</div>
-    </div>
-  </div>
-
-  <div class="timeline-item1">
-    <div class="timeline-header1">
-      <div>
-        <div class="timeline-title1">
-          Bachelor of Technology in Information Technology
+  <div class="aboutx-track">
+    <article class="aboutx-entry aboutx-reveal">
+      <div class="aboutx-node" aria-hidden="true"></div>
+      <div class="aboutx-card">
+        <div class="aboutx-top">
+          <div>
+            <h3 class="aboutx-title">Master of Engineering in Cybersecurity</h3>
+            <p class="aboutx-sub">Graduate Certificate in Cloud Engineering</p>
+            <p class="aboutx-org">University of Maryland - College Park</p>
+          </div>
+          <div class="aboutx-date">2024 - 2026</div>
         </div>
-        <div class="timeline-sub1">Birla Vishvakarma Mahavidyalaya</div>
+
+        <p class="aboutx-meta">
+          <strong>Coursework:</strong> Binary Exploitation · Security Tools · Information Assurance · Cloud Security · Cloud Computing
+        </p>
       </div>
-      <div class="timeline-date1">2020 - 2024</div>
-    </div>
-    <div class="coursework">Coursework: Cybersecurity | Computer Networks | Operating System | Machine Learning</div>
-  </div>
-</div>
-<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0;" />
+    </article>
 
-<h2>💼 Work Experience</h2>
-<div class="timeline-item1">
-  <div class="timeline-header1">
-    <div>
-      <div class="timeline-title1">Junior Penetration Tester</div>
-      <div class="timeline-sub1">EVE Healthcare Centers</div>
-    </div>
-    <div class="timeline-date1">2022 – 2023</div>
-  </div>
+    <article class="aboutx-entry aboutx-reveal">
+      <div class="aboutx-node" aria-hidden="true"></div>
+      <div class="aboutx-card">
+        <div class="aboutx-top">
+          <div>
+            <h3 class="aboutx-title">Bachelor of Technology in Information Technology</h3>
+            <p class="aboutx-sub">Birla Vishvakarma Mahavidyalaya</p>
+          </div>
+          <div class="aboutx-date">2020 - 2024</div>
+        </div>
 
-  <div class="experience-points">
-    <ul>
-      <li>
-        Identified a critical <strong>Broken Authentication</strong> vulnerability
-        enabling account takeover via an internal portal.
-      </li>
-      <li>
-        Demonstrated real-world impact by exposing unauthorized access to
-        <strong>PII of 1,000+ users</strong>.
-      </li>
-      <li>
-        Assisted the incident handling team with <strong>triage, root cause analysis,
-          and containment</strong>, reducing exposure within <strong>24 hours</strong>.
-      </li>
-      <li>
-        Supported enforcement of <strong>role-based access control (RBAC)</strong>
-        to prevent lateral movement.
-      </li>
-      <li>
-        Partnered with IT and compliance teams to deliver
-        business-aligned remediation guidance.
-      </li>
-    </ul>
+        <p class="aboutx-meta">
+          <strong>Coursework:</strong> Cybersecurity · Computer Networks · Operating System · Machine Learning
+        </p>
+      </div>
+    </article>
   </div>
-</div>
+</section>
 
-<div class="timeline-item1">
-  <div class="timeline-header1">
-    <div>
-      <div class="timeline-title1">Information Security Administrator</div>
-      <div class="timeline-sub1">Virtual Testing Foundation</div>
-    </div>
-    <div class="timeline-date1">2022</div>
+<section class="aboutx-block">
+  <div class="aboutx-head aboutx-reveal">
+    <span class="aboutx-kicker">Practice</span>
+    <h2>Work Experience</h2>
   </div>
 
-  <div class="experience-points">
-    <ul>
-      <li>
-        Monitored security events using <strong>SIEM platforms (Splunk / ELK)</strong>
-        to identify attack vectors and perform <strong>root cause analysis</strong>.
-      </li>
-      <li>
-        Simulated adversary techniques using <strong>BloodHound</strong> and applied
-        <strong>STRIDE-based threat modeling</strong> to strengthen network security posture.
-      </li>
-    </ul>
-  </div>
-</div>
+  <p class="aboutx-copy aboutx-reveal">
+    Security work shaped by testing, monitoring, incident handling, and practical remediation.
+  </p>
 
-<hr style="border: none; border-top: 2px solid #444; margin: 2rem 0;" />
+  <div class="aboutx-track">
+    <article class="aboutx-entry aboutx-reveal">
+      <div class="aboutx-node" aria-hidden="true"></div>
+      <div class="aboutx-card">
+        <div class="aboutx-top">
+          <div>
+            <h3 class="aboutx-title">Junior Penetration Tester</h3>
+            <p class="aboutx-sub">EVE Healthcare Centers</p>
+          </div>
+          <div class="aboutx-date">2022 - 2023</div>
+        </div>
+
+        <ul class="aboutx-points">
+          <li>Identified a critical <strong>Broken Authentication</strong> vulnerability enabling account takeover via an internal portal.</li>
+          <li>Demonstrated real-world impact by exposing unauthorized access to <strong>PII of 1,000+ users</strong>.</li>
+          <li>Assisted the incident handling team with <strong>triage, root cause analysis, and containment</strong>, reducing exposure within <strong>24 hours</strong>.</li>
+          <li>Supported enforcement of <strong>role-based access control (RBAC)</strong> to prevent lateral movement.</li>
+          <li>Partnered with IT and compliance teams to deliver business-aligned remediation guidance.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="aboutx-entry aboutx-reveal">
+      <div class="aboutx-node" aria-hidden="true"></div>
+      <div class="aboutx-card">
+        <div class="aboutx-top">
+          <div>
+            <h3 class="aboutx-title">Information Security Administrator</h3>
+            <p class="aboutx-sub">Virtual Testing Foundation</p>
+          </div>
+          <div class="aboutx-date">2022</div>
+        </div>
+
+        <ul class="aboutx-points">
+          <li>Monitored security events using <strong>SIEM platforms (Splunk / ELK)</strong> to identify attack vectors and perform <strong>root cause analysis</strong>.</li>
+          <li>Simulated adversary techniques using <strong>BloodHound</strong> and applied <strong>STRIDE-based threat modeling</strong> to strengthen network security posture.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<script>
+  (function () {
+    function initAboutxReveal() {
+      if (window.__aboutxRevealBound) return;
+      window.__aboutxRevealBound = true;
+
+      var items = document.querySelectorAll(".aboutx-reveal");
+      if (!items.length) return;
+
+      var reduceMotion =
+        window.matchMedia &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      items.forEach(function (item, index) {
+        item.style.setProperty("--aboutx-delay", Math.min(index * 60, 360) + "ms");
+      });
+
+      if (reduceMotion || !("IntersectionObserver" in window)) {
+        items.forEach(function (item) {
+          item.classList.add("is-visible");
+        });
+        return;
+      }
+
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          });
+        },
+        {
+          threshold: 0.14,
+          rootMargin: "0px 0px -36px 0px"
+        }
+      );
+
+      items.forEach(function (item) {
+        observer.observe(item);
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initAboutxReveal);
+    } else {
+      initAboutxReveal();
+    }
+  })();
+</script>

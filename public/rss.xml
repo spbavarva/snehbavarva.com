@@ -6,7 +6,6 @@
     <description>Recent content on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CloudSentinel</title>
@@ -683,175 +682,340 @@
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&#34;UTF-8&#34; /&gt;
-    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;
-    &lt;link
-      rel=&#34;stylesheet&#34;
-      href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css&#34;
-    /&gt;
+      <description>&lt;style&gt;
+    .contact-page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2.25rem 1rem 4.5rem;
+    }
 
-    &lt;title&gt;Get In Touch&lt;/title&gt;
-    &lt;style&gt;
-      .contact-container {
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        gap: 2rem;
-        margin-top: 2rem;
+    .contact-title {
+      margin: 0 0 1rem;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      line-height: 0.98;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.94);
+    }
+
+    .contact-intro {
+      max-width: 760px;
+      margin: 0 0 2.5rem;
+      font-size: 1rem;
+      line-height: 1.85;
+      color: rgba(255, 255, 255, 0.64);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .contact-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .info-card {
+      display: flex;
+      gap: 1rem;
+      padding: 1.15rem 1.25rem;
+      border-radius: 18px;
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.03),
+          rgba(255, 255, 255, 0.018));
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .info-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(96, 165, 250, 0.18);
+      box-shadow: 0 24px 55px rgba(0, 0, 0, 0.22);
+    }
+
+    .info-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      color: rgba(96, 165, 250, 0.82);
+    }
+
+    .info-content h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .info-content p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .info-content a {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .info-content a:hover {
+      color: #76b4ff;
+      text-decoration: none;
+    }
+
+    .social-section {
+      padding: 1.15rem 1.25rem;
+      border-radius: 18px;
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.03),
+          rgba(255, 255, 255, 0.018));
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .social-section h3 {
+      margin: 0 0 1rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .social-row {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .social-row a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.42);
+      transition: color 0.2s ease, transform 0.2s ease;
+      text-decoration: none;
+    }
+
+    .social-row a:hover {
+      color: #76b4ff;
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 1rem;
+      border-radius: 999px;
+      background: linear-gradient(180deg,
+          rgba(50, 115, 220, 0.16),
+          rgba(50, 115, 220, 0.08));
+      border: 1px solid rgba(96, 165, 250, 0.22);
+      color: rgba(255, 255, 255, 0.92) !important;
+      font-size: 0.85rem;
+      font-weight: 400;
+      text-decoration: none;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .contact-links a:hover {
+      transform: translateY(-2px);
+      border-color: rgba(147, 197, 253, 0.42);
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+      text-decoration: none;
+    }
+
+    .contact-form-card {
+      padding: 1.5rem 1.5rem 1.75rem;
+      border-radius: 18px;
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.03),
+          rgba(255, 255, 255, 0.018));
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-form-card::before {
+      content: &#34;&#34;;
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, #3273dc, #60a5fa, transparent);
+      opacity: 0.85;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.64);
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 0.95rem;
+      font-family: inherit;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: rgba(96, 165, 250, 0.5);
+      box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .click-to-fill {
+      font-size: 0.8rem;
+      color: rgba(96, 165, 250, 0.7);
+      margin-top: 0.35rem;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .click-to-fill:hover {
+      color: #76b4ff;
+    }
+
+    .submit-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0.85rem;
+      border: 1px solid rgba(96, 165, 250, 0.3);
+      border-radius: 12px;
+      background: linear-gradient(180deg,
+          rgba(50, 115, 220, 0.2),
+          rgba(50, 115, 220, 0.1));
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 0.95rem;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      border-color: rgba(147, 197, 253, 0.5);
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+    }
+
+    .form-status {
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+    }
+
+    .form-status.success {
+      background: rgba(74, 222, 128, 0.08);
+      border: 1px solid rgba(74, 222, 128, 0.2);
+      color: rgba(74, 222, 128, 0.9);
+    }
+
+    .form-status.error {
+      background: rgba(248, 113, 113, 0.08);
+      border: 1px solid rgba(248, 113, 113, 0.2);
+      color: rgba(248, 113, 113, 0.9);
+    }
+
+    .contact-separator {
+      border: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      margin: 2.5rem 0 0;
+    }
+
+    /* scroll reveal */
+    html.contact-motion-ready .reveal-item {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+
+    html.contact-motion-ready .reveal-item.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    @media (max-width: 900px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .contact-page {
+        padding: 1.5rem 1rem 4rem;
       }
 
-      .contact-form input,
-      .contact-form textarea {
-        width: 100%;
-        padding: 0.75rem;
-        border: 1px solid #333;
-        border-radius: 6px;
-        background-color: #121212;
-        color: white;
+      .contact-title {
+        font-size: clamp(2.35rem, 12vw, 3.3rem);
+      }
+
+      .contact-intro {
         font-size: 1rem;
+        line-height: 1.8;
       }
 
-      .contact-form label {
-        font-weight: 600;
-        margin-bottom: 0.25rem;
-        display: block;
+      .contact-form-card {
+        padding: 1.15rem 1rem 1.35rem;
+        border-radius: 14px;
       }
 
-      .submit-button {
-        background-color: #3b82f6;
-        color: white;
-        border: none;
-        padding: 0.75rem;
-        border-radius: 6px;
-        font-weight: 600;
-        cursor: pointer;
-        width: 100%;
-        margin-top: 1rem;
+      .form-group input,
+      .form-group textarea {
+        border-radius: 10px;
       }
 
-      .submit-button:hover {
-        background-color: #2563eb;
+      .submit-btn {
+        border-radius: 10px;
       }
+    }
+  &lt;/style&gt;
 
-      .click-to-fill {
-        font-size: 0.875rem;
-        color: #3b82f6;
-        margin-top: 0.25rem;
-        cursor: pointer;
-      }
-
-      .contact-container {
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        gap: 3rem;
-        margin-bottom: 4rem;
-      }
-
-      .contact-info {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-
-      .info-card {
-        display: flex;
-        gap: 1rem;
-        padding: 1.25rem;
-        background-color: var(--card-bg);
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      }
-
-      .info-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 48px;
-        height: 48px;
-        /* background-color: var(--primary-color-light); */
-        border-radius: 50%;
-        /* color: var(--primary-color); */
-        flex-shrink: 0;
-      }
-
-      .info-content {
-        flex: 1;
-      }
-
-      .info-content h3 {
-        margin: 0 0 0.5rem;
-        /* font-size: 1.1rem; */
-      }
-
-      .info-content p {
-        margin: 0;
-        color: var(--text-color-light);
-      }
-
-      .info-content a {
-        color: var(--text-color);
-        text-decoration: none;
-        transition: color 0.2s ease;
-      }
-
-      .info-content a:hover {
-        color: var(--primary-color);
-        text-decoration: underline;
-      }
-
-      .social-links {
-        margin-top: 1rem;
-      }
-
-      .social-links h3 {
-        margin-bottom: 1rem;
-        /* font-size: 1.1rem; */
-      }
-
-      .social-icons {
-        display: flex;
-        gap: 3rem;
-      }
-
-      .social-icons a {
-        display: flex;
-        /* align-items: center; */
-        /* justify-content: center; */
-        width: 40px;
-        height: 40px;
-        /* background-color: var(--card-bg); */
-        border-radius: 50%;
-        color: var(--text-color);
-        transition: all 0.2s ease;
-      }
-
-      .social-icons a:hover {
-        /* background-color: var(--primary-color); */
-        color: white;
-        transform: translateY(-2px);
-      }
-      @media (max-width: 900px) {
-        .contact-container {
-          grid-template-columns: 1fr;
-        }
-
-        .faq-items {
-          grid-template-columns: 1fr;
-        }
-      }
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;section&gt;
-      &lt;h1&gt;Get In Touch&lt;/h1&gt;
-
-      &lt;p class=&#34;intro-text&#34;&gt;
-        Got a question about cybersecurity? Or just want to geek out over tech?
-        I’m always happy to connect, help where I can, and learn something new
-        along the way :)
-      &lt;/p&gt;</description>
+  &lt;section class=&#34;contact-page&#34;&gt;
+    &lt;h1 class=&#34;contact-title&#34;&gt;Get In Touch&lt;/h1&gt;
+    &lt;p class=&#34;contact-intro&#34;&gt;
+      Got a question about cybersecurity? Or just want to geek out over tech?
+      I&#39;m always happy to connect, help where I can, and learn something new
+      along the way :)
+    &lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

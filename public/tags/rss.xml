@@ -2,794 +2,794 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Sneh Bavarva | Cybersecurity Professional</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://snehbavarva.xyz/tags/</link>
     <description>Recent content in Tags on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://snehbavarva.xyz/tags/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <link>https://snehbavarva.xyz/tags/ai/</link>
       <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>https://snehbavarva.xyz/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Attack-Path</title>
-      <link>http://localhost:1313/tags/attack-path/</link>
+      <link>https://snehbavarva.xyz/tags/attack-path/</link>
       <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/attack-path/</guid>
+      <guid>https://snehbavarva.xyz/tags/attack-path/</guid>
       <description></description>
     </item>
     <item>
       <title>AWS</title>
-      <link>http://localhost:1313/tags/aws/</link>
+      <link>https://snehbavarva.xyz/tags/aws/</link>
       <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/aws/</guid>
+      <guid>https://snehbavarva.xyz/tags/aws/</guid>
       <description></description>
     </item>
     <item>
       <title>Claude</title>
-      <link>http://localhost:1313/tags/claude/</link>
+      <link>https://snehbavarva.xyz/tags/claude/</link>
       <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/claude/</guid>
+      <guid>https://snehbavarva.xyz/tags/claude/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloud</title>
-      <link>http://localhost:1313/tags/cloud/</link>
+      <link>https://snehbavarva.xyz/tags/cloud/</link>
       <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cloud/</guid>
+      <guid>https://snehbavarva.xyz/tags/cloud/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://snehbavarva.xyz/tags/python/</link>
       <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://snehbavarva.xyz/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>http://localhost:1313/tags/security/</link>
+      <link>https://snehbavarva.xyz/tags/security/</link>
       <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/security/</guid>
+      <guid>https://snehbavarva.xyz/tags/security/</guid>
       <description></description>
     </item>
     <item>
       <title>Appsec</title>
-      <link>http://localhost:1313/tags/appsec/</link>
+      <link>https://snehbavarva.xyz/tags/appsec/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/appsec/</guid>
+      <guid>https://snehbavarva.xyz/tags/appsec/</guid>
       <description></description>
     </item>
     <item>
       <title>CVE</title>
-      <link>http://localhost:1313/tags/cve/</link>
+      <link>https://snehbavarva.xyz/tags/cve/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cve/</guid>
+      <guid>https://snehbavarva.xyz/tags/cve/</guid>
       <description></description>
     </item>
     <item>
       <title>CVE-2025-55182</title>
-      <link>http://localhost:1313/tags/cve-2025-55182/</link>
+      <link>https://snehbavarva.xyz/tags/cve-2025-55182/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cve-2025-55182/</guid>
+      <guid>https://snehbavarva.xyz/tags/cve-2025-55182/</guid>
       <description></description>
     </item>
     <item>
       <title>Deserialiozation</title>
-      <link>http://localhost:1313/tags/deserialiozation/</link>
+      <link>https://snehbavarva.xyz/tags/deserialiozation/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/deserialiozation/</guid>
+      <guid>https://snehbavarva.xyz/tags/deserialiozation/</guid>
       <description></description>
     </item>
     <item>
       <title>FrameworkSecurity</title>
-      <link>http://localhost:1313/tags/frameworksecurity/</link>
+      <link>https://snehbavarva.xyz/tags/frameworksecurity/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/frameworksecurity/</guid>
+      <guid>https://snehbavarva.xyz/tags/frameworksecurity/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>http://localhost:1313/tags/git/</link>
+      <link>https://snehbavarva.xyz/tags/git/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/git/</guid>
+      <guid>https://snehbavarva.xyz/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Javascript</title>
-      <link>http://localhost:1313/tags/javascript/</link>
+      <link>https://snehbavarva.xyz/tags/javascript/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/javascript/</guid>
+      <guid>https://snehbavarva.xyz/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>PrototypeChain</title>
-      <link>http://localhost:1313/tags/prototypechain/</link>
+      <link>https://snehbavarva.xyz/tags/prototypechain/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/prototypechain/</guid>
+      <guid>https://snehbavarva.xyz/tags/prototypechain/</guid>
       <description></description>
     </item>
     <item>
       <title>RCE</title>
-      <link>http://localhost:1313/tags/rce/</link>
+      <link>https://snehbavarva.xyz/tags/rce/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/rce/</guid>
+      <guid>https://snehbavarva.xyz/tags/rce/</guid>
       <description></description>
     </item>
     <item>
       <title>RCS</title>
-      <link>http://localhost:1313/tags/rcs/</link>
+      <link>https://snehbavarva.xyz/tags/rcs/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/rcs/</guid>
+      <guid>https://snehbavarva.xyz/tags/rcs/</guid>
       <description></description>
     </item>
     <item>
       <title>React</title>
-      <link>http://localhost:1313/tags/react/</link>
+      <link>https://snehbavarva.xyz/tags/react/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/react/</guid>
+      <guid>https://snehbavarva.xyz/tags/react/</guid>
       <description></description>
     </item>
     <item>
       <title>React2shell</title>
-      <link>http://localhost:1313/tags/react2shell/</link>
+      <link>https://snehbavarva.xyz/tags/react2shell/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/react2shell/</guid>
+      <guid>https://snehbavarva.xyz/tags/react2shell/</guid>
       <description></description>
     </item>
     <item>
       <title>ReactServerComponents</title>
-      <link>http://localhost:1313/tags/reactservercomponents/</link>
+      <link>https://snehbavarva.xyz/tags/reactservercomponents/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/reactservercomponents/</guid>
+      <guid>https://snehbavarva.xyz/tags/reactservercomponents/</guid>
       <description></description>
     </item>
     <item>
       <title>Testing</title>
-      <link>http://localhost:1313/tags/testing/</link>
+      <link>https://snehbavarva.xyz/tags/testing/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/testing/</guid>
+      <guid>https://snehbavarva.xyz/tags/testing/</guid>
       <description></description>
     </item>
     <item>
       <title>Vulnerability</title>
-      <link>http://localhost:1313/tags/vulnerability/</link>
+      <link>https://snehbavarva.xyz/tags/vulnerability/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/vulnerability/</guid>
+      <guid>https://snehbavarva.xyz/tags/vulnerability/</guid>
       <description></description>
     </item>
     <item>
       <title>VulnerabilityResearch</title>
-      <link>http://localhost:1313/tags/vulnerabilityresearch/</link>
+      <link>https://snehbavarva.xyz/tags/vulnerabilityresearch/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/vulnerabilityresearch/</guid>
+      <guid>https://snehbavarva.xyz/tags/vulnerabilityresearch/</guid>
       <description></description>
     </item>
     <item>
       <title>CTF</title>
-      <link>http://localhost:1313/tags/ctf/</link>
+      <link>https://snehbavarva.xyz/tags/ctf/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ctf/</guid>
+      <guid>https://snehbavarva.xyz/tags/ctf/</guid>
       <description></description>
     </item>
     <item>
       <title>DFIR</title>
-      <link>http://localhost:1313/tags/dfir/</link>
+      <link>https://snehbavarva.xyz/tags/dfir/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/dfir/</guid>
+      <guid>https://snehbavarva.xyz/tags/dfir/</guid>
       <description></description>
     </item>
     <item>
       <title>Easy</title>
-      <link>http://localhost:1313/tags/easy/</link>
+      <link>https://snehbavarva.xyz/tags/easy/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/easy/</guid>
+      <guid>https://snehbavarva.xyz/tags/easy/</guid>
       <description></description>
     </item>
     <item>
       <title>Enduring Echo</title>
-      <link>http://localhost:1313/tags/enduring-echo/</link>
+      <link>https://snehbavarva.xyz/tags/enduring-echo/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/enduring-echo/</guid>
+      <guid>https://snehbavarva.xyz/tags/enduring-echo/</guid>
       <description></description>
     </item>
     <item>
       <title>Hard</title>
-      <link>http://localhost:1313/tags/hard/</link>
+      <link>https://snehbavarva.xyz/tags/hard/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hard/</guid>
+      <guid>https://snehbavarva.xyz/tags/hard/</guid>
       <description></description>
     </item>
     <item>
       <title>Htb</title>
-      <link>http://localhost:1313/tags/htb/</link>
+      <link>https://snehbavarva.xyz/tags/htb/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/htb/</guid>
+      <guid>https://snehbavarva.xyz/tags/htb/</guid>
       <description></description>
     </item>
     <item>
       <title>Incident Response</title>
-      <link>http://localhost:1313/tags/incident-response/</link>
+      <link>https://snehbavarva.xyz/tags/incident-response/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/incident-response/</guid>
+      <guid>https://snehbavarva.xyz/tags/incident-response/</guid>
       <description></description>
     </item>
     <item>
       <title>Insane</title>
-      <link>http://localhost:1313/tags/insane/</link>
+      <link>https://snehbavarva.xyz/tags/insane/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/insane/</guid>
+      <guid>https://snehbavarva.xyz/tags/insane/</guid>
       <description></description>
     </item>
     <item>
       <title>IOCs</title>
-      <link>http://localhost:1313/tags/iocs/</link>
+      <link>https://snehbavarva.xyz/tags/iocs/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/iocs/</guid>
+      <guid>https://snehbavarva.xyz/tags/iocs/</guid>
       <description></description>
     </item>
     <item>
       <title>IR</title>
-      <link>http://localhost:1313/tags/ir/</link>
+      <link>https://snehbavarva.xyz/tags/ir/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ir/</guid>
+      <guid>https://snehbavarva.xyz/tags/ir/</guid>
       <description></description>
     </item>
     <item>
       <title>Log Analysis</title>
-      <link>http://localhost:1313/tags/log-analysis/</link>
+      <link>https://snehbavarva.xyz/tags/log-analysis/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/log-analysis/</guid>
+      <guid>https://snehbavarva.xyz/tags/log-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>Medium</title>
-      <link>http://localhost:1313/tags/medium/</link>
+      <link>https://snehbavarva.xyz/tags/medium/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/medium/</guid>
+      <guid>https://snehbavarva.xyz/tags/medium/</guid>
       <description></description>
     </item>
     <item>
       <title>MITRE</title>
-      <link>http://localhost:1313/tags/mitre/</link>
+      <link>https://snehbavarva.xyz/tags/mitre/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mitre/</guid>
+      <guid>https://snehbavarva.xyz/tags/mitre/</guid>
       <description></description>
     </item>
     <item>
       <title>Persistence</title>
-      <link>http://localhost:1313/tags/persistence/</link>
+      <link>https://snehbavarva.xyz/tags/persistence/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/persistence/</guid>
+      <guid>https://snehbavarva.xyz/tags/persistence/</guid>
       <description></description>
     </item>
     <item>
       <title>Sandbox Bypass</title>
-      <link>http://localhost:1313/tags/sandbox-bypass/</link>
+      <link>https://snehbavarva.xyz/tags/sandbox-bypass/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sandbox-bypass/</guid>
+      <guid>https://snehbavarva.xyz/tags/sandbox-bypass/</guid>
       <description></description>
     </item>
     <item>
       <title>TTPs</title>
-      <link>http://localhost:1313/tags/ttps/</link>
+      <link>https://snehbavarva.xyz/tags/ttps/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ttps/</guid>
+      <guid>https://snehbavarva.xyz/tags/ttps/</guid>
       <description></description>
     </item>
     <item>
       <title>Tunnel Without Walls</title>
-      <link>http://localhost:1313/tags/tunnel-without-walls/</link>
+      <link>https://snehbavarva.xyz/tags/tunnel-without-walls/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tunnel-without-walls/</guid>
+      <guid>https://snehbavarva.xyz/tags/tunnel-without-walls/</guid>
       <description></description>
     </item>
     <item>
       <title>VirusTotal</title>
-      <link>http://localhost:1313/tags/virustotal/</link>
+      <link>https://snehbavarva.xyz/tags/virustotal/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/virustotal/</guid>
+      <guid>https://snehbavarva.xyz/tags/virustotal/</guid>
       <description></description>
     </item>
     <item>
       <title>Automation</title>
-      <link>http://localhost:1313/tags/automation/</link>
+      <link>https://snehbavarva.xyz/tags/automation/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/automation/</guid>
+      <guid>https://snehbavarva.xyz/tags/automation/</guid>
       <description></description>
     </item>
     <item>
       <title>EDR</title>
-      <link>http://localhost:1313/tags/edr/</link>
+      <link>https://snehbavarva.xyz/tags/edr/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/edr/</guid>
+      <guid>https://snehbavarva.xyz/tags/edr/</guid>
       <description></description>
     </item>
     <item>
       <title>MITRE ATT&amp;CK</title>
-      <link>http://localhost:1313/tags/mitre-attck/</link>
+      <link>https://snehbavarva.xyz/tags/mitre-attck/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mitre-attck/</guid>
+      <guid>https://snehbavarva.xyz/tags/mitre-attck/</guid>
       <description></description>
     </item>
     <item>
       <title>Powershell</title>
-      <link>http://localhost:1313/tags/powershell/</link>
+      <link>https://snehbavarva.xyz/tags/powershell/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/powershell/</guid>
+      <guid>https://snehbavarva.xyz/tags/powershell/</guid>
       <description></description>
     </item>
     <item>
       <title>SOAR</title>
-      <link>http://localhost:1313/tags/soar/</link>
+      <link>https://snehbavarva.xyz/tags/soar/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/soar/</guid>
+      <guid>https://snehbavarva.xyz/tags/soar/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows</title>
-      <link>http://localhost:1313/tags/windows/</link>
+      <link>https://snehbavarva.xyz/tags/windows/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/windows/</guid>
+      <guid>https://snehbavarva.xyz/tags/windows/</guid>
       <description></description>
     </item>
     <item>
       <title>Automated</title>
-      <link>http://localhost:1313/tags/automated/</link>
+      <link>https://snehbavarva.xyz/tags/automated/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/automated/</guid>
+      <guid>https://snehbavarva.xyz/tags/automated/</guid>
       <description></description>
     </item>
     <item>
       <title>Burplabs</title>
-      <link>http://localhost:1313/tags/burplabs/</link>
+      <link>https://snehbavarva.xyz/tags/burplabs/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/burplabs/</guid>
+      <guid>https://snehbavarva.xyz/tags/burplabs/</guid>
       <description></description>
     </item>
     <item>
       <title>Burpsuite</title>
-      <link>http://localhost:1313/tags/burpsuite/</link>
+      <link>https://snehbavarva.xyz/tags/burpsuite/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/burpsuite/</guid>
+      <guid>https://snehbavarva.xyz/tags/burpsuite/</guid>
       <description></description>
     </item>
     <item>
       <title>Portswigger</title>
-      <link>http://localhost:1313/tags/portswigger/</link>
+      <link>https://snehbavarva.xyz/tags/portswigger/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/portswigger/</guid>
+      <guid>https://snehbavarva.xyz/tags/portswigger/</guid>
       <description></description>
     </item>
     <item>
       <title>Blue Team</title>
-      <link>http://localhost:1313/tags/blue-team/</link>
+      <link>https://snehbavarva.xyz/tags/blue-team/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/blue-team/</guid>
+      <guid>https://snehbavarva.xyz/tags/blue-team/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloud Security</title>
-      <link>http://localhost:1313/tags/cloud-security/</link>
+      <link>https://snehbavarva.xyz/tags/cloud-security/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cloud-security/</guid>
+      <guid>https://snehbavarva.xyz/tags/cloud-security/</guid>
       <description></description>
     </item>
     <item>
       <title>Cybersecurity</title>
-      <link>http://localhost:1313/tags/cybersecurity/</link>
+      <link>https://snehbavarva.xyz/tags/cybersecurity/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cybersecurity/</guid>
+      <guid>https://snehbavarva.xyz/tags/cybersecurity/</guid>
       <description></description>
     </item>
     <item>
       <title>MalwareAnalysis</title>
-      <link>http://localhost:1313/tags/malwareanalysis/</link>
+      <link>https://snehbavarva.xyz/tags/malwareanalysis/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/malwareanalysis/</guid>
+      <guid>https://snehbavarva.xyz/tags/malwareanalysis/</guid>
       <description></description>
     </item>
     <item>
       <title>MITREATTACK</title>
-      <link>http://localhost:1313/tags/mitreattack/</link>
+      <link>https://snehbavarva.xyz/tags/mitreattack/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mitreattack/</guid>
+      <guid>https://snehbavarva.xyz/tags/mitreattack/</guid>
       <description></description>
     </item>
     <item>
       <title>Phishing</title>
-      <link>http://localhost:1313/tags/phishing/</link>
+      <link>https://snehbavarva.xyz/tags/phishing/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/phishing/</guid>
+      <guid>https://snehbavarva.xyz/tags/phishing/</guid>
       <description></description>
     </item>
     <item>
       <title>Weekly Report</title>
-      <link>http://localhost:1313/tags/weekly-report/</link>
+      <link>https://snehbavarva.xyz/tags/weekly-report/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/weekly-report/</guid>
+      <guid>https://snehbavarva.xyz/tags/weekly-report/</guid>
       <description></description>
     </item>
     <item>
       <title>Certification</title>
-      <link>http://localhost:1313/tags/certification/</link>
+      <link>https://snehbavarva.xyz/tags/certification/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/certification/</guid>
+      <guid>https://snehbavarva.xyz/tags/certification/</guid>
       <description></description>
     </item>
     <item>
-      <title>Cloudsec</title>
-      <link>http://localhost:1313/tags/cloudsec/</link>
+      <title>CloudSec</title>
+      <link>https://snehbavarva.xyz/tags/cloudsec/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cloudsec/</guid>
+      <guid>https://snehbavarva.xyz/tags/cloudsec/</guid>
       <description></description>
     </item>
     <item>
       <title>Fortress</title>
-      <link>http://localhost:1313/tags/fortress/</link>
+      <link>https://snehbavarva.xyz/tags/fortress/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/fortress/</guid>
+      <guid>https://snehbavarva.xyz/tags/fortress/</guid>
       <description></description>
     </item>
     <item>
       <title>OWASP</title>
-      <link>http://localhost:1313/tags/owasp/</link>
+      <link>https://snehbavarva.xyz/tags/owasp/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/owasp/</guid>
+      <guid>https://snehbavarva.xyz/tags/owasp/</guid>
       <description></description>
     </item>
     <item>
       <title>Reverse Engineering</title>
-      <link>http://localhost:1313/tags/reverse-engineering/</link>
+      <link>https://snehbavarva.xyz/tags/reverse-engineering/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/reverse-engineering/</guid>
+      <guid>https://snehbavarva.xyz/tags/reverse-engineering/</guid>
       <description></description>
     </item>
     <item>
       <title>Assume Breach</title>
-      <link>http://localhost:1313/tags/assume-breach/</link>
+      <link>https://snehbavarva.xyz/tags/assume-breach/</link>
       <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/assume-breach/</guid>
+      <guid>https://snehbavarva.xyz/tags/assume-breach/</guid>
       <description></description>
     </item>
     <item>
       <title>Easy&#34;</title>
-      <link>http://localhost:1313/tags/easy/</link>
+      <link>https://snehbavarva.xyz/tags/easy/</link>
       <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/easy/</guid>
+      <guid>https://snehbavarva.xyz/tags/easy/</guid>
       <description></description>
     </item>
     <item>
       <title>Hayabusa</title>
-      <link>http://localhost:1313/tags/hayabusa/</link>
+      <link>https://snehbavarva.xyz/tags/hayabusa/</link>
       <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hayabusa/</guid>
+      <guid>https://snehbavarva.xyz/tags/hayabusa/</guid>
       <description></description>
     </item>
     <item>
       <title>Phantom Check</title>
-      <link>http://localhost:1313/tags/phantom-check/</link>
+      <link>https://snehbavarva.xyz/tags/phantom-check/</link>
       <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/phantom-check/</guid>
+      <guid>https://snehbavarva.xyz/tags/phantom-check/</guid>
       <description></description>
     </item>
     <item>
       <title>Very Easy</title>
-      <link>http://localhost:1313/tags/very-easy/</link>
+      <link>https://snehbavarva.xyz/tags/very-easy/</link>
       <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/very-easy/</guid>
+      <guid>https://snehbavarva.xyz/tags/very-easy/</guid>
       <description></description>
     </item>
     <item>
       <title>WMI</title>
-      <link>http://localhost:1313/tags/wmi/</link>
+      <link>https://snehbavarva.xyz/tags/wmi/</link>
       <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/wmi/</guid>
+      <guid>https://snehbavarva.xyz/tags/wmi/</guid>
       <description></description>
     </item>
     <item>
       <title>CVE-2025-46203</title>
-      <link>http://localhost:1313/tags/cve-2025-46203/</link>
+      <link>https://snehbavarva.xyz/tags/cve-2025-46203/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cve-2025-46203/</guid>
+      <guid>https://snehbavarva.xyz/tags/cve-2025-46203/</guid>
       <description></description>
     </item>
     <item>
       <title>CVE-2025-46204</title>
-      <link>http://localhost:1313/tags/cve-2025-46204/</link>
+      <link>https://snehbavarva.xyz/tags/cve-2025-46204/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cve-2025-46204/</guid>
+      <guid>https://snehbavarva.xyz/tags/cve-2025-46204/</guid>
       <description></description>
     </item>
     <item>
       <title>FirstCVE</title>
-      <link>http://localhost:1313/tags/firstcve/</link>
+      <link>https://snehbavarva.xyz/tags/firstcve/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/firstcve/</guid>
+      <guid>https://snehbavarva.xyz/tags/firstcve/</guid>
       <description></description>
     </item>
     <item>
       <title>OpenSource</title>
-      <link>http://localhost:1313/tags/opensource/</link>
+      <link>https://snehbavarva.xyz/tags/opensource/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/opensource/</guid>
+      <guid>https://snehbavarva.xyz/tags/opensource/</guid>
       <description></description>
     </item>
     <item>
       <title>SecurityResearch</title>
-      <link>http://localhost:1313/tags/securityresearch/</link>
+      <link>https://snehbavarva.xyz/tags/securityresearch/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/securityresearch/</guid>
+      <guid>https://snehbavarva.xyz/tags/securityresearch/</guid>
       <description></description>
     </item>
     <item>
       <title>2025</title>
-      <link>http://localhost:1313/tags/2025/</link>
+      <link>https://snehbavarva.xyz/tags/2025/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/2025/</guid>
+      <guid>https://snehbavarva.xyz/tags/2025/</guid>
       <description></description>
     </item>
     <item>
       <title>CDSA</title>
-      <link>http://localhost:1313/tags/cdsa/</link>
+      <link>https://snehbavarva.xyz/tags/cdsa/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cdsa/</guid>
+      <guid>https://snehbavarva.xyz/tags/cdsa/</guid>
       <description></description>
     </item>
     <item>
       <title>SOC</title>
-      <link>http://localhost:1313/tags/soc/</link>
+      <link>https://snehbavarva.xyz/tags/soc/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/soc/</guid>
+      <guid>https://snehbavarva.xyz/tags/soc/</guid>
       <description></description>
     </item>
     <item>
       <title>FREE</title>
-      <link>http://localhost:1313/tags/free/</link>
+      <link>https://snehbavarva.xyz/tags/free/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/free/</guid>
+      <guid>https://snehbavarva.xyz/tags/free/</guid>
       <description></description>
     </item>
     <item>
       <title>Notes</title>
-      <link>http://localhost:1313/tags/notes/</link>
+      <link>https://snehbavarva.xyz/tags/notes/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/notes/</guid>
+      <guid>https://snehbavarva.xyz/tags/notes/</guid>
       <description></description>
     </item>
     <item>
       <title>Obsidian</title>
-      <link>http://localhost:1313/tags/obsidian/</link>
+      <link>https://snehbavarva.xyz/tags/obsidian/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/obsidian/</guid>
+      <guid>https://snehbavarva.xyz/tags/obsidian/</guid>
       <description></description>
     </item>
     <item>
       <title>Sync</title>
-      <link>http://localhost:1313/tags/sync/</link>
+      <link>https://snehbavarva.xyz/tags/sync/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sync/</guid>
+      <guid>https://snehbavarva.xyz/tags/sync/</guid>
       <description></description>
     </item>
     <item>
       <title>SIEM</title>
-      <link>http://localhost:1313/tags/siem/</link>
+      <link>https://snehbavarva.xyz/tags/siem/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/siem/</guid>
+      <guid>https://snehbavarva.xyz/tags/siem/</guid>
       <description></description>
     </item>
     <item>
       <title>Sigma</title>
-      <link>http://localhost:1313/tags/sigma/</link>
+      <link>https://snehbavarva.xyz/tags/sigma/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sigma/</guid>
+      <guid>https://snehbavarva.xyz/tags/sigma/</guid>
       <description></description>
     </item>
     <item>
       <title>Splunk</title>
-      <link>http://localhost:1313/tags/splunk/</link>
+      <link>https://snehbavarva.xyz/tags/splunk/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/splunk/</guid>
+      <guid>https://snehbavarva.xyz/tags/splunk/</guid>
       <description></description>
     </item>
     <item>
       <title>Threat Detection</title>
-      <link>http://localhost:1313/tags/threat-detection/</link>
+      <link>https://snehbavarva.xyz/tags/threat-detection/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/threat-detection/</guid>
+      <guid>https://snehbavarva.xyz/tags/threat-detection/</guid>
       <description></description>
     </item>
     <item>
       <title>Threat Hunting</title>
-      <link>http://localhost:1313/tags/threat-hunting/</link>
+      <link>https://snehbavarva.xyz/tags/threat-hunting/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/threat-hunting/</guid>
+      <guid>https://snehbavarva.xyz/tags/threat-hunting/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows Security</title>
-      <link>http://localhost:1313/tags/windows-security/</link>
+      <link>https://snehbavarva.xyz/tags/windows-security/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/windows-security/</guid>
+      <guid>https://snehbavarva.xyz/tags/windows-security/</guid>
       <description></description>
     </item>
     <item>
       <title>Ransomware</title>
-      <link>http://localhost:1313/tags/ransomware/</link>
+      <link>https://snehbavarva.xyz/tags/ransomware/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ransomware/</guid>
+      <guid>https://snehbavarva.xyz/tags/ransomware/</guid>
       <description></description>
     </item>
     <item>
       <title>WannaCry</title>
-      <link>http://localhost:1313/tags/wannacry/</link>
+      <link>https://snehbavarva.xyz/tags/wannacry/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/wannacry/</guid>
+      <guid>https://snehbavarva.xyz/tags/wannacry/</guid>
       <description></description>
     </item>
     <item>
       <title>YARA</title>
-      <link>http://localhost:1313/tags/yara/</link>
+      <link>https://snehbavarva.xyz/tags/yara/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/yara/</guid>
+      <guid>https://snehbavarva.xyz/tags/yara/</guid>
       <description></description>
     </item>
     <item>
       <title>ArgoCD</title>
-      <link>http://localhost:1313/tags/argocd/</link>
+      <link>https://snehbavarva.xyz/tags/argocd/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/argocd/</guid>
+      <guid>https://snehbavarva.xyz/tags/argocd/</guid>
       <description></description>
     </item>
     <item>
       <title>CD</title>
-      <link>http://localhost:1313/tags/cd/</link>
+      <link>https://snehbavarva.xyz/tags/cd/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cd/</guid>
+      <guid>https://snehbavarva.xyz/tags/cd/</guid>
       <description></description>
     </item>
     <item>
       <title>CI</title>
-      <link>http://localhost:1313/tags/ci/</link>
+      <link>https://snehbavarva.xyz/tags/ci/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ci/</guid>
+      <guid>https://snehbavarva.xyz/tags/ci/</guid>
       <description></description>
     </item>
     <item>
       <title>DevOps</title>
-      <link>http://localhost:1313/tags/devops/</link>
+      <link>https://snehbavarva.xyz/tags/devops/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/devops/</guid>
+      <guid>https://snehbavarva.xyz/tags/devops/</guid>
       <description></description>
     </item>
     <item>
       <title>DevSecOps</title>
-      <link>http://localhost:1313/tags/devsecops/</link>
+      <link>https://snehbavarva.xyz/tags/devsecops/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/devsecops/</guid>
+      <guid>https://snehbavarva.xyz/tags/devsecops/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/tags/docker/</link>
+      <link>https://snehbavarva.xyz/tags/docker/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/docker/</guid>
+      <guid>https://snehbavarva.xyz/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Gitlab</title>
-      <link>http://localhost:1313/tags/gitlab/</link>
+      <link>https://snehbavarva.xyz/tags/gitlab/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/gitlab/</guid>
+      <guid>https://snehbavarva.xyz/tags/gitlab/</guid>
       <description></description>
     </item>
     <item>
       <title>JACOCO</title>
-      <link>http://localhost:1313/tags/jacoco/</link>
+      <link>https://snehbavarva.xyz/tags/jacoco/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/jacoco/</guid>
+      <guid>https://snehbavarva.xyz/tags/jacoco/</guid>
       <description></description>
     </item>
     <item>
       <title>Jenkins</title>
-      <link>http://localhost:1313/tags/jenkins/</link>
+      <link>https://snehbavarva.xyz/tags/jenkins/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/jenkins/</guid>
+      <guid>https://snehbavarva.xyz/tags/jenkins/</guid>
       <description></description>
     </item>
     <item>
       <title>K8s</title>
-      <link>http://localhost:1313/tags/k8s/</link>
+      <link>https://snehbavarva.xyz/tags/k8s/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/k8s/</guid>
+      <guid>https://snehbavarva.xyz/tags/k8s/</guid>
       <description></description>
     </item>
     <item>
       <title>Kubernetes</title>
-      <link>http://localhost:1313/tags/kubernetes/</link>
+      <link>https://snehbavarva.xyz/tags/kubernetes/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/kubernetes/</guid>
+      <guid>https://snehbavarva.xyz/tags/kubernetes/</guid>
       <description></description>
     </item>
     <item>
       <title>Maven</title>
-      <link>http://localhost:1313/tags/maven/</link>
+      <link>https://snehbavarva.xyz/tags/maven/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/maven/</guid>
+      <guid>https://snehbavarva.xyz/tags/maven/</guid>
       <description></description>
     </item>
     <item>
       <title>OWASP ZAP</title>
-      <link>http://localhost:1313/tags/owasp-zap/</link>
+      <link>https://snehbavarva.xyz/tags/owasp-zap/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/owasp-zap/</guid>
+      <guid>https://snehbavarva.xyz/tags/owasp-zap/</guid>
       <description></description>
     </item>
     <item>
       <title>SAST</title>
-      <link>http://localhost:1313/tags/sast/</link>
+      <link>https://snehbavarva.xyz/tags/sast/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sast/</guid>
+      <guid>https://snehbavarva.xyz/tags/sast/</guid>
       <description></description>
     </item>
     <item>
       <title>SCA</title>
-      <link>http://localhost:1313/tags/sca/</link>
+      <link>https://snehbavarva.xyz/tags/sca/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sca/</guid>
+      <guid>https://snehbavarva.xyz/tags/sca/</guid>
       <description></description>
     </item>
     <item>
       <title>SonarQube</title>
-      <link>http://localhost:1313/tags/sonarqube/</link>
+      <link>https://snehbavarva.xyz/tags/sonarqube/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sonarqube/</guid>
+      <guid>https://snehbavarva.xyz/tags/sonarqube/</guid>
       <description></description>
     </item>
     <item>
       <title>Trivy</title>
-      <link>http://localhost:1313/tags/trivy/</link>
+      <link>https://snehbavarva.xyz/tags/trivy/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/trivy/</guid>
+      <guid>https://snehbavarva.xyz/tags/trivy/</guid>
       <description></description>
     </item>
     <item>
       <title>YML</title>
-      <link>http://localhost:1313/tags/yml/</link>
+      <link>https://snehbavarva.xyz/tags/yml/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/yml/</guid>
+      <guid>https://snehbavarva.xyz/tags/yml/</guid>
       <description></description>
     </item>
     <item>
       <title>Dream Job-1</title>
-      <link>http://localhost:1313/tags/dream-job-1/</link>
+      <link>https://snehbavarva.xyz/tags/dream-job-1/</link>
       <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/dream-job-1/</guid>
+      <guid>https://snehbavarva.xyz/tags/dream-job-1/</guid>
       <description></description>
     </item>
     <item>
       <title>Lazarus Group</title>
-      <link>http://localhost:1313/tags/lazarus-group/</link>
+      <link>https://snehbavarva.xyz/tags/lazarus-group/</link>
       <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/lazarus-group/</guid>
+      <guid>https://snehbavarva.xyz/tags/lazarus-group/</guid>
       <description></description>
     </item>
     <item>
       <title>SmartyPants</title>
-      <link>http://localhost:1313/tags/smartypants/</link>
+      <link>https://snehbavarva.xyz/tags/smartypants/</link>
       <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/smartypants/</guid>
+      <guid>https://snehbavarva.xyz/tags/smartypants/</guid>
       <description></description>
     </item>
     <item>
       <title>OSINT</title>
-      <link>http://localhost:1313/tags/osint/</link>
+      <link>https://snehbavarva.xyz/tags/osint/</link>
       <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/osint/</guid>
+      <guid>https://snehbavarva.xyz/tags/osint/</guid>
       <description></description>
     </item>
   </channel>
