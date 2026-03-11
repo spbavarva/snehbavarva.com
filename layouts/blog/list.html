@@ -1,15 +1,345 @@
 {{ define "main" }}
+
+<style>
+  .blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2.25rem 1rem 4.5rem;
+  }
+
+  .blog-title {
+    margin: 0 0 1rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    line-height: 0.98;
+    letter-spacing: 0em;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.94);
+  }
+
+  .blog-description {
+    max-width: 760px;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.85;
+    color: rgba(255, 255, 255, 0.64);
+  }
+
+  .blog-description+.newsletter-promo {
+    margin-top: 2rem;
+  }
+
+  .blog-description a,
+  .timeline-content-read {
+    color: #76b4ff;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+
+  .blog-description a:hover,
+  .timeline-content-read:hover {
+    color: #a9ceff;
+    text-decoration: none;
+  }
+
+  .newsletter-promo {
+    position: relative;
+    max-width: 100%;
+    margin: 2rem 0 2.75rem;
+    padding: 1.3rem 1.45rem;
+    border-radius: 18px;
+    background: linear-gradient(180deg,
+        rgba(255, 255, 255, 0.03),
+        rgba(255, 255, 255, 0.018));
+    border: 1px solid rgba(96, 165, 250, 0.14);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  .newsletter-promo::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #3273dc, #60a5fa, transparent);
+    opacity: 0.85;
+  }
+
+  .newsletter-promo .blog-description {
+    max-width: none;
+    font-size: 0.9rem;
+    line-height: 1.85;
+    color: rgba(255, 255, 255, 0.68);
+  }
+
+  .span-for-inline {
+    color: #9fc8ff;
+    font-weight: 400;
+  }
+
+  .subscribe-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1.15rem;
+  }
+
+  .subscribe-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    padding: 0.85rem 1.15rem;
+    border-radius: 999px;
+    background: linear-gradient(180deg,
+        rgba(50, 115, 220, 0.16),
+        rgba(50, 115, 220, 0.08));
+    border: 1px solid rgba(96, 165, 250, 0.22);
+    color: rgba(255, 255, 255, 0.92) !important;
+    font-weight: 200;
+    text-decoration: none;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+
+  .subscribe-button:hover {
+    transform: translateY(-2px);
+    border-color: rgba(147, 197, 253, 0.42);
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+    text-decoration: none;
+  }
+
+  .timeline-wrapper {
+    margin-top: 2.5rem;
+  }
+
+  .timeline-posts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.35rem;
+  }
+
+  .timeline-posts::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 0.8rem;
+    bottom: 0.8rem;
+    width: 1px;
+    background: linear-gradient(180deg,
+        rgba(96, 165, 250, 0.34),
+        rgba(96, 165, 250, 0.14));
+  }
+
+  .timeline-entry {
+    position: relative;
+    display: grid;
+    grid-template-columns: 22px minmax(0, 1fr);
+    column-gap: 1rem;
+    align-items: start;
+  }
+
+  .timeline-rail {
+    position: relative;
+    min-height: 100%;
+  }
+
+  .timeline-rail::before {
+    content: "";
+    position: absolute;
+    top: 0.95rem;
+    left: 11px;
+    width: 12px;
+    height: 12px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #05070c;
+    border: 2px solid rgba(96, 165, 250, 0.82);
+    box-shadow: 0 0 0 6px rgba(50, 115, 220, 0.1);
+  }
+
+  .timeline-content {
+  min-width: 0;
+  padding: 1.15rem 1.25rem 1.2rem;
+  border-radius: 18px;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.03),
+      rgba(255, 255, 255, 0.018));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, opacity 0.65s ease;
+}
+
+
+  .timeline-entry:hover .timeline-content {
+  transform: translateY(-4px);
+  border-color: rgba(96, 165, 250, 0.18);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.22);
+}
+
+
+  .timeline-date {
+    /* display: inline-flex; */
+    align-items: center;
+    gap: 0.55rem;
+    margin: 0 0 0.85rem;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.78rem;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.42);
+  }
+
+  .timeline-date::before {
+    content: "";
+    width: 28px;
+    height: 1px;
+    background: rgba(96, 165, 250, 0.42);
+  }
+
+  .timeline-content h2 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+    line-height: 1.24;
+    font-weight: 500;
+    letter-spacing: 0em;
+    transition: top 0.2s ease;
+
+  }
+
+  .timeline-content-title {
+    color: rgba(255, 255, 255, 0.88) !important;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+  }
+
+  .timeline-content-title:hover {
+    color: #76b4ff !important;
+    text-decoration: none;
+  }
+
+  .timeline-content p {
+    margin: 0 0 1rem;
+    max-width: 64ch;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.56);
+  }
+
+  .timeline-content-read {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-weight: 600;
+  }
+
+  .timeline-content-read:hover {
+    transform: translateX(2px);
+    transition: top 0.2s ease;
+
+  }
+
+  .blog-separator {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin: 2.5rem 0 0;
+  }
+
+  html.blog-motion-ready .timeline-content {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+html.blog-motion-ready .timeline-content.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+
+
+  @media (max-width: 680px) {
+    .blog-container {
+      padding: 1.5rem 1rem 4rem;
+    }
+
+    .blog-title {
+      font-size: clamp(2.35rem, 12vw, 3.3rem);
+    }
+
+    .blog-description,
+    .newsletter-promo .blog-description {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .newsletter-promo {
+      padding: 1.15rem 1rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .subscribe-container {
+      justify-content: stretch;
+    }
+
+    .subscribe-button {
+      width: 100%;
+    }
+
+    .timeline-posts {
+      gap: 1.15rem;
+    }
+
+    .timeline-posts::before {
+      left: 9px;
+      top: 0.8rem;
+      bottom: 0.8rem;
+    }
+
+    .timeline-entry {
+      grid-template-columns: 18px minmax(0, 1fr);
+      column-gap: 0.9rem;
+    }
+
+    .timeline-rail::before {
+      left: 9px;
+      top: 0.9rem;
+      width: 10px;
+      height: 10px;
+    }
+
+    .timeline-content {
+      padding: 1rem;
+      border-radius: 14px;
+    }
+
+    .timeline-date {
+      font-size: 0.74rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .timeline-date::before {
+      width: 20px;
+    }
+
+    .timeline-content h2 {
+      font-size: 1.2rem;
+    }
+
+    .timeline-content p {
+      font-size: 0.96rem;
+    }
+  }
+</style>
+
 <main class="blog-container">
   <h1 class="blog-title">📝 My Blogs</h1>
   <p class="blog-description">
     These are my new blogs apart from Medium blogs. For my previous Medium blogs
     about Privilege Escalation Techniques and more,
-    <a
-      class="timeline-content-read"
-      href="https://medium.com/@snehbavarva"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a class="timeline-content-read" href="https://medium.com/@snehbavarva" target="_blank" rel="noopener noreferrer">
       Please visit here →
     </a>
   </p>
@@ -31,30 +361,72 @@
   </div>
 
   <div class="timeline-wrapper">
-    <div class="timeline-line"></div>
-
     <div class="timeline-posts">
       {{ range (where .Site.RegularPages "Section" "blog").ByDate.Reverse }}
       <article class="timeline-entry">
-        <div></div>
-        {{ if .Date }}
-        <div class="timeline-date">{{ .Date.Format "January 2, 2006" }}</div>
-        {{ end }}
+        <div class="timeline-rail" aria-hidden="true"></div>
         <div class="timeline-content">
+          {{ if .Date }}
+          <div class="timeline-date">{{ .Date.Format "January 2, 2006" }}</div>
+          {{ end }}
           <h2>
-            <a class="timeline-content-title" href="{{ .RelPermalink }}"
-              >{{ .Title }}</a
-            >
+            <a class="timeline-content-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
           </h2>
           <p>{{ .Description | default .Summary | truncate 150 }}</p>
-          <a class="timeline-content-read" href="{{ .RelPermalink }}"
-            >Read article →</a
-          >
+          <a class="timeline-content-read" href="{{ .RelPermalink }}">Read article →</a>
         </div>
       </article>
       {{ end }}
     </div>
   </div>
-  <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+
+  <hr class="blog-separator" />
 </main>
+
+<script>
+  (function () {
+    function initBlogMotion() {
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      ) {
+        return;
+      }
+
+      var items = document.querySelectorAll(".timeline-content");
+      if (!items.length) {
+        return;
+      }
+
+      document.documentElement.classList.add("blog-motion-ready");
+
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          });
+        },
+        {
+          threshold: 0.12,
+          rootMargin: "0px 0px -40px 0px"
+        }
+      );
+
+      items.forEach(function (item, index) {
+        item.style.transitionDelay = Math.min(index * 70, 280) + "ms";
+        observer.observe(item);
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initBlogMotion);
+    } else {
+      initBlogMotion();
+    }
+  })();
+</script>
+
+
 {{ end }}

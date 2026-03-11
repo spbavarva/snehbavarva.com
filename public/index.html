@@ -1452,11 +1452,32 @@
       justify-content: center;
     }
   }
+
+.reveal-item {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+
 </style>
 
 <main class="main">
 
-  <section class="section-home main intro-section">
+  <section class="section-home main intro-section" data-reveal>
     <div class="intro-grid">
       <div class="intro-copy">
         <div class="intro-eyebrow">WHOAMI</div>
@@ -2357,6 +2378,75 @@
 
   <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
 </main>
+
+<script>
+  (function () {
+    function initHomepageReveal() {
+      var reduceMotion =
+        window.matchMedia &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      var selectors = [
+        ".intro-copy",
+        ".intro-grid",
+        ".intro-panel",
+        ".project-card-new",
+        ".cve-card",
+        ".cert-card-new",
+        ".pub-badge",
+        ".pub-card",
+        ".medium-section .post-entry",
+        ".medium-section .featured-links",
+        ".view-all-link"
+      ];
+
+      var items = Array.from(
+        document.querySelectorAll(selectors.join(", "))
+      );
+
+      items.forEach(function (item) {
+        item.classList.add("reveal-item");
+      });
+
+      if (!items.length) return;
+
+      if (reduceMotion) {
+        items.forEach(function (item) {
+          item.classList.add("is-visible");
+        });
+        return;
+      }
+
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          });
+        },
+        {
+          threshold: 0.12,
+          rootMargin: "0px 0px -40px 0px"
+        }
+      );
+
+      items.forEach(function (item, index) {
+        item.style.transitionDelay = Math.min(index * 70, 280) + "ms";
+        observer.observe(item);
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initHomepageReveal);
+    } else {
+      initHomepageReveal();
+    }
+  })();
+</script>
+
+
+
 </div>
 
   <footer class="site-footer">
