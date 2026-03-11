@@ -63,7 +63,7 @@
   .aboutx-track {
     position: relative;
     display: grid;
-    gap: 0.9rem;
+    gap: 1rem;
   }
 
   .aboutx-track::before {
@@ -75,8 +75,9 @@
     width: 1px;
     background: linear-gradient(
       180deg,
-      rgba(96, 165, 250, 0.38),
-      rgba(96, 165, 250, 0.12)
+      rgba(96, 165, 250, 0.3),
+      rgba(6, 182, 212, 0.15),
+      rgba(96, 165, 250, 0.04)
     );
   }
 
@@ -97,33 +98,22 @@
     position: absolute;
     top: 1.02rem;
     left: 12px;
-    width: 12px;
-    height: 12px;
-    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%) scale(1);
     border-radius: 50%;
-    background: #07101d;
-    border: 2px solid #4f93ff;
-    box-shadow: 0 0 0 6px rgba(50, 115, 220, 0.08);
+    background: #4f93ff;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .aboutx-entry:hover .aboutx-node::before {
+    transform: translate(-50%, -50%) scale(1.35);
+    box-shadow: 0 0 0 5px rgba(79, 147, 255, 0.1), 0 0 16px rgba(79, 147, 255, 0.08);
   }
 
   .aboutx-card {
     min-width: 0;
-    padding: 1rem 1.05rem 1rem 1.1rem;
-    border-radius: 16px;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.028),
-      rgba(255, 255, 255, 0.016)
-    );
-    border: 1px solid rgba(255, 255, 255, 0.055);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
-    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-  }
-
-  .aboutx-entry:hover .aboutx-card {
-    transform: translateY(-3px);
-    border-color: rgba(96, 165, 250, 0.16);
-    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
+    padding: 0.65rem 0;
   }
 
   .aboutx-top {
@@ -138,39 +128,47 @@
     font-size: clamp(1.06rem, 1.7vw, 1.3rem);
     line-height: 1.22;
     font-weight: 620;
-    color: rgba(255, 255, 255, 0.92);
+    color: rgba(255, 255, 255, 0.88);
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .aboutx-entry:hover .aboutx-title {
+    color: #fff;
   }
 
   .aboutx-date {
     white-space: nowrap;
-    font-family: var(--font-mono, monospace);
-    font-size: 0.74rem;
-    letter-spacing: 0.08em;
+    font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', var(--font-mono, monospace);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.42);
-    padding-top: 0.18rem;
+    color: rgba(255, 255, 255, 0.35);
+    padding: 0.2rem 0.55rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 4px;
   }
 
   .aboutx-sub {
     margin: 0.22rem 0 0;
     font-size: 0.92rem;
     line-height: 1.55;
-    color: rgba(255, 255, 255, 0.66);
+    color: rgba(255, 255, 255, 0.55);
     font-style: italic;
   }
 
   .aboutx-org {
-    margin: 0.45rem 0 0;
+    margin: 0.4rem 0 0;
     font-size: 0.95rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.78);
+    color: rgba(255, 255, 255, 0.7);
   }
 
   .aboutx-meta {
-    margin: 0.9rem 0 0;
+    margin: 0.85rem 0 0;
     font-size: 0.94rem;
     line-height: 1.68;
-    color: rgba(255, 255, 255, 0.66);
+    color: rgba(255, 255, 255, 0.55);
   }
 
   .aboutx-meta strong {
@@ -179,15 +177,30 @@
   }
 
   .aboutx-points {
-    margin: 0.95rem 0 0;
-    padding-left: 1.1rem;
-    color: rgba(255, 255, 255, 0.74);
+    margin: 0.85rem 0 0;
+    padding-left: 0;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.62);
     font-size: 0.94rem;
     line-height: 1.72;
   }
 
   .aboutx-points li {
-    margin-bottom: 0.58rem;
+    position: relative;
+    padding-left: 0.9rem;
+    margin-bottom: 0.52rem;
+  }
+
+  .aboutx-points li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #60a5fa;
+    opacity: 0.6;
   }
 
   .aboutx-points strong {
@@ -207,6 +220,7 @@
 
     .aboutx-date {
       white-space: normal;
+      width: fit-content;
     }
 
     .aboutx-track::before {
@@ -220,13 +234,8 @@
 
     .aboutx-node::before {
       left: 10px;
-      width: 11px;
-      height: 11px;
-    }
-
-    .aboutx-card {
-      padding: 0.95rem;
-      border-radius: 14px;
+      width: 7px;
+      height: 7px;
     }
   }
 
@@ -237,7 +246,8 @@
       transition: none;
     }
 
-    .aboutx-card {
+    .aboutx-node::before,
+    .aboutx-title {
       transition: none;
     }
   }

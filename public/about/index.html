@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -260,7 +260,7 @@
   .aboutx-track {
     position: relative;
     display: grid;
-    gap: 0.9rem;
+    gap: 1rem;
   }
 
   .aboutx-track::before {
@@ -272,8 +272,9 @@
     width: 1px;
     background: linear-gradient(
       180deg,
-      rgba(96, 165, 250, 0.38),
-      rgba(96, 165, 250, 0.12)
+      rgba(96, 165, 250, 0.3),
+      rgba(6, 182, 212, 0.15),
+      rgba(96, 165, 250, 0.04)
     );
   }
 
@@ -294,33 +295,22 @@
     position: absolute;
     top: 1.02rem;
     left: 12px;
-    width: 12px;
-    height: 12px;
-    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%) scale(1);
     border-radius: 50%;
-    background: #07101d;
-    border: 2px solid #4f93ff;
-    box-shadow: 0 0 0 6px rgba(50, 115, 220, 0.08);
+    background: #4f93ff;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .aboutx-entry:hover .aboutx-node::before {
+    transform: translate(-50%, -50%) scale(1.35);
+    box-shadow: 0 0 0 5px rgba(79, 147, 255, 0.1), 0 0 16px rgba(79, 147, 255, 0.08);
   }
 
   .aboutx-card {
     min-width: 0;
-    padding: 1rem 1.05rem 1rem 1.1rem;
-    border-radius: 16px;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.028),
-      rgba(255, 255, 255, 0.016)
-    );
-    border: 1px solid rgba(255, 255, 255, 0.055);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
-    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-  }
-
-  .aboutx-entry:hover .aboutx-card {
-    transform: translateY(-3px);
-    border-color: rgba(96, 165, 250, 0.16);
-    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
+    padding: 0.65rem 0;
   }
 
   .aboutx-top {
@@ -335,39 +325,47 @@
     font-size: clamp(1.06rem, 1.7vw, 1.3rem);
     line-height: 1.22;
     font-weight: 620;
-    color: rgba(255, 255, 255, 0.92);
+    color: rgba(255, 255, 255, 0.88);
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .aboutx-entry:hover .aboutx-title {
+    color: #fff;
   }
 
   .aboutx-date {
     white-space: nowrap;
-    font-family: var(--font-mono, monospace);
-    font-size: 0.74rem;
-    letter-spacing: 0.08em;
+    font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', var(--font-mono, monospace);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.42);
-    padding-top: 0.18rem;
+    color: rgba(255, 255, 255, 0.35);
+    padding: 0.2rem 0.55rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 4px;
   }
 
   .aboutx-sub {
     margin: 0.22rem 0 0;
     font-size: 0.92rem;
     line-height: 1.55;
-    color: rgba(255, 255, 255, 0.66);
+    color: rgba(255, 255, 255, 0.55);
     font-style: italic;
   }
 
   .aboutx-org {
-    margin: 0.45rem 0 0;
+    margin: 0.4rem 0 0;
     font-size: 0.95rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.78);
+    color: rgba(255, 255, 255, 0.7);
   }
 
   .aboutx-meta {
-    margin: 0.9rem 0 0;
+    margin: 0.85rem 0 0;
     font-size: 0.94rem;
     line-height: 1.68;
-    color: rgba(255, 255, 255, 0.66);
+    color: rgba(255, 255, 255, 0.55);
   }
 
   .aboutx-meta strong {
@@ -376,15 +374,30 @@
   }
 
   .aboutx-points {
-    margin: 0.95rem 0 0;
-    padding-left: 1.1rem;
-    color: rgba(255, 255, 255, 0.74);
+    margin: 0.85rem 0 0;
+    padding-left: 0;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.62);
     font-size: 0.94rem;
     line-height: 1.72;
   }
 
   .aboutx-points li {
-    margin-bottom: 0.58rem;
+    position: relative;
+    padding-left: 0.9rem;
+    margin-bottom: 0.52rem;
+  }
+
+  .aboutx-points li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #60a5fa;
+    opacity: 0.6;
   }
 
   .aboutx-points strong {
@@ -404,6 +417,7 @@
 
     .aboutx-date {
       white-space: normal;
+      width: fit-content;
     }
 
     .aboutx-track::before {
@@ -417,13 +431,8 @@
 
     .aboutx-node::before {
       left: 10px;
-      width: 11px;
-      height: 11px;
-    }
-
-    .aboutx-card {
-      padding: 0.95rem;
-      border-radius: 14px;
+      width: 7px;
+      height: 7px;
     }
   }
 
@@ -434,7 +443,8 @@
       transition: none;
     }
 
-    .aboutx-card {
+    .aboutx-node::before,
+    .aboutx-title {
       transition: none;
     }
   }
@@ -595,40 +605,14 @@
 <style>
   .skillx-ledger {
     margin-top: 0.9rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.65rem;
   }
 
   .skillx-row {
-    position: relative;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.018));
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 18px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-    transition: border-color 0.22s ease, transform 0.22s ease, background 0.22s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
 
-  .skillx-row:hover {
-    border-color: rgba(96, 165, 250, 0.18);
-    transform: translateY(-2px);
-  }
-
-  .skillx-row.is-open {
-    border-left: 3px solid rgba(96, 165, 250, 0.7);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.042), rgba(255, 255, 255, 0.025));
-  }
-
-  .skillx-row.is-open::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    border-radius: 18px 18px 0 0;
-    background: linear-gradient(90deg, #3273dc, #60a5fa, transparent);
-    pointer-events: none;
+  .skillx-row:last-child {
+    border-bottom: 0;
   }
 
   .skillx-toggle {
@@ -639,19 +623,50 @@
     color: inherit;
     cursor: pointer;
     display: grid;
-    grid-template-columns: 42px minmax(170px, 220px) minmax(0, 1fr) 18px;
+    grid-template-columns: 40px minmax(170px, 220px) minmax(0, 1fr) 16px;
     gap: 1rem;
     align-items: center;
     text-align: left;
-    padding: 1rem 1.2rem;
+    padding: 1.15rem 0;
   }
 
   .skillx-index {
-    font-family: var(--font-mono, monospace);
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.35);
+    position: relative;
+    font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', var(--font-mono, monospace);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.2);
+    padding-left: 0.65rem;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .skillx-index::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 0;
+    background: #60a5fa;
+    border-radius: 1px;
+    transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .skillx-row:hover .skillx-index {
+    color: rgba(96, 165, 250, 0.7);
+  }
+
+  .skillx-row:hover .skillx-index::before {
+    height: 55%;
+  }
+
+  .skillx-row.is-open .skillx-index {
+    color: #60a5fa;
+  }
+
+  .skillx-row.is-open .skillx-index::before {
+    height: 100%;
   }
 
   .skillx-titlebox {
@@ -663,32 +678,34 @@
     font-size: 1rem;
     line-height: 1.3;
     font-weight: 620;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.85);
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .skillx-preview {
     display: block;
     margin-top: 0.2rem;
-    font-size: 0.84rem;
+    font-size: 0.82rem;
     line-height: 1.55;
-    color: rgba(255, 255, 255, 0.46);
+    color: rgba(255, 255, 255, 0.34);
   }
 
   .skillx-snapshot {
     min-width: 0;
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.66);
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .skillx-icon {
     justify-self: end;
-    width: 12px;
-    height: 12px;
-    border-right: 1.5px solid rgba(255, 255, 255, 0.45);
-    border-bottom: 1.5px solid rgba(255, 255, 255, 0.45);
+    width: 10px;
+    height: 10px;
+    border-right: 1.5px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.25);
     transform: rotate(45deg);
-    transition: transform 0.22s ease, border-color 0.22s ease;
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .skillx-row:hover .skillx-title,
@@ -697,19 +714,19 @@
   }
 
   .skillx-row:hover .skillx-snapshot {
-    color: rgba(255, 255, 255, 0.78);
+    color: rgba(255, 255, 255, 0.58);
   }
 
   .skillx-row.is-open .skillx-icon {
     transform: rotate(225deg);
-    border-color: #7db5ff;
+    border-color: #60a5fa;
   }
 
   .skillx-panel {
     display: grid;
     grid-template-rows: 0fr;
     opacity: 0;
-    transition: grid-template-rows 0.32s ease, opacity 0.22s ease;
+    transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .skillx-row.is-open .skillx-panel {
@@ -719,92 +736,80 @@
 
   .skillx-panel-inner {
     overflow: hidden;
-    padding: 0 1.2rem 1rem calc(42px + 1.2rem);
+    padding: 0 0 1.2rem 40px;
   }
 
   .skillx-panel-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
-    gap: 1rem;
-    padding-top: 0.6rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding-top: 0.1rem;
   }
 
   .skillx-note {
     margin: 0;
-    font-size: 0.84rem;
+    font-size: 0.82rem;
     line-height: 1.65;
-    color: rgba(255, 255, 255, 0.48);
+    color: rgba(255, 255, 255, 0.38);
   }
 
   .skillx-list {
     list-style: none;
     margin: 0;
     padding: 0;
-    columns: 2;
-    column-gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.38rem;
   }
 
   .skillx-list--wide {
-    columns: 3;
+    gap: 0.38rem;
   }
 
   .skillx-list li {
-    break-inside: avoid;
     position: relative;
-    padding-left: 0.9rem;
-    margin: 0 0 0.52rem;
-    font-size: 0.92rem;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.76);
+    padding: 0.26rem 0.68rem;
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.62);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 5px;
+    background: transparent;
+    transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .skillx-list li:hover {
+    border-color: rgba(96, 165, 250, 0.22);
+    color: rgba(255, 255, 255, 0.92);
+    background: rgba(96, 165, 250, 0.05);
+    box-shadow: 0 0 14px rgba(96, 165, 250, 0.06);
   }
 
   .skillx-list li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.62em;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #60a5fa;
-    opacity: 0.8;
+    display: none;
   }
 
   @media (max-width: 880px) {
     .skillx-toggle {
-      grid-template-columns: 36px minmax(150px, 190px) minmax(0, 1fr) 16px;
+      grid-template-columns: 34px minmax(150px, 190px) minmax(0, 1fr) 14px;
       gap: 0.85rem;
-      padding: 1rem;
     }
 
     .skillx-panel-inner {
-      padding-left: calc(36px + 1rem);
-      padding-right: 1rem;
-    }
-
-    .skillx-panel-grid {
-      grid-template-columns: 1fr;
+      padding-left: 34px;
     }
 
     .skillx-note {
-      margin-bottom: 0.25rem;
-    }
-
-    .skillx-list--wide {
-      columns: 2;
+      margin-bottom: 0.1rem;
     }
   }
 
   @media (max-width: 680px) {
-    .skillx-row {
-      border-radius: 14px;
-    }
-
     .skillx-toggle {
       grid-template-columns: 28px minmax(0, 1fr) 14px;
       gap: 0.8rem;
-      padding: 0.92rem 0.9rem;
+      padding: 0.95rem 0;
     }
 
     .skillx-snapshot {
@@ -812,20 +817,22 @@
     }
 
     .skillx-panel-inner {
-      padding-left: calc(28px + 0.9rem);
-      padding-right: 0.9rem;
+      padding-left: 28px;
     }
 
-    .skillx-list,
-    .skillx-list--wide {
-      columns: 1;
+    .skillx-index {
+      padding-left: 0.5rem;
     }
   }
 
   @media (prefers-reduced-motion: reduce) {
     .skillx-icon,
     .skillx-panel,
-    .skillx-row {
+    .skillx-list li,
+    .skillx-index,
+    .skillx-index::before,
+    .skillx-title,
+    .skillx-snapshot {
       transition: none;
     }
   }
