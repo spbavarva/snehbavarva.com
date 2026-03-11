@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title
-      }}{{ end }}
-    </title>
-    <meta
-      name="title"
-      property="og:title"
-      content="Sneh Bavarva | Cybersecurity Professional"
-    />
-    <meta
-      name="description"
-      content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}"
-    />
 
-    <!-- Load CSS -->
-    {{ $css := resources.Get "css/main.css" | resources.ExecuteAsTemplate
-    "css/main.css" . | fingerprint }}
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title
+    }}{{ end }}
+  </title>
+  <meta name="title" property="og:title" content="Sneh Bavarva | Cybersecurity Professional" />
+  <meta name="description"
+    content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}" />
 
-    <!-- Initial theme class based on user preference -->
-    <script>
-      // Set the initial theme class on the html element
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme) {
-        document.documentElement.classList.add(savedTheme);
-      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.add("light");
-      }
-    </script>
-    <script type="module">
-      import { inject } from "https://analytics.vercel.app/script.js";
-      inject();
-    </script>
-    <script src="/js/copy-code.js" defer></script>
-  </head>
-  <body>
-    {{ partial "header.html" . }}
+  <!-- Load CSS -->
+  {{ $css := resources.Get "css/main.css" | resources.ExecuteAsTemplate
+  "css/main.css" . | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
 
-    <div class="content-wrapper">{{ block "main" . }}{{ end }}</div>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
 
-    {{ partial "footer.html" . }}
-  </body>
+  <!-- Initial theme class based on user preference -->
+  <script>
+    // Set the initial theme class on the html element
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      document.documentElement.classList.add(savedTheme);
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.add("light");
+    }
+  </script>
+  <script type="module">
+    import { inject } from "https://analytics.vercel.app/script.js";
+    inject();
+  </script>
+  <script src="/js/copy-code.js" defer></script>
+</head>
+
+<body>
+  {{ partial "header.html" . }}
+
+  <div class="content-wrapper">{{ block "main" . }}{{ end }}</div>
+
+  {{ partial "footer.html" . }}
+</body>
+
 </html>

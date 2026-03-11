@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
 	<meta name="generator" content="Hugo 0.155.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Sneh Bavarva | Cybersecurity Professional
-    </title>
-    <meta
-      name="title"
-      property="og:title"
-      content="Sneh Bavarva | Cybersecurity Professional"
-    />
-    <meta
-      name="description"
-      content="Cybersecurity portfolio of Sneh Bavarva – OSCP-certified professional with hands-on experience in penetration testing, threat analysis, and DevSecOps. Seeking opportunities to contribute and grow in the cybersecurity industry.
-"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
 
-    
-    
-    <link rel="stylesheet" href="/css/main.2b5779e4be4f79296ef0b0f6227d4e72210c791d42b97713223d742f5f7c4b34.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Sneh Bavarva | Cybersecurity Professional
+  </title>
+  <meta name="title" property="og:title" content="Sneh Bavarva | Cybersecurity Professional" />
+  <meta name="description"
+    content="Cybersecurity portfolio of Sneh Bavarva – OSCP-certified professional with hands-on experience in penetration testing, threat analysis, and DevSecOps. Seeking opportunities to contribute and grow in the cybersecurity industry.
+" />
 
-    
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
+  
+  
+  <link rel="stylesheet" href="/css/main.2b5779e4be4f79296ef0b0f6227d4e72210c791d42b97713223d742f5f7c4b34.css" />
 
+  
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+  
+  <script>
     
-    <script>
-      
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme) {
-        document.documentElement.classList.add(savedTheme);
-      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.add("light");
-      }
-    </script>
-    <script type="module">
-      import { inject } from "https://analytics.vercel.app/script.js";
-      inject();
-    </script>
-    <script src="/js/copy-code.js" defer></script>
-  </head>
-  <body>
-    <header class="site-header">
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      document.documentElement.classList.add(savedTheme);
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.add("light");
+    }
+  </script>
+  <script type="module">
+    import { inject } from "https://analytics.vercel.app/script.js";
+    inject();
+  </script>
+  <script src="/js/copy-code.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
   <div class="header-inner">
     <div class="site-brand">
       <a href="/" class="site-name">Sneh Bavarva</a>
@@ -183,7 +185,7 @@
   </script>
 </header>
 
-    <div class="content-wrapper">
+  <div class="content-wrapper">
 <style>
   .highlight {
     background-color: rgba(50, 115, 220, 0.1);
@@ -358,385 +360,2006 @@
       grid-template-columns: 1fr;
     }
   }
+
+   
+  .hero-section {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 4rem 1rem;
+    background: radial-gradient(ellipse at top, #111827, #000000);
+  }
+
+  .hero-orbs {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.12;
+  }
+
+  .hero-orb--1 {
+    width: 400px;
+    height: 400px;
+    background: #3273dc;
+    top: -10%;
+    left: 10%;
+    animation: float-1 12s ease-in-out infinite;
+  }
+
+  .hero-orb--2 {
+    width: 350px;
+    height: 350px;
+    background: #8b5cf6;
+    top: 20%;
+    right: 5%;
+    animation: float-2 15s ease-in-out infinite;
+  }
+
+  .hero-orb--3 {
+    width: 300px;
+    height: 300px;
+    background: #06b6d4;
+    bottom: -5%;
+    left: 30%;
+    animation: float-3 18s ease-in-out infinite;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    animation: fade-in-up 0.8s ease-out;
+  }
+
+  .hero-greeting {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+
+  .hero-name {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #3273dc, #8b5cf6, #06b6d4);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 6s ease infinite;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.5rem;
+    min-height: 1.8em;
+    position: relative;
+  }
+
+  .subtitle-role {
+    display: inline-block;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  .subtitle-role.fade-out {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  .subtitle-role.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    background: linear-gradient(135deg, #3c73ca, #413792);
+    color: #fff !important;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(79, 70, 229, 0.3);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 0 30px rgba(79, 70, 229, 0.5);
+    transform: translateY(-2px);
+    text-decoration: none;
+    color: #fff !important;
+  }
+
+  .btn-outline {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline:hover {
+    background: linear-gradient(135deg, rgba(50, 115, 220, 0.15), rgba(109, 92, 231, 0.15));
+    border-color: rgba(50, 115, 220, 0.5);
+    color: #fff !important;
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+
+  .hero-socials {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.5) !important;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .hero-socials a:hover {
+    color: #3273dc !important;
+    transform: scale(1.15);
+    text-decoration: none;
+  }
+
+  .hero-socials svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+
+   
+  .stats-section {
+    padding: 3rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-number {
+    font-family: var(--font-mono);
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, #3273dc, #8b5cf6, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.45);
+    margin-top: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+   
+  .section-home {
+    padding: 4rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  .section-header::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(50, 115, 220, 0.4), transparent);
+  }
+
+   
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--accent-gradient);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .glass-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(50, 115, 220, 0.25);
+    box-shadow: 0 15px 40px rgba(50, 115, 220, 0.1);
+  }
+
+  .glass-card:hover::before {
+    opacity: 1;
+  }
+
+   
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .project-card-new h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .project-card-new h3 a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .project-card-new h3 a:hover {
+    color: #60a5fa;
+    text-decoration: none;
+  }
+
+  .project-card-new p {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-tag {
+    background: rgba(50, 115, 220, 0.1);
+    color: #60a5fa;
+    border: 1px solid rgba(50, 115, 220, 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .project-link {
+    color: #60a5fa !important;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+  }
+
+  .project-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #60a5fa;
+    transition: width 0.3s ease;
+  }
+
+  .project-link:hover::after {
+    width: 100%;
+  }
+
+  .project-link:hover {
+    text-decoration: none;
+  }
+
+  .view-all-link {
+    text-align: right;
+    margin-top: 1.5rem;
+  }
+
+  .view-all-link a {
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .view-all-link a:hover {
+    color: #60a5fa !important;
+    text-decoration: none;
+  }
+
+   
+  .cve-card {
+    border-left: 3px solid #ef4444 !important;
+    margin-bottom: 1.25rem;
+  }
+
+  .cve-card:hover {
+    border-left-color: #ef4444 !important;
+  }
+
+  .cve-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .cve-id {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: #ef4444;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .cve-id:hover {
+    text-decoration: underline;
+    color: #f87171;
+  }
+
+  .cve-badge {
+    display: inline-block;
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .cve-description {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .cve-description code {
+    font-family: var(--font-mono);
+    background: rgba(255, 255, 255, 0.06);
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #60a5fa;
+  }
+
+   
+  .certs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .cert-card-new {
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .cert-card-new img {
+    height: 160px;
+    width: auto;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+    display: block;
+    filter: grayscale(0.2);
+    transition: all 0.3s ease;
+  }
+
+  .cert-card-new:hover img {
+    filter: grayscale(0) drop-shadow(0 0 12px rgba(50, 115, 220, 0.3));
+  }
+
+  .cert-card-name {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: #fff;
+    font-size: 0.95rem;
+  }
+
+  .cert-card-date {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 0.25rem;
+  }
+
+   
+  .pub-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .pub-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .pub-badge {
+    display: inline-block;
+    background: rgba(50, 115, 220, 0.1);
+    color: #60a5fa;
+    border: 1px solid rgba(50, 115, 220, 0.2);
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+
+  .pub-title {
+    color: #60a5fa !important;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .pub-title:hover {
+    color: #93c5fd !important;
+    text-decoration: underline;
+  }
+
+  .pub-date {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+   
+  .medium-section .medium-feed h2 {
+    display: none;
+  }
+
+  .medium-section .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .medium-section .post-entry {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .medium-section .post-entry::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--accent-gradient);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .medium-section .post-entry:hover {
+    transform: translateY(-8px);
+    border-color: rgba(50, 115, 220, 0.25);
+    box-shadow: 0 15px 40px rgba(50, 115, 220, 0.1);
+  }
+
+  .medium-section .post-entry:hover::before {
+    opacity: 1;
+  }
+
+  .medium-section .featured-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .medium-section .featured-link.outline {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+  }
+
+  .medium-section .featured-link.outline:hover {
+    border-color: rgba(50, 115, 220, 0.5);
+    background: rgba(50, 115, 220, 0.1);
+    color: #fff !important;
+    text-decoration: none;
+  }
+
+  .medium-section .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .medium-section .post-entry {
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+
+  .medium-section .post-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .medium-section .post-kicker {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.38);
+  }
+
+  .medium-section .post-entry h3 {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .medium-section .post-entry h3 a {
+    color: #f8fafc;
+    text-decoration: none;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-wrap: balance;
+  }
+
+  .medium-section .post-entry h3 a:hover {
+    color: #60a5fa;
+    text-decoration: none;
+  }
+
+  .medium-section .post-meta {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.45);
+  }
+
+  .medium-section .post-entry p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 6.5em;
+  }
+
+  .medium-section .post-entry .project-link {
+    margin-top: 1.25rem;
+    align-self: flex-start;
+    font-size: 0.95rem;
+  }
+
+  .medium-section .featured-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .medium-section .featured-link.outline {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+  }
+
+  .medium-section .featured-link.outline:hover {
+    border-color: rgba(50, 115, 220, 0.5);
+    background: rgba(50, 115, 220, 0.1);
+    color: #fff !important;
+    text-decoration: none;
+  }
+
+  @media (max-width: 1100px) {
+    .medium-section .posts-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    .medium-section .posts-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .medium-section .post-entry {
+      min-height: auto;
+    }
+
+    .medium-section .post-entry h3 {
+      font-size: 1.7rem;
+    }
+  }
+
+
+   
+  @media (max-width: 768px) {
+    .hero-section {
+      min-height: 70vh;
+      padding: 3rem 1rem;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .certs-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pub-card {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .hero-cta {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section-home {
+      padding: 3rem 1rem;
+    }
+
+    .medium-section .posts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .certs-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-orb--1 {
+      width: 250px;
+      height: 250px;
+    }
+
+    .hero-orb--2 {
+      width: 200px;
+      height: 200px;
+    }
+
+    .hero-orb--3 {
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  .intro-section {
+    padding-top: 2rem;
+  }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.9fr);
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .intro-copy {
+    max-width: 860px;
+  }
+
+  .intro-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #60a5fa;
+    background: rgba(50, 115, 220, 0.1);
+    border: 1px solid rgba(50, 115, 220, 0.18);
+  }
+
+  .intro-title {
+    margin: 0 0 1.25rem;
+    max-width: 32ch;
+    font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+    line-height: 1.02;
+    letter-spacing: 0.04em;
+    color: #f8fafc;
+  }
+
+  .intro-lead,
+  .intro-body {
+    max-width: 66ch;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin: 0 0 1rem;
+  }
+
+  .intro-lead {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.95rem;
+  }
+
+  .intro-lead strong,
+  .intro-body strong {
+    color: #fff;
+  }
+
+  .intro-lead span {
+    color: #60a5fa;
+    font-weight: 700;
+  }
+
+  .intro-body a,
+  .intro-panel-item a {
+    color: #60a5fa;
+    text-decoration: none;
+  }
+
+  .intro-body a:hover,
+  .intro-panel-item a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+  }
+
+  .intro-actions {
+    justify-content: flex-start;
+    margin-top: 1.75rem;
+    margin-bottom: 0;
+  }
+
+  .intro-panel {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .intro-panel-label {
+    margin-bottom: 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.42);
+  }
+
+  .intro-panel-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.95rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .intro-panel-item:first-of-type {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .intro-panel-item span {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.38);
+  }
+
+  .intro-panel-item strong {
+    color: #f8fafc;
+    font-size: 1rem;
+    line-height: 1.45;
+    font-weight: 600;
+  }
+
+  @media (max-width: 980px) {
+    .intro-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .intro-title {
+      max-width: 14ch;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .intro-title {
+      font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+    .intro-lead,
+    .intro-body {
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .intro-actions {
+      justify-content: center;
+    }
+  }
+
+  .intro-section {
+    padding-top: 2rem;
+  }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.9fr);
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .intro-copy {
+    max-width: 860px;
+  }
+
+  .intro-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 999px;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #60a5fa;
+    background: rgba(50, 115, 220, 0.1);
+    border: 1px solid rgba(50, 115, 220, 0.18);
+  }
+
+  .intro-title {
+    margin: 0 0 1.1rem;
+    max-width: 32ch;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.08;
+    letter-spacing: 0.03em;
+    font-weight: 650;
+    color: rgba(255, 255, 255, 0.777);
+  }
+
+  .intro-lead,
+  .intro-body {
+    max-width: 66ch;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.709);
+  }
+
+  .intro-lead {
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .soft-strong {
+    color: rgba(255, 255, 255, 0.805);
+    font-weight: 600;
+  }
+
+  .soft-accent {
+    color: #7db5ff;
+    font-weight: 600;
+  }
+
+  .intro-body a,
+  .intro-panel-item a {
+    color: #60a5fa;
+    text-decoration: none;
+  }
+
+  .intro-body a:hover,
+  .intro-panel-item a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+  }
+
+  .intro-actions {
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .intro-panel {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .intro-panel-label {
+    margin-bottom: 0.75rem;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .intro-panel-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.9rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.106);
+  }
+
+  .intro-panel-item:first-of-type {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .intro-panel-item span {
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.36);
+  }
+
+  .intro-panel-item strong {
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 0.98rem;
+    line-height: 1.45;
+    font-weight: 550;
+  }
+
+  @media (max-width: 980px) {
+    .intro-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .intro-title {
+      max-width: 20ch;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .intro-title {
+      font-size: clamp(1.8rem, 8vw, 2.4rem);
+    }
+
+    .intro-lead,
+    .intro-body {
+      font-size: 0.98rem;
+      line-height: 1.75;
+    }
+
+    .intro-actions {
+      justify-content: center;
+    }
+  }
 </style>
 
 <main class="main">
-  <section class="intro py-12">
-    <div class="typing-container mb-6">
-      <h2 class="text-2xl font-bold">
-        <span class="highlight text-blue-400">whoami</span>
-      </h2>
+
+  <section class="section-home main intro-section">
+    <div class="intro-grid">
+      <div class="intro-copy">
+        <div class="intro-eyebrow">WHOAMI</div>
+
+        <h2 class="intro-title">
+          I build security automation, offensive tooling, and practical cloud defense workflows.
+        </h2>
+
+        <p class="intro-lead">
+          I’ll graduate from
+          <span class="soft-strong">University of Maryland, College Park</span>
+          in <span class="soft-strong">May 2026</span>, completing my
+          <span class="soft-accent">Master’s in Cybersecurity</span>
+          and a
+          <span class="soft-strong">Graduate Certificate in Cloud Engineering</span>.
+        </p>
+
+        <p class="intro-body">
+          I’m looking for full-time Security Engineering, IR/SOC, or AppSec roles, and I’m open to relocating.
+        </p>
+
+        <p class="intro-body">
+          My work focuses on building and automating security systems, especially around log analysis,
+          threat modeling, incident triage, and AI-assisted security workflows.
+        </p>
+
+        <p class="intro-body">
+          I also write <a href="/blog">technical blogs</a>, contribute to open-source security tools,
+          and build projects that simulate real-world attacks and defensive response.
+        </p>
+
+        <div class="hero-cta intro-actions">
+          <a href="/projects" class="btn-primary">View Projects →</a>
+          <a href="/contact" class="btn-outline">Get in Touch →</a>
+        </div>
+      </div>
+
+      <aside class="glass-card intro-panel">
+        <div class="intro-panel-label">Current Snapshot</div>
+
+        <div class="intro-panel-item">
+          <span>Degree</span>
+          <strong>MS in Cybersecurity, UMD</strong>
+        </div>
+
+        <div class="intro-panel-item">
+          <span>Also Studying</span>
+          <strong>Graduate Certificate in Cloud Engineering</strong>
+        </div>
+
+        <div class="intro-panel-item">
+          <span>Focus Areas</span>
+          <strong>Security Engineering with Automation, AppSec, Detection & Response</strong>
+        </div>
+
+        <div class="intro-panel-item">
+          <span>Open To</span>
+          <strong>Full-time roles and relocation</strong>
+        </div>
+
+        <div class="intro-panel-item">
+          <span>Writing</span>
+          <strong><a href="/blog">Blogs and technical writeups</a></strong>
+        </div>
+      </aside>
     </div>
-
-    <p class="mb-4 text-zinc-300">
-      I'll be graduating from the
-      <strong> University of Maryland, College Park</strong> in May 2026, currently finishing
-      my
-      <span class="highlight text-blue-400"> Master’s in Cybersecurity</span>
-      along with a <strong>Graduate Certificate in Cloud Engineering</strong>.
-    </p>
-
-    <p class="mb-4 text-zinc-300">
-      I'm actively looking for a full-time role in Security Engineering, IR/SOC Analyst, or AppSec roles, and I am open
-      to relocating.
-    </p>
-
-    <p class="mb-6 text-zinc-300">
-      I focus more on builing and automating security Systems. A large part of my work involves automation and
-      AI/LLM-assisted security workflows, especially for log analysis, threat modeling, and incident triaging.
-    </p>
-    <p class="mb-6 text-zinc-300">
-
-      I do write a lot of
-      <a href="/blog" class="text-blue-400 underline hover:text-blue-300 transition">Blogs</a>, building and
-      contributing to open-source security tools, experimenting new AI/LLM, and work on projects that simulate
-      real-world attacks and defensive response.
-    </p>
-    <p class="mb-4 text-zinc-300">Let's stay in touch :)</p>
-
-    <div class="featured-links">
-      <a href="/projects" class="featured-link outline">View Projects →</a>
-      <a href="/contact" class="featured-link outline">Get in Touch →</a>
-      
-    </div>
-
-    
   </section>
 
-  <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
 
-  <section>
-    <h3>Featured Projects</h3>
 
-    <div class="project-grid">
-
-      <div class="project-card">
-        <h3>
-          <a href="/projects" role="link">
-            SOAR EDR Emulation
-          </a>
-        </h3>
-
-        <p>
-          Emulating adversary techniques and automating D&R with LimaCharlie, Tines and Slack
-        </p>
-        <div class="tags">
-          <span class="tag">Automation</span>
-          <span class="tag">LimaCharlie</span>
-          <span class="tag">Tines</span>
-          
-        </div>
-        <div class="project-links">
-          
-          
-          <a href="/projects">Learn More</a>
-        </div>
+  <template>
+    <section class="intro py-12">
+      <div class="typing-container mb-6">
+        <h2 class="text-2xl font-bold">
+          <span class="highlight text-blue-400">whoami</span>
+        </h2>
       </div>
 
-      <div class="project-card">
-        <h3>
-          <a href="/projects" role="link">
-            burplabs
-          </a>
-        </h3>
+      <p class="mb-4 text-zinc-300">
+        I'll be graduating from the
+        <strong> University of Maryland, College Park</strong> in May 2026, currently finishing
+        my
+        <span class="highlight text-blue-400"> Master’s in Cybersecurity</span>
+        along with a <strong>Graduate Certificate in Cloud Engineering</strong>.
+      </p>
 
-        <p>
-          Automated python package for portswigger labs
-        </p>
-        <div class="tags">
-          <span class="tag">python</span>
-          <span class="tag">burplabs</span>
-          <span class="tag">portswigger</span>
-        </div>
-        <div class="project-links">
-          
-          
-          <a href="/projects">Learn More</a>
-        </div>
-      </div>
-      
-      <div class="project-card">
-        <h3>
-          <a href="/projects" role="link">
-            Automated DevSecOps pipeline: Secure CI/CD Deployment
-          </a>
-        </h3>
+      <p class="mb-4 text-zinc-300">
+        I'm actively looking for a full-time role in Security Engineering, IR/SOC Analyst, or AppSec roles, and I am
+        open
+        to relocating.
+      </p>
 
-        <p>
-          An automated vulnerability scanning pipeline which involves Cloud, AI
-          and Security Integration.
-        </p>
-        <div class="tags">
-          <span class="tag">Jenkins</span>
-          <span class="tag">Docker</span>
-          <span class="tag">OWASP</span>
-        </div>
-        <div class="project-links">
-          
-          
-          <a href="/projects">Learn More</a>
-        </div>
+      <p class="mb-6 text-zinc-300">
+        I focus more on builing and automating security Systems. A large part of my work involves automation and
+        AI/LLM-assisted security workflows, especially for log analysis, threat modeling, and incident triaging.
+      </p>
+      <p class="mb-6 text-zinc-300">
+
+        I do write a lot of
+        <a href="/blog" class="text-blue-400 underline hover:text-blue-300 transition">Blogs</a>, building and
+        contributing to open-source security tools, experimenting new AI/LLM, and work on projects that simulate
+        real-world attacks and defensive response.
+      </p>
+      <p class="mb-4 text-zinc-300">Let's stay in touch :)</p>
+
+      <div class="featured-links">
+        <a href="/projects" class="featured-link outline">View Projects →</a>
+        <a href="/contact" class="featured-link outline">Get in Touch →</a>
+        
       </div>
 
       
-      <div class="project-card">
-        <h3>
-          <a href="/projects" role="link"> Obsidian sync from windows </a>
-        </h3>
-        <p>
-          PowerShell-based automation sets up your Obsidian vault to sync with a
-          private GitHub repo
-        </p>
-        <div class="tags">
-          <span class="tag">Powershell</span>
-          <span class="tag">Automation</span>
-          <span class="tag">Obsidian</span>
-        </div>
-        <div class="project-links">
-          <a href="/projects">Learn More</a>
-        </div>
-      </div>
+    </section>
+
+  </template>
+
+  
+
+
+
+
+  
+
+  <section class="section-home main">
+
+    <div class="section-header" data-aos="fade-right">
+
+      <h2>Featured Projects</h2>
+
     </div>
 
-    <div class="view-all text-zinc-300">
+
+
+    <div class="projects-grid">
+
+      <div class="glass-card project-card-new" data-aos="fade-up" data-aos-delay="0">
+
+        <h3><a href="/projects">SOAR EDR Emulation</a></h3>
+
+        <p>Emulating adversary techniques and automating D&amp;R with LimaCharlie, Tines and Slack</p>
+
+        <div class="project-tags">
+
+          <span class="project-tag">Automation</span>
+
+          <span class="project-tag">LimaCharlie</span>
+
+          <span class="project-tag">Tines</span>
+
+        </div>
+
+        <a href="/projects" class="project-link">Learn More →</a>
+
+      </div>
+
+
+
+      <div class="glass-card project-card-new" data-aos="fade-up" data-aos-delay="100">
+
+        <h3><a href="/projects">burplabs</a></h3>
+
+        <p>Automated python package for portswigger labs</p>
+
+        <div class="project-tags">
+
+          <span class="project-tag">Python</span>
+
+          <span class="project-tag">burplabs</span>
+
+          <span class="project-tag">Portswigger</span>
+
+        </div>
+
+        <a href="/projects" class="project-link">Learn More →</a>
+
+      </div>
+
+
+
+      <div class="glass-card project-card-new" data-aos="fade-up" data-aos-delay="200">
+
+        <h3><a href="/projects">Automated DevSecOps Pipeline</a></h3>
+
+        <p>An automated vulnerability scanning pipeline with Cloud, AI and Security integration</p>
+
+        <div class="project-tags">
+
+          <span class="project-tag">Jenkins</span>
+
+          <span class="project-tag">Docker</span>
+
+          <span class="project-tag">OWASP</span>
+
+        </div>
+
+        <a href="/projects" class="project-link">Learn More →</a>
+
+      </div>
+
+
+
+      <div class="glass-card project-card-new" data-aos="fade-up" data-aos-delay="300">
+
+        <h3><a href="/projects">Obsidian Sync from Windows</a></h3>
+
+        <p>PowerShell-based automation to sync your Obsidian vault with a private GitHub repo</p>
+
+        <div class="project-tags">
+
+          <span class="project-tag">PowerShell</span>
+
+          <span class="project-tag">Automation</span>
+
+          <span class="project-tag">Obsidian</span>
+
+        </div>
+
+        <a href="/projects" class="project-link">Learn More →</a>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="view-all-link" data-aos="fade-up">
+
       <a href="/projects">View All Projects →</a>
+
     </div>
+
   </section>
 
-  <section class="py-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      
-      <div class="hidden md:block">
-        <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
-      </div>
+  <template>
 
-      
-      <div class="bg-zinc-900 p-6 rounded-2xl shadow-lg border border-zinc-700">
-        <h3 class="text-xl font-semibold text-white mb-4">CVEs</h3>
+    <section>
+      <h3>Featured Projects</h3>
+
+      <div class="project-grid">
+
+        <div class="project-card">
+          <h3>
+            <a href="/projects" role="link">
+              SOAR EDR Emulation
+            </a>
+          </h3>
+
+          <p>
+            Emulating adversary techniques and automating D&R with LimaCharlie, Tines and Slack
+          </p>
+          <div class="tags">
+            <span class="tag">Automation</span>
+            <span class="tag">LimaCharlie</span>
+            <span class="tag">Tines</span>
+            
+          </div>
+          <div class="project-links">
+            
+            
+            <a href="/projects">Learn More</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>
+            <a href="/projects" role="link">
+              burplabs
+            </a>
+          </h3>
+
+          <p>
+            Automated python package for portswigger labs
+          </p>
+          <div class="tags">
+            <span class="tag">python</span>
+            <span class="tag">burplabs</span>
+            <span class="tag">portswigger</span>
+          </div>
+          <div class="project-links">
+            
+            
+            <a href="/projects">Learn More</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <h3>
+            <a href="/projects" role="link">
+              Automated DevSecOps pipeline: Secure CI/CD Deployment
+            </a>
+          </h3>
+
+          <p>
+            An automated vulnerability scanning pipeline which involves Cloud, AI
+            and Security Integration.
+          </p>
+          <div class="tags">
+            <span class="tag">Jenkins</span>
+            <span class="tag">Docker</span>
+            <span class="tag">OWASP</span>
+          </div>
+          <div class="project-links">
+            
+            
+            <a href="/projects">Learn More</a>
+          </div>
+        </div>
 
         
-        <div class="mb-4">
-          <p class="text-white mb-1">
-            <span class="text-red-400">|</span>
-            <b><a href="https://www.cve.org/CVERecord?id=CVE-2025-46203" class="text-red-400 hover:underline"
-                target="_blank">CVE-2025-46203</a></b>
+        <div class="project-card">
+          <h3>
+            <a href="/projects" role="link"> Obsidian sync from windows </a>
+          </h3>
+          <p>
+            PowerShell-based automation sets up your Obsidian vault to sync with a
+            private GitHub repo
           </p>
-          <ul class="list-disc list-inside text-sm text-zinc-300 ml-4">
-            <li>
-              Unifiedtransform v2.0 suffers from Broken Access Control, allowing
-              students/teachers to access
-              <code class="inline-code">/students/edit/{id}</code> and modify
-              student records. Affects all v2.0 builds
-            </li>
-          </ul>
-        </div>
-        <br />
-        
-        <div class="mb-4">
-          <p class="text-white mb-1">
-            <span class="text-red-400">|</span>
-            <b><a href="https://www.cve.org/CVERecord?id=CVE-2025-46204" class="text-red-400 hover:underline"
-                target="_blank">CVE-2025-46204</a>
-            </b>
-          </p>
-          <ul class="list-disc list-inside text-sm text-zinc-300 ml-4">
-            <li>
-              Unifiedtransform v2.0 suffers from Broken Access Control, allowing
-              students/teachers to access
-              <code class="inline-code">/course/edit/{id}</code> and modify
-              course data. Affects all v2.0 builds
-            </li>
-          </ul>
+          <div class="tags">
+            <span class="tag">Powershell</span>
+            <span class="tag">Automation</span>
+            <span class="tag">Obsidian</span>
+          </div>
+          <div class="project-links">
+            <a href="/projects">Learn More</a>
+          </div>
         </div>
       </div>
+
+      <div class="view-all text-zinc-300">
+        <a href="/projects">View All Projects →</a>
+      </div>
+    </section>
+  </template>
+
+
+  
+
+  <section class="section-home main">
+
+    <div class="section-header" data-aos="fade-right">
+
+      <h2>CVEs</h2>
+
     </div>
+
+
+
+    <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="0">
+
+      <div class="cve-header">
+
+        <a href="https://www.cve.org/CVERecord?id=CVE-2025-46203" class="cve-id" target="_blank"
+          rel="noopener noreferrer">CVE-2025-46203</a>
+
+        <span class="cve-badge">Published</span>
+
+      </div>
+
+      <p class="cve-description">
+
+        Unifiedtransform v2.0 suffers from Broken Access Control, allowing students/teachers to access
+
+        <code>/students/edit/{id}</code> and modify student records. Affects all v2.0 builds.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="cve-header">
+
+        <a href="https://www.cve.org/CVERecord?id=CVE-2025-46204" class="cve-id" target="_blank"
+          rel="noopener noreferrer">CVE-2025-46204</a>
+
+        <span class="cve-badge">Published</span>
+
+      </div>
+
+      <p class="cve-description">
+
+        Unifiedtransform v2.0 suffers from Broken Access Control, allowing students/teachers to access
+
+        <code>/course/edit/{id}</code> and modify course data. Affects all v2.0 builds.
+
+      </p>
+
+    </div>
+
   </section>
 
-  <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
 
-  <section>
-    <h3 style="font-size: 1.25rem; font-weight: 600; color: white">
-      Certifications
-    </h3>
+  <template>
 
-    <div class="cert-grid">
-      
-      <div class="cert-card">
-        <a href="https://www.credly.com/badges/4628b4a9-cd87-4b97-b636-32ec21842c8b" target="_blank">
+    <section class="py-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <div class="hidden md:block">
+          <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+        </div>
+
+        
+        <div class="bg-zinc-900 p-6 rounded-2xl shadow-lg border border-zinc-700">
+          <h3 class="text-xl font-semibold text-white mb-4">CVEs</h3>
+
+          
+          <div class="mb-4">
+            <p class="text-white mb-1">
+              <span class="text-red-400">|</span>
+              <b><a href="https://www.cve.org/CVERecord?id=CVE-2025-46203" class="text-red-400 hover:underline"
+                  target="_blank">CVE-2025-46203</a></b>
+            </p>
+            <ul class="list-disc list-inside text-sm text-zinc-300 ml-4">
+              <li>
+                Unifiedtransform v2.0 suffers from Broken Access Control, allowing
+                students/teachers to access
+                <code class="inline-code">/students/edit/{id}</code> and modify
+                student records. Affects all v2.0 builds
+              </li>
+            </ul>
+          </div>
+          <br />
+          
+          <div class="mb-4">
+            <p class="text-white mb-1">
+              <span class="text-red-400">|</span>
+              <b><a href="https://www.cve.org/CVERecord?id=CVE-2025-46204" class="text-red-400 hover:underline"
+                  target="_blank">CVE-2025-46204</a>
+              </b>
+            </p>
+            <ul class="list-disc list-inside text-sm text-zinc-300 ml-4">
+              <li>
+                Unifiedtransform v2.0 suffers from Broken Access Control, allowing
+                students/teachers to access
+                <code class="inline-code">/course/edit/{id}</code> and modify
+                course data. Affects all v2.0 builds
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  
+  <template>
+
+    <section>
+      <h3 style="font-size: 1.25rem; font-weight: 600; color: white">
+        Certifications
+      </h3>
+
+      <div class="cert-grid">
+        
+        <div class="cert-card">
+          <a href="https://www.credly.com/badges/4628b4a9-cd87-4b97-b636-32ec21842c8b" target="_blank">
+            <img src="/images/gfact.png" alt="GFACT" />
+          </a>
+          <div class="cert-name">GFACT</div>
+          <div class="cert-date">Feb 2026</div>
+        </div>
+        
+        <div class="cert-card">
+          <a href="https://portswigger.net/web-security/e/c/02ee4654422bec36" target="_blank">
+            <img src="/images/bscp-1.png" alt="BSCP" />
+          </a>
+          <div class="cert-name">BSCP</div>
+          <div class="cert-date">July 2025</div>
+        </div>
+        
+        <div class="cert-card">
+          <a href="https://www.credly.com/badges/c35b460c-42ed-4f70-8053-578f71d57a97/public_url" target="_blank">
+            <img src="/images/aws.png" alt="AWS" />
+          </a>
+          <div class="cert-name">SAA</div>
+          <div class="cert-date">April 2025</div>
+        </div>
+
+        
+        <div class="cert-card">
+          <a href="https://www.credly.com/badges/0b7bc11a-55c4-4948-807a-30c26926ffc7/public_url" target="_blank">
+            <img src="/images/htb_cdsa.webp" alt="CDSA" />
+          </a>
+          <div class="cert-name">CDSA</div>
+          <div class="cert-date">March 2025</div>
+        </div>
+
+        
+        <div class="cert-card">
+          <a href="https://www.credential.net/6b9e9db3-fe36-43fe-b28f-15cafb95e776#acc.a5n9KTyH" target="_blank">
+            <img src="/images/OSCP.png" alt="OSCP" />
+          </a>
+          <div class="cert-name">OSCP</div>
+          <div class="cert-date">July 2024</div>
+        </div>
+
+        
+        <div class="cert-card">
+          <a href="https://www.coursera.org/account/accomplishments/professional-cert/WE85FGTPTJFR" target="_blank">
+            <img src="/images/google.png" alt="Google" />
+          </a>
+          <div class="cert-name">Google Cert</div>
+          <div class="cert-date">Sept 2023</div>
+        </div>
+
+        
+        <div class="cert-card">
+          <a href="https://certs.ine.com/feaa4277-2a76-4595-8f78-dacbc0f466b6#acc.hsixWzf9" target="_blank">
+            <img src="/images/ejpt.png" alt="eJPT" />
+          </a>
+          <div class="cert-name">eJPTv2</div>
+          <div class="cert-date">May 2023</div>
+        </div>
+
+        
+        <div class="cert-card">
+          <a href="https://drive.google.com/file/d/1JcZQQ5seGswCOJk3SBPkFlM6A3wHkKFe/view" target="_blank">
+            <img src="/images/ceh.jpeg" alt="CEH" />
+          </a>
+          <div class="cert-name">CEH</div>
+          <div class="cert-date">Feb 2023</div>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  
+
+  <section class="section-home main">
+
+    <div class="section-header" data-aos="fade-right">
+
+      <h2>Certifications</h2>
+
+    </div>
+
+
+
+    <div class="certs-grid">
+
+      <div class="glass-card cert-card-new" data-aos="zoom-in" data-aos-delay="0">
+
+        <a href="https://www.credly.com/badges/4628b4a9-cd87-4b97-b636-32ec21842c8b" target="_blank"
+          rel="noopener noreferrer">
+
           <img src="/images/gfact.png" alt="GFACT" />
+
         </a>
-        <div class="cert-name">GFACT</div>
-        <div class="cert-date">Feb 2026</div>
+
+        <div class="cert-card-name">GFACT</div>
+
+        <div class="cert-card-date">Feb 2026</div>
+
       </div>
-      
-      <div class="cert-card">
-        <a href="https://portswigger.net/web-security/e/c/02ee4654422bec36" target="_blank">
+
+
+
+      <div class="glass-card cert-card-new" data-aos="zoom-in" data-aos-delay="50">
+
+        <a href="https://portswigger.net/web-security/e/c/02ee4654422bec36" target="_blank" rel="noopener noreferrer">
+
           <img src="/images/bscp-1.png" alt="BSCP" />
+
         </a>
-        <div class="cert-name">BSCP</div>
-        <div class="cert-date">July 2025</div>
+
+        <div class="cert-card-name">BSCP</div>
+
+        <div class="cert-card-date">July 2025</div>
+
       </div>
-      
-      <div class="cert-card">
-        <a href="https://www.credly.com/badges/c35b460c-42ed-4f70-8053-578f71d57a97/public_url" target="_blank">
+
+
+
+      <div class="glass-card cert-card-new" data-aos="zoom-in" data-aos-delay="100">
+
+        <a href="https://www.credly.com/badges/c35b460c-42ed-4f70-8053-578f71d57a97/public_url" target="_blank"
+          rel="noopener noreferrer">
+
           <img src="/images/aws.png" alt="AWS" />
+
         </a>
-        <div class="cert-name">SAA</div>
-        <div class="cert-date">April 2025</div>
+
+        <div class="cert-card-name">SAA</div>
+
+        <div class="cert-card-date">April 2025</div>
+
       </div>
 
-      
-      <div class="cert-card">
-        <a href="https://www.credly.com/badges/0b7bc11a-55c4-4948-807a-30c26926ffc7/public_url" target="_blank">
+
+
+      <div class="glass-card cert-card-new" data-aos="zoom-in" data-aos-delay="150">
+
+        <a href="https://www.credly.com/badges/0b7bc11a-55c4-4948-807a-30c26926ffc7/public_url" target="_blank"
+          rel="noopener noreferrer">
+
           <img src="/images/htb_cdsa.webp" alt="CDSA" />
+
         </a>
-        <div class="cert-name">CDSA</div>
-        <div class="cert-date">March 2025</div>
+
+        <div class="cert-card-name">CDSA</div>
+
+        <div class="cert-card-date">March 2025</div>
+
       </div>
 
-      
-      <div class="cert-card">
-        <a href="https://www.credential.net/6b9e9db3-fe36-43fe-b28f-15cafb95e776#acc.a5n9KTyH" target="_blank">
+
+
+      <div class="glass-card cert-card-new" data-aos="zoom-in" data-aos-delay="200">
+
+        <a href="https://www.credential.net/6b9e9db3-fe36-43fe-b28f-15cafb95e776#acc.a5n9KTyH" target="_blank"
+          rel="noopener noreferrer">
+
           <img src="/images/OSCP.png" alt="OSCP" />
+
         </a>
-        <div class="cert-name">OSCP</div>
-        <div class="cert-date">July 2024</div>
+
+        <div class="cert-card-name">OSCP</div>
+
+        <div class="cert-card-date">July 2024</div>
+
       </div>
 
-      
-      <div class="cert-card">
-        <a href="https://www.coursera.org/account/accomplishments/professional-cert/WE85FGTPTJFR" target="_blank">
+
+
+      <div class="glass-card cert-card-new" data-aos="zoom-in" data-aos-delay="250">
+
+        <a href="https://www.coursera.org/account/accomplishments/professional-cert/WE85FGTPTJFR" target="_blank"
+          rel="noopener noreferrer">
+
           <img src="/images/google.png" alt="Google" />
+
         </a>
-        <div class="cert-name">Google Cert</div>
-        <div class="cert-date">Sept 2023</div>
+
+        <div class="cert-card-name">Google Cert</div>
+
+        <div class="cert-card-date">Sept 2023</div>
+
       </div>
 
-      
-      <div class="cert-card">
-        <a href="https://certs.ine.com/feaa4277-2a76-4595-8f78-dacbc0f466b6#acc.hsixWzf9" target="_blank">
+
+
+      <div class="glass-card cert-card-new" data-aos="zoom-in" data-aos-delay="300">
+
+        <a href="https://certs.ine.com/feaa4277-2a76-4595-8f78-dacbc0f466b6#acc.hsixWzf9" target="_blank"
+          rel="noopener noreferrer">
+
           <img src="/images/ejpt.png" alt="eJPT" />
+
         </a>
-        <div class="cert-name">eJPTv2</div>
-        <div class="cert-date">May 2023</div>
+
+        <div class="cert-card-name">eJPTv2</div>
+
+        <div class="cert-card-date">May 2023</div>
+
       </div>
 
-      
-      <div class="cert-card">
-        <a href="https://drive.google.com/file/d/1JcZQQ5seGswCOJk3SBPkFlM6A3wHkKFe/view" target="_blank">
+
+
+      <div class="glass-card cert-card-new" data-aos="zoom-in" data-aos-delay="350">
+
+        <a href="https://drive.google.com/file/d/1JcZQQ5seGswCOJk3SBPkFlM6A3wHkKFe/view" target="_blank"
+          rel="noopener noreferrer">
+
           <img src="/images/ceh.jpeg" alt="CEH" />
+
         </a>
-        <div class="cert-name">CEH</div>
-        <div class="cert-date">Feb 2023</div>
+
+        <div class="cert-card-name">CEH</div>
+
+        <div class="cert-card-date">Feb 2023</div>
+
       </div>
+
     </div>
+
   </section>
 
-  <section class="py-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      
-      <div class="hidden md:block">
-        <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+  
+
+  <section class="section-home main">
+
+    <div class="section-header" data-aos="fade-right">
+
+      <h2>Publications</h2>
+
+    </div>
+
+
+
+    <span class="pub-badge">Original Research</span>
+
+
+
+    <div class="glass-card" data-aos="fade-up" data-aos-delay="0" style="margin-bottom: 1rem;">
+
+      <div class="pub-card">
+
+        <a href="https://drive.google.com/file/d/11kwNP_r4h08tmu7-3-8Lp7mAvORLIhaI/view?usp=sharing" class="pub-title"
+          target="_blank" rel="noopener noreferrer">
+
+          Enhancing OSINT Practices with Eye-Sint: A Multi-Module Intelligence Tool
+
+        </a>
+
+        <span class="pub-date">October 2023</span>
+
       </div>
 
-      
-      <div class="bg-zinc-900 p-6 rounded-2xl shadow-lg border border-zinc-700">
-        <h3 class="text-xl font-semibold text-white mb-4">📚 Publications</h3>
-        <p class="mb-2 font-medium text-zinc-300">Original Research</p>
-        <ul class="space-y-2">
-          <li class="grid grid-cols-[1fr_auto] justify-between items-start gap-2">
-            <a href="https://drive.google.com/file/d/11kwNP_r4h08tmu7-3-8Lp7mAvORLIhaI/view?usp=sharing"
-              class="text-blue-400 hover:underline" target="_blank">
-              Enhancing OSINT Practices with Eye-Sint: A Multi-Module
-              Intelligence Tool
-            </a>
-            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
-              - October 2023</span>
-          </li>
-          <li class="grid grid-cols-[1fr_auto] justify-between items-start gap-2">
-            <a href="https://www.researchgate.net/publication/375113483_SQLI_Attack_An_Approach_using_ML_and_Hybrid_Techniques"
-              class="text-blue-400 hover:underline" target="_blank">
-              SQLI Attack: An Approach using ML and Hybrid Techniques
-            </a>
-            <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
-              - September 2023</span>
-          </li>
-        </ul>
-      </div>
     </div>
+
+
+
+    <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="pub-card">
+
+        <a href="https://www.researchgate.net/publication/375113483_SQLI_Attack_An_Approach_using_ML_and_Hybrid_Techniques"
+          class="pub-title" target="_blank" rel="noopener noreferrer">
+
+          SQLI Attack: An Approach using ML and Hybrid Techniques
+
+        </a>
+
+        <span class="pub-date">September 2023</span>
+
+      </div>
+
+    </div>
+
   </section>
 
-  <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+  <template>
 
-  <div style="margin-top: 3rem"> 
+    <section class="py-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <div class="hidden md:block">
+          <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
+        </div>
+
+        
+        <div class="bg-zinc-900 p-6 rounded-2xl shadow-lg border border-zinc-700">
+          <h3 class="text-xl font-semibold text-white mb-4">📚 Publications</h3>
+          <p class="mb-2 font-medium text-zinc-300">Original Research</p>
+          <ul class="space-y-2">
+            <li class="grid grid-cols-[1fr_auto] justify-between items-start gap-2">
+              <a href="https://drive.google.com/file/d/11kwNP_r4h08tmu7-3-8Lp7mAvORLIhaI/view?usp=sharing"
+                class="text-blue-400 hover:underline" target="_blank">
+                Enhancing OSINT Practices with Eye-Sint: A Multi-Module
+                Intelligence Tool
+              </a>
+              <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
+                - October 2023</span>
+            </li>
+            <li class="grid grid-cols-[1fr_auto] justify-between items-start gap-2">
+              <a href="https://www.researchgate.net/publication/375113483_SQLI_Attack_An_Approach_using_ML_and_Hybrid_Techniques"
+                class="text-blue-400 hover:underline" target="_blank">
+                SQLI Attack: An Approach using ML and Hybrid Techniques
+              </a>
+              <span class="text-sm text-zinc-400 text-right whitespace-nowrap">
+                - September 2023</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  
+
+  
+
+  
+  <section class="section-home main medium-section">
+    <div class="section-header" data-aos="fade-right">
+      <h2>Latest from Medium</h2>
+    </div>
+
+    <div class="medium-shell" data-aos="fade-up">
+      
+
+
 
 <div class="medium-feed">
-  <h2>Latest from Medium</h2>
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
-      
+  
   <div class="posts-grid">
     
-    <div class="post-entry">
-      <h3>
-        <a href="https://snehbavarva.medium.com/react2shell-cve-2025-55182-practical-exploitation-of-the-vulnerability-2581a65da695?source=rss-600f15a63557------2" target="_blank" rel="noopener">React2Shell — CVE-2025–55182: Practical Exploitation of the Vulnerability</a>
-      </h3>
-      <div class="post-meta">February 22, 2026</div>
-      <p> Exploiting Northport Ledger application with RSC component
-In a previous post, we explored React2Shell as a concept and how insecure deserialization …</p>
-      <a href="https://snehbavarva.medium.com/react2shell-cve-2025-55182-practical-exploitation-of-the-vulnerability-2581a65da695?source=rss-600f15a63557------2" target="_blank" rel="noopener" class="read-more"
-        >Read More →</a
-      >
-    </div>
     
-    <div class="post-entry">
-      <h3>
-        <a href="https://snehbavarva.medium.com/react2shell-cve-2025-55182-critical-vulnerability-in-react-server-cf592ce5f790?source=rss-600f15a63557------2" target="_blank" rel="noopener">React2Shell — CVE-2025–55182: Critical Vulnerability in React Server</a>
-      </h3>
-      <div class="post-meta">February 13, 2026</div>
-      <p> Vuln with easy chain and CVSS:10
-After so long i have been writing blog and I have been researching on this vuln. I know time has passed on this but …</p>
-      <a href="https://snehbavarva.medium.com/react2shell-cve-2025-55182-critical-vulnerability-in-react-server-cf592ce5f790?source=rss-600f15a63557------2" target="_blank" rel="noopener" class="read-more"
-        >Read More →</a
-      >
-    </div>
     
-    <div class="post-entry">
-      <h3>
-        <a href="https://snehbavarva.medium.com/the-tunnel-without-walls-report-htb-holmes-b2ceed033e94?source=rss-600f15a63557------2" target="_blank" rel="noopener">The Tunnel Without Walls Report — HTB Holmes</a>
-      </h3>
-      <div class="post-meta">September 27, 2025</div>
-      <p> The Tunnel Without Walls Report — HTB Holmes Scenario: A memory dump from a connected Linux machine reveals covert network connections, fake …</p>
-      <a href="https://snehbavarva.medium.com/the-tunnel-without-walls-report-htb-holmes-b2ceed033e94?source=rss-600f15a63557------2" target="_blank" rel="noopener" class="read-more"
-        >Read More →</a
-      >
-    </div>
-    
-  </div>
-   
 
-  <div class="featured-links">
-    <a
-      href="https://medium.com/@snehbavarva"
-      target="_blank"
-      rel="noopener"
-      class="featured-link outline"
-      >View Medium Blogs →</a
-    >
-    <a
-      href="/blog"
-      rel="noopener"
-      class="featured-link outline"
-      >View New Blogs →</a
-    >
+    <article class="glass-card post-entry" data-aos="fade-up" data-aos-delay="0">
+      <div class="post-content">
+        <div class="post-kicker">Medium Post</div>
+
+        <h3>
+          <a href="https://snehbavarva.medium.com/ai-just-got-me-a-blood-in-the-2026s-biggest-ctf-are-you-even-keeping-up-349258e11bee?source=rss-600f15a63557------2" target="_blank" rel="noopener noreferrer">
+            AI Just Got Me a Blood in the 2026’s Biggest CTF. Are You Even Keeping Up?
+          </a>
+        </h3>
+
+        
+        <div class="post-meta">
+          March 10, 2026
+        </div>
+        
+
+        <p>Writeups, research, and practical security notes from my Medium.</p>
+      </div>
+
+      <a href="https://snehbavarva.medium.com/ai-just-got-me-a-blood-in-the-2026s-biggest-ctf-are-you-even-keeping-up-349258e11bee?source=rss-600f15a63557------2" target="_blank" rel="noopener noreferrer" class="project-link">
+        Read More →
+      </a>
+    </article>
+    
+    
+    
+
+    <article class="glass-card post-entry" data-aos="fade-up" data-aos-delay="100">
+      <div class="post-content">
+        <div class="post-kicker">Medium Post</div>
+
+        <h3>
+          <a href="https://snehbavarva.medium.com/react2shell-cve-2025-55182-practical-exploitation-of-the-vulnerability-2581a65da695?source=rss-600f15a63557------2" target="_blank" rel="noopener noreferrer">
+            React2Shell — CVE-2025–55182: Practical Exploitation of the Vulnerability
+          </a>
+        </h3>
+
+        
+        <div class="post-meta">
+          February 22, 2026
+        </div>
+        
+
+        <p>Writeups, research, and practical security notes from my Medium.</p>
+      </div>
+
+      <a href="https://snehbavarva.medium.com/react2shell-cve-2025-55182-practical-exploitation-of-the-vulnerability-2581a65da695?source=rss-600f15a63557------2" target="_blank" rel="noopener noreferrer" class="project-link">
+        Read More →
+      </a>
+    </article>
+    
+    
+    
+
+    <article class="glass-card post-entry" data-aos="fade-up" data-aos-delay="200">
+      <div class="post-content">
+        <div class="post-kicker">Medium Post</div>
+
+        <h3>
+          <a href="https://snehbavarva.medium.com/react2shell-cve-2025-55182-critical-vulnerability-in-react-server-cf592ce5f790?source=rss-600f15a63557------2" target="_blank" rel="noopener noreferrer">
+            React2Shell — CVE-2025–55182: Critical Vulnerability in React Server
+          </a>
+        </h3>
+
+        
+        <div class="post-meta">
+          February 13, 2026
+        </div>
+        
+
+        <p>Writeups, research, and practical security notes from my Medium.</p>
+      </div>
+
+      <a href="https://snehbavarva.medium.com/react2shell-cve-2025-55182-critical-vulnerability-in-react-server-cf592ce5f790?source=rss-600f15a63557------2" target="_blank" rel="noopener noreferrer" class="project-link">
+        Read More →
+      </a>
+    </article>
+    
+  </div>
+  
+
+  <div class="featured-links" data-aos="fade-up" data-aos-delay="300">
+    <a href="https://medium.com/@snehbavarva" target="_blank" rel="noopener noreferrer" class="featured-link outline">
+      View Medium Blogs →
+    </a>
+    <a href="/blog" rel="noopener" class="featured-link outline">
+      View New Blogs →
+    </a>
   </div>
 </div>
-</div>
+    </div>
+  </section>
+
+
+
 
   <hr style="border: none; border-top: 2px solid #444; margin: 2rem 0" />
 </main>
 </div>
 
-    <footer class="site-footer">
+  <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-content">
       <span>&copy; 2026 Sneh Bavarva</span>
@@ -800,5 +2423,6 @@ After so long i have been writing blog and I have been researching on this vuln.
 
 <script src="/js/copy-code.js" defer></script>
 
-  </body>
+</body>
+
 </html>

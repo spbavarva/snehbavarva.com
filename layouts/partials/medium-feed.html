@@ -1,44 +1,78 @@
-{{ $mediumRSS := "https://medium.com/feed/@snehbavarva" }} {{ $limit := 3 }}
+{{ $mediumRSS := "https://medium.com/feed/@snehbavarva" }}
+{{ $limit := 3 }}
+{{ $data := dict }}
 
 <div class="medium-feed">
-  <h2>Latest from Medium</h2>
+  {{ with try (resources.GetRemote $mediumRSS) }}
+  {{ with .Err }}
+  {{ warnf "Unable to fetch Medium RSS feed %q: %s" $mediumRSS . }}
+  {{ else with .Value }}
+  {{ with try (transform.Unmarshal (dict "format" "xml") .Content) }}
+  {{ with .Err }}
+  {{ warnf "Unable to parse Medium RSS feed %q: %s" $mediumRSS . }}
+  {{ else with .Value }}
+  {{ $data = . }}
+  {{ end }}
+  {{ end }}
+  {{ end }}
+  {{ end }}
 
-  {{ $rssUrl := printf "https://api.rss2json.com/v1/api.json?rss_url=%s"
-  $mediumRSS }} {{ $remote := resources.GetRemote $rssUrl }} {{ if $remote }} {{
-  $dataJ := $remote | transform.Unmarshal }} {{ if $dataJ.items }}
+  {{ with $data.channel.item }}
   <div class="posts-grid">
-    {{ range first $limit $dataJ.items }}
-    <div class="post-entry">
-      <h3>
-        <a href="{{ .link }}" target="_blank" rel="noopener">{{ .title }}</a>
-      </h3>
-      <div class="post-meta">{{ dateFormat "January 2, 2006" .pubDate }}</div>
-      <p>{{ .description | plainify | truncate 150 }}</p>
-      <a href="{{ .link }}" target="_blank" rel="noopener" class="read-more"
-        >Read More →</a
-      >
-    </div>
+    {{ range $index, $item := first $limit . }}
+    {{ $excerpt := "Writeups, research, and practical security notes from my Medium." }}
+    {{ with $item.description }}
+    {{ $raw := . | plainify }}
+    {{ if gt (len (replaceRE `\s+` "" $raw)) 0 }}
+    {{ $excerpt = $raw | truncate 150 }}
+    {{ end }}
+    {{ end }}
+
+    <article class="glass-card post-entry" data-aos="fade-up" data-aos-delay="{{ mul $index 100 }}">
+      <div class="post-content">
+        <div class="post-kicker">Medium Post</div>
+
+        <h3>
+          <a href="{{ $item.link }}" target="_blank" rel="noopener noreferrer">
+            {{ $item.title }}
+          </a>
+        </h3>
+
+        {{ with $item.pubDate }}
+        <div class="post-meta">
+          {{ . | time.AsTime | time.Format "January 2, 2006" }}
+        </div>
+        {{ end }}
+
+        <p>{{ $excerpt }}</p>
+      </div>
+
+      <a href="{{ $item.link }}" target="_blank" rel="noopener noreferrer" class="project-link">
+        Read More →
+      </a>
+    </article>
     {{ end }}
   </div>
   {{ else }}
-  <p>No posts found. Please check back later.</p>
-  {{ end }} {{ else }}
-  <p>Unable to fetch Medium posts at this time. Please check back later.</p>
+  <article class="glass-card post-entry" data-aos="fade-up">
+    <div class="post-content">
+      <div class="post-kicker">Medium Post</div>
+      <h3>Latest posts are temporarily unavailable</h3>
+      <p>Please check back later or read directly on Medium.</p>
+    </div>
+
+    <a href="https://medium.com/@snehbavarva" target="_blank" rel="noopener noreferrer" class="project-link">
+      View Medium →
+    </a>
+  </article>
   {{ end }}
 
-  <div class="featured-links">
-    <a
-      href="https://medium.com/@snehbavarva"
-      target="_blank"
-      rel="noopener"
-      class="featured-link outline"
-      >View Medium Blogs →</a
-    >
-    <a
-      href="/blog"
-      rel="noopener"
-      class="featured-link outline"
-      >View New Blogs →</a
-    >
+  <div class="featured-links" data-aos="fade-up" data-aos-delay="300">
+    <a href="https://medium.com/@snehbavarva" target="_blank" rel="noopener noreferrer" class="featured-link outline">
+      View Medium Blogs →
+    </a>
+    <a href="/blog" rel="noopener" class="featured-link outline">
+      View New Blogs →
+    </a>
   </div>
 </div>
