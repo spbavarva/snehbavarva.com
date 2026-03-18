@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>My Blogs on Sneh Bavarva | Cybersecurity Professional</title>
-    <link>https://snehbavarva.xyz/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in My Blogs on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://snehbavarva.xyz/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>React2Shell — CVE-2025–55182: Practical Exploitation of the Vulnerability</title>
-      <link>https://snehbavarva.xyz/blog/react2shell-exploitation/</link>
+      <link>http://localhost:1313/blog/react2shell-exploitation/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://snehbavarva.xyz/blog/react2shell-exploitation/</guid>
+      <guid>http://localhost:1313/blog/react2shell-exploitation/</guid>
       <description>Practical Exploitation of React2Shell (CVE-2025-55182)</description>
     </item>
     <item>
       <title>React2Shell — CVE-2025–55182: Critical Vulnerability in React Server</title>
-      <link>https://snehbavarva.xyz/blog/react2shell/</link>
+      <link>http://localhost:1313/blog/react2shell/</link>
       <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://snehbavarva.xyz/blog/react2shell/</guid>
+      <guid>http://localhost:1313/blog/react2shell/</guid>
       <description>Technical breakdown of React2Shell (CVE-2025-55182)</description>
     </item>
     <item>
       <title>The Enduring Echo Report - HTB Holmes</title>
-      <link>https://snehbavarva.xyz/blog/enduring-echo/</link>
+      <link>http://localhost:1313/blog/enduring-echo/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://snehbavarva.xyz/blog/enduring-echo/</guid>
+      <guid>http://localhost:1313/blog/enduring-echo/</guid>
       <description>Finding Persistence and Data Exfiltration Challenge</description>
     </item>
     <item>
       <title>The Tunnel Without Walls Report - HTB Holmes</title>
-      <link>https://snehbavarva.xyz/blog/the-tunnel-without-walls/</link>
+      <link>http://localhost:1313/blog/the-tunnel-without-walls/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://snehbavarva.xyz/blog/the-tunnel-without-walls/</guid>
+      <guid>http://localhost:1313/blog/the-tunnel-without-walls/</guid>
       <description>Linux Memory Forensics </description>
     </item>
     <item>
       <title>SOAR &#43; EDR Emulation</title>
-      <link>https://snehbavarva.xyz/blog/soar-edr/</link>
+      <link>http://localhost:1313/blog/soar-edr/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://snehbavarva.xyz/blog/soar-edr/</guid>
+      <guid>http://localhost:1313/blog/soar-edr/</guid>
       <description>Emulating adversary techniques and automating D&amp;amp;R with LimaCharlie &amp;amp; Tines</description>
     </item>
     <item>
       <title>New Series: Kill Chain Weekly: A DFIR Casebook Series</title>
-      <link>https://snehbavarva.xyz/blog/dfir-blog-series/</link>
+      <link>http://localhost:1313/blog/dfir-blog-series/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://snehbavarva.xyz/blog/dfir-blog-series/</guid>
+      <guid>http://localhost:1313/blog/dfir-blog-series/</guid>
       <description>Launching a weekly DFIR series exploring real-world incident response scenarios and investigations.</description>
     </item>
     <item>
       <title>AWS Fortress - Hack The Box Review</title>
-      <link>https://snehbavarva.xyz/blog/aws-fortress-review/</link>
+      <link>http://localhost:1313/blog/aws-fortress-review/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://snehbavarva.xyz/blog/aws-fortress-review/</guid>
+      <guid>http://localhost:1313/blog/aws-fortress-review/</guid>
       <description>One resource, ten flags - my take on the AWS Fortress experience on Hack The Box</description>
     </item>
     <item>
       <title>How my curiosity gave me 2 CVEs!</title>
-      <link>https://snehbavarva.xyz/blog/first-cves/</link>
+      <link>http://localhost:1313/blog/first-cves/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://snehbavarva.xyz/blog/first-cves/</guid>
+      <guid>http://localhost:1313/blog/first-cves/</guid>
       <description>Journey of CVEs finding path....</description>
     </item>
     <item>
       <title>HTB - Certified Defensive Security Analyst (CDSA) Review 2025</title>
-      <link>https://snehbavarva.xyz/blog/cdsa/</link>
+      <link>http://localhost:1313/blog/cdsa/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://snehbavarva.xyz/blog/cdsa/</guid>
+      <guid>http://localhost:1313/blog/cdsa/</guid>
       <description>A completely new guy in defesive side passing in a month...</description>
     </item>
     <item>
       <title>Hunt Evil with - Sigma</title>
-      <link>https://snehbavarva.xyz/blog/sigma-rules/</link>
+      <link>http://localhost:1313/blog/sigma-rules/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://snehbavarva.xyz/blog/sigma-rules/</guid>
+      <guid>http://localhost:1313/blog/sigma-rules/</guid>
       <description>Basic understanding of Sigma rules and it&amp;#39;s importance</description>
     </item>
     <item>
       <title>Hunt Evil with - YARA</title>
-      <link>https://snehbavarva.xyz/blog/yara-rules/</link>
+      <link>http://localhost:1313/blog/yara-rules/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://snehbavarva.xyz/blog/yara-rules/</guid>
+      <guid>http://localhost:1313/blog/yara-rules/</guid>
       <description>Basic understanding of YARA rules</description>
     </item>
     <item>
       <title>DevSecOps CI/CD pipeline for SAST</title>
-      <link>https://snehbavarva.xyz/blog/devsecops-cicd/</link>
+      <link>http://localhost:1313/blog/devsecops-cicd/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://snehbavarva.xyz/blog/devsecops-cicd/</guid>
+      <guid>http://localhost:1313/blog/devsecops-cicd/</guid>
       <description>A secure complete CI/CD pipeline for SAST and image testing</description>
     </item>
     <item>
       <title>How I passed AWS Solution Architect Associate - SAA in 5 days!</title>
-      <link>https://snehbavarva.xyz/blog/aws-review/</link>
+      <link>http://localhost:1313/blog/aws-review/</link>
       <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://snehbavarva.xyz/blog/aws-review/</guid>
+      <guid>http://localhost:1313/blog/aws-review/</guid>
       <description>fairly easy exam if you follow just one resource...</description>
     </item>
   </channel>
