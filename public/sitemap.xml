@@ -2,8 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/categories/ai/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/ai/</loc>
-    <lastmod>2026-03-07T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/blood-in-biggest-ctf/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/automation/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/bug-bounty/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/claude-code/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ctf/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/cybersecurity/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cybersecurity/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/htb/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/picoctf/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/thm/</loc>
+    <lastmod>2026-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/attack-path/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
@@ -12,9 +60,6 @@
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/aws/</loc>
-    <lastmod>2026-03-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/claude/</loc>
@@ -33,12 +78,6 @@
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/security/</loc>
-    <lastmod>2026-03-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-03-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/tool/</loc>
@@ -66,9 +105,6 @@
     <lastmod>2026-02-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/javascript/</loc>
-    <lastmod>2026-02-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2026-02-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/prototypechain/</loc>
@@ -107,9 +143,6 @@
     <loc>http://localhost:1313/ctf/htb/</loc>
     <lastmod>2025-09-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ctf/</loc>
-    <lastmod>2025-09-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/ctf/</loc>
     <lastmod>2025-09-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -123,9 +156,6 @@
     <lastmod>2025-09-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hard/</loc>
-    <lastmod>2025-09-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/htb/</loc>
     <lastmod>2025-09-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ctf/htb/holmes/</loc>
@@ -179,9 +209,6 @@
     <loc>http://localhost:1313/tags/virustotal/</loc>
     <lastmod>2025-09-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/automation/</loc>
-    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/edr/</loc>
     <lastmod>2025-09-14T00:00:00+00:00</lastmod>
   </url><url>
@@ -231,9 +258,6 @@
     <lastmod>2025-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cloud-security/</loc>
-    <lastmod>2025-07-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/cybersecurity/</loc>
     <lastmod>2025-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/dfir/</loc>

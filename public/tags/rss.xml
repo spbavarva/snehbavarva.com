@@ -6,13 +6,76 @@
     <description>Recent content in Tags on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
       <link>http://localhost:1313/tags/ai/</link>
-      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Artificial Intelligence</title>
+      <link>http://localhost:1313/tags/artificial-intelligence/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automation</title>
+      <link>http://localhost:1313/tags/automation/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bug Bounty</title>
+      <link>http://localhost:1313/tags/bug-bounty/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bug-bounty/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Claude Code</title>
+      <link>http://localhost:1313/tags/claude-code/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/claude-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CTF</title>
+      <link>http://localhost:1313/tags/ctf/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ctf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cybersecurity</title>
+      <link>http://localhost:1313/tags/cybersecurity/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Htb</title>
+      <link>http://localhost:1313/tags/htb/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/htb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PicoCTF</title>
+      <link>http://localhost:1313/tags/picoctf/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/picoctf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>THM</title>
+      <link>http://localhost:1313/tags/thm/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/thm/</guid>
       <description></description>
     </item>
     <item>
@@ -58,7 +121,7 @@
       <description></description>
     </item>
     <item>
-      <title>AppSec</title>
+      <title>Appsec</title>
       <link>http://localhost:1313/tags/appsec/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/appsec/</guid>
@@ -170,13 +233,6 @@
       <description></description>
     </item>
     <item>
-      <title>CTF</title>
-      <link>http://localhost:1313/tags/ctf/</link>
-      <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ctf/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>DFIR</title>
       <link>http://localhost:1313/tags/dfir/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
@@ -202,13 +258,6 @@
       <link>http://localhost:1313/tags/hard/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/hard/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>HTB</title>
-      <link>http://localhost:1313/tags/htb/</link>
-      <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/htb/</guid>
       <description></description>
     </item>
     <item>
@@ -296,13 +345,6 @@
       <description></description>
     </item>
     <item>
-      <title>Automation</title>
-      <link>http://localhost:1313/tags/automation/</link>
-      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/automation/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>EDR</title>
       <link>http://localhost:1313/tags/edr/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
@@ -380,13 +422,6 @@
       <description></description>
     </item>
     <item>
-      <title>Cybersecurity</title>
-      <link>http://localhost:1313/tags/cybersecurity/</link>
-      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cybersecurity/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>MalwareAnalysis</title>
       <link>http://localhost:1313/tags/malwareanalysis/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
@@ -422,7 +457,7 @@
       <description></description>
     </item>
     <item>
-      <title>Cloudsec</title>
+      <title>CloudSec</title>
       <link>http://localhost:1313/tags/cloudsec/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/cloudsec/</guid>

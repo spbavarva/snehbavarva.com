@@ -6,8 +6,22 @@
     <description>Recent content in Categories on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/categories/ai/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cybersecurity</title>
+      <link>http://localhost:1313/categories/cybersecurity/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/cybersecurity/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Automated</title>
       <link>http://localhost:1313/categories/automated/</link>
