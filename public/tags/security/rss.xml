@@ -6,8 +6,15 @@
     <description>Recent content in Security on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/security/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CRTO 2026 Review and Preparation Guide</title>
+      <link>http://localhost:1313/blog/crto-blog/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/crto-blog/</guid>
+      <description>My honest review of the Certified Red Team Operator exam, failed attempts, and tips...</description>
+    </item>
     <item>
       <title>CVE-2026-33171: Path Traversal in Statamic CMS</title>
       <link>http://localhost:1313/blog/cve-2026-33171-statamic-cms/</link>

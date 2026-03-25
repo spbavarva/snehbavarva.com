@@ -6,8 +6,22 @@
     <description>Recent content in Categories on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Certifications</title>
+      <link>http://localhost:1313/categories/certifications/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/certifications/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Red Team</title>
+      <link>http://localhost:1313/categories/red-team/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/red-team/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI</title>
       <link>http://localhost:1313/categories/ai/</link>
@@ -104,13 +118,6 @@
       <link>http://localhost:1313/categories/opensource/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/opensource/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Certifications</title>
-      <link>http://localhost:1313/categories/certifications/</link>
-      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/certifications/</guid>
       <description></description>
     </item>
     <item>
