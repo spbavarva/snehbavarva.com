@@ -6,13 +6,104 @@
     <description>Recent content in Tags on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
       <link>http://localhost:1313/tags/ai/</link>
-      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bug Bounty</title>
+      <link>http://localhost:1313/tags/bug-bounty/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bug-bounty/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CVE</title>
+      <link>http://localhost:1313/tags/cve/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cve/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cybersecurity</title>
+      <link>http://localhost:1313/tags/cybersecurity/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Github</title>
+      <link>http://localhost:1313/tags/github/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Laravel</title>
+      <link>http://localhost:1313/tags/laravel/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/laravel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LFI</title>
+      <link>http://localhost:1313/tags/lfi/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/lfi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Path Traversal</title>
+      <link>http://localhost:1313/tags/path-traversal/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/path-traversal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/tags/security/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statamic</title>
+      <link>http://localhost:1313/tags/statamic/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/statamic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statamic CMS</title>
+      <link>http://localhost:1313/tags/statamic-cms/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/statamic-cms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statamic CVE</title>
+      <link>http://localhost:1313/tags/statamic-cve/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/statamic-cve/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statamic LFI</title>
+      <link>http://localhost:1313/tags/statamic-lfi/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/statamic-lfi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statamic Path Traversal</title>
+      <link>http://localhost:1313/tags/statamic-path-traversal/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/statamic-path-traversal/</guid>
       <description></description>
     </item>
     <item>
@@ -30,13 +121,6 @@
       <description></description>
     </item>
     <item>
-      <title>Bug Bounty</title>
-      <link>http://localhost:1313/tags/bug-bounty/</link>
-      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/bug-bounty/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Claude Code</title>
       <link>http://localhost:1313/tags/claude-code/</link>
       <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
@@ -48,13 +132,6 @@
       <link>http://localhost:1313/tags/ctf/</link>
       <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/ctf/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cybersecurity</title>
-      <link>http://localhost:1313/tags/cybersecurity/</link>
-      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cybersecurity/</guid>
       <description></description>
     </item>
     <item>
@@ -114,24 +191,10 @@
       <description></description>
     </item>
     <item>
-      <title>Security</title>
-      <link>http://localhost:1313/tags/security/</link>
-      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/security/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Appsec</title>
       <link>http://localhost:1313/tags/appsec/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/appsec/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CVE</title>
-      <link>http://localhost:1313/tags/cve/</link>
-      <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cve/</guid>
       <description></description>
     </item>
     <item>
@@ -457,7 +520,7 @@
       <description></description>
     </item>
     <item>
-      <title>CloudSec</title>
+      <title>Cloudsec</title>
       <link>http://localhost:1313/tags/cloudsec/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/cloudsec/</guid>
