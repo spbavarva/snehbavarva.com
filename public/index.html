@@ -1453,26 +1453,24 @@
     }
   }
 
-.reveal-item {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.reveal-item.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
   .reveal-item {
-    opacity: 1;
-    transform: none;
-    transition: none;
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
   }
-}
 
+  .reveal-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-item {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
 </style>
 
 <main class="main">
@@ -1816,116 +1814,94 @@
   
 
   <section class="section-home main">
-
     <div class="section-header" data-aos="fade-right">
-
       <h2>CVEs</h2>
-
     </div>
 
     <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="0">
-
       <div class="cve-header">
-
-        <a href="https://github.com/statamic/cms/security/advisories/GHSA-qm7r-wwq7-6f85" class="cve-id" target="_blank"
-          rel="noopener noreferrer">CVE-2026-*****</a>
-
+        <a href="https://github.com/parse-community/parse-server/security/advisories/GHSA-2299-ghjr-6vjp" class="cve-id"
+          target="_blank" rel="noopener noreferrer">CVE-2026-33624</a>
         <span class="cve-badge">Published</span>
-
       </div>
-
       <p class="cve-description">
-        Weblate - <a href="https://weblate.org/en/">Weblate</a> 
-      </p> 
-       <p class="cve-description">
-      bhjk
+        <a href="https://github.com/parse-community/parse-server">Parse Server</a> - MFA recovery code single-use bypass via concurrent requests
       </p>
-
+      <p class="cve-description">
+        An attacker who obtains a user's password and a single MFA recovery code can reuse that recovery code an unlimited number of times by sending concurrent login requests. 
+      </p>
     </div>
 
     <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="0">
-
       <div class="cve-header">
-
-        <a href="https://github.com/statamic/cms/security/advisories/GHSA-qm7r-wwq7-6f85" class="cve-id" target="_blank"
-          rel="noopener noreferrer">CVE-2026-*****</a>
-
+        <a href="https://weblate.org/en/" class="cve-id" target="_blank"
+          rel="noopener noreferrer">CVE-2026-33220</a>
         <span class="cve-badge">Published</span>
-
       </div>
-
       <p class="cve-description">
-        Weblate - <a href="https://weblate.org/en/">Weblate</a> 
-      </p> 
-       <p class="cve-description">
-      bhjk
+        Weblate - <a href="https://weblate.org/en/">Weblate</a>
       </p>
-
+      <p class="cve-description">
+        Advisory is not published yet.
+      </p>
     </div>
 
     <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="0">
-
       <div class="cve-header">
+        <a href="https://weblate.org/en/" class="cve-id" target="_blank"
+          rel="noopener noreferrer">CVE-2026-33440</a>
+        <span class="cve-badge">Published</span>
+      </div>
+      <p class="cve-description">
+        Weblate - <a href="https://weblate.org/en/">Weblate</a>
+      </p>
+      <p class="cve-description">
+        Advisory is not published yet.
+      </p>
+    </div>
 
+    <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="0">
+      <div class="cve-header">
         <a href="https://github.com/statamic/cms/security/advisories/GHSA-qm7r-wwq7-6f85" class="cve-id" target="_blank"
           rel="noopener noreferrer">CVE-2026-33171</a>
-
         <span class="cve-badge">Published</span>
-
       </div>
-
       <p class="cve-description">
-        LFI in file dictionary fieldtype in Best Flat CMS 2026 - <a href="https://github.com/statamic/cms">Statamic</a> 
-      </p> 
-       <p class="cve-description">
-      In the file dictionary fieldtype, allowing authenticated Control Panel users to read arbitrary .json, .yaml, and .csv files from the server.
+        LFI in file dictionary fieldtype in Best Flat CMS 2026 - <a href="https://github.com/statamic/cms">Statamic</a>
       </p>
-
+      <p class="cve-description">
+        In the file dictionary fieldtype, allowing authenticated Control Panel users to read arbitrary .json, .yaml, and
+        .csv files from the server.
+      </p>
     </div>
 
 
     <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="0">
-
       <div class="cve-header">
-
         <a href="https://www.cve.org/CVERecord?id=CVE-2025-46203" class="cve-id" target="_blank"
           rel="noopener noreferrer">CVE-2025-46203</a>
-
         <span class="cve-badge">Published</span>
-
       </div>
-
       <p class="cve-description">
-
-        Unifiedtransform v2.0 suffers from Broken Access Control, allowing students/teachers to access
-
+        <a href="https://github.com/changeweb/Unifiedtransform">Unifiedtransform v2.0</a> suffers from Broken Access
+        Control, allowing students/teachers to access
         <code>/students/edit/{id}</code> and modify student records. Affects all v2.0 builds.
-
       </p>
-
     </div>
 
 
 
     <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="100">
-
       <div class="cve-header">
-
         <a href="https://www.cve.org/CVERecord?id=CVE-2025-46204" class="cve-id" target="_blank"
           rel="noopener noreferrer">CVE-2025-46204</a>
-
         <span class="cve-badge">Published</span>
-
       </div>
-
       <p class="cve-description">
-
-        Unifiedtransform v2.0 suffers from Broken Access Control, allowing students/teachers to access
-
+        <a href="https://github.com/changeweb/Unifiedtransform">Unifiedtransform v2.0</a> suffers from Broken Access
+        Control, allowing students/teachers to access
         <code>/course/edit/{id}</code> and modify course data. Affects all v2.0 builds.
-
       </p>
-
     </div>
 
   </section>
@@ -1992,9 +1968,10 @@
       </h3>
 
       <div class="cert-grid">
-         
+        
         <div class="cert-card">
-          <a href="https://certs.zeropointsecurity.co.uk/0bbc9a4e-2602-480b-9a04-b1d11b55ab57#acc.AUOLRZjS" target="_blank">
+          <a href="https://certs.zeropointsecurity.co.uk/0bbc9a4e-2602-480b-9a04-b1d11b55ab57#acc.AUOLRZjS"
+            target="_blank">
             <img src="/images/crto.png" alt="CRTO" />
           </a>
           <div class="cert-name">CRTO</div>
@@ -2086,10 +2063,10 @@
 
 
     <div class="certs-grid">
-        <div class="glass-card cert-card-new" data-aos="zoom-in" data-aos-delay="0">
+      <div class="glass-card cert-card-new" data-aos="zoom-in" data-aos-delay="0">
 
-        <a href="https://certs.zeropointsecurity.co.uk/0bbc9a4e-2602-480b-9a04-b1d11b55ab57#acc.AUOLRZjS" target="_blank"
-          rel="noopener noreferrer">
+        <a href="https://certs.zeropointsecurity.co.uk/0bbc9a4e-2602-480b-9a04-b1d11b55ab57#acc.AUOLRZjS"
+          target="_blank" rel="noopener noreferrer">
 
           <img src="/images/crto1.png" alt="CRTO" />
 
