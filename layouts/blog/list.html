@@ -232,16 +232,6 @@
     margin: 2.5rem 0 0;
   }
 
-  html.blog-motion-ready .timeline-content {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-
-  html.blog-motion-ready .timeline-content.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1), transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
   @media (max-width: 680px) {
     .blog-container {
@@ -321,10 +311,6 @@
       transition: none;
     }
 
-    html.blog-motion-ready .timeline-content {
-      opacity: 1;
-      transform: none;
-    }
   }
 </style>
 
@@ -377,50 +363,6 @@
   <hr class="blog-separator" />
 </main>
 
-<script>
-  (function () {
-    function initBlogMotion() {
-      if (
-        window.matchMedia &&
-        window.matchMedia("(prefers-reduced-motion: reduce)").matches
-      ) {
-        return;
-      }
-
-      var items = document.querySelectorAll(".timeline-content");
-      if (!items.length) {
-        return;
-      }
-
-      document.documentElement.classList.add("blog-motion-ready");
-
-      var observer = new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (entry) {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          });
-        },
-        {
-          threshold: 0.12,
-          rootMargin: "0px 0px -40px 0px"
-        }
-      );
-
-      items.forEach(function (item, index) {
-        item.style.transitionDelay = Math.min(index * 70, 280) + "ms";
-        observer.observe(item);
-      });
-    }
-
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", initBlogMotion);
-    } else {
-      initBlogMotion();
-    }
-  })();
-</script>
 
 
 {{ end }}
