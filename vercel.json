@@ -1,18 +1,5 @@
 {
   "buildCommand": "hugo --minify",
   "outputDirectory": "public",
-  "framework": null,
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.snehbavarva.com"
-        }
-      ],
-      "destination": "https://snehbavarva.com/:path*",
-      "permanent": true
-    }
-  ]
+  "framework": null
 }
