@@ -1,4 +1,4 @@
-baseURL: https://snehbavarva.xyz/
+baseURL: https://snehbavarva.com/
 languageCode: en-us
 title: Sneh Bavarva | Cybersecurity Professional
 theme: PaperMod
@@ -9,6 +9,7 @@ enableRobotsTXT: true
 pagination:
   pagerSize: 10
 params:
+  googleAnalyticsID: G-S0TEQ0EKKZ
   ShowReadingTime: true
   defaultTheme: auto
   description: >

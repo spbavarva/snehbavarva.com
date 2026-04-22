@@ -313,7 +313,7 @@ YARA is not fun as it seems after some hit ad try but defenitely it's good one t
 _Next time_, I’ll be diving into **Sigma** rules, another powerful framework that turns log data into actionable detections.
 Stay tuned, and feel free to reach out if you'd like to connect or collaborate:
 
-[🔗 Contact Me](https://www.snehbavarva.com/contact)
+[🔗 Contact Me](/contact/)
 
 [📅 Schedule via Calendly](https://calendly.com/bavarvasneh/30min)
 

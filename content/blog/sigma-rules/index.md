@@ -159,7 +159,7 @@ Then run the query in Splunk to find anomalies.
 
 Sigma makes threat detection feel less like guesswork and more like detective work. It’s clean, flexible, and super handy when you’re digging through logs trying to make sense of weird behavior. Definitely a tool worth keeping in your SOC toolkit!
 
-[🔗 Contact Me](https://www.snehbavarva.com/contact)
+[🔗 Contact Me](/contact/)
 
 [📅 Schedule via Calendly](https://calendly.com/bavarvasneh/30min)
 
