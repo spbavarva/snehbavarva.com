@@ -39,8 +39,6 @@ This post is about fixes and research I have been doing. This is for _"How to ru
 - **GitHub Copilot** reads `.github/copilot-instructions.md`
 - **Codex CLI** reads agent definitions from `~/.codex/agents/` (global) or `.codex/agents/` (project)
 
-{{< figure src="/images/blog/blog-secure-vibe-coding/file-setup.png" alt="Project root showing files next to package.json" caption="Every file goes in the root of your project" align="center" >}}
-
 {{< dots >}}
 
 ## Tier 1: Personal Projects, MVPs
