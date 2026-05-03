@@ -6,8 +6,78 @@
     <description>Recent content in Tags on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agentic Engineering</title>
+      <link>http://localhost:1313/tags/agentic-engineering/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/agentic-engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI Security</title>
+      <link>http://localhost:1313/tags/ai-security/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ai-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Claude Code</title>
+      <link>http://localhost:1313/tags/claude-code/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/claude-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cursor</title>
+      <link>http://localhost:1313/tags/cursor/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cursor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cybersecurity</title>
+      <link>http://localhost:1313/tags/cybersecurity/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCP</title>
+      <link>http://localhost:1313/tags/mcp/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OWASP</title>
+      <link>http://localhost:1313/tags/owasp/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/owasp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/tags/security/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Supply Chain</title>
+      <link>http://localhost:1313/tags/supply-chain/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/supply-chain/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vibe Coding</title>
+      <link>http://localhost:1313/tags/vibe-coding/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/vibe-coding/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cobalt Strike</title>
       <link>http://localhost:1313/tags/cobalt-strike/</link>
@@ -37,13 +107,6 @@
       <description></description>
     </item>
     <item>
-      <title>Cybersecurity</title>
-      <link>http://localhost:1313/tags/cybersecurity/</link>
-      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cybersecurity/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Ethical Hacking</title>
       <link>http://localhost:1313/tags/ethical-hacking/</link>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
@@ -69,13 +132,6 @@
       <link>http://localhost:1313/tags/red-team-operator/</link>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/red-team-operator/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security</title>
-      <link>http://localhost:1313/tags/security/</link>
-      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/security/</guid>
       <description></description>
     </item>
     <item>
@@ -184,13 +240,6 @@
       <description></description>
     </item>
     <item>
-      <title>Claude Code</title>
-      <link>http://localhost:1313/tags/claude-code/</link>
-      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/claude-code/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>CTF</title>
       <link>http://localhost:1313/tags/ctf/</link>
       <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
@@ -198,7 +247,7 @@
       <description></description>
     </item>
     <item>
-      <title>Htb</title>
+      <title>HTB</title>
       <link>http://localhost:1313/tags/htb/</link>
       <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/htb/</guid>
@@ -254,7 +303,7 @@
       <description></description>
     </item>
     <item>
-      <title>Appsec</title>
+      <title>AppSec</title>
       <link>http://localhost:1313/tags/appsec/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/appsec/</guid>
@@ -594,13 +643,6 @@
       <link>http://localhost:1313/tags/fortress/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/fortress/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>OWASP</title>
-      <link>http://localhost:1313/tags/owasp/</link>
-      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/owasp/</guid>
       <description></description>
     </item>
     <item>

@@ -2,6 +2,7 @@
 <html lang="en-us">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -195,17 +196,6 @@
 <p>Also, I do participate in the CTFs. Learn the new technology and write so many <strong>Blogs</strong>. Also, I&rsquo;m active on the Hack The Box season (my peak was global rank of 144). Honestly, this offensive security keeps my defender mindset honest, and I know how an attacker thinks.</p>
 <p>I learned by building, documenting, and automating. If it is something related to security, cloud, or detection, or a bit of everything, then I am probably working on it. Like currently, I am working on something very special and soon I will be sharing it.</p>
 <style>
-  .aboutx-reveal {
-    opacity: 0;
-    transform: translateY(14px);
-    transition: opacity 0.65s ease, transform 0.65s ease;
-    transition-delay: var(--aboutx-delay, 0ms);
-  }
-
-  .aboutx-reveal.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
 
   .aboutx-block + .aboutx-block {
     margin-top: 3rem;
@@ -436,12 +426,6 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .aboutx-reveal {
-      opacity: 1;
-      transform: none;
-      transition: none;
-    }
-
     .aboutx-node::before,
     .aboutx-title {
       transition: none;
@@ -450,17 +434,17 @@
 </style>
 
 <section class="aboutx-block">
-  <div class="aboutx-head aboutx-reveal">
+  <div class="aboutx-head">
     <span class="aboutx-kicker">Path</span>
     <h2>Education</h2>
   </div>
 
-  <p class="aboutx-copy aboutx-reveal">
+  <p class="aboutx-copy">
     Formal training in cybersecurity and cloud engineering, with the offensive foundations behind my defensive work.
   </p>
 
   <div class="aboutx-track">
-    <article class="aboutx-entry aboutx-reveal">
+    <article class="aboutx-entry">
       <div class="aboutx-node" aria-hidden="true"></div>
       <div class="aboutx-card">
         <div class="aboutx-top">
@@ -478,7 +462,7 @@
       </div>
     </article>
 
-    <article class="aboutx-entry aboutx-reveal">
+    <article class="aboutx-entry">
       <div class="aboutx-node" aria-hidden="true"></div>
       <div class="aboutx-card">
         <div class="aboutx-top">
@@ -498,17 +482,17 @@
 </section>
 
 <section class="aboutx-block">
-  <div class="aboutx-head aboutx-reveal">
+  <div class="aboutx-head">
     <span class="aboutx-kicker">Practice</span>
     <h2>Work Experience</h2>
   </div>
 
-  <p class="aboutx-copy aboutx-reveal">
+  <p class="aboutx-copy">
     Security work shaped by testing, monitoring, incident handling, and practical remediation.
   </p>
 
   <div class="aboutx-track">
-    <article class="aboutx-entry aboutx-reveal">
+    <article class="aboutx-entry">
       <div class="aboutx-node" aria-hidden="true"></div>
       <div class="aboutx-card">
         <div class="aboutx-top">
@@ -529,7 +513,7 @@
       </div>
     </article>
 
-    <article class="aboutx-entry aboutx-reveal">
+    <article class="aboutx-entry">
       <div class="aboutx-node" aria-hidden="true"></div>
       <div class="aboutx-card">
         <div class="aboutx-top">
@@ -549,56 +533,6 @@
   </div>
 </section>
 
-<script>
-  (function () {
-    function initAboutxReveal() {
-      if (window.__aboutxRevealBound) return;
-      window.__aboutxRevealBound = true;
-
-      var items = document.querySelectorAll(".aboutx-reveal");
-      if (!items.length) return;
-
-      var reduceMotion =
-        window.matchMedia &&
-        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-      items.forEach(function (item, index) {
-        item.style.setProperty("--aboutx-delay", Math.min(index * 60, 360) + "ms");
-      });
-
-      if (reduceMotion || !("IntersectionObserver" in window)) {
-        items.forEach(function (item) {
-          item.classList.add("is-visible");
-        });
-        return;
-      }
-
-      var observer = new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (entry) {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          });
-        },
-        {
-          threshold: 0.14,
-          rootMargin: "0px 0px -36px 0px"
-        }
-      );
-
-      items.forEach(function (item) {
-        observer.observe(item);
-      });
-    }
-
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", initAboutxReveal);
-    } else {
-      initAboutxReveal();
-    }
-  })();
-</script>
 
 <h2 id="-technical-skills">🛠️ Technical Skills</h2>
 <style>
@@ -838,7 +772,7 @@
 </style>
 
 <div class="skillx-ledger">
-  <article class="skillx-row aboutx-reveal">
+  <article class="skillx-row">
     <button class="skillx-toggle" type="button">
       <span class="skillx-index">01</span>
       <span class="skillx-titlebox">
@@ -867,7 +801,7 @@
     </div>
   </article>
 
-  <article class="skillx-row aboutx-reveal is-open">
+  <article class="skillx-row is-open">
     <button class="skillx-toggle" type="button">
       <span class="skillx-index">02</span>
       <span class="skillx-titlebox">
@@ -894,7 +828,7 @@
     </div>
   </article>
 
-  <article class="skillx-row aboutx-reveal">
+  <article class="skillx-row">
     <button class="skillx-toggle" type="button">
       <span class="skillx-index">03</span>
       <span class="skillx-titlebox">
@@ -920,7 +854,7 @@
     </div>
   </article>
 
-  <article class="skillx-row aboutx-reveal">
+  <article class="skillx-row">
     <button class="skillx-toggle" type="button">
       <span class="skillx-index">04</span>
       <span class="skillx-titlebox">
@@ -945,7 +879,7 @@
     </div>
   </article>
 
-  <article class="skillx-row aboutx-reveal">
+  <article class="skillx-row">
     <button class="skillx-toggle" type="button">
       <span class="skillx-index">05</span>
       <span class="skillx-titlebox">
@@ -971,7 +905,7 @@
     </div>
   </article>
 
-  <article class="skillx-row aboutx-reveal">
+  <article class="skillx-row">
     <button class="skillx-toggle" type="button">
       <span class="skillx-index">06</span>
       <span class="skillx-titlebox">
@@ -1000,7 +934,7 @@
     </div>
   </article>
 
-  <article class="skillx-row aboutx-reveal">
+  <article class="skillx-row">
     <button class="skillx-toggle" type="button">
       <span class="skillx-index">07</span>
       <span class="skillx-titlebox">
@@ -1024,7 +958,7 @@
     </div>
   </article>
 
-  <article class="skillx-row aboutx-reveal">
+  <article class="skillx-row">
     <button class="skillx-toggle" type="button">
       <span class="skillx-index">08</span>
       <span class="skillx-titlebox">
@@ -1049,7 +983,7 @@
     </div>
   </article>
 
-  <article class="skillx-row aboutx-reveal">
+  <article class="skillx-row">
     <button class="skillx-toggle" type="button">
       <span class="skillx-index">09</span>
       <span class="skillx-titlebox">

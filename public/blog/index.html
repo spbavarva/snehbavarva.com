@@ -2,6 +2,7 @@
 <html lang="en-us">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -417,16 +418,6 @@
     margin: 2.5rem 0 0;
   }
 
-  html.blog-motion-ready .timeline-content {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-
-  html.blog-motion-ready .timeline-content.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1), transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
   @media (max-width: 680px) {
     .blog-container {
@@ -506,10 +497,6 @@
       transition: none;
     }
 
-    html.blog-motion-ready .timeline-content {
-      opacity: 1;
-      transform: none;
-    }
   }
 </style>
 
@@ -541,6 +528,20 @@
 
   <div class="timeline-wrapper">
     <div class="timeline-posts">
+      
+      <article class="timeline-entry">
+        <div class="timeline-rail" aria-hidden="true"></div>
+        <div class="timeline-content">
+          
+          <div class="timeline-date">May 3, 2026</div>
+          
+          <h2>
+            <a class="timeline-content-title" href="/blog/secure-vibe-starter/">Secure Vibe Coding in 2026: The Files, Prompts and Rules of Use and Research</a>
+          </h2>
+          <p>How to run agentic engineering in 2026 without shipping the next breach. Exact files, prompts, and rules — organized by stage.</p>
+          <a class="timeline-content-read" href="/blog/secure-vibe-starter/">Read article →</a>
+        </div>
+      </article>
       
       <article class="timeline-entry">
         <div class="timeline-rail" aria-hidden="true"></div>
@@ -772,50 +773,6 @@
   <hr class="blog-separator" />
 </main>
 
-<script>
-  (function () {
-    function initBlogMotion() {
-      if (
-        window.matchMedia &&
-        window.matchMedia("(prefers-reduced-motion: reduce)").matches
-      ) {
-        return;
-      }
-
-      var items = document.querySelectorAll(".timeline-content");
-      if (!items.length) {
-        return;
-      }
-
-      document.documentElement.classList.add("blog-motion-ready");
-
-      var observer = new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (entry) {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          });
-        },
-        {
-          threshold: 0.12,
-          rootMargin: "0px 0px -40px 0px"
-        }
-      );
-
-      items.forEach(function (item, index) {
-        item.style.transitionDelay = Math.min(index * 70, 280) + "ms";
-        observer.observe(item);
-      });
-    }
-
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", initBlogMotion);
-    } else {
-      initBlogMotion();
-    }
-  })();
-</script>
 
 
 </div>
