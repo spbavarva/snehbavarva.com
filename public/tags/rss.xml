@@ -79,6 +79,48 @@
       <description></description>
     </item>
     <item>
+      <title>Appsec</title>
+      <link>http://localhost:1313/tags/appsec/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/appsec/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitHub Actions</title>
+      <link>http://localhost:1313/tags/github-actions/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/github-actions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security Automation</title>
+      <link>http://localhost:1313/tags/security-automation/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/security-automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Threat Intelligence</title>
+      <link>http://localhost:1313/tags/threat-intelligence/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/threat-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vulnerability Research</title>
+      <link>http://localhost:1313/tags/vulnerability-research/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/vulnerability-research/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Cobalt Strike</title>
       <link>http://localhost:1313/tags/cobalt-strike/</link>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
@@ -293,20 +335,6 @@
       <link>http://localhost:1313/tags/cloud/</link>
       <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/cloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
-      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AppSec</title>
-      <link>http://localhost:1313/tags/appsec/</link>
-      <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/appsec/</guid>
       <description></description>
     </item>
     <item>

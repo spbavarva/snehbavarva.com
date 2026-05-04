@@ -30,6 +30,34 @@
       <description></description>
     </item>
     <item>
+      <title>Automated</title>
+      <link>http://localhost:1313/categories/automated/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/automated/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security Automation</title>
+      <link>http://localhost:1313/categories/security-automation/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/security-automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Threat Intelligence</title>
+      <link>http://localhost:1313/categories/threat-intelligence/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/threat-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tool</title>
+      <link>http://localhost:1313/categories/tool/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/tool/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Certifications</title>
       <link>http://localhost:1313/categories/certifications/</link>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
@@ -58,20 +86,6 @@
       <description></description>
     </item>
     <item>
-      <title>Automated</title>
-      <link>http://localhost:1313/categories/automated/</link>
-      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/automated/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tool</title>
-      <link>http://localhost:1313/categories/tool/</link>
-      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/tool/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Appsec</title>
       <link>http://localhost:1313/categories/appsec/</link>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
@@ -83,13 +97,6 @@
       <link>http://localhost:1313/categories/incident-response/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/incident-response/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security Automation</title>
-      <link>http://localhost:1313/categories/security-automation/</link>
-      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/security-automation/</guid>
       <description></description>
     </item>
     <item>

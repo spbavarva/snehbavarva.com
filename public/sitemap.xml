@@ -56,6 +56,42 @@
     <loc>http://localhost:1313/tags/vibe-coding/</loc>
     <lastmod>2026-05-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/projects/0day-digest/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/appsec/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/automated/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/github-actions/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/security-automation/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/security-automation/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/threat-intelligence/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/threat-intelligence/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/tool/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vulnerability-research/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/certifications/</loc>
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
@@ -161,9 +197,6 @@
     <loc>http://localhost:1313/tags/attack-path/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/automated/</loc>
-    <lastmod>2026-03-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/aws/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -176,19 +209,7 @@
     <loc>http://localhost:1313/projects/cloudsentinel/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2026-03-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
-    <lastmod>2026-03-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/tool/</loc>
-    <lastmod>2026-03-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/appsec/</loc>
-    <lastmod>2026-02-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/appsec/</loc>
     <lastmod>2026-02-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cve-2025-55182/</loc>
@@ -318,9 +339,6 @@
     <lastmod>2025-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/powershell/</loc>
-    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/security-automation/</loc>
     <lastmod>2025-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/soar/</loc>
