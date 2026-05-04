@@ -478,7 +478,7 @@
   /* --- Featured Projects --- */
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
   }
 
@@ -568,9 +568,15 @@
   }
 
   /* --- CVE Cards --- */
+  .cve-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
   .cve-card {
     border-left: 3px solid #ef4444 !important;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0;
   }
 
   .cve-card:hover {
@@ -920,6 +926,10 @@
     }
 
     .projects-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cve-grid {
       grid-template-columns: 1fr;
     }
 
@@ -1427,7 +1437,7 @@
 
       <div class="glass-card project-card-new" data-aos="fade-up" data-aos-delay="0">
 
-        <h3><a href="/projects">SOAR EDR Emulation</a></h3>
+        <h3><a href="/projects/soar-edr/">SOAR EDR Emulation</a></h3>
 
         <p>Emulating adversary techniques and automating D&amp;R with LimaCharlie, Tines and Slack</p>
 
@@ -1441,7 +1451,7 @@
 
         </div>
 
-        <a href="/projects" class="project-link">Learn More →</a>
+        <a href="/projects/soar-edr/" class="project-link">Learn More →</a>
 
       </div>
 
@@ -1449,7 +1459,7 @@
 
       <div class="glass-card project-card-new" data-aos="fade-up" data-aos-delay="100">
 
-        <h3><a href="/projects">burplabs</a></h3>
+        <h3><a href="/projects/burplabs/">burplabs</a></h3>
 
         <p>Automated python package for portswigger labs</p>
 
@@ -1463,7 +1473,51 @@
 
         </div>
 
-        <a href="/projects" class="project-link">Learn More →</a>
+        <a href="/projects/burplabs/" class="project-link">Learn More →</a>
+
+      </div>
+
+
+
+      <div class="glass-card project-card-new" data-aos="fade-up" data-aos-delay="200">
+
+        <h3><a href="/projects/cloudsentinel/">CloudSentinel</a></h3>
+
+        <p>AI-powered AWS security scanner that chains misconfigurations into attack paths</p>
+
+        <div class="project-tags">
+
+          <span class="project-tag">AWS</span>
+
+          <span class="project-tag">AI</span>
+
+          <span class="project-tag">Attack Paths</span>
+
+        </div>
+
+        <a href="/projects/cloudsentinel/" class="project-link">Learn More →</a>
+
+      </div>
+
+
+
+      <div class="glass-card project-card-new" data-aos="fade-up" data-aos-delay="300">
+
+        <h3><a href="/projects/0day-digest/">0day.digest</a></h3>
+
+        <p>Automated threat-intelligence feed with review-gated AI publishing workflow</p>
+
+        <div class="project-tags">
+
+          <span class="project-tag">Threat Intel</span>
+
+          <span class="project-tag">Python</span>
+
+          <span class="project-tag">GitHub Actions</span>
+
+        </div>
+
+        <a href="/projects/0day-digest/" class="project-link">Learn More →</a>
 
       </div>
 
@@ -1588,6 +1642,8 @@
       <h2>CVEs</h2>
     </div>
 
+    <div class="cve-grid">
+
     <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="0">
       <div class="cve-header">
         <a href="https://github.com/parse-community/parse-server/security/advisories/GHSA-2299-ghjr-6vjp" class="cve-id"
@@ -1672,6 +1728,8 @@
         Control, allowing students/teachers to access
         <code>/course/edit/{id}</code> and modify course data. Affects all v2.0 builds.
       </p>
+    </div>
+
     </div>
 
   </section>
