@@ -821,6 +821,52 @@
   }
 
    
+  .intro-panel .intro-panel-item--compact strong {
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+
+  .recognition-strip {
+    padding: 1.2rem;
+    border-left: 3px solid #60a5fa !important;
+  }
+
+  .recognition-strip__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+
+  .recognition-chip {
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.22rem;
+    min-height: 64px;
+    padding: 0.56rem 0.82rem;
+    border: 1px solid rgba(96, 165, 250, 0.22);
+    border-radius: 18px;
+    background: rgba(96, 165, 250, 0.08);
+    color: rgba(226, 232, 240, 0.82);
+    line-height: 1.25;
+  }
+
+  .recognition-chip__title {
+    color: #93c5fd;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.78rem;
+    font-weight: 750;
+    white-space: nowrap;
+  }
+
+  .recognition-chip__detail {
+    color: rgba(226, 232, 240, 0.78);
+    font-size: 0.78rem;
+    font-weight: 650;
+  }
+
+   
   .certs-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1590,6 +1636,7 @@
     .intro-title {
       max-width: 20ch;
     }
+
   }
 
   @media (max-width: 768px) {
@@ -1691,6 +1738,11 @@
         <div class="intro-panel-item">
           <span>Certifications</span>
           <strong><a href="#certifications">Certifications</a></strong>
+        </div>
+
+        <div class="intro-panel-item intro-panel-item--compact">
+          <span>Honors</span>
+          <strong><a href="#honors">Honors &amp; Involvement</a></strong>
         </div>
 
       </aside>
@@ -2138,6 +2190,43 @@
 
     </div>
 
+  </section>
+
+  
+
+  <section class="section-home main" id="honors">
+    <div class="section-header" data-aos="fade-right">
+      <h2>Honors &amp; Involvement</h2>
+    </div>
+
+    <div class="glass-card recognition-strip" data-aos="fade-up">
+      <div class="recognition-strip__chips">
+        <span class="recognition-chip">
+          <strong class="recognition-chip__title">Black Hat 2025</strong>
+          <span class="recognition-chip__detail">Scholarship winner / 1 of 8 global recipients</span>
+        </span>
+        <span class="recognition-chip">
+          <strong class="recognition-chip__title">fwd:cloudsec 2025</strong>
+          <span class="recognition-chip__detail">Cloud security scholarship winner</span>
+        </span>
+        <span class="recognition-chip">
+          <strong class="recognition-chip__title">Anthropic x UMD</strong>
+          <span class="recognition-chip__detail">Claude Builder Club Hackathon judge / Apr. 2026</span>
+        </span>
+        <span class="recognition-chip">
+          <strong class="recognition-chip__title">Amazon x HackerOne CTF</strong>
+          <span class="recognition-chip__detail">Top 3 placement / Oct. 2025</span>
+        </span>
+        <span class="recognition-chip">
+          <strong class="recognition-chip__title">HTB Season 8</strong>
+          <span class="recognition-chip__detail">Global Rank 144 / Jun.-Aug. 2025</span>
+        </span>
+        <span class="recognition-chip">
+          <strong class="recognition-chip__title">Other CTF Placements</strong>
+          <span class="recognition-chip__detail">Boot-up Top 50 / Smiley Top 70 / Break The Syntax Top 40 / BSidesSF Top 5 / FTF Top 5%</span>
+        </span>
+      </div>
+    </div>
   </section>
 
 
