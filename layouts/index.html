@@ -572,16 +572,71 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.25rem;
+    max-height: 560px;
+    overflow-y: auto;
+    padding-right: 0.75rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(239, 68, 68, 0.45) rgba(255, 255, 255, 0.04);
+  }
+
+  .cve-grid::-webkit-scrollbar {
+    width: 8px;
+  }
+  .cve-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 999px;
+  }
+  .cve-grid::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(239,68,68,0.55), rgba(249,115,22,0.55));
+    border-radius: 999px;
+  }
+  .cve-grid::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(239,68,68,0.8), rgba(249,115,22,0.8));
   }
 
   .cve-card {
     border-left: 3px solid #ef4444 !important;
     margin-bottom: 0;
+    padding: 1rem 1.1rem !important;
   }
 
-  .cve-card:hover {
-    border-left-color: #ef4444 !important;
+  .cve-card.cve-card--critical { border-left-color: #ef4444 !important; }
+  .cve-card.cve-card--high     { border-left-color: #f97316 !important; }
+  .cve-card.cve-card--medium   { border-left-color: #eab308 !important; }
+  .cve-card.cve-card--low      { border-left-color: #3b82f6 !important; }
+
+  .cve-card:hover { transform: translateY(-2px); }
+
+  .cve-card .cve-header {
+    margin-bottom: 0.6rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
+
+  .cve-card .cve-id {
+    font-size: 0.9rem;
+  }
+
+  .cve-card .cve-description {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .cve-severity {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: var(--font-mono);
+  }
+  .cve-severity--critical { background: rgba(239,68,68,0.15);  color: #fca5a5; border: 1px solid rgba(239,68,68,0.4); }
+  .cve-severity--high     { background: rgba(249,115,22,0.15); color: #fed7aa; border: 1px solid rgba(249,115,22,0.4); }
+  .cve-severity--medium   { background: rgba(234,179,8,0.15);  color: #fde68a; border: 1px solid rgba(234,179,8,0.4); }
+  .cve-severity--low      { background: rgba(59,130,246,0.15); color: #bfdbfe; border: 1px solid rgba(59,130,246,0.4); }
 
   .cve-header {
     display: flex;
@@ -1562,7 +1617,7 @@
 
   <section class="signal-strip" aria-label="Current security signal">
     <div class="signal-strip__summary">
-      <strong>6 CVEs</strong>
+      <strong>11 CVEs</strong>
       <span>AI x AppSec x Cloud x D&amp;R</span>
     </div>
 
@@ -1923,89 +1978,125 @@
 
     <div class="cve-grid">
 
-    <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="0">
+    <div class="glass-card cve-card cve-card--critical" data-aos="fade-up" data-aos-delay="0">
       <div class="cve-header">
-        <a href="https://github.com/parse-community/parse-server/security/advisories/GHSA-2299-ghjr-6vjp" class="cve-id"
-          target="_blank" rel="noopener noreferrer">CVE-2026-33624</a>
-        <span class="cve-badge">Published</span>
+        <a href="https://github.com/patriksimek/vm2/security/advisories/GHSA-rp36-8xq3-r6c4" class="cve-id"
+          target="_blank" rel="noopener noreferrer">CVE-2026-47140</a>
+        <span class="cve-severity cve-severity--critical">Critical 10.0</span>
       </div>
       <p class="cve-description">
-        <a href="https://github.com/parse-community/parse-server">Parse Server</a> - MFA recovery code single-use bypass via concurrent requests
-      </p>
-      <p class="cve-description">
-        An attacker who obtains a user's password and a single MFA recovery code can reuse that recovery code an unlimited number of times by sending concurrent login requests. 
+        <a href="https://github.com/patriksimek/vm2">vm2</a> &mdash; NodeVM denylist bypass via <code>process</code> + <code>inspector/promises</code> &rarr; host RCE.
+        Refs: <a href="https://www.heise.de/en/news/Node-js-Four-critical-security-gaps-with-maximum-rating-in-vm2-closed-11300471.html" target="_blank" rel="noopener noreferrer">heise.de</a>, <a href="https://securityonline.info/vm2-sandbox-escape-vulnerabilities-cve-2026-47140-node-rce/" target="_blank" rel="noopener noreferrer">securityonline</a>.
       </p>
     </div>
 
-    <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="0">
+    <div class="glass-card cve-card cve-card--critical" data-aos="fade-up" data-aos-delay="0">
+      <div class="cve-header">
+        <a href="https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-h8q5-cp56-rr65" class="cve-id"
+          target="_blank" rel="noopener noreferrer">CVE-2026-47407</a>
+        <span class="cve-severity cve-severity--critical">Critical 9.4</span>
+      </div>
+      <p class="cve-description">
+        <a href="https://github.com/MervinPraison/PraisonAI">PraisonAI Platform</a> &mdash; cross-workspace IDOR + members can self-promote to admin/owner via unprotected member-management routes.
+      </p>
+    </div>
+
+    <div class="glass-card cve-card cve-card--high" data-aos="fade-up" data-aos-delay="0">
+      <div class="cve-header">
+        <a href="https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-9cr9-25q5-8prj" class="cve-id"
+          target="_blank" rel="noopener noreferrer">CVE-2026-47394</a>
+        <span class="cve-severity cve-severity--high">High 8.7</span>
+      </div>
+      <p class="cve-description">
+        <a href="https://github.com/MervinPraison/PraisonAI">PraisonAI</a> &mdash; unauthenticated arbitrary file read via MCP <code>workflow.show</code> / <code>workflow.validate</code> / <code>deploy.validate</code> handlers.
+      </p>
+    </div>
+
+    <div class="glass-card cve-card cve-card--high" data-aos="fade-up" data-aos-delay="0">
+      <div class="cve-header">
+        <a href="https://github.com/patriksimek/vm2/security/advisories/GHSA-r9pm-gxmw-wv6p" class="cve-id"
+          target="_blank" rel="noopener noreferrer">CVE-2026-47139</a>
+        <span class="cve-severity cve-severity--high">High 8.6</span>
+      </div>
+      <p class="cve-description">
+        <a href="https://github.com/patriksimek/vm2">vm2</a> &mdash; NodeVM network deny bypass via internal <code>_http_client</code> / <code>_http_server</code> escapes the network policy.
+      </p>
+    </div>
+
+    <div class="glass-card cve-card cve-card--medium" data-aos="fade-up" data-aos-delay="0">
       <div class="cve-header">
         <a href="https://github.com/advisories/GHSA-mqph-7h49-hqfm" class="cve-id" target="_blank"
           rel="noopener noreferrer">CVE-2026-33220</a>
-        <span class="cve-badge">Published</span>
+        <span class="cve-severity cve-severity--medium">Medium 6.8</span>
       </div>
       <p class="cve-description">
-        Weblate - <a href="https://weblate.org/en/">Weblate</a>
-      </p>
-      <p class="cve-description">
-        JavaScript localization CDN add-on allows arbitrary local file read outside the repository
+        <a href="https://weblate.org/en/">Weblate</a> &mdash; JS localization CDN add-on allows arbitrary local file read outside the repository.
       </p>
     </div>
 
-    <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="0">
-      <div class="cve-header">
-        <a href="https://github.com/advisories/GHSA-5fhx-9jwj-867m" class="cve-id" target="_blank"
-          rel="noopener noreferrer">CVE-2026-33440</a>
-        <span class="cve-badge">Published</span>
-      </div>
-      <p class="cve-description">
-        Weblate - <a href="https://weblate.org/en/">Weblate</a>
-      </p>
-      <p class="cve-description">
-        Authenticated SSRF via redirect bypass of ALLOWED_ASSET_DOMAINS in screenshot URL uploads
-      </p>
-    </div>
-
-    <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="0">
-      <div class="cve-header">
-        <a href="https://github.com/statamic/cms/security/advisories/GHSA-qm7r-wwq7-6f85" class="cve-id" target="_blank"
-          rel="noopener noreferrer">CVE-2026-33171</a>
-        <span class="cve-badge">Published</span>
-      </div>
-      <p class="cve-description">
-        LFI in file dictionary fieldtype in Best Flat CMS 2026 - <a href="https://github.com/statamic/cms">Statamic</a>
-      </p>
-      <p class="cve-description">
-        In the file dictionary fieldtype, allowing authenticated Control Panel users to read arbitrary .json, .yaml, and
-        .csv files from the server.
-      </p>
-    </div>
-
-
-    <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="0">
+    <div class="glass-card cve-card cve-card--medium" data-aos="fade-up" data-aos-delay="0">
       <div class="cve-header">
         <a href="https://www.cve.org/CVERecord?id=CVE-2025-46203" class="cve-id" target="_blank"
           rel="noopener noreferrer">CVE-2025-46203</a>
-        <span class="cve-badge">Published</span>
+        <span class="cve-severity cve-severity--medium">Medium 6.5</span>
       </div>
       <p class="cve-description">
-        <a href="https://github.com/changeweb/Unifiedtransform">Unifiedtransform v2.0</a> suffers from Broken Access
-        Control, allowing students/teachers to access
-        <code>/students/edit/{id}</code> and modify student records. Affects all v2.0 builds.
+        <a href="https://github.com/changeweb/Unifiedtransform">Unifiedtransform v2.0</a> &mdash; broken access control on <code>/students/edit/{id}</code> lets students/teachers modify any student record.
       </p>
     </div>
 
-
-
-    <div class="glass-card cve-card" data-aos="fade-up" data-aos-delay="100">
+    <div class="glass-card cve-card cve-card--medium" data-aos="fade-up" data-aos-delay="0">
       <div class="cve-header">
         <a href="https://www.cve.org/CVERecord?id=CVE-2025-46204" class="cve-id" target="_blank"
           rel="noopener noreferrer">CVE-2025-46204</a>
-        <span class="cve-badge">Published</span>
+        <span class="cve-severity cve-severity--medium">Medium 6.5</span>
       </div>
       <p class="cve-description">
-        <a href="https://github.com/changeweb/Unifiedtransform">Unifiedtransform v2.0</a> suffers from Broken Access
-        Control, allowing students/teachers to access
-        <code>/course/edit/{id}</code> and modify course data. Affects all v2.0 builds.
+        <a href="https://github.com/changeweb/Unifiedtransform">Unifiedtransform v2.0</a> &mdash; broken access control on <code>/course/edit/{id}</code> lets any user modify course data.
+      </p>
+    </div>
+
+    <div class="glass-card cve-card cve-card--medium" data-aos="fade-up" data-aos-delay="0">
+      <div class="cve-header">
+        <a href="https://github.com/advisories/GHSA-5fhx-9jwj-867m" class="cve-id" target="_blank"
+          rel="noopener noreferrer">CVE-2026-33440</a>
+        <span class="cve-severity cve-severity--medium">Medium 5.0</span>
+      </div>
+      <p class="cve-description">
+        <a href="https://weblate.org/en/">Weblate</a> &mdash; authenticated SSRF via redirect bypass of <code>ALLOWED_ASSET_DOMAINS</code> in screenshot URL uploads.
+      </p>
+    </div>
+
+    <div class="glass-card cve-card cve-card--medium" data-aos="fade-up" data-aos-delay="0">
+      <div class="cve-header">
+        <a href="https://github.com/statamic/cms/security/advisories/GHSA-qm7r-wwq7-6f85" class="cve-id" target="_blank"
+          rel="noopener noreferrer">CVE-2026-33171</a>
+        <span class="cve-severity cve-severity--medium">Medium 4.3</span>
+      </div>
+      <p class="cve-description">
+        <a href="https://github.com/statamic/cms">Statamic</a> &mdash; authenticated LFI in file dictionary fieldtype reads arbitrary <code>.json</code>/<code>.yaml</code>/<code>.csv</code> from server.
+      </p>
+    </div>
+
+    <div class="glass-card cve-card cve-card--medium" data-aos="fade-up" data-aos-delay="0">
+      <div class="cve-header">
+        <a href="https://github.com/patriksimek/vm2/security/advisories/GHSA-9g8x-92q2-p28f" class="cve-id"
+          target="_blank" rel="noopener noreferrer">CVE-2026-47141</a>
+        <span class="cve-severity cve-severity--medium">Medium</span>
+      </div>
+      <p class="cve-description">
+        <a href="https://github.com/patriksimek/vm2">vm2</a> &mdash; NodeVM observability builtins leak host process metadata and in-flight HTTP request data.
+      </p>
+    </div>
+
+    <div class="glass-card cve-card cve-card--low" data-aos="fade-up" data-aos-delay="0">
+      <div class="cve-header">
+        <a href="https://github.com/parse-community/parse-server/security/advisories/GHSA-2299-ghjr-6vjp" class="cve-id"
+          target="_blank" rel="noopener noreferrer">CVE-2026-33624</a>
+        <span class="cve-severity cve-severity--low">Low 2.1</span>
+      </div>
+      <p class="cve-description">
+        <a href="https://github.com/parse-community/parse-server">Parse Server</a> &mdash; MFA recovery code single-use bypass via concurrent login requests.
       </p>
     </div>
 
