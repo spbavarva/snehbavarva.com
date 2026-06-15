@@ -115,7 +115,7 @@
   &lt;tr&gt;
     &lt;td rowspan=&#34;7&#34;&gt;
       
-      &lt;img src=&#34;http://localhost:1313/images/ctf/htb/tombwatcher.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
+      &lt;img src=&#34;http://localhost:1313/images/ctf/htb/TombWatcher.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
       
     &lt;/td&gt;
   &lt;/tr&gt;
@@ -149,7 +149,7 @@
 
 
 &lt;h2 id=&#34;walkthrough&#34;&gt;Walkthrough&lt;/h2&gt;
-&lt;p&gt;will publish once machine is retired&amp;hellip;&lt;/p&gt;</description>
+&lt;p&gt;Medium - Windows&lt;/p&gt;</description>
     </item>
     <item>
       <title>Certificate</title>
@@ -237,7 +237,7 @@
   &lt;tr&gt;
     &lt;td rowspan=&#34;7&#34;&gt;
       
-      &lt;img src=&#34;http://localhost:1313/images/ctf/htb/certificate.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
+      &lt;img src=&#34;http://localhost:1313/images/ctf/htb/Certificate.png&#34; class=&#34;machine-info-thumb&#34; alt=&#34;Machine Image&#34; /&gt;
       
     &lt;/td&gt;
   &lt;/tr&gt;
@@ -271,7 +271,7 @@
 
 
 &lt;h2 id=&#34;walkthrough&#34;&gt;Walkthrough&lt;/h2&gt;
-&lt;p&gt;will publish once machine is retired&amp;hellip;&lt;/p&gt;</description>
+&lt;p&gt;Hard - Windows&lt;/p&gt;</description>
     </item>
     <item>
       <title>Puppy</title>

