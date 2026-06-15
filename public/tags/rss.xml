@@ -79,7 +79,7 @@
       <description></description>
     </item>
     <item>
-      <title>AppSec</title>
+      <title>Appsec</title>
       <link>http://localhost:1313/tags/appsec/</link>
       <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/appsec/</guid>
@@ -289,7 +289,7 @@
       <description></description>
     </item>
     <item>
-      <title>Htb</title>
+      <title>HTB</title>
       <link>http://localhost:1313/tags/htb/</link>
       <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/htb/</guid>
@@ -583,6 +583,13 @@
       <description></description>
     </item>
     <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Sat, 26 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Automated</title>
       <link>http://localhost:1313/tags/automated/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
@@ -653,6 +660,13 @@
       <description></description>
     </item>
     <item>
+      <title>Assume Breach</title>
+      <link>http://localhost:1313/tags/assume-breach/</link>
+      <pubDate>Sat, 05 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/assume-breach/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Certification</title>
       <link>http://localhost:1313/tags/certification/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
@@ -678,13 +692,6 @@
       <link>http://localhost:1313/tags/reverse-engineering/</link>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/reverse-engineering/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Assume Breach</title>
-      <link>http://localhost:1313/tags/assume-breach/</link>
-      <pubDate>Sat, 07 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/assume-breach/</guid>
       <description></description>
     </item>
     <item>

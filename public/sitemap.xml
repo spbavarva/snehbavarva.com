@@ -353,6 +353,15 @@
     <loc>http://localhost:1313/tags/windows/</loc>
     <lastmod>2025-09-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/ctf/htb/machines/era/</loc>
+    <lastmod>2025-07-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ctf/htb/machines/</loc>
+    <lastmod>2025-07-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2025-07-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/automated/</loc>
     <lastmod>2025-07-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -395,6 +404,12 @@
     <loc>http://localhost:1313/tags/weekly-report/</loc>
     <lastmod>2025-07-17T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/assume-breach/</loc>
+    <lastmod>2025-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ctf/htb/machines/voleur/</loc>
+    <lastmod>2025-07-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/blog/aws-fortress-review/</loc>
     <lastmod>2025-06-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -416,11 +431,8 @@
     <loc>http://localhost:1313/tags/reverse-engineering/</loc>
     <lastmod>2025-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/assume-breach/</loc>
-    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ctf/htb/machines/</loc>
-    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/ctf/htb/machines/rustykey/</loc>
+    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ctf/htb/machines/tombwatcher/</loc>
     <lastmod>2025-06-07T00:00:00+00:00</lastmod>
