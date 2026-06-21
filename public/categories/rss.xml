@@ -6,8 +6,22 @@
     <description>Recent content in Categories on Sneh Bavarva | Cybersecurity Professional</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automated</title>
+      <link>http://localhost:1313/categories/automated/</link>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/automated/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tool</title>
+      <link>http://localhost:1313/categories/tool/</link>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/tool/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI</title>
       <link>http://localhost:1313/categories/ai/</link>
@@ -30,13 +44,6 @@
       <description></description>
     </item>
     <item>
-      <title>Automated</title>
-      <link>http://localhost:1313/categories/automated/</link>
-      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/automated/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Security Automation</title>
       <link>http://localhost:1313/categories/security-automation/</link>
       <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
@@ -48,13 +55,6 @@
       <link>http://localhost:1313/categories/threat-intelligence/</link>
       <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/threat-intelligence/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tool</title>
-      <link>http://localhost:1313/categories/tool/</link>
-      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/tool/</guid>
       <description></description>
     </item>
     <item>
