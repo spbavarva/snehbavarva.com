@@ -3,7 +3,7 @@ title: "CleanClip"
 description: "A quiet macOS background tool that auto-cleans Claude Code terminal copies and adds a clipboard-history popup"
 date: 2026-06-21
 draft: false
-kind: "Product"
+ptype: "Product"
 showToc: true
 tags: ["macOS", "Hammerspoon", "Lua", "Productivity", "Claude", "Tool"]
 categories: ["Tool"]

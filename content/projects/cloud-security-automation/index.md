@@ -3,7 +3,7 @@ title: "Secure CI/CD DevSecOps pipeline"
 description: "Automated security scanning and compliance checking for code"
 date: 2025-04-08
 draft: false
-kind: "Lab"
+ptype: "Lab"
 tags: ["Security", "Cloud", "Automation", "AWS"]
 categories: ["Security"]
 showToc: true

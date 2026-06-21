@@ -3,7 +3,7 @@ title: "ONE STOP SHOP"
 description: "Built fully-fledged ecommerce platform protected against OWASP Top 10"
 date: 2023-12-09
 draft: false
-kind: "Lab"
+ptype: "Lab"
 showToc: true
 tags: ["OWASP", "Security"]
 cover:

@@ -14,7 +14,7 @@
         </div>
         {{ end }}
 
-        <h2>{{ .Title }}{{ if eq .Section "projects" }}{{ with .Params.kind }}
+        <h2>{{ .Title }}{{ if eq .Section "projects" }}{{ with .Params.ptype }}
           <span class="kind-badge kind-{{ . | lower }}">{{ . }}</span>{{ end }}{{ end }}</h2>
         <div class="post-meta">{{ .Date.Format "January 2, 2006" }}</div>
         <p>{{ .Description | default .Summary | truncate 150 }}</p>

@@ -3,7 +3,7 @@ title: "SOAR + EDR Emulation"
 description: "Emulating adversary techniques and automating D&R with LimaCharlie & Tines"
 date: 2025-09-14
 draft: false
-kind: "Lab"
+ptype: "Lab"
 tags:
   [
     "SOAR",

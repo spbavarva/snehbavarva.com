@@ -3,7 +3,7 @@ title: "Source Code Review Challenges"
 description: "Hands-on secure-code-review challenges built from real, public vulnerabilities across many languages and stacks"
 date: 2026-06-18
 draft: false
-kind: "Research"
+ptype: "Research"
 showToc: true
 tags: ["Secure-Code-Review", "Vulnerabilities", "CVE", "Supply-Chain", "DevSecOps", "Python", "TypeScript", "Java"]
 categories: ["Security"]

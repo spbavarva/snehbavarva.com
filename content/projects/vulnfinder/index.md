@@ -3,7 +3,7 @@ title: "vulnfinder"
 description: "Source-to-sink vulnerability research that runs inside Claude Code"
 date: 2026-06-13
 draft: false
-kind: "Product"
+ptype: "Product"
 showToc: true
 tags: ["CVE", "AI", "LLM", "Security-Research", "Open-Source", "Claude", "Automation"]
 categories: ["Tool", "automated"]
