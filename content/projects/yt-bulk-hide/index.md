@@ -3,6 +3,7 @@ title: "YouTube Bulk Hide"
 description: "Chrome extension to bulk-hide and auto-hide videos from your YouTube subscriptions feed"
 date: 2026-04-19
 draft: false
+kind: "Tool"
 showToc: true
 tags: ["Chrome-Extension", "JavaScript", "Productivity", "YouTube", "Tool"]
 categories: ["Tool"]

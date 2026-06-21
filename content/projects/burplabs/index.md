@@ -3,6 +3,7 @@ title: "burplabs"
 description: "Automated python package for portswigger labs"
 date: 2025-07-21
 draft: false
+kind: "Tool"
 tags: ["Automated", "portswigger", "Windows", "burpsuite", "burplabs", "powershell"]
 categories: ["automated", "Tool"]
 showToc: true

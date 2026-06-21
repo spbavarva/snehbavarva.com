@@ -3,6 +3,7 @@ title: "0day.digest"
 description: "Automated threat-intelligence feed for AI, CVEs, supply-chain attacks, and appsec research"
 date: 2026-04-26
 draft: false
+kind: "Product"
 tags:
   [
     "Threat Intelligence",

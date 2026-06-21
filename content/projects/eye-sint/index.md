@@ -3,6 +3,7 @@ title: "Eye-Sint – A Multi-Module Open-Source Intelligence Tool"
 description: "An OSINT tool for web and human footprinting"
 date: 2024-04-09
 draft: false
+kind: "Research"
 showToc: true
 tags: ["OSINT", "Security"]
 categories: ["Tooling"]

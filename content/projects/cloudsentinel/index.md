@@ -3,6 +3,7 @@ title: "CloudSentinel"
 description: "AI-powered AWS security scanner with attack path reasoning"
 date: 2026-03-07
 draft: false
+kind: "Product"
 tags: ["AWS", "Security", "AI", "Python", "Claude", "Attack-Path", "Cloud"]
 categories: ["automated", "Tool"]
 showToc: true
