@@ -7,10 +7,10 @@ showToc: true
 tags: ["CVE", "AI", "LLM", "Security-Research", "Open-Source", "Claude", "Automation"]
 categories: ["Tool", "automated"]
 cover:
-image: "/images/vulnfinder.png"
-alt: "vulnfinder"
-caption: "secure the system"
-relative: false
+  image: "/images/vulnfinder.png"
+  alt: "vulnfinder"
+  caption: "secure the system"
+  relative: false
 ---
 
 > **Find the bug devs forgot.**
