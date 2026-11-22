@@ -1,11 +1,11 @@
 ---
 title: "SourceDeck"
-description: "A hosted service that follows public accounts, collects every new photo and video once, and delivers it to where creators work"
+description: "A personal project that follows public accounts, collects every new photo and video once, and delivers it to where creators work"
 date: 2026-11-10
 draft: false
 ptype: "Product"
 showToc: true
-tags: ["SaaS", "Python", "Security", "Threat-Modeling", "Automation", "Product"]
+tags: ["Web-App", "Python", "Security", "Threat-Modeling", "Automation", "Product"]
 categories: ["Product"]
 cover:
   image: "/images/sourcedeck.png"
@@ -16,15 +16,11 @@ cover:
 
 > **Stop checking ten apps for footage.**
 
-**[SourceDeck](https://sourcedeck.pages.dev/)** is a hosted product I built and run for real, paying customers. It follows the public accounts your videos depend on, collects every new photo, clip and story the moment it is posted, and delivers it to where you work: team channels, cloud folders, or signed webhooks on your own servers. Sorted by source, never duplicated, ready for your edit.
+**[SourceDeck](https://sourcedeck.pages.dev/)** is a personal project I built to show how I design, run and secure a real product end to end. It is not a business: no real payments are taken, and checkout runs on Stripe's test mode only. It follows the public accounts your videos depend on, collects every new photo, clip and story the moment it is posted, and delivers it to where you work: team channels, cloud folders, or signed webhooks on your own servers. Sorted by source, never duplicated, ready for your edit.
 
-It is used by news and explainer channels, nature and documentary editors, social media teams, and researchers and archivists.
+It is designed for news and explainer channels, nature and documentary editors, social media teams, and researchers and archivists. It collects 25K to 30K new photos and videos a day.
 
-- **100+** active creators and teams
-- **500+** workspaces created
-- **25K to 30K** new photos and videos collected a day
-
-Try it free (3 sources, no card needed): **[sourcedeck.pages.dev](https://sourcedeck.pages.dev/)**
+Try the live sandbox (no sign-up, simulated accounts): **[sourcedeck.pages.dev/try](https://sourcedeck.pages.dev/try/)**
 
 Full engineering case study: **[How SourceDeck is built](https://sourcedeck.pages.dev/engineering/)**
 
@@ -50,11 +46,11 @@ Three constraints shaped every decision: correctness over cleverness (a creator 
 Work flows through a pipeline where every hop is a row in a durable queue, so a restart resumes exactly where it stopped:
 
 1. **Collectors** check each source and hand new items to the core.
-2. **The core** runs the durable job queue, deduplicates by item ID, and tracks billing and plan limits.
+2. **The core** runs the durable job queue, deduplicates by item ID, and enforces plan limits.
 3. **The pacer** delivers each item to every matching destination while respecting each destination's rate limits, with backoff.
 4. **A self-healing residential "station"** runs a full browser for pages that need one. It dials out over SSH and opens no inbound ports.
 
-**Stack:** Python 3.12 with asyncio, aiohttp for the dashboard and API, SQLite in WAL mode, systemd services, Caddy for TLS, and Playwright for browser-based collection. Payments run through Stripe.
+**Stack:** Python 3.12 with asyncio, aiohttp for the dashboard and API, SQLite in WAL mode, systemd services, Caddy for TLS, and Playwright for browser-based collection. Checkout uses Stripe in test mode only; no real payments are taken.
 
 {{<dots>}}
 
